@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: release-notes/dr-limitations.html 
+keywords: disaster recovery, bluexp 
+summary: 已知的限制可識別此服務版本不支援的平台、裝置或功能、或是無法與之正確互通。 
+---
+= 限制
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/use/
+
+
+[role="lead"]
+已知的限制可識別此服務版本不支援的平台、裝置或功能、或是無法與之正確互通。
+
+
+
+== BlueXP 可能無法探索 Amazon FSX for NetApp ONTAP
+
+有時候 BlueXP 無法探索適用於 NetApp ONTAP 叢集的 Amazon FSX 。這可能是因為 FSX 認證不正確。
+
+* 因應措施 * ：在 BlueXP 中新增 Amazon FSX for NetApp ONTAP 叢集、並定期重新整理叢集以顯示任何變更。
+
+如果您需要從 BlueXP 災難恢復服務中移除 ONTAP FSX 叢集、請完成下列步驟：
+
+. 在 BlueXP Connector 中、使用雲端供應商提供的連線選項、連線至 Connector 執行的 Linux VM 、然後使用重新啟動「 occm 」服務 `docker restart occm` 命令。
++
+請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["管理現有的連接器"^]。
+
+. 在 BlueXP Canvas 中、再次新增 Amazon FSX for ONTAP 環境、並提供 FSX 認證。
++
+請參閱 https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started-step1.html["為 NetApp ONTAP 檔案系統建立 Amazon FSX"^]。
+
+. 從 BlueXP 災難恢復中、選取 * 站台 * 、在 vCenter 列中選取 * 動作 * 選項 image:../use/icon-vertical-dots.png["BlueXP 災難恢復服務中的「動作」功能表圖示"]，然後從 Actions （操作）菜單中選擇 *Refresh* （刷新 * ）以刷新 BlueXP 災難恢復中的 FSX 發現。
++
+如此可重新探索資料存放區、其虛擬機器及其目的地關係。
+
+

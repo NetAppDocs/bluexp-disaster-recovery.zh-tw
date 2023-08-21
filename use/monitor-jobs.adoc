@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: use/monitor-jobs.html 
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
+summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。 
+---
+= 監控災難恢復工作
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/use/
+
+
+[role="lead"]
+您可以監控所有災難恢復工作、並判斷其進度。
+
+.步驟
+. 從 BlueXP 左側導航中，選擇 * 保護 * > * 災難恢復 * 。
+. 從頂端功能表中、選取 * 工作監控 * 。
+. 探索與營運相關的所有工作、並檢閱其時間戳記和狀態。
+. 若要檢視特定工作的詳細資料、請選取該列。
+. 若要重新整理資訊、請選取 * 重新整理 * 。
+

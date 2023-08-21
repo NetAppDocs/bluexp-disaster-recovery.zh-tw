@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: use/failback.html 
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
+summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。 
+---
+= 將應用程式容錯回復至原始來源
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/use/
+
+
+[role="lead"]
+災難解決後、請從災難恢復站台容錯回復至來源站台、以恢復正常作業。您可以選擇要從中恢復的 Snapshot 。
+
+在此工作流程中、 BlueXP 災難恢復會先將任何變更複寫回原始來源虛擬機器、然後再還原複寫方向。此程序從已完成容錯移轉至目標的關係開始、並涉及下列步驟：
+
+* 在目標站台上、虛擬機器會關閉並取消登錄、磁碟區也會取消掛載。
+* 原始來源上的 SnapMirror 關係已中斷、無法讀取 / 寫入。
+* SnapMirror 關係會重新同步以反轉複寫。
+* 來源虛擬機器已開機並已登錄、而且磁碟區已掛載在來源上。
+
+
+.步驟
+. 從 BlueXP 左側導航中，選擇 * 保護 * > * 災難恢復 * 。
+. 從 BlueXP 災難恢復主菜單中，選擇 *Replication Plans （複製計劃） * 。
+. 選取災難恢復計畫。
+. 在右側、選取 * 動作 * 選項 image:../use/icon-horizontal-dots.png["BlueXP 災難恢復服務中的「動作」功能表圖示"]  然後選擇 * 容錯回復 * 。
+. 輸入災難恢復計畫名稱以確認並啟動容錯回復。
+. 選擇要從中恢復的資料存放區的 Snapshot 。  預設為最新。
+. 若要檢查進度、請在頂端功能表中選取 * 工作監控 * 。
+

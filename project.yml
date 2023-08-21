@@ -1,0 +1,24 @@
+---
+settings:
+  name: BlueXP disaster recovery
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: zh-tw,us-en,ja-jp,ko-kr,zh-cn,de-de,es-es,fr-fr,it-it
+sidebar:
+  entries:
+  - title: BlueXP 災難恢復文件
+    url: "/index.html"
+  - section: release-notes
+  - section: get-started
+  - section: use
+  - section: support
+  - title: 法律聲明
+    url: "/legal-notices.html"
+product-family:
+  name: BlueXP
+  repo: cloud-manager-family
+  sidebar_label: 所有BlueXP文件

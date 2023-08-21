@@ -1,0 +1,16 @@
+---
+section: get-started
+title: 開始使用
+entries:
+- title: 瞭解 BlueXP 災難恢復
+  url: "/get-started/dr-intro.html"
+- title: 先決條件
+  url: "/get-started/dr-prerequisites.html"
+- title: 快速入門
+  url: "/get-started/dr-quick-start.html"
+- title: 設定 BlueXP 災難恢復
+  url: "/get-started/dr-setup.html"
+- title: 存取 BlueXP 災難恢復
+  url: "/get-started/dr-login.html"
+- title: 常見問題集
+  url: "/get-started/dr-faq.html"

@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: get-started/dr-quick-start.html 
+keywords: how to get started with bluexp disaster recovery, disaster recovery quick start, failover, failback 
+summary: 只需幾個步驟、就能開始使用 NetApp BlueXP 災難恢復服務。 
+---
+= BlueXP 災難恢復快速入門
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/get-started/
+
+
+[role="lead"]
+以下概述開始執行 BlueXP 災難恢復所需的步驟。每個步驟中的連結都會帶您前往提供更多詳細資料的頁面。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 檢閱先決條件
+[role="quick-margin-para"]
+link:../get-started/dr-prerequisites.html["確保您的環境符合這些要求"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 設定災難恢復服務
+[role="quick-margin-para"]
+link:../get-started/dr-setup.html["完成設定服務的步驟"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 接下來呢？
+[role="quick-margin-para"]
+設定服務之後、接下來您可以做些什麼。
+
+[role="quick-margin-list"]
+* link:../use/sites-add.html["新增 vCenter 站台"]。
+* link:../use/drplan-create.html["建立災難恢復計畫"]。
+* link:../use/replicate.html["將應用程式複寫到另一個站台"]。
+* link:../use/failover.html["將應用程式容錯移轉至遠端站台"]。
+* link:../use/failback.html["將應用程式容錯回復至原始來源站台"]。
+* link:../use/manage.html["管理站台、計畫、資料存放區和虛擬機器資訊"]。
+* link:../use/monitor-jobs.html["監控災難恢復作業"]。
+

@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: use/replicate.html 
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
+summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。 
+---
+= 將應用程式複寫到另一個站台
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/use/
+
+
+[role="lead"]
+使用 SnapMirror 複寫、將來源站台上的 VMware 應用程式複寫到雲端的災難恢復遠端站台。
+
+
+TIP: 建立災難恢復計畫、識別精靈中的週期、並啟動災難恢復站台的複寫作業之後、每 30 分鐘 BlueXP 災難恢復就會驗證複寫作業是否確實根據計畫進行。您可以在「工作監控」頁面中監控支票。
+
+.步驟
+. 從 BlueXP 左側導航中，選擇 * 保護 * > * 災難恢復 * 。
+. 從上方功能表中、選取 * 複寫計畫 * 。
+. 選取災難恢復計畫。
+. 在右側、選取 * 動作 * 選項 image:../use/icon-horizontal-dots.png["BlueXP 災難恢復服務中的「動作」功能表圖示"] 然後選擇 * Replicate * 。
+
