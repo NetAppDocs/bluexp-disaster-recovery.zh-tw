@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: use/migrate.html 
+keywords: disaster recovery, bluexp disaster recovery, migrate, vmware, vcenter 
+summary: 使用 BlueXP 災難恢復、您可以將來源網站上的 VMware 應用程式移轉至其他網站。 
+---
+= 將應用程式移轉至其他站台
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/use/
+
+
+[role="lead"]
+使用 BlueXP 災難恢復、您可以將來源網站上的 VMware 應用程式移轉至其他網站。
+
+
+TIP: 建立複寫計畫、在精靈中識別週期、並啟動移轉之後、每 30 分鐘 BlueXP 災難恢復就會驗證移轉是否確實根據計畫進行。您可以在「工作監控」頁面中監控進度。
+
+.開始之前
+在開始移轉之前、您應該先建立複寫計畫、然後選擇移轉應用程式。然後、「動作」功能表中會出現 * 移轉 * 選項。
+
+.步驟
+. 從 BlueXP 左側導航中，選擇 * 保護 * > * 災難恢復 * 。
+. 從上方功能表中、選取 * 複寫計畫 * 。
+. 選取複寫計畫。
+. 在右側、選取 * 動作 * 選項 image:../use/icon-horizontal-dots.png["BlueXP 災難恢復服務中的「動作」功能表圖示"] 然後選取 * 移轉 * 。
+

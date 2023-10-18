@@ -4,7 +4,7 @@ permalink: get-started/dr-intro.html
 keywords: how bluexp disaster recovery works, what is disaster recovery, bluexp, vmware, vcenter, draas, replicate, failover, failback, fail over, fail back 
 summary: 災難恢復至雲端是一種彈性且具成本效益的方法、可保護工作負載免受站台中斷和資料毀損事件的影響。有了適用於 VMware 的 BlueXP 災難恢復功能、您可以使用 NetApp 雲端儲存設備、將執行 ONTAP 儲存設備的內部部署 VMware 工作負載複寫到公有雲中的 VMware 軟體定義資料中心、做為災難恢復站台。 
 ---
-= 瞭解適用於 VMware Beta 的 BlueXP 災難恢復
+= 瞭解適用於 VMware 的 BlueXP 災難恢復預覽
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,21 +12,23 @@ summary: 災難恢復至雲端是一種彈性且具成本效益的方法、可�
 
 
 [role="lead"]
-災難恢復至雲端是一種彈性且具成本效益的方法、可保護工作負載免受站台中斷和資料毀損事件的影響。使用 BlueXP 災難恢復 for VMware 試用版、您可以使用 NetApp 雲端儲存設備、將執行 ONTAP 儲存設備的內部部署 VMware 工作負載複寫到公有雲中的 VMware 軟體定義資料中心、做為災難恢復站台。
+災難恢復至雲端是一種彈性且具成本效益的方法、可保護工作負載免受站台中斷和資料毀損事件的影響。透過 BlueXP 災難恢復 for VMware 預覽、您可以使用 NetApp 雲端儲存設備、將執行 ONTAP 儲存設備的內部部署 VMware 工作負載複寫到公有雲中的 VMware 軟體定義資料中心、或將 ONTAP 儲存設備做為災難恢復站台的內部部署 VMware 環境。
 
-BlueXP 災難恢復試用版是一項雲端型災難恢復服務、可自動化災難恢復工作流程。最初、透過 BlueXP 災難恢復測試版、您可以保護內部部署、以 NFS 為基礎的 VMware 工作負載、在 AWS 上執行儲存設備、將 NetApp 儲存設備移轉至 VMware Cloud （ VMC ）、並搭配 Amazon FSX for NetApp ONTAP 。
+BlueXP 災難恢復預覽是一種雲端型災難恢復服務、可自動化災難恢復工作流程。最初、透過 BlueXP 災難恢復預覽、您可以將執行 NetApp 儲存設備的內部部署 NFS 型 VMware 工作負載、保護到下列其中一項：
 
-BlueXP 災難恢復測試版使用 ONTAP SnapMirror 技術作爲到雲的複製傳輸。這可在主要和次要站台上實現業界最佳的儲存效率（壓縮和重複資料刪除）。
-
-Beta 支援內部部署工作負載到雲端的災難恢復。
-
-image:draas-onprem-to-cloud.png["顯示 VMware BlueXP 災難恢復元件的圖表"]
+* VMware Cloud （ VMC ） on AWS with Amazon FSX for NetApp ONTAP 或
+* 另一個內部部署的 NFS 型 VMware 環境、搭配 ONTAP 儲存設備
 
 
+BlueXP 災難恢復預覽使用 ONTAP SnapMirror 技術作爲災難恢復站點的複製傳輸。這可在主要和次要站台上實現業界最佳的儲存效率（壓縮和重複資料刪除）。
 
-== 使用 BlueXP 災難恢復 for VMware Beta 的優點
+image:draas-onprem-to-cloud-onprem.png["顯示 VMware BlueXP 災難恢復元件的圖表"]
 
-BlueXP 災難恢復試用版具有以下優點：
+
+
+== 使用 BlueXP 災難恢復進行 VMware 預覽的優點
+
+BlueXP 災難恢復預覽提供下列優點：
 
 * 透過多個時間點恢復作業、簡化 vCenter 探索及應用程式恢復的使用者體驗 
 * 降低總體擁有成本、降低營運成本、並能以最少的資源建立及調整災難恢復計畫
@@ -36,16 +38,15 @@ BlueXP 災難恢復試用版具有以下優點：
 
 
 
-== 使用 BlueXP 災難恢復 for VMware Beta 可以做什麼
+== BlueXP 災難恢復 for VMware 預覽的用途
 
-BlueXP 災難恢復試用版可讓您充分運用多項 NetApp 技術來達成下列目標：
+BlueXP 災難恢復預覽可讓您充分運用多項 NetApp 技術來達成下列目標：
 
-* 使用 SnapMirror 複寫、將正式作業站台上的 VMware 應用程式複寫到雲端的災難恢復遠端站台。
-* 在發生災難時、請根據需要將主要站台容錯移轉至 VMware Cloud on AWS 中的 NetApp 雲端磁碟區。
+* 使用 SnapMirror 複寫、將內部部署正式作業站台上的 VMware 應用程式複寫到雲端或內部部署的災難恢復遠端站台。
+* 將 VMware 工作負載從原始站台移轉至其他站台。
+* 在發生災難時、可依需求將主要站台容錯移轉至災難恢復站台、該站台可以是 VMware Cloud on AWS with FSX for NetApp ONTAP 、或是內部部署的 VMware 環境搭配 ONTAP 。
 * 災難解決後、可隨需從災難恢復站台容錯回復至主要站台。
 
-
-有了 NetApp SnapMirror 技術、內部部署的 VMware 工作負載（適用於 NFS ）可複寫至在 AWS 中執行的適用於 NetApp ONTAP 的 FSX 。
 
 
 NOTE: vSphere 伺服器的組態是在 vSphere Server 的 BlueXP 災難恢復之外完成。
@@ -54,21 +55,25 @@ NOTE: vSphere 伺服器的組態是在 vSphere Server 的 BlueXP 災難恢復之
 
 == 成本
 
-NetApp 不會向您收取使用 BlueXP 災難恢復試用版的費用。
+NetApp 不收取使用 BlueXP 災難恢復預覽版本的費用。
 
 BlueXP 災難恢復服務在一般可用度下、預期將提供隨用隨付定價或年度訂閱方案。
 
 
 
-== BlueXP 災難恢復試用版的運作方式
+== BlueXP 災難恢復預覽的運作方式
 
-BlueXP 災難恢復試用版可將內部部署複寫到 Amazon FSX for ONTAP 的工作負載恢復。這項服務可從 SnapMirror 層級、透過虛擬機器登錄至 Virtual Machine Cloud （ VMC ）、以及直接在 VMware 網路虛擬化與安全平台 NSS-T 上進行網路對應、將還原作業自動化此功能隨附於所有 Virtual Machine Cloud 環境中。
+BlueXP 災難恢復預覽可將從內部部署站台複寫到 Amazon FSX for ONTAP 或其他內部部署站台的工作負載恢復。這項服務可從 SnapMirror 層級、透過虛擬機器登錄至 Virtual Machine Cloud （ VMC ）、以及直接在 VMware 網路虛擬化與安全平台 NSS-T 上進行網路對應、將還原作業自動化此功能隨附於所有 Virtual Machine Cloud 環境中。
 
-BlueXP 災難恢復測試版採用 ONTAP SnapMirror 技術、可提供高效率的複寫、並保留 ONTAP 的永久遞增 Snapshot 效率。SnapMirror 複寫可確保應用程式一致的 Snapshot 複本永遠保持同步、而且資料在容錯移轉後立即可用。
+BlueXP 災難恢復預覽採用 ONTAP SnapMirror 技術、可提供高效率的複寫、並保留 ONTAP 的永久遞增 Snapshot 效率。SnapMirror 複寫可確保應用程式一致的 Snapshot 複本永遠保持同步、而且資料在容錯移轉後立即可用。
 
 image:dr-architecture-diagram-70.png["顯示 VMware 服務基礎架構 BlueXP 災難恢復架構的圖表"]
 
-當發生災難時、此服務可中斷 SnapMirror 關係、並讓目的地站台處於作用中狀態、協助您恢復 VMC 中的虛擬機器。
+下圖顯示內部部署到內部部署災難恢復計畫的架構。
+
+image:dr-architecture-diagram-onprem-to-onprem.png["顯示 VMware 服務基礎架構 BlueXP 災難恢復架構的圖表"]
+
+當發生災難時、此服務可中斷 SnapMirror 關係、並讓目的地站台成為作用中、協助您在其他內部部署 VMware 環境或 VMC 中恢復虛擬機器。
 
 * 此服務也可讓您將虛擬機器容錯回復至原始來源位置。
 * 您可以在不中斷原始虛擬機器的情況下、測試災難恢復容錯移轉程序。此測試會建立 Volume 的 FlexClone 、將虛擬機器還原至隔離的網路。

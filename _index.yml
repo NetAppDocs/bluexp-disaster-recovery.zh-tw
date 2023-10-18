@@ -1,7 +1,7 @@
 ---
 indexpage:
-  lead: 災難恢復至雲端是一種彈性且具成本效益的方法、可保護工作負載免受站台中斷和資料毀損事件（例如勒索軟體）的影響。使用 BlueXP 災難恢復 for VMware
-    試用版、您可以使用 NetApp 雲端儲存設備、將執行 ONTAP 儲存設備的內部部署 VMware 工作負載複寫到公有雲中的 VMware 軟體定義資料中心、做為災難恢復站台。
+  lead: 災難恢復至雲端是一種彈性且具成本效益的方法、可保護工作負載免受站台中斷和資料毀損事件（例如勒索軟體）的影響。透過 BlueXP 災難恢復 for VMware
+    預覽、您可以將執行 ONTAP 儲存的內部部署 VMware 工作負載複寫到公有雲中的 VMware 軟體定義資料中心、或將其複寫到另一個內部部署站台做為災難恢復站台。
   tiles:
   - title: 開始使用
     links:
@@ -25,6 +25,8 @@ indexpage:
       url: "/use/drplan-create.html"
     - title: 將應用程式複寫到其他網站
       url: "/use/replicate.html"
+    - title: 將應用程式移轉至其他網站
+      url: "/use/migrate.html"
     - title: 將應用程式容錯移轉至遠端站台
       url: "/use/failover.html"
     - title: 將應用程式容錯回復至原始來源網站
@@ -39,3 +41,5 @@ indexpage:
       url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
     - title: 雲端網路研討會
       url: https://bluexp.netapp.com/events
+    - title: BlueXP 災難恢復部落格
+      url: https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-disaster-recovery-service-for-BC-with-VMware-Cloud-on-AWS-and-FSx-for/ba-p/447066

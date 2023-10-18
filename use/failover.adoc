@@ -12,9 +12,9 @@ summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自
 
 
 [role="lead"]
-發生災難時、請使用適用於 NetApp ONTAP 的 FSX 將主要內部部署站台容錯移轉至 AWS 站台上的 VMware Cloud 。
+發生災難時、請將主要內部部署 VMware 網站容錯移轉至其他內部部署 VMware 網站或 VMware Cloud on AWS 。
 
-在容錯移轉期間、會使用最新的 SnapMirror 快照複本。或者、您可以從時間點 Snapshot 複本（根據 SnapMirror 的保留原則）選取特定 Snapshot 複本。如果您面臨勒索軟體等毀損事件、而最近的複本已經遭到入侵或加密、則時間點選項會很有幫助。BlueXP 災難恢復會及時顯示所有可用點。
+在容錯移轉期間、會使用最新的 SnapMirror Snapshot 複本。或者、您可以從時間點 Snapshot 複本（根據 SnapMirror 的保留原則）選取特定 Snapshot 複本。如果您面臨勒索軟體等毀損事件、而最近的複本已經遭到入侵或加密、則時間點選項會很有幫助。BlueXP 災難恢復會及時顯示所有可用點。
 
 此程序會中斷複寫關係、將 vCenter 來源 VM 離線、並在目標站台上啟用讀取 / 寫入。
 
@@ -26,16 +26,16 @@ summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自
 
 開始實際容錯移轉之前、您應該先測試容錯移轉程序。
 
-在容錯移轉測試期間、會暫時建立虛擬機器。BlueXP 災難恢復無法對應目標磁碟區。而是從選取的快照建立新的 FlexClone Volume 、並將作為 FlexClone Volume 備份的暫存資料存放區對應至 ESXi 主機。
+在容錯移轉測試期間、會暫時建立虛擬機器。BlueXP 災難恢復無法對應目標磁碟區。而是從選取的 Snapshot 建立新的 FlexClone Volume 、並將作為 FlexClone Volume 備份的暫存資料存放區對應至 ESXi 主機。
 
-此程序不會消耗 Amazon FSX for NetApp ONTAP 的額外實體容量。原始來源磁碟區不會被修改、複本工作甚至可以在災難恢復期間繼續進行。
+此程序不會佔用內部部署 ONTAP 儲存設備上的額外實體容量、也不會佔用 AWS 中 NetApp ONTAP 儲存設備的 FSX 。原始來源磁碟區不會被修改、複本工作甚至可以在災難恢復期間繼續進行。
 
 完成測試後、您應該使用 * 清理測試 * 選項重設虛擬機器。雖然建議這樣做、但不需要。
 
 .步驟
 . 從 BlueXP 左側導航中，選擇 * 保護 * > * 災難恢復 * 。
 . 從 BlueXP 災難恢復主菜單中，選擇 *Replication Plans （複製計劃） * 。
-. 選取災難恢復計畫。
+. 選取複寫計畫。
 . 在右側、選取 * 動作 * 選項 image:../use/icon-horizontal-dots.png["BlueXP 災難恢復服務中的「動作」功能表圖示"] 然後選擇 * 測試容錯移轉 * 。
 . 在「測試容錯移轉」頁面中、輸入「測試容錯移轉」、然後選取 * 測試容錯移轉 * 。
 . 測試完成後、請清理測試環境。
@@ -49,7 +49,7 @@ summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自
 
 .步驟
 . 從 BlueXP 災難恢復主菜單中，選擇 *Replication Plans （複製計劃） * 。
-. 選取災難恢復計畫。
+. 選取複寫計畫。
 . 在右側、選取 * 動作 * 選項 image:../use/icon-horizontal-dots.png["BlueXP 災難恢復服務中的「動作」功能表圖示"]  並選取 * 清除容錯移轉測試 * 。
 . 在測試容錯移轉頁面中、輸入「清除容錯移轉」、然後選取 * 清除容錯移轉測試 * 。
 
@@ -58,7 +58,7 @@ summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自
 
 == 將來源站台容錯移轉至災難恢復站台
 
-發生災難時、請使用適用於 NetApp ONTAP 的 FSX 、在 AWS 網站上隨需將來源網站容錯移轉至 VMware Cloud 。
+發生災難時、可隨需將主要內部部署 VMware 網站容錯移轉至其他內部部署 VMware 網站、或將 VMware Cloud on AWS with FSX for NetApp ONTAP 容錯移轉至其他內部部署 VMware 網站。
 
 容錯移轉程序涉及下列作業：
 
@@ -66,20 +66,20 @@ summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自
 * 來源虛擬機器已關機。
 * SnapMirror 關係中斷、目標磁碟區變成讀取 / 寫入。
 * 根據 Snapshot 的選擇、作用中的檔案系統會還原至指定的 Snapshot （最新或選取）
-* 資料存放區會根據災難恢復計畫中擷取的資訊、建立並掛載至 VMC 叢集或主機。
+* 資料存放區會根據複寫計畫中擷取的資訊、建立並掛載到 VMware 或 VMC 叢集或主機。
 * 目標虛擬機器會根據「資源群組」頁面中擷取的順序進行登錄和開機。
 * SnapMirror 關係會從目標虛擬機器反轉至來源虛擬機器。
 
 
 
-TIP: 容錯移轉啟動後、可在 VMC vCenter （ VM 、網路和資料存放區）中看到復原的項目。根據預設、虛擬機器會還原至 Workload 資料夾。
+TIP: 容錯移轉啟動後、可在災難恢復站台（虛擬機器、網路和資料存放區）的 vCenter 中看到復原的虛擬機器。根據預設、虛擬機器會還原至 Workload 資料夾。
 
 .步驟
 . 從 BlueXP 左側導航中，選擇 * 保護 * > * 災難恢復 * 。
 . 從 BlueXP 災難恢復主菜單中，選擇 *Replication Plans （複製計劃） * 。
-. 選取災難恢復計畫。
+. 選取複寫計畫。
 . 在右側、選取 * 動作 * 選項 image:../use/icon-horizontal-dots.png["BlueXP 災難恢復服務中的「動作」功能表圖示"] 然後選擇 * 容錯移轉 * 。
-. 在測試容錯移轉頁面中、輸入災難恢復計畫名稱以確認、然後選取 * 容錯移轉 * 。
+. 在測試容錯移轉頁面中、輸入複寫計畫名稱以確認、然後選取 * 容錯移轉 * 。
 . 選擇要從中恢復的資料存放區的 Snapshot 。  預設為最新。
 . 若要檢查進度、請在頂端功能表中選取 * 工作監控 * 。
 
