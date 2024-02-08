@@ -17,8 +17,5 @@ summary: 如果您只是想要快速回答問題、這個常見問題集就能�
 * 什麼是 BlueXP 災難恢復 URL ？ *
 對於 URL 、請在瀏覽器中輸入： https://console.bluexp.netapp.com/["https://console.bluexp.netapp.com/"^] 存取 BlueXP 主控台。
 
-* 您是否需要使用 BlueXP 災難恢復的授權？ *
-不需要 NetApp 授權檔案（ NLF ）。
-
 * 如何存取 BlueXP 災難恢復？ *
 BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 BlueXP 左側導覽中。

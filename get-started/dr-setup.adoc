@@ -75,3 +75,9 @@ Amazon FSX for NetApp ONTAP Sfing是一項全託管服務、以熱門的NetApp O
 . 在 BlueXP 中、將 SnapMirror 部署至適用於 NetApp ONTAP 的 FSX 。
 . 在 BlueXP 中、探索 AWS 執行個體上的已配置 FSX for NetApp ONTAP 、並以適當的頻率和 NetApp Snapshot 複製保留、將指定的資料存放區磁碟區從內部環境複寫到適用於 NetApp ONTAP 的 FSX 。
 
+
+
+
+=== 設定授權
+
+有了 BlueXP 災難恢復功能、您可以註冊 90 天免費試用。

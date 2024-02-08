@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: release-notes/dr-whats-new.html 
-keywords: disaster recovery faq, bluexp, disaster recovery frequently asked questions, vmware, vcenter 
-summary: BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。 
+keywords: disaster recovery, bluexp, disaster recovery, vmware, vcenter 
+summary: BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。有了適用於 VMware 的 BlueXP 災難恢復功能、您可以使用 NetApp 雲端儲存設備、將執行 ONTAP 儲存設備的內部部署 VMware 工作負載複寫到公有雲中的 VMware 軟體定義資料中心、做為災難恢復站台。 
 ---
 = 新功能
 :hardbreaks:
@@ -13,6 +13,54 @@ summary: BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化�
 
 [role="lead"]
 瞭解 BlueXP 災難恢復預覽的新功能。
+
+
+
+== 2024 年 2 月 1 日
+
+此 BlueXP 災難恢復版本包含下列更新：
+
+* * 網路增強 * ：現在您可以使用此版本調整 VM CPU 和 RAM 值的大小。您現在也可以為虛擬機器選取網路 DHCP 或靜態 IP 位址。
++
+** DHCP ：如果您選擇此選項、則會提供 VM 的認證。
+** 靜態 IP ：您可以從來源 VM 選取相同或不同的資訊。如果您選擇的來源相同、則不需要輸入認證。另一方面、如果您選擇使用來源的不同資訊、則可以提供認證、 IP 位址、子網路遮罩、 DNS 和閘道資訊。
++
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
+
+
+
+* * 自訂指令碼 * 現在可以納入容錯移轉後程序。透過自訂指令碼、您可以在容錯移轉程序之後執行 BlueXP 災難恢復指令碼。例如、您可以使用自訂指令碼、在容錯移轉完成後恢復所有資料庫交易。
++
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["容錯移轉至遠端站台"]。
+
+* *SnapMirror 關係 * ：您現在可以在開發複寫計畫時建立 SnapMirror 關係。以前、您必須在 BlueXP 災難恢復之外建立關係。
++
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
+
+* * 一致性群組 * ：建立複寫計畫時、您可以納入來自不同磁碟區和不同 SVM 的 VM 。BlueXP 災難恢復通過包括所有卷並更新所有輔助位置來創建一致性組快照。
++
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
+
+* * VM 開機延遲選項 * ：建立複寫計畫時、您可以將 VM 新增至資源群組。使用資源群組、您可以在每個 VM 上設定延遲、以便它們啟動延遲的順序。
++
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
+
+* * 應用程式一致的 Snapshot 複本 * ：您可以指定建立應用程式一致的 Snapshot 複本。服務將會先將應用程式設為「自動快照」、然後再製作「快照」、以取得應用程式的一致狀態。
++
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
+
+
+
+
+
+== 2024 年 1 月 11 日
+
+此版本的 BlueXP 災難恢復包括下列更新：
+
+* 使用此版本、您可以更快速地從儀表板存取其他頁面上的資訊。
+
+
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["瞭解 BlueXP 災難恢復"]。
 
 
 
