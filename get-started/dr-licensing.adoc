@@ -12,25 +12,24 @@ summary: 有了 BlueXP 災難恢復、您可以使用不同的授權方案、包
 
 
 [role="lead"]
-有了 BlueXP 災難恢復、您可以使用不同的授權方案、包括免費試用、隨用隨付訂閱、或自帶授權。
+有了 BlueXP 災難恢復功能、您可以免費試用使用該服務、或自行攜帶授權。
 
-您可以使用下列任一種授權類型：
+您可以使用下列授權類型：
 
 * 註冊 90 天免費試用。
-* 透過 Amazon Web Services （ AWS ） Marketplace 購買一年、二年或三年的隨用隨付（ PAYGO ）訂閱。
-* 請自帶授權（ BYOL ）、這是您從 NetApp 銷售代表或 NetApp 支援網站 （ NSS ）取得的 NetApp 授權檔案（ NLF ）。您可以直接在 BlueXP 數位錢包中上傳 NLF 、或使用授權序號、在 BlueXP 數位錢包中啟動 BYOL 。
+* 請自帶授權（ BYOL ）、這是您從 NetApp 銷售代表處取得的 NetApp 授權檔案（ NLF ）您可以使用授權序號、在 BlueXP 數位錢包中啟動 BYOL 。
 
 
 
-NOTE: BlueXP 災難恢復費用是根據來源站台上已配置的資料存放區容量而定、因為至少有一個 VM 具有複寫計畫。容錯移轉資料存放區的容錯容量不包含在容量限制中。對於 BYOL 而言、如果資料超過允許的容量、服務中的作業將受到限制、直到您取得額外容量授權、以 BlueXP 數位錢包升級授權、或是在 AWS 中購買訂閱。如果您選擇 AWS 訂閱、超過合約限制的任何容量都會根據 AWS Marketplace 方案收費。
+NOTE: BlueXP 災難恢復費用是根據來源站台上已配置的資料存放區容量而定、因為至少有一個 VM 具有複寫計畫。容錯移轉資料存放區的容錯容量不包含在容量限制中。對於 BYOL 而言、如果資料超過允許容量、則服務中的作業將受到限制、直到您取得額外容量授權或升級 BlueXP 數位錢包中的授權為止。
 
-在您設定 BYOL 或在 AWS 中購買訂閱之後、您可以在 BlueXP 數位錢包 * 資料服務授權 * 索引標籤中查看授權、或在 BlueXP 數位錢包 * 訂閱 * 索引標籤中查看有效訂閱。
+設定 BYOL 之後、您可以在 BlueXP 數位錢包 * 資料服務授權 * 標籤中看到授權。
 
-免費試用結束或授權或 AWS 訂閱過期後、您仍可在服務中執行下列動作：
+在免費試用結束或授權過期之後、您仍可在服務中執行下列動作：
 
 * 檢視任何資源、例如工作負載或複寫計畫。
 * 刪除任何資源、例如工作負載或複寫計畫。
-* 執行在試用期間、授權或訂閱期間建立的所有排程作業。
+* 執行試用期間或授權期間所建立的所有排程作業。
 
 
 
@@ -42,7 +41,7 @@ NOTE: BlueXP 災難恢復費用是根據來源站台上已配置的資料存放�
 
 NOTE: 試用期間不會強制執行容量限制。
 
-您可以隨時取得授權或訂閱、直到 90 天試用期結束為止、您將不會被收取費用。若要在 90 天試用之後繼續、您必須購買 BYOL 授權或 PAYGO AWS 訂閱。
+您可以隨時取得授權、直到 90 天試用結束為止、您將不會被收取費用。若要在 90 天試用之後繼續、您必須購買 BYOL 授權。
 
 試用期間、您擁有完整功能。
 
@@ -54,63 +53,38 @@ NOTE: 試用期間不會強制執行容量限制。
 如果這是您第一次登入此服務、就會出現登陸頁面。
 
 +
-image:draas-landing.png["BlueXP 災難恢復的登陸頁快照"]
+image:draas-landing2.png["BlueXP 災難恢復的登陸頁快照"]
 
 . 如果您尚未新增 Connector for 其他服務、請新增一個。
 +
 若要新增 Connector 、請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["深入瞭解連接器"^]。
 
-. 設定 Connector 之後、請在 BlueXP 災難恢復登陸頁面中選取 * 開始免費試用 * 。
-+
-image:draas-landing-trial.png["BlueXP 災難恢復的登陸頁快照"]
-
+. 設定 Connector 之後、在 BlueXP 災難恢復登陸頁面中、新增 Connector 的按鈕會變更為按鈕、以開始免費試用。選擇 * 開始免費試用 * 。
 . 檢閱免費試用資訊、然後選擇 * Let's Go* 。
-
-
-
-
-=== 試用結束後、請透過 AWS Marketplace 訂閱
-
-免費試用結束後、您可以從 NetApp 購買授權、或透過 AWS Marketplace 訂閱。本程序提供如何直接在 AWS Marketplace 中訂閱的高階概觀。
-
-.步驟
-. 在 BlueXP 災難恢復中、您會看到免費試用即將到期的訊息。在訊息中、選取 * 訂閱或購買授權 * 。
-+
-image:draas-license-subscribe.png["BlueXP 災難恢復訂閱或購買授權頁面"]
-
-. 在「訂閱或購買授權」頁面中、選取 * 在 AWS Marketplace* 中訂閱。
-. 在 AWS Marketplace 中、選取 * 檢視購買選項 * 。
-. 使用 AWS Marketplace 訂閱 BlueXP 災難恢復。
-. 當您返回 BlueXP 災難恢復時、會有一則訊息指出您已訂閱。若要在 BlueXP 數位錢包中檢視訂閱詳細資料、請選取 * 檢視訂閱詳細資料 * 、然後在 * 訂閱 * 頁面上檢視使用中的訂閱。
-+
-image:digital-wallet-subscriptions.png["BlueXP 數位錢包訂閱索引標籤"]
-
 
 
 
 
 === 試用結束後、請透過 NetApp 購買 BYOL 授權
 
-試用結束後、您可以透過 NetApp 銷售代表或技術支援部門購買授權。
+試用結束後、您可以透過 NetApp 銷售代表購買授權
 
 .步驟
-. 請聯絡您的 NetApp 銷售代表或 NetApp 支援部門、以購買授權。
-. 取得授權後、請返回 BlueXP 災難恢復、並在免費試用即將到期的訊息中、選取 * 訂閱或購買授權 * 。
+. 請聯絡您的 NetApp 銷售代表以購買授權。
+. 取得授權後、請返回 BlueXP 災難恢復。選取右上角的 * 檢視付款方式 * 選項。或者、在免費試用即將到期的訊息中、選取 * 訂閱或購買授權 * 。
 +
-隨即顯示訂閱或購買授權頁面。
-
-+
-image:draas-license-subscribe-NetApp-option.png["BlueXP 災難恢復訂閱或購買授權頁面"]
+image:draas-license-subscribe-NetApp-option2.png["BlueXP 災難恢復訂閱或購買授權頁面"]
 
 . 選取 * 新增授權至 BlueXP* 。您將會被引導至 BlueXP 數位錢包。
 +
-image:digital-wallet-data-services-licenses-tab.png["BlueXP 災難恢復訂閱或購買授權頁面"]
+image:digital-wallet-data-services-licenses-tab2.png["BlueXP 數位錢包資料服務授權標籤"]
 
 . 在 BlueXP 數位錢包中、從 * 資料服務授權 * 標籤中、選取 * 新增授權 * 。
-. 在「新增授權」頁面中、輸入序號或上傳 NetApp 授權檔案（ NLF ）。
+. 在「新增授權」頁面中、輸入序號和 NetApp 支援網站 帳戶資訊。
 +
-image:byol-digital-wallet-license-add.png["BlueXP 數位錢包新增授權頁面"]
+image:byol-digital-wallet-license-add2.png["BlueXP 數位錢包新增授權頁面"]
 
+. 選擇*新增授權*。
 
 
 
@@ -123,7 +97,7 @@ image:byol-digital-wallet-license-add.png["BlueXP 數位錢包新增授權頁面
 . 在 BlueXP 災難恢復中，選擇右上角的 * 免費試用 - 查看詳細信息 * 。
 . 在下拉式詳細資料中、選取 * 結束免費試用 * 。
 +
-image:draas-trial-end.png["結束免費試用頁面"]
+image:draas-trial-end3.png["結束免費試用頁面"]
 
 . 如果您要刪除所有資料、請勾選 * 當我的試用結束時刪除所有資料 * 。
 +
@@ -135,188 +109,6 @@ NOTE: 如果您結束免費試用、而不要求刪除資料、而且您沒有�
 
 . 在文字方塊中輸入「 End 試用」。
 . 選取 * 結束 * 。
-
-
-
-
-== 使用 AWS 隨用隨付（ PAYGO ）訂閱
-
-如果您選擇使用 AWS Marketplace PAYGO 訂閱、則必須先在 AWS 中設定、然後在 BlueXP 中設定。
-
-若要在 AWS 中設定 PAYGO 訂閱、請完成下列程序：
-
-* <<第 1 部分在 AWS 中設定 PAYGO 訂閱>>
-* <<第 2 部分在 BlueXP 中設定 PAYGO 訂閱>>
-* <<Part 3a Associate the new SaaS Marketplace subscription with AWS credentials>> 或
-+
-<<Part 3b Associate the new SaaS Marketplace subscription with AWS credentials for annual contracts>>。
-
-
-
-
-
-==== 第 1 部分在 AWS 中設定 PAYGO 訂閱
-
-以下是在 AWS 中設定 PAYGO 訂閱的步驟摘要。
-
-如需其他詳細資料、請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["管理 BlueXP 的 AWS 認證和市場訂閱"^]。
-
-.開始之前
-您必須已與 NetApp 銷售團隊合作、並取得優惠連結、且您必須擁有接受優惠的權限、如所述 https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-iam-users-groups-policies.html["控制 AWS Marketplace 訂閱的存取權"^]。
-
-.步驟
-. 在 AWS 主控台中接受適用於 NetApp BlueXP 的 AWS Marketplace 私有優惠。
-+
-請參閱下列資訊：
-
-+
-** https://aws.amazon.com/blogs/awsmarketplace/access-your-private-offers-aws-marketplace-console/["透過 AWS Marketplace 主控台存取您的私人優惠"^]。
-** https://docs.aws.amazon.com/marketplace/latest/buyerguide/private-offers-page.html#private-offers-page-permissions["檢視「私人優惠」頁面所需的權限"^]。
-
-
-. 檢閱私人優惠詳細資料、並驗證是否符合您的協議。
-+
-
-CAUTION: 由於帳單會在您按一下 * 訂閱 * 後開始、如果有任何資訊不正確、 * 請勿 * 接受私人優惠、請聯絡您的 NetApp 銷售代表。
-
-. 確認優惠資訊正確後、請選擇 * 訂閱 * 。
-+
-如果報價使用合約列表、請同時輸入每項服務的單位數量。然後、您可以選取 * 建立合約 * 來接受私人優惠。
-
-. 在快顯視窗中、選取 * 設定您的帳戶 * 、此選項會將您重新導向至 NetApp BlueXP 主控台、以完成 BlueXP Marketplace 訂閱的組態設定。
-+
-如果報價使用合約列表、請選擇 * 檢視購買選項 * 、然後 * 設定您的帳戶 * 。
-
-
-
-
-
-==== 第 2 部分在 BlueXP 中設定 PAYGO 訂閱
-
-在 AWS 主控台接受私有方案後、系統會將您導向 BlueXP 主控台。
-
-.步驟
-. 在 BlueXP 主控台中、執行下列步驟：
-+
-.. 輸入 SaaS Marketplace 訂閱的顯示名稱。
-.. 選取 NetApp BlueXP 帳戶、這些帳戶應該可以存取此服務商場訂閱。
-.. 選擇 * 取代現有訂閱 * 、以新建立的訂閱取代單一 NetApp BlueXP 帳戶中現有的 SaaS Marketplace 訂閱。BlueXP 將以這項新訂閱取代帳戶中所有雲端認證的現有訂閱。
-+
-
-NOTE: 更換選項僅限單一 NetApp BlueXP 帳戶。如果您有多個 BlueXP 帳戶想要與相同的 SaaS Marketplace 訂閱建立關聯、則必須分別設定這些帳戶。
-
-+
-
-NOTE: 如果一組雲端認證資料從未與 SaaS Marketplace 訂閱相關聯、您應該依照本程序的下一部分進行設定。
-
-
-
-. 選取 * 儲存 * 和 * 完成 * 。
-. 接下來繼續進行第 3 部分：
-+
-** <<第 3a 部分將新的 Marketplace 訂閱與 AWS 認證建立關聯>>
-** <<第 3b 部分將新的 Marketplace 訂閱與 AWS 認證建立年度合約的關聯>>。
-
-
-
-
-
-
-==== 第 3a 部分將新的 Marketplace 訂閱與 AWS 認證建立關聯
-
-這是在 AWS 中設定授權的第 3 部分。
-
-
-NOTE: 如果您有年度合約、請改為繼續：
-<<Part 3b Associate the new SaaS Marketplace subscription with AWS credentials for annual contracts>>。
-
-.步驟
-. 存取 https://console.bluexp.netapp.com["NetApp BlueXP 主控台"]。
-. 驗證訂閱詳細資料：
-+
-.. 從左窗格中、選取 * Governance * > * Digital wallet * 。
-.. 選取 * 訂閱 * 索引標籤。
-+
-image:paygo-digitalwallet-subscriptions.png["BlueXP 數位錢包訂閱頁面"]
-
-.. 尋找您在第 1 部分新增的 SaaS Marketplace 訂閱、並驗證這是您要使用的正確方案。
-
-
-. 尋找 AWS 訂閱的資料列、展開資料列以查看詳細資料、並確認您的私人方案已成功與 BlueXP 帳戶建立關聯。
-+
-由於 AWS Marketplace 的限制、 AWS 主控台外部無法取得產品的部分詳細資料。如果其中一個欄位顯示「 N/A 」、表示無法從 AWS 主控台擷取資訊、這不是錯誤。您仍可在 AWS 主控台中檢查資訊。
-
-. 選取 BlueXP 主控台右上方的 * 設定 * 檔位、然後選取 * 認證 * 。
-+
-image:paygo-digitalwallet-settings.png["BlueXP 數位錢包設定功能表"]
-
-. 找出您要與新的 SaaS Marketplace 訂閱相關聯的認證組合。
-+
-
-TIP: 您可以按一下工作環境上方的 * 檢視 * 來驗證這些資訊是否正確。
-
-. 選取 * 動作 ...* 選項、然後選取 * 關聯訂閱 * 。
-. 在 Marketplace Subscription （市場訂閱）下拉式功能表中選取您的私人優惠、然後選取 *Associate* 。
-+
-
-NOTE: 與這些 AWS 認證相關的 Marketplace 費用現在將透過您剛建立關聯的 SaaS Marketplace 訂閱進行計費。如果您使用年度合約、則與這些 AWS 認證相關的基礎架構成本將計入您的年度合約中。
-
-. 針對您想要與此 SaaS Marketplace 訂閱相關聯的 BlueXP 帳戶中的任何其他 AWS 認證、重複這些步驟：
-+
-.. 對於其他 BlueXP 帳戶中的 AWS 認證、請使用 BlueXP 主控台頂端的 * 帳戶 * 選項來切換帳戶、然後重複這些步驟。
-.. 對於與其他 BlueXP Connector 相關的 AWS 認證、請使用 BlueXP 主控台頂端的 * Connector* 選項來切換連接器、然後重複這些步驟。
-
-
-
-
-
-
-==== 第 3b 部分將新的 Marketplace 訂閱與 AWS 認證建立年度合約的關聯
-
-如果您使用年度合約、 BlueXP 數位錢包中的資訊似乎有些不同。
-
-. 存取 https://console.bluexp.netapp.com["NetApp BlueXP 主控台"]。
-. 驗證訂閱詳細資料：
-+
-.. 從左窗格中、選取 * Governance * > * Digital wallet * 。
-.. 選取 * 訂閱 * 索引標籤。
-+
-image:paygo-digitalwallet-subscriptions-annualcontract.png["BlueXP 數位錢包訂閱頁面、顯示年度合約"]
-
-.. 尋找您在第 1 部分新增的 SaaS Marketplace 訂閱、並驗證這是您要使用的正確方案。
-
-
-. 尋找 AWS 年度合約訂閱的資料列、展開資料列以查看詳細資料、並確認您的私人方案已成功與 BlueXP 帳戶建立關聯。
-+
-image:paygo-digitalwallet-subscriptions-annualcontract-associate.png["BlueXP 數位錢包訂閱頁面、以取得年度合約"]
-
-. 選取該列上的 * 動作 ...* 選項、然後選取 * 關聯訂閱 * 。
-+
-image:paygo-digitalwallet-subscriptions-annualcontract-associate-dialog.png["BlueXP 數位錢包訂閱頁面、以取得年度合約"]
-
-. 選取您要與訂閱相關聯的帳戶、然後選取 * 套用 * 。
-+
-
-NOTE: 與這些 AWS 認證相關的 Marketplace 費用現在將透過您剛建立關聯的 SaaS Marketplace 訂閱進行計費。如果您使用年度合約、則與這些 AWS 認證相關的基礎架構成本將計入您的年度合約中。
-
-. 針對您想要與此 SaaS Marketplace 訂閱相關聯的 BlueXP 帳戶中的任何其他 AWS 認證、重複這些步驟：
-+
-.. 對於其他 BlueXP 帳戶中的 AWS 認證、請使用 BlueXP 主控台頂端的 * 帳戶 * 選項來切換帳戶、然後重複這些步驟。
-.. 對於與其他 BlueXP Connector 相關的 AWS 認證、請使用 BlueXP 主控台頂端的 * Connector* 選項來切換連接器、然後重複這些步驟。
-
-
-
-
-
-
-==== 自訂您在 BlueXP 數位錢包訂閱檢視中看到的內容
-
-您可以自訂在「訂閱」頁面上看到的欄位。例如、您可能想要這樣做來查看字詞資訊。
-
-.步驟
-. 在 BlueXP 數位錢包訂閱頁面中、選取右側的表格圖示。
-. 在出現的欄清單中、核取您要在表格中顯示的欄。
-. 選擇*應用*。
 
 
 
@@ -343,9 +135,7 @@ NOTE: 與這些 AWS 認證相關的 Marketplace 費用現在將透過您剛建�
 
 === 取得 BlueXP 災難恢復授權檔案
 
-購買 BlueXP 災難恢復授權後、您可以輸入 BlueXP 災難恢復序號和 NetApp 支援網站 （ NSS ）帳戶、或上傳 NetApp 授權檔案（ NLF ）來啟動授權。
-
-您可以透過 NetApp 銷售代表或 NetApp 支援網站 取得 NLF 。
+向 NetApp 銷售代表購買 BlueXP 災難恢復授權後、您可以輸入 BlueXP 災難恢復序號和 NetApp 支援網站 （ NSS ）帳戶資訊來啟動授權。
 
 .開始之前
 開始之前、您必須先取得下列資訊：
@@ -360,19 +150,6 @@ NOTE: 與這些 AWS 認證相關的 Marketplace 費用現在將透過您剛建�
 
 
 
-.從支援網站取得 NLF 授權檔案的步驟
-. 登入 https://mysupport.netapp.com["NetApp 支援網站"^]  並選擇 * 系統 * > * 軟體授權 * 。
-+
-image:byol-nss-licenses.png["NetApp 支援網站 軟體授權頁面"]
-
-. 輸入 BlueXP 災難恢復授權序號。
-. 在「授權金鑰」欄下、選取 * 取得 NetApp 授權檔案 * 。
-+
-image:byol-nss-licenses-get.png["NetApp 支援網站 軟體授權頁面"]
-
-. 輸入您的 BlueXP 帳戶 ID （在支援網站上稱為租戶 ID ）、然後選取 * 提交 * 以下載授權檔案。
-
-
 
 
 === 將 BlueXP 災難恢復授權新增至 BlueXP 數位錢包
@@ -382,11 +159,11 @@ image:byol-nss-licenses-get.png["NetApp 支援網站 軟體授權頁面"]
 .步驟
 . 從 BlueXP 功能表中、選取 * Governance * > * Digital wall* > * Data Services Licenses* 。
 +
-image:byol-digital-wallet-dataserviceslicenses-tab.png["NetApp BlueXP 數位錢包資料服務授權標籤"]
+image:digital-wallet-data-services-licenses-tab2.png["BlueXP 數位錢包資料服務授權標籤"]
 
 . 選擇*新增授權*。
 +
-image:byol-digital-wallet-license-add.png["NetApp BlueXP 數位錢包新增授權頁面"]
+image:byol-digital-wallet-license-add2.png["NetApp BlueXP 數位錢包新增授權頁面"]
 
 . 在「新增授權」頁面中、輸入授權資訊、然後選取 * 新增授權 * ：
 +
@@ -421,10 +198,8 @@ TIP: 此訊息也會出現在 BlueXP 數位錢包和中 https://docs.netapp.com/
 . 如果BlueXP無法自動更新授權（例如、安裝在暗點）、則您需要手動上傳授權檔案。
 +
 .. 您可以從 NetApp 支援網站 取得授權檔案。
-.. 在「資料服務授權」標籤的 BlueXP 數位電子錢包頁面上、針對您要更新的服務序號選取 * 動作 ... * 圖示、然後選取 * 更新授權 * 。
-+
-image:digital-wallet-licenses-expired.png["NetApp BlueXP 數位錢包顯示過期授權"]
-
+.. 存取 BlueXP 數位錢包。
+.. 選取 * 資料服務授權 * 標籤、選取要更新之服務序號的 * 動作 ... * 圖示、然後選取 * 更新授權 * 。
 
 
 

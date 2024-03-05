@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: get-started/dr-setup.html 
-keywords: bluexp, disaster recovery, 
+keywords: bluexp, disaster recovery, aws, amazon web services 
 summary: 若要使用 BlueXP 災難恢復、請執行幾個步驟來設定。 
 ---
 = 設定 BlueXP 災難恢復
@@ -12,14 +12,14 @@ summary: 若要使用 BlueXP 災難恢復、請執行幾個步驟來設定。
 
 
 [role="lead"]
-若要使用 BlueXP 災難恢復、請執行幾個步驟、在 AWS 和 BlueXP 中同時設定。
+若要使用 BlueXP 災難恢復、請執行幾個步驟、在 Amazon Web Services （ AWS ）和 BlueXP 中設定。
 
 
 TIP: 檢閱 link:../get-started/dr-prerequisites.html["先決條件"] 確保您的環境已準備就緒。
 
 
 
-== 在 AWS 中設定
+== 設定 AWS
 
 在 AWS 中、您需要執行下列步驟：
 
@@ -44,7 +44,7 @@ Amazon FSX for NetApp ONTAP Sfing是一項全託管服務、以熱門的NetApp O
 
 
 
-== 在 BlueXP 中設定
+== 設定 BlueXP 災難恢復
 
 下一步是在 BlueXP 中設定災難恢復。
 
@@ -58,7 +58,7 @@ Amazon FSX for NetApp ONTAP Sfing是一項全託管服務、以熱門的NetApp O
 
 === 在 BlueXP 中建立 Connector
 
-您必須註冊預覽、或聯絡 NetApp 銷售代表、才能試用這項服務。然後、當您使用 BlueXP Connector 時、它會包含災難恢復服務的適當功能。
+您必須聯絡 NetApp 銷售代表、才能試用這項服務。然後、當您使用 BlueXP Connector 時、它會包含災難恢復服務的適當功能。
 
 若要在使用此服務之前在 BlueXP 中建立 Connector 、請參閱說明的 BlueXP 文件 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["如何建立連接器"^]。
 
@@ -81,3 +81,7 @@ Amazon FSX for NetApp ONTAP Sfing是一項全託管服務、以熱門的NetApp O
 === 設定授權
 
 有了 BlueXP 災難恢復功能、您可以註冊 90 天免費試用。
+
+您可以自帶授權（ BYOL ）、這是 NetApp 授權檔案（ NLF ）。
+
+如需設定 BlueXP 災難恢復授權的詳細資訊、請參閱 link:../get-started/dr-licensing.html["設定 BlueXP 災難恢復授權"]。

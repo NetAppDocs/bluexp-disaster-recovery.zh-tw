@@ -12,13 +12,34 @@ summary: BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化�
 
 
 [role="lead"]
-瞭解 BlueXP 災難恢復預覽的新功能。
+瞭解 BlueXP 災難恢復的新功能。
+
+
+
+== 2024 年 3 月 5 日
+
+這是 BlueXP 災難恢復的一般可用度版本、其中包括下列更新。
+
+* * 授權更新 * ：使用 BlueXP 災難恢復功能、您可以註冊 90 天免費試用版、或自帶授權（ BYOL ）、這是您從 NetApp 銷售代表處取得的 NetApp 授權檔案（ NLF ）您可以使用授權序號、在 BlueXP 數位錢包中啟動 BYOL 。BlueXP 災難恢復費用是根據資料存放區的已配置容量而定。
++
+如需設定 BlueXP 災難恢復授權的詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html["設定授權"]。
+
++
+如需管理 * 全部 * BlueXP 服務授權的詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["管理所有 BlueXP 服務的授權"^]。
+
+
+
+* * 編輯排程 * ：使用此版本、您現在可以設定排程來測試法規遵循和容錯移轉測試、確保它們能在您需要時正常運作。
++
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
+
+
 
 
 
 == 2024 年 2 月 1 日
 
-此 BlueXP 災難恢復版本包含下列更新：
+此 BlueXP 災難恢復預覽版本包含下列更新：
 
 * * 網路增強 * ：現在您可以使用此版本調整 VM CPU 和 RAM 值的大小。您現在也可以為虛擬機器選取網路 DHCP 或靜態 IP 位址。
 +
@@ -55,7 +76,7 @@ summary: BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化�
 
 == 2024 年 1 月 11 日
 
-此版本的 BlueXP 災難恢復包括下列更新：
+此 BlueXP 災難恢復預覽版本包含下列更新：
 
 * 使用此版本、您可以更快速地從儀表板存取其他頁面上的資訊。
 

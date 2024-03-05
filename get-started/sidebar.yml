@@ -12,5 +12,7 @@ entries:
   url: "/get-started/dr-login.html"
 - title: 設定 BlueXP 災難恢復
   url: "/get-started/dr-setup.html"
+- title: 設定授權
+  url: "/get-started/dr-licensing.html"
 - title: 常見問題集
   url: "/get-started/dr-faq.html"

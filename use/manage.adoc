@@ -29,7 +29,7 @@ summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自
 
 .步驟
 . 從頂端功能表中選取 * 站台 * 。
-. 選取 * 動作 * 選項 image:../use/icon-horizontal-dots.png["BlueXP 災難恢復服務中的「動作」功能表圖示"]  在 vCenter 名稱右側、選取 * 編輯 * 。
+. 選取 * 動作 * 選項 image:../use/icon-vertical-dots.png["BlueXP 災難恢復服務中的「動作」功能表圖示"]  在 vCenter 名稱右側、選取 * 編輯 * 。
 . 編輯 vCenter 站台名稱和位置。
 
 
@@ -45,6 +45,9 @@ summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自
 
 .步驟
 . 從上方功能表中、選取 * 複寫計畫 * 。
++
+image:../use/dr-plan-list2.png["複寫計畫清單"]
+
 . 若要檢視計畫詳細資料、請選取 * 動作 * 選項 image:../use/icon-horizontal-dots.png["BlueXP 災難恢復服務中的「動作」功能表圖示"] 然後選擇 * 檢視方案詳細資料 * 。
 . 執行下列任一項：
 +

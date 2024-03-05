@@ -21,3 +21,33 @@ summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自
 . 若要檢視特定工作的詳細資料、請選取該列。
 . 若要重新整理資訊、請選取 * 重新整理 * 。
 
+
+
+
+== 取消工作
+
+如果某個工作正在進行中、而您不想繼續、您可以取消該工作。如果工作卡在相同的狀態、而您想要釋放佇列中的下一個作業、您可能會想要取消工作。您可能想要在逾時之前取消工作。
+
+若要取消工作、請使用 Swagger 。
+
+.開始之前
+若要取消工作、您必須擁有帳戶 ID 。
+
+.步驟
+. 從 BlueXP 左側導航中，選擇 * 保護 * > * 災難恢復 * 。
+. 從頂端功能表中、選取 * 工作監控 * 。
+. 在「工作監控」頁面中、記下您要取消的工作 ID 。
+. 存取 BlueXP 災難恢復交換器 URL ： https://snapcenter.cloudmanager.cloud.netapp.com/api-doc/#/Jobs/put_jobmanager_v2_jobs__jobId_["swagger"^]。
++
+"https://snapcenter.cloudmanager.cloud.netapp.com/api-doc/#/Jobs/put_jobmanager_v2_jobs__jobId_"[]
+
++
+image:dr-swagger-job-cancel.png["顯示如何取消工作的瀏覽器頁面"]
+
++
+如需 Swagger 的詳細資訊、請參閱 https://swagger.io/docs/["swagger 文件"^]。
+
+. 從 Swagger 取得安全性權杖、也稱為 _bonstoner 權杖、可從授權選項取得。
+. 輸入帳戶 ID 和工作 ID 。
+. 選擇*試用*。
+

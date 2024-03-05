@@ -16,19 +16,28 @@ summary: 驗證您的環境、網路存取、登入和網頁瀏覽器的支援�
 
 若要使用 BlueXP 災難恢復、您應確保環境符合下列需求：
 
-* 內部部署的 VMware 工作環境搭配 NetApp 儲存設備
+* 內部部署 VMware 工作環境搭配 NetApp 儲存設備
 * 在 AWS 上：
 +
 ** 適用於 NetApp ONTAP 檔案系統的 Amazon FSX 。請參閱上的 Amazon FSX for ONTAP 文件 https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started-step1.html["如何開始使用"^]。
-** 在 AWS 上擁有軟體定義資料中心（ SDDC ）的 VMware 帳戶、也稱為 Virtual Machines Cloud 。在 VMware Cloud Console 中、使用 Administrator 和 NSX Cloud Administrator 的服務角色、這兩種角色都位於 AWS 上的 VMware Cloud 上。也可以使用組織擁有者擔任組織角色。請參閱 https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/vmware-cloud-ontap.html["Virtual Machines Cloud 文件"^]。
+** 在 AWS 上擁有軟體定義資料中心（ SDDC ）的 VMware 帳戶、也稱為 Virtual Machines Cloud 。在 VMware Cloud Console 中、使用管理員和 NSX Cloud Administrator 的服務角色。也可以使用組織擁有者擔任組織角色。請參閱 https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/vmware-cloud-ontap.html["Virtual Machines Cloud 文件"^]。
 ** 將 SDDC 與 Amazon FSX for NetApp ONTAP 連結。請參閱 https://vmc.techzone.vmware.com/fsx-guide#overview["VMware Cloud on AWS 與 Amazon FSX for NetApp ONTAP 整合"^]。
 
 
 * 在 BlueXP 中：
 +
-** BlueXP Connector 需要在 NetApp BlueXP 中設定。請使用 BlueXP AWS Connector 、它可以同時存取內部部署 vCenter 和雲端。BlueXP Connector 需要來源和目標 vCenter 伺服器的認證。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html["BlueXP 快速入門"^] 和 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-saas-console.html["BlueXP 網路資訊"^]。
-** 使用 BlueXP 內部部署 Connector 或 BlueXP AWS Connector 、可存取來源內部部署 vCenter 和目的地內部部署 vCenter 。
-** 新增至 BlueXP 工作環境的 Amazon FSX for ONTAP 和 AWS 認證
+** 新增至 BlueXP 工作環境的 Amazon FSX for ONTAP 和 AWS 認證。
+** BlueXP Connector 需要在 BlueXP 中設定。內部部署和 Cloud Connector 應可連線至內部部署和 VMware Cloud （ VMC ） vCenter 與 ESXis 。如此一來、備份、容錯移轉、容錯回復和移轉功能就能與所需的網路和指令碼功能正常運作。
++
+BlueXP Connector 需要來源和目標 vCenter 伺服器的認證。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html["BlueXP 快速入門"^] 和 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-saas-console.html["BlueXP 網路資訊"^]。
+
+** 為了確保應用程式一致性程序成功、請確保符合下列先決條件：
++
+*** 確保 VMware 工具（或 Open VM 工具）正在受保護的 VM 上執行。
+*** 對於執行 SQL 或 Oracle 或兩者的 Windows VM 、資料庫應啟用其 VSS 寫入器、且資料庫應處於穩定狀態。
+*** 在 Linux 作業系統上執行的 Oracle 資料庫、應針對 Oracle 資料庫 SYSDBA 角色啟用作業系統使用者驗證。
+
+
 
 
 

@@ -43,6 +43,6 @@ image:draas-landing2.png["BlueXP 災難恢復的登陸頁快照"]
 
 
 +
-image:dr-dashboard-preview.png["BlueXP 災難恢復儀表板"]
+image:dr-dashboard.png["BlueXP 災難恢復儀表板"]
 
 
