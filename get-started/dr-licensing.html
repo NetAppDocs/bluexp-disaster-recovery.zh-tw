@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head class="at-element-marker">
+  <title>設定 BlueXP 災難恢復的授權 | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="設定 BlueXP 災難恢復的授權 | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-tw/bluexp-disaster-recovery/get-started/dr-licensing.html" />
+	<meta property="og:description" content="有了 BlueXP 災難恢復、您可以使用不同的授權方案、包括免費試用、隨用隨付訂閱、或自帶授權。" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-tw/bluexp-disaster-recovery/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="有了 BlueXP 災難恢復、您可以使用不同的授權方案、包括免費試用、隨用隨付訂閱、或自帶授權。">
+  <meta name="keywords" content=" bluexp license, disaster recovery licensing"><!-- Icons -->
+  <link rel="icon" href="/zh-tw/bluexp-disaster-recovery/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/zh-tw/bluexp-disaster-recovery/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/bluexp-disaster-recovery/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/zh-tw/bluexp-disaster-recovery/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-tw/bluexp-disaster-recovery/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/zh-tw/bluexp-disaster-recovery/get-started/dr-licensing.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-disaster-recovery/get-started/dr-licensing.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-disaster-recovery/get-started/dr-licensing.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-disaster-recovery/get-started/dr-licensing.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-disaster-recovery/get-started/dr-licensing.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-disaster-recovery/get-started/dr-licensing.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-disaster-recovery/get-started/dr-licensing.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-disaster-recovery/get-started/dr-licensing.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-disaster-recovery/get-started/dr-licensing.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-tw/bluexp-disaster-recovery/js/na-search.js'></script><script src='/zh-tw/bluexp-disaster-recovery/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/zh-tw/bluexp-disaster-recovery/js/custom-dropdown.js'></script>
+  <script src='/zh-tw/bluexp-disaster-recovery/js/FileSaver.min.js'></script>
+  <script src='/zh-tw/bluexp-disaster-recovery/js/jszip-utils.min.js'></script>
+  <script src='/zh-tw/bluexp-disaster-recovery/js/jszip.min.js'></script><script src='/zh-tw/bluexp-disaster-recovery/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/zh-tw/bluexp-disaster-recovery/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/tw">
+                <image id="ie-header-logo" src="/zh-tw/bluexp-disaster-recovery/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">文件</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/zh-tw/bluexp-disaster-recovery/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">繁體中文</span>
+                    <img src="/zh-tw/bluexp-disaster-recovery/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-tw/bluexp-disaster-recovery/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-disaster-recovery/get-started/dr-licensing.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-disaster-recovery/get-started/dr-licensing.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-disaster-recovery/get-started/dr-licensing.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-disaster-recovery/get-started/dr-licensing.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-disaster-recovery/get-started/dr-licensing.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-disaster-recovery/get-started/dr-licensing.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-disaster-recovery/get-started/dr-licensing.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-disaster-recovery/get-started/dr-licensing.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/zh-tw/bluexp-disaster-recovery/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">所有 NetApp</span>
+                    <img src="/zh-tw/bluexp-disaster-recovery/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-tw/bluexp-disaster-recovery/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">支援</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">知識庫</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">訓練</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/zh-tw/bluexp-disaster-recovery/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/zh-tw/bluexp-disaster-recovery/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">所有文件</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">雲端文件</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/zh-tw/cloud-manager-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/zh-tw/bluexp-disaster-recovery/">-->
+      BlueXP disaster recovery
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/zh-tw/bluexp-disaster-recovery/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/zh-tw/bluexp-disaster-recovery/search.html" 
+        data-type="widget"
+        data-placeholder="搜尋說明文件"
+        data-no-results-found="找不到 {query} 的結果"
+        data-did-you-mean="搜尋 {suggestion}。"
+        data-no-results-found-did-you-mean="找不到 {query} 的結果。您的意思是 {suggestion} 嗎？"
+        data-results-found="找到 {hitCount} 個結果"
+        data-error-message="發生錯誤。請再試一次。"
+        data-error-reset="重設搜尋"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP 災難恢復文件"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/bluexp-disaster-recovery/index.html">
+        BlueXP 災難恢復文件
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="版本資訊"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-disaster-recovery/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-disaster-recovery/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 版本資訊</div>-->
+         版本資訊
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="新增功能"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/release-notes/dr-whats-new.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-disaster-recovery/release-notes/dr-whats-new.html">
+        新增功能
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="限制"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/release-notes/dr-limitations.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-disaster-recovery/release-notes/dr-limitations.html">
+        限制
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="開始使用"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-disaster-recovery/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-disaster-recovery/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 開始使用</div>-->
+         開始使用
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="瞭解 BlueXP 災難恢復"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/get-started/dr-intro.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-disaster-recovery/get-started/dr-intro.html">
+        瞭解 BlueXP 災難恢復
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="先決條件"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/get-started/dr-prerequisites.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-disaster-recovery/get-started/dr-prerequisites.html">
+        先決條件
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="快速入門"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/get-started/dr-quick-start.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-disaster-recovery/get-started/dr-quick-start.html">
+        快速入門
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="存取 BlueXP 災難恢復"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/get-started/dr-login.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-disaster-recovery/get-started/dr-login.html">
+        存取 BlueXP 災難恢復
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定 BlueXP 災難恢復"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/get-started/dr-setup.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-disaster-recovery/get-started/dr-setup.html">
+        設定 BlueXP 災難恢復
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定授權"
+      data-li-level="2#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/get-started/dr-licensing.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-disaster-recovery/get-started/dr-licensing.html">
+        設定授權
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="常見問題集"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/get-started/dr-faq.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-disaster-recovery/get-started/dr-faq.html">
+        常見問題集
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用 BlueXP 災難恢復"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-disaster-recovery/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-disaster-recovery/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 使用 BlueXP 災難恢復</div>-->
+         使用 BlueXP 災難恢復
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用 BlueXP 災難恢復概述"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/use/use-overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-disaster-recovery/use/use-overview.html">
+        使用 BlueXP 災難恢復概述
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="在儀表板上檢視災難恢復計畫的健全狀況"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/use/dashboard-view.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-disaster-recovery/use/dashboard-view.html">
+        在儀表板上檢視災難恢復計畫的健全狀況
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="新增 vCenter 站台"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/use/sites-add.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-disaster-recovery/use/sites-add.html">
+        新增 vCenter 站台
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="建立複寫計畫"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/use/drplan-create.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-disaster-recovery/use/drplan-create.html">
+        建立複寫計畫
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="複寫到另一個站台"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/use/replicate.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-disaster-recovery/use/replicate.html">
+        複寫到另一個站台
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="移轉至其他站台"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/use/migrate.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-disaster-recovery/use/migrate.html">
+        移轉至其他站台
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="容錯移轉至遠端站台"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/use/failover.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-disaster-recovery/use/failover.html">
+        容錯移轉至遠端站台
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="將應用程式容錯回復至原始來源站台"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/use/failback.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-disaster-recovery/use/failback.html">
+        將應用程式容錯回復至原始來源站台
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理站台、計畫、資料存放區和虛擬機器資訊"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/use/manage.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-disaster-recovery/use/manage.html">
+        管理站台、計畫、資料存放區和虛擬機器資訊
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="監控災難恢復工作"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/use/monitor-jobs.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-disaster-recovery/use/monitor-jobs.html">
+        監控災難恢復工作
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="知識與支援"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/bluexp-disaster-recovery/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/bluexp-disaster-recovery/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 知識與支援</div>-->
+         知識與支援
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="註冊以取得支援"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/support/task-support-registration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-disaster-recovery/support/task-support-registration.html">
+        註冊以取得支援
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="取得協助"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/support/task-get-help.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/bluexp-disaster-recovery/support/task-get-help.html">
+        取得協助
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="法律聲明"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/get-started/dr-licensing.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/bluexp-disaster-recovery/legal-notices.html">
+        法律聲明
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/zh-tw/bluexp-disaster-recovery"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/zh-tw/bluexp-disaster-recovery"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/zh-tw/bluexp-disaster-recovery/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 本繁體中文版使用機器翻譯，譯文僅供參考，若與英文版本牴觸，應以英文版本為準。 </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">設定 BlueXP 災難恢復的授權</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2024-03-07 05:00:21 +0000">03/07/2024</time>
+        
+    
+    
+        <span>貢獻者
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/zh-tw/bluexp-disaster-recovery/images/discuss-sm.svg" alt="" class="github-icon" />建議變更</span>
+        <img src="/zh-tw/bluexp-disaster-recovery/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/zh-tw/bluexp-disaster-recovery/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-disaster-recovery.zh-tw/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/zh-tw/bluexp-disaster-recovery/get-started/dr-licensing.html&page-title=設定 BlueXP 災難恢復的授權" class="page-nav-contribute-link" role="button">請求文件變更</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-disaster-recovery/blob/main/get-started/dr-licensing.adoc" class="page-nav-contribute-link" role="button">編輯本頁</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >瞭解如何貢獻</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/zh-tw/bluexp-disaster-recovery/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/zh-tw/bluexp-disaster-recovery/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/zh-tw/bluexp-disaster-recovery/pdfs/fullsite-sidebar/BlueXP_災難恢復文件.pdf" >
+                    <img src="/zh-tw/bluexp-disaster-recovery/images/pdf-icon.png" alt="" width="16" height="16"/>此文件 PDF 的網站</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-disaster-recovery/pdfs/sidebar/版本資訊.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-disaster-recovery/images/pdf-icon.png" alt="" width="16" height="16"/>
+            版本資訊
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-disaster-recovery/pdfs/sidebar/開始使用.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-disaster-recovery/images/pdf-icon.png" alt="" width="16" height="16"/>
+            開始使用
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-disaster-recovery/pdfs/sidebar/使用_BlueXP_災難恢復.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-disaster-recovery/images/pdf-icon.png" alt="" width="16" height="16"/>
+            使用 BlueXP 災難恢復
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/bluexp-disaster-recovery/pdfs/sidebar/知識與支援.pdf" 
+            
+          >
+            <img src="/zh-tw/bluexp-disaster-recovery/images/pdf-icon.png" alt="" width="16" height="16"/>
+            知識與支援
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/zh-tw/bluexp-disaster-recovery/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>個別的 PDF 文件集合<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>有了 BlueXP 災難恢復功能、您可以免費試用使用該服務、或自行攜帶授權。</p>
+</div>
+<div class="paragraph">
+<p>您可以使用下列授權類型：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>註冊 90 天免費試用。</p>
+</li>
+<li>
+<p>請自帶授權（ BYOL ）、這是您從 NetApp 銷售代表處取得的 NetApp 授權檔案（ NLF ）您可以使用授權序號、在 BlueXP 數位錢包中啟動 BYOL 。</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-disaster-recovery/images/note.svg" alt="註">
+</td>
+<td class="content">
+BlueXP 災難恢復費用是根據來源站台上已配置的資料存放區容量而定、因為至少有一個 VM 具有複寫計畫。容錯移轉資料存放區的容錯容量不包含在容量限制中。對於 BYOL 而言、如果資料超過允許容量、則服務中的作業將受到限制、直到您取得額外容量授權或升級 BlueXP 數位錢包中的授權為止。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>設定 BYOL 之後、您可以在 BlueXP 數位錢包 * 資料服務授權 * 標籤中看到授權。</p>
+</div>
+<div class="paragraph">
+<p>在免費試用結束或授權過期之後、您仍可在服務中執行下列動作：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>檢視任何資源、例如工作負載或複寫計畫。</p>
+</li>
+<li>
+<p>刪除任何資源、例如工作負載或複寫計畫。</p>
+</li>
+<li>
+<p>執行試用期間或授權期間所建立的所有排程作業。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="試用-90-天免費試用">試用 90 天免費試用</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>您可以使用 90 天免費試用版試用 BlueXP 災難恢復。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-disaster-recovery/images/note.svg" alt="註">
+</td>
+<td class="content">
+試用期間不會強制執行容量限制。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>您可以隨時取得授權、直到 90 天試用結束為止、您將不會被收取費用。若要在 90 天試用之後繼續、您必須購買 BYOL 授權。</p>
+</div>
+<div class="paragraph">
+<p>試用期間、您擁有完整功能。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p>存取 <a href="https://console.bluexp.netapp.com/" target="_blank" rel="noopener">"BlueXP主控台"</a>。</p>
+</li>
+<li>
+<p>登入 BlueXP 。</p>
+</li>
+<li>
+<p>從 BlueXP 左側導航欄中，選擇 * Protection * &gt; * Disaster recovery * 。</p>
+<div class="paragraph">
+<p>如果這是您第一次登入此服務、就會出現登陸頁面。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../media/get-started/draas-landing2.png" alt="BlueXP 災難恢復的登陸頁快照"></span></p>
+</div>
+</li>
+<li>
+<p>如果您尚未新增 Connector for 其他服務、請新增一個。</p>
+<div class="paragraph">
+<p>若要新增 Connector 、請參閱 <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html" target="_blank" rel="noopener">"深入瞭解連接器"</a>。</p>
+</div>
+</li>
+<li>
+<p>設定 Connector 之後、在 BlueXP 災難恢復登陸頁面中、新增 Connector 的按鈕會變更為按鈕、以開始免費試用。選擇 * 開始免費試用 * 。</p>
+</li>
+<li>
+<p>檢閱免費試用資訊、然後選擇 * Let's Go* 。</p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="試用結束後請透過-netapp-購買-byol-授權">試用結束後、請透過 NetApp 購買 BYOL 授權</h3>
+<div class="paragraph">
+<p>試用結束後、您可以透過 NetApp 銷售代表購買授權</p>
+</div>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p>請聯絡您的 NetApp 銷售代表以購買授權。</p>
+</li>
+<li>
+<p>取得授權後、請返回 BlueXP 災難恢復。選取右上角的 * 檢視付款方式 * 選項。或者、在免費試用即將到期的訊息中、選取 * 訂閱或購買授權 * 。</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/get-started/draas-license-subscribe-NetApp-option2.png" alt="BlueXP 災難恢復訂閱或購買授權頁面"></span></p>
+</div>
+</li>
+<li>
+<p>選取 * 新增授權至 BlueXP* 。您將會被引導至 BlueXP 數位錢包。</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/get-started/digital-wallet-data-services-licenses-tab2.png" alt="BlueXP 數位錢包資料服務授權標籤"></span></p>
+</div>
+</li>
+<li>
+<p>在 BlueXP 數位錢包中、從 * 資料服務授權 * 標籤中、選取 * 新增授權 * 。</p>
+</li>
+<li>
+<p>在「新增授權」頁面中、輸入序號和 NetApp 支援網站 帳戶資訊。</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/get-started/byol-digital-wallet-license-add2.png" alt="BlueXP 數位錢包新增授權頁面"></span></p>
+</div>
+</li>
+<li>
+<p>選擇*新增授權*。</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="結束免費試用">結束免費試用</h3>
+<div class="paragraph">
+<p>您可以隨時停止免費試用、也可以等到免費試用到期。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p>在 BlueXP 災難恢復中，選擇右上角的 * 免費試用 - 查看詳細信息 * 。</p>
+</li>
+<li>
+<p>在下拉式詳細資料中、選取 * 結束免費試用 * 。</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/get-started/draas-trial-end3.png" alt="結束免費試用頁面"></span></p>
+</div>
+</li>
+<li>
+<p>如果您要刪除所有資料、請勾選 * 當我的試用結束時刪除所有資料 * 。</p>
+<div class="paragraph">
+<p>這會刪除所有排程、複寫計畫、資源群組、 vCenter 和站台。稽核資料、作業記錄和工作記錄會保留到產品生命週期結束為止。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-disaster-recovery/images/note.svg" alt="註">
+</td>
+<td class="content">
+如果您結束免費試用、而不要求刪除資料、而且您沒有購買授權或訂閱、則在免費試用結束 60 天後、 BlueXP 災難恢復會刪除您所有的資料。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>在文字方塊中輸入「 End 試用」。</p>
+</li>
+<li>
+<p>選取 * 結束 * 。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="自帶授權-byol">自帶授權（ BYOL ）</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>如果您攜帶自己的授權（ BYOL ）、設定包括購買授權、取得 NetApp 授權檔案（ NLF ）、以及將授權新增至 BlueXP 數位錢包。</p>
+</div>
+<div class="sect2">
+<h3 id="購買-bluexp-災難恢復授權">購買 BlueXP 災難恢復授權</h3>
+<div class="paragraph">
+<p>如果您沒有 BlueXP 災難恢復授權、請聯絡我們購買。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>執行下列其中一項：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>請聯絡 NetApp 銷售部門以購買授權。</p>
+</li>
+<li>
+<p>按一下BlueXP右下角的聊天圖示、申請授權。</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="取得-bluexp-災難恢復授權檔案">取得 BlueXP 災難恢復授權檔案</h3>
+<div class="paragraph">
+<p>向 NetApp 銷售代表購買 BlueXP 災難恢復授權後、您可以輸入 BlueXP 災難恢復序號和 NetApp 支援網站 （ NSS ）帳戶資訊來啟動授權。</p>
+</div>
+<div class="paragraph">
+<div class="title">開始之前</div>
+<p>開始之前、您必須先取得下列資訊：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>BlueXP 災難恢復序號</p>
+<div class="paragraph">
+<p>請從您的銷售訂單中找出此號碼、或聯絡客戶團隊以取得此資訊。</p>
+</div>
+</li>
+<li>
+<p>BlueXP 帳戶 ID</p>
+<div class="paragraph">
+<p>您可以從 BlueXP 頂端選取「 * 帳戶 * 」下拉式清單、然後選取帳戶旁邊的「 * 管理帳戶 * 」、以找到您的 BlueXP 帳戶 ID 。您的帳戶ID位於「總覽」索引標籤。若為無法存取網際網路的私人模式網站、請使用 <strong>account-DARKSITE1</strong> 。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="將-bluexp-災難恢復授權新增至-bluexp-數位錢包">將 BlueXP 災難恢復授權新增至 BlueXP 數位錢包</h3>
+<div class="paragraph">
+<p>為 BlueXP 帳戶購買 BlueXP 災難恢復授權後、您必須將授權新增至 BlueXP 數位錢包。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p>從 BlueXP 功能表中、選取 * Governance * &gt; * Digital wall* &gt; * Data Services Licenses* 。</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/get-started/digital-wallet-data-services-licenses-tab2.png" alt="BlueXP 數位錢包資料服務授權標籤"></span></p>
+</div>
+</li>
+<li>
+<p>選擇*新增授權*。</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/get-started/byol-digital-wallet-license-add2.png" alt="NetApp BlueXP 數位錢包新增授權頁面"></span></p>
+</div>
+</li>
+<li>
+<p>在「新增授權」頁面中、輸入授權資訊、然後選取 * 新增授權 * ：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>如果您有 BlueXP 授權序號、而且知道您的 NSS 帳戶、請選取 * 輸入序號 * 選項、然後輸入該資訊。</p>
+<div class="paragraph">
+<p>如果下拉式清單中沒有您的 NetApp 支援網站帳戶， <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html" target="_blank" rel="noopener">"將新增至BlueXP的NSS帳戶"</a>。</p>
+</div>
+</li>
+<li>
+<p>如果您有 BlueXP 授權檔案（安裝在黑暗網站時為必填）、請選取 * 上傳授權檔案 * 選項、然後依照提示附加檔案。</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">結果</div>
+<p>BlueXP 數位錢包現在以授權證明災難恢復。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../media/get-started/byol-digital-wallet-licenses-added.png" alt="NetApp BlueXP 數位錢包"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bluexp-授權到期時請更新">BlueXP 授權到期時請更新</h3>
+<div class="paragraph">
+<p>如果您的授權期限即將到期、或是您的授權容量已達到上限、您將會在 BlueXP 災難恢復 UI 中收到通知。您可以在 BlueXP 災難恢復授權過期前更新、以確保您存取掃描資料的能力不會中斷。</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-disaster-recovery/images/tip.svg" alt="提示">
+</td>
+<td class="content">
+此訊息也會出現在 BlueXP 數位錢包和中 <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#monitoring-operations-status-using-the-notification-center">"通知"</a>。
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p>選取 BlueXP 右下角的聊天圖示、以申請延長您的期限、或申請額外的授權容量、以取得特定序號。您也可以傳送電子郵件要求更新授權。</p>
+<div class="paragraph">
+<p>在您支付授權費用並向 NetApp 支援網站 註冊之後、 BlueXP 會自動更新 BlueXP 數位錢包中的授權、而「資料服務授權」頁面則會在 5 到 10 分鐘內反映變更。</p>
+</div>
+</li>
+<li>
+<p>如果BlueXP無法自動更新授權（例如、安裝在暗點）、則您需要手動上傳授權檔案。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>您可以從 NetApp 支援網站 取得授權檔案。</p>
+</li>
+<li>
+<p>存取 BlueXP 數位錢包。</p>
+</li>
+<li>
+<p>選取 * 資料服務授權 * 標籤、選取要更新之服務序號的 * 動作 &#8230;&#8203; * 圖示、然後選取 * 更新授權 * 。</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/zh-tw/bluexp-disaster-recovery/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/zh-tw/bluexp-disaster-recovery/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">在本頁</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">使用條款</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">隱私權政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie 政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">傳送有關本網頁的意見反應</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-tw/bluexp-disaster-recovery/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-tw/bluexp-disaster-recovery/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-tw/bluexp-disaster-recovery/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-tw/bluexp-disaster-recovery/js/ie-tabbed-blocks.js'></script>
+    <script src='/zh-tw/bluexp-disaster-recovery/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
