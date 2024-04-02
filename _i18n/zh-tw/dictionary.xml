@@ -562,7 +562,6 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="dcc9d99320099ed731ca2f05b3e501a7" category="list-text">將 VMware 工作負載從原始站台移轉至其他站台。</block>
   <block id="2aefc74ac286c583100431f62049590d" category="list-text">在發生災難時、可依需求將主要站台容錯移轉至災難恢復站台、該站台可以是 VMware Cloud on AWS with FSX for NetApp ONTAP 、或是內部部署的 VMware 環境搭配 ONTAP 。</block>
   <block id="a6a42e8e3070730d19bfd86d6a1d66fe" category="paragraph">下圖顯示內部部署到內部部署災難恢復計畫的架構。</block>
-  <block id="11ee533cc4ce7135332d0b64a9e82e51" category="paragraph"><block ref="11ee533cc4ce7135332d0b64a9e82e51" category="inline-image-macro-rx" type="image"></block></block>
   <block id="20099229ad21726312a6ff50740b0b57" category="paragraph">當發生災難時、此服務可中斷 SnapMirror 關係、並讓目的地站台成為作用中、協助您在其他內部部署 VMware 環境或 VMC 中恢復虛擬機器。</block>
   <block id="a675a2edc95f7fca650a735944e38f96" category="paragraph">若要使用 BlueXP 災難恢復、您應確保環境符合下列需求：</block>
   <block id="96ed64c294e585324853f8f980f9d78e" category="sidebar">將應用程式移轉至其他網站</block>
@@ -797,4 +796,5 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="9fc7e8cb24850b1f0912cebc8da32620" category="list-text">存取 BlueXP 數位錢包。</block>
   <block id="7b6dca09bf0ef612bac047a313d66cbf" category="list-text">選取 * 資料服務授權 * 標籤、選取要更新之服務序號的 * 動作 ... * 圖示、然後選取 * 更新授權 * 。</block>
   <block id="be976ba4e18c887ae57e14f6ebfbbab3" category="sidebar">災難恢復至雲端是一種彈性且具成本效益的方法、可保護工作負載免受站台中斷和資料毀損事件（例如勒索軟體）的影響。使用 BlueXP 災難恢復 for VMware 、您可以將執行 ONTAP 儲存設備的內部部署 VMware 工作負載複寫到公有雲中的 VMware 軟體定義資料中心、或將其他內部部署站台複寫為災難恢復站台。</block>
+  <block id="67d87f62e2f6294a12829113edfa11b8" category="paragraph"><block ref="67d87f62e2f6294a12829113edfa11b8" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

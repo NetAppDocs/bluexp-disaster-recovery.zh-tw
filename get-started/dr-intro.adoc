@@ -98,7 +98,7 @@ image:dr-architecture-diagram-70.png["顯示 VMware 服務基礎架構 BlueXP �
 
 下圖顯示內部部署到內部部署災難恢復計畫的架構。
 
-image:dr-architecture-diagram-onprem-to-onprem.png["顯示 VMware 服務基礎架構 BlueXP 災難恢復架構的圖表"]
+image:dr-architecture-diagram-onprem-to-onprem2.png["顯示 VMware 服務基礎架構 BlueXP 災難恢復架構的圖表"]
 
 當發生災難時、此服務可中斷 SnapMirror 關係、並讓目的地站台成為作用中、協助您在其他內部部署 VMware 環境或 VMC 中恢復虛擬機器。
 
