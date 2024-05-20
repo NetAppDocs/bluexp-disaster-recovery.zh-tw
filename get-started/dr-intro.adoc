@@ -57,7 +57,7 @@ NOTE: vSphere 伺服器的組態是在 vSphere Server 的 BlueXP 災難恢復之
 
 NetApp 不會向您收取使用試用版 BlueXP 災難恢復的費用。
 
-BlueXP 災難恢復服務的完整版本可搭配 NetApp 授權使用。
+BlueXP 災難恢復服務可搭配 NetApp 授權使用、或透過 Amazon Web Services Marketplace 使用年度訂閱方案。
 
 
 
@@ -66,6 +66,7 @@ BlueXP 災難恢復服務的完整版本可搭配 NetApp 授權使用。
 您可以使用下列授權類型：
 
 * 註冊 90 天免費試用。
+* 透過 Amazon Web Services （ AWS ） Marketplace 購買隨用隨付（ PAYGO ）訂閱。
 * 請自帶授權（ BYOL ）、這是您從 NetApp 銷售代表處取得的 NetApp 授權檔案（ NLF ）您可以使用授權序號、在 BlueXP 數位錢包中啟動 BYOL 。
 
 
@@ -82,7 +83,7 @@ NOTE: BlueXP 災難恢復費用是根據來源站台上已配置的資料存放�
 
 您可以使用 90 天免費試用版試用 BlueXP 災難恢復。
 
-若要在 90 天試用之後繼續、您必須向 NetApp 購買 BYOL 授權。
+若要在 90 天試用之後繼續、您必須向雲端供應商取得隨用隨付（ PAYGO ）訂閱、或向 NetApp 購買 BYOL 授權。
 
 您可以隨時購買授權、直到 90 天試用結束為止、您將不會被收取費用。
 
@@ -94,11 +95,11 @@ BlueXP 災難恢復可將從內部部署站台複寫到 Amazon FSX for ONTAP 或
 
 BlueXP 災難恢復採用 ONTAP SnapMirror 技術、可提供高效率的複寫、並保留 ONTAP 的永久遞增 Snapshot 效率。SnapMirror 複寫可確保應用程式一致的 Snapshot 複本永遠保持同步、而且資料在容錯移轉後立即可用。
 
-image:dr-architecture-diagram-70.png["顯示 VMware 服務基礎架構 BlueXP 災難恢復架構的圖表"]
+image:dr-architecture-diagram-70-2.png["顯示 VMware 服務基礎架構 BlueXP 災難恢復架構的圖表"]
 
 下圖顯示內部部署到內部部署災難恢復計畫的架構。
 
-image:dr-architecture-diagram-onprem-to-onprem2.png["顯示 VMware 服務基礎架構 BlueXP 災難恢復架構的圖表"]
+image:dr-architecture-diagram-onprem-to-onprem3.png["顯示 VMware 服務基礎架構 BlueXP 災難恢復架構的圖表"]
 
 當發生災難時、此服務可中斷 SnapMirror 關係、並讓目的地站台成為作用中、協助您在其他內部部署 VMware 環境或 VMC 中恢復虛擬機器。
 

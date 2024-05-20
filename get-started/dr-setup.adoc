@@ -82,6 +82,6 @@ Amazon FSX for NetApp ONTAP Sfing是一項全託管服務、以熱門的NetApp O
 
 有了 BlueXP 災難恢復功能、您可以註冊 90 天免費試用。
 
-您可以自帶授權（ BYOL ）、這是 NetApp 授權檔案（ NLF ）。
+您可以透過 AWS Marketplace 購買隨付（ PAYGO ）訂閱、或自帶授權（ BYOL ）、這是 NetApp 授權檔案（ NLF ）。
 
 如需設定 BlueXP 災難恢復授權的詳細資訊、請參閱 link:../get-started/dr-licensing.html["設定 BlueXP 災難恢復授權"]。

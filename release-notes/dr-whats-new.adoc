@@ -16,6 +16,21 @@ summary: BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化�
 
 
 
+== 2024 年 5 月 15 日
+
+此 BlueXP 災難恢復版本包含下列更新：
+
+* * 將 VMware 工作負載從內部部署複製到內部部署 * 、現在已成為一般可用度功能。以前、這是一項功能有限的技術預覽。
+* * 授權更新 * ： 有了 BlueXP 災難恢復功能、您可以註冊 90 天免費試用版、向 Amazon Marketplace 購買隨用隨付（ PAYGO ）訂閱、或自帶授權（ BYOL ）、這是您從 NetApp 銷售代表或 NetApp 支援網站 （ NSS ）取得的 NetApp 授權檔案（ NLF ）。
++
+如需設定 BlueXP 災難恢復授權的詳細資訊、請參閱 link:../get-started/dr-licensing.html["設定授權"]。
+
+
+
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["深入瞭解 BlueXP 災難恢復"]。
+
+
+
 == 2024 年 3 月 5 日
 
 這是 BlueXP 災難恢復的一般可用度版本、其中包括下列更新。

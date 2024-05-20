@@ -188,7 +188,6 @@
   <block id="da43ae6496f10d6bfd475400915e2865" category="admonition">vSphere 伺服器的組態是在 vSphere Server 的 BlueXP 災難恢復之外完成。</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
   <block id="d244f191aaddadced4c31b2f67d06c9c" category="inline-image-macro">顯示 VMware 服務基礎架構 BlueXP 災難恢復架構的圖表</block>
-  <block id="a61fe2c95a03251717d7405c6bf53ede" category="paragraph"><block ref="a61fe2c95a03251717d7405c6bf53ede" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7599cfdf730a164b0625ccc661508efa" category="list-text">此服務也可讓您將虛擬機器容錯回復至原始來源位置。</block>
   <block id="a6d3ce8aba8914f5380d164c99d7dab0" category="list-text">您可以在不中斷原始虛擬機器的情況下、測試災難恢復容錯移轉程序。此測試會建立 Volume 的 FlexClone 、將虛擬機器還原至隔離的網路。</block>
   <block id="b5a43a585d1a40908cfd5ee656c8579c" category="list-text">對於容錯移轉或測試容錯移轉程序、您可以選擇最新的（預設）或選取的 Snapshot 來復原您的虛擬機器。</block>
@@ -614,8 +613,6 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="771e1ea643a8723d0d0dfad6c2b70ace" category="list-text">如果您尚未新增 Connector for 其他服務、請新增一個。</block>
   <block id="e6e80588e9fe7cf89218fea44300f7ca" category="inline-link">深入瞭解連接器</block>
   <block id="7530875db6f7eceea689fdfeb6a12778" category="paragraph">若要新增 Connector 、請參閱<block ref="d6df7dcc2fc3105e10967a9194806ce5" category="inline-link-rx"></block>。</block>
-  <block id="9aac5cf8ab754f13e3926b6983853bec" category="list-text">檢閱免費試用資訊、然後選擇 * Let's Go* 。</block>
-  <block id="1584158e2068ac8b1f79bfc70eb2775d" category="inline-image-macro">BlueXP 災難恢復訂閱或購買授權頁面</block>
   <block id="ee6d03e51dd7b0fc10c6b3c8fcab3718" category="section-title">試用結束後、請透過 NetApp 購買 BYOL 授權</block>
   <block id="b11106bafac141be455d28549bfe177d" category="list-text">選取 * 新增授權至 BlueXP* 。您將會被引導至 BlueXP 數位錢包。</block>
   <block id="d2ec998008b95e1189b9d8f3dbc6ed64" category="inline-image-macro">BlueXP 數位錢包新增授權頁面</block>
@@ -629,29 +626,12 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="fd4452ba53d2010757fb183f23851efd" category="admonition">如果您結束免費試用、而不要求刪除資料、而且您沒有購買授權或訂閱、則在免費試用結束 60 天後、 BlueXP 災難恢復會刪除您所有的資料。</block>
   <block id="c3964fe08c9dd95815cc67d8aaee9323" category="list-text">在文字方塊中輸入「 End 試用」。</block>
   <block id="44a320573c319d1f30b840c2d11a4e26" category="list-text">選取 * 結束 * 。</block>
-  <block id="c584f4f2a6193ac47ece196c84d506a1" category="section-title">自帶授權（ BYOL ）</block>
   <block id="3906249fde1cef9339402436007bb4f7" category="paragraph">如果您攜帶自己的授權（ BYOL ）、設定包括購買授權、取得 NetApp 授權檔案（ NLF ）、以及將授權新增至 BlueXP 數位錢包。</block>
-  <block id="4eb472761579fcb29aec7dae0dedc791" category="section-title">購買 BlueXP 災難恢復授權</block>
-  <block id="4ad29e095044e3e5ac3a8f5bdd094504" category="paragraph">如果您沒有 BlueXP 災難恢復授權、請聯絡我們購買。</block>
-  <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">執行下列其中一項：</block>
-  <block id="14149621358a55a2bcbcb304322f2bdd" category="list-text">請聯絡 NetApp 銷售部門以購買授權。</block>
-  <block id="6193e62acb4a86204633b2d093e49546" category="list-text">按一下BlueXP右下角的聊天圖示、申請授權。</block>
-  <block id="bb5400afe237282fdad364a407fc147b" category="section-title">取得 BlueXP 災難恢復授權檔案</block>
   <block id="e3286b69a705d4ed944e904722ab7c8f" category="paragraph">開始之前、您必須先取得下列資訊：</block>
   <block id="43ae1d792e09f6126441ea0d91d847c7" category="list-text">BlueXP 災難恢復序號</block>
   <block id="079aeecf06b109e4316b0a68ea943f2b" category="paragraph">請從您的銷售訂單中找出此號碼、或聯絡客戶團隊以取得此資訊。</block>
   <block id="bcbbd9a155e07caa8b31001adc835c79" category="list-text">BlueXP 帳戶 ID</block>
-  <block id="98d8dec8ea6912e160aa222c8e6f76c7" category="paragraph">您可以從 BlueXP 頂端選取「 * 帳戶 * 」下拉式清單、然後選取帳戶旁邊的「 * 管理帳戶 * 」、以找到您的 BlueXP 帳戶 ID 。您的帳戶ID位於「總覽」索引標籤。若為無法存取網際網路的私人模式網站、請使用 *account-DARKSITE1* 。</block>
-  <block id="4642741ba5bc33f3309c8ec5bab06682" category="section-title">將 BlueXP 災難恢復授權新增至 BlueXP 數位錢包</block>
-  <block id="ba8afb5484c287f1ace20840bc94d916" category="paragraph">為 BlueXP 帳戶購買 BlueXP 災難恢復授權後、您必須將授權新增至 BlueXP 數位錢包。</block>
-  <block id="7caa9eb74f44350c8dde29c8267cdf24" category="list-text">從 BlueXP 功能表中、選取 * Governance * &gt; * Digital wall* &gt; * Data Services Licenses* 。</block>
   <block id="c8508c0ce4da6dc634b7c66b1df15681" category="list-text">選擇*新增授權*。</block>
-  <block id="021d7e94275fbce0d19f7cf686aabd40" category="inline-image-macro">NetApp BlueXP 數位錢包新增授權頁面</block>
-  <block id="5fe793b25da4bb065137c8c34e98d41f" category="list-text">在「新增授權」頁面中、輸入授權資訊、然後選取 * 新增授權 * ：</block>
-  <block id="b628341a05a2d315b4789aadc3fd8caa" category="list-text">如果您有 BlueXP 授權序號、而且知道您的 NSS 帳戶、請選取 * 輸入序號 * 選項、然後輸入該資訊。</block>
-  <block id="bae190eec3db4a0dd635ae72756acde8" category="inline-link">將新增至BlueXP的NSS帳戶</block>
-  <block id="30fc689a9c3cd4222329fe3a4c818a33" category="paragraph">如果下拉式清單中沒有您的 NetApp 支援網站帳戶，<block ref="06a3bc9d474b5d4e44d1a2733cac785a" category="inline-link-rx"></block>。</block>
-  <block id="751ab53fef561de80df12e1944c11ba2" category="list-text">如果您有 BlueXP 授權檔案（安裝在黑暗網站時為必填）、請選取 * 上傳授權檔案 * 選項、然後依照提示附加檔案。</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
   <block id="7c8c5dfa7e1cbe0ce55b88149d634d69" category="paragraph">BlueXP 數位錢包現在以授權證明災難恢復。</block>
   <block id="72e3dbb78819e204c1d67c9aaba1d190" category="inline-image-macro">NetApp BlueXP 數位錢包</block>
@@ -675,10 +655,7 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="e907b41f5f3d7332bee5a43fbbf78a08" category="section-title">設定授權</block>
   <block id="64f8f55f5eb85f10374cb9251379aa7d" category="paragraph">有了 BlueXP 災難恢復功能、您可以註冊 90 天免費試用。</block>
   <block id="db9425c5e893fb09212aa796b71ab4ff" category="paragraph"><block ref="db9425c5e893fb09212aa796b71ab4ff" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0fb78a41f977493934dee1c46062309c" category="list-text">如果您沒有 BlueXP Connector 、或不是這項服務的連接器、您可能需要聯絡 NetApp 支援部門或追蹤訊息來註冊此服務。</block>
-  <block id="665470c666558171488159c6aa3dd98a" category="list-text">如果您是 BlueXP 的新手、而且尚未使用任何 Connector 、當您選取「災難恢復」時、會出現一則關於註冊的訊息。請繼續提交表單。NetApp 會就您的要求與您聯絡。</block>
   <block id="9aea41391b3a188365a351addd6cf6fc" category="list-text">如果您是具有現有 Connector 的 BlueXP 使用者、當您選取「災難恢復」時、會出現一則關於註冊的訊息。</block>
-  <block id="8f333bfde48f31b2cfcf04c153782963" category="list-text">如果您已在使用服務、則當您選取「災難恢復」時、即可繼續。</block>
   <block id="cbef5af23561d0ec620e5d275e7c8eb5" category="inline-image-macro">BlueXP 災難恢復儀表板</block>
   <block id="b044111e167403664c9e3432eca1f25a" category="sidebar">BlueXP 災難恢復文件</block>
   <block id="4aca0b59a2fa7d9e86368a58f1e869c9" category="list-text">選取 * 動作 * 選項 <block ref="e282bbe0f95615c6416d0f1c92efdcdd" category="inline-image-macro-rx" type="image"></block>  在 vCenter 名稱右側、選取 * 編輯 * 。</block>
@@ -751,20 +728,17 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="78a065b9fb649a31c2037ac8b6adf208" category="paragraph">若要使用 BlueXP 災難恢復、請執行幾個步驟、在 Amazon Web Services （ AWS ）和 BlueXP 中設定。</block>
   <block id="456948be6cc17bd9f797492f175ff847" category="section-title">設定 AWS</block>
   <block id="724c7536b89d0d851109ea9f7868da08" category="paragraph">您必須聯絡 NetApp 銷售代表、才能試用這項服務。然後、當您使用 BlueXP Connector 時、它會包含災難恢復服務的適當功能。</block>
-  <block id="0bf14c9d518db90372ef9c78dc9638b2" category="paragraph">您可以自帶授權（ BYOL ）、這是 NetApp 授權檔案（ NLF ）。</block>
   <block id="878214f294066da0bab8a3693a1f802a" category="doc">瞭解適用於 VMware 的 BlueXP 災難恢復</block>
   <block id="e04cb1e00b4f2d764efe09d0b22a6b43" category="paragraph">災難恢復至雲端是一種彈性且具成本效益的方法、可保護工作負載免受站台中斷和資料毀損事件的影響。透過 BlueXP 災難恢復 for VMware 、您可以使用 NetApp 雲端儲存設備、將內部部署的執行 ONTAP 儲存設備的 VMware 工作負載複寫到公有雲中的 VMware 軟體定義資料中心、或將 ONTAP 儲存設備做為災難恢復站台的內部部署 VMware 環境。</block>
   <block id="81cd6d5889a00f3187d6e30af0f9838e" category="paragraph">BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。起初、透過 BlueXP 災難恢復服務、您可以將執行 NetApp 儲存設備的內部部署 NFS 型 VMware 工作負載、保護到下列其中一項：</block>
   <block id="fbec25bffbcdefa11c9ca28adb0b824c" category="paragraph">BlueXP 災難恢復使用 ONTAP SnapMirror 技術作爲災難恢復站點的複製傳輸。這可在主要和次要站台上實現業界最佳的儲存效率（壓縮和重複資料刪除）。</block>
   <block id="3c524eb32d863a57c821ef5ffecb96ee" category="section-title">使用 BlueXP 災難恢復 for VMware 可以做什麼</block>
   <block id="0ad83d5f52e2b8f6dfc6ec26ef91aa38" category="paragraph">BlueXP 災難恢復可讓您充分運用多項 NetApp 技術來達成下列目標：</block>
-  <block id="2020a15d2254ab61244fd58956ac0150" category="paragraph">BlueXP 災難恢復服務的完整版本可搭配 NetApp 授權使用。</block>
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">授權</block>
   <block id="924cc6eaf82618251de609e2689ed733" category="paragraph">您可以使用下列授權類型：</block>
   <block id="2caf85d76a31b7bef7132937ff28e9dc" category="list-text">請自帶授權（ BYOL ）、這是您從 NetApp 銷售代表處取得的 NetApp 授權檔案（ NLF ）您可以使用授權序號、在 BlueXP 數位錢包中啟動 BYOL 。</block>
   <block id="c809a23426c6fb72cef75816c461ade9" category="paragraph">所有 BlueXP 服務的授權均由 BlueXP 數位錢包服務管理。設定 BYOL 之後、您可以在 BlueXP 數位錢包中看到該服務的有效授權。</block>
   <block id="8eb586b1b79ddd3ae7c3123b39d4420e" category="admonition">BlueXP 災難恢復費用是根據來源站台上已配置的資料存放區容量而定、因為至少有一個 VM 具有複寫計畫。容錯移轉資料存放區的容錯容量不包含在容量限制中。對於 BYOL 而言、如果資料超過允許容量、則服務中的作業將受到限制、直到您取得額外容量授權或升級 BlueXP 數位錢包中的授權為止。</block>
-  <block id="5ae84730ec695b46a67c1692274ccaf3" category="paragraph">若要在 90 天試用之後繼續、您必須向 NetApp 購買 BYOL 授權。</block>
   <block id="27be91c80d5e97799bb6e73e37370e5d" category="paragraph">您可以隨時購買授權、直到 90 天試用結束為止、您將不會被收取費用。</block>
   <block id="da329ee75f8833283c259789372600f6" category="list-text">內部部署 VMware 工作環境搭配 NetApp 儲存設備</block>
   <block id="0f5757c2302ddb1a6b48cf01d0fe295d" category="list-text">在 AWS 上擁有軟體定義資料中心（ SDDC ）的 VMware 帳戶、也稱為 Virtual Machines Cloud 。在 VMware Cloud Console 中、使用管理員和 NSX Cloud Administrator 的服務角色。也可以使用組織擁有者擔任組織角色。請參閱<block ref="e0529c1c92608a25886bf41835abea27" category="inline-link-rx"></block>。</block>
@@ -775,26 +749,57 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="7033a5d3e074f0c7401499ee4e48f38a" category="list-text">確保 VMware 工具（或 Open VM 工具）正在受保護的 VM 上執行。</block>
   <block id="7c480d19e9a60d89cc5b027f95938aa8" category="list-text">對於執行 SQL 或 Oracle 或兩者的 Windows VM 、資料庫應啟用其 VSS 寫入器、且資料庫應處於穩定狀態。</block>
   <block id="af77ac64a97a80925dee7dc916344004" category="list-text">在 Linux 作業系統上執行的 Oracle 資料庫、應針對 Oracle 資料庫 SYSDBA 角色啟用作業系統使用者驗證。</block>
-  <block id="952d5792e20104bd51e61d359faac899" category="paragraph">有了 BlueXP 災難恢復功能、您可以免費試用使用該服務、或自行攜帶授權。</block>
-  <block id="dd6dd33362dbc70a36edb35890647f3c" category="paragraph">設定 BYOL 之後、您可以在 BlueXP 數位錢包 * 資料服務授權 * 標籤中看到授權。</block>
   <block id="e23539b066371b4dcfdd50b7d80417d8" category="paragraph">在免費試用結束或授權過期之後、您仍可在服務中執行下列動作：</block>
   <block id="1594f78ebbb281f7b5359eb6d2b89912" category="list-text">執行試用期間或授權期間所建立的所有排程作業。</block>
   <block id="a14b332e4d6b9ee17b484a7fb805179f" category="paragraph">您可以隨時取得授權、直到 90 天試用結束為止、您將不會被收取費用。若要在 90 天試用之後繼續、您必須購買 BYOL 授權。</block>
   <block id="01c014f2e37e5bf6d3ce893bea0197cb" category="list-text">設定 Connector 之後、在 BlueXP 災難恢復登陸頁面中、新增 Connector 的按鈕會變更為按鈕、以開始免費試用。選擇 * 開始免費試用 * 。</block>
   <block id="b9ef842238fa8d82db6b7559f33adc6c" category="paragraph">試用結束後、您可以透過 NetApp 銷售代表購買授權</block>
-  <block id="ecfbb42aa9e2f3b94bd289d87aaf5ea3" category="list-text">請聯絡您的 NetApp 銷售代表以購買授權。</block>
   <block id="9bdfa376bcb2fa79aff92c39d0b24fcd" category="list-text">取得授權後、請返回 BlueXP 災難恢復。選取右上角的 * 檢視付款方式 * 選項。或者、在免費試用即將到期的訊息中、選取 * 訂閱或購買授權 * 。</block>
-  <block id="97bcf0f36d751871efb4e9140f54f17d" category="paragraph"><block ref="97bcf0f36d751871efb4e9140f54f17d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d2a39678e393e2b473354681a2c1e5f4" category="inline-image-macro">BlueXP 數位錢包資料服務授權標籤</block>
-  <block id="e220d51686433f8f5a05d755bc58c162" category="paragraph"><block ref="e220d51686433f8f5a05d755bc58c162" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e3585ef220efaa70fe392bb8e133b54e" category="list-text">在 BlueXP 數位錢包中、從 * 資料服務授權 * 標籤中、選取 * 新增授權 * 。</block>
   <block id="7578ebad24c71aee2f2992e5efe1118d" category="list-text">在「新增授權」頁面中、輸入序號和 NetApp 支援網站 帳戶資訊。</block>
   <block id="c6711fc66daa9915490ca9f9bdc7f08f" category="paragraph"><block ref="c6711fc66daa9915490ca9f9bdc7f08f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="be94b7e6fbf892064754b145ecdeb994" category="paragraph"><block ref="be94b7e6fbf892064754b145ecdeb994" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="17456408ade135981b9345bc87881dc3" category="paragraph">向 NetApp 銷售代表購買 BlueXP 災難恢復授權後、您可以輸入 BlueXP 災難恢復序號和 NetApp 支援網站 （ NSS ）帳戶資訊來啟動授權。</block>
-  <block id="c9b34ae6e6872c8ec153a41cea722706" category="paragraph"><block ref="c9b34ae6e6872c8ec153a41cea722706" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9fc7e8cb24850b1f0912cebc8da32620" category="list-text">存取 BlueXP 數位錢包。</block>
-  <block id="7b6dca09bf0ef612bac047a313d66cbf" category="list-text">選取 * 資料服務授權 * 標籤、選取要更新之服務序號的 * 動作 ... * 圖示、然後選取 * 更新授權 * 。</block>
   <block id="be976ba4e18c887ae57e14f6ebfbbab3" category="sidebar">災難恢復至雲端是一種彈性且具成本效益的方法、可保護工作負載免受站台中斷和資料毀損事件（例如勒索軟體）的影響。使用 BlueXP 災難恢復 for VMware 、您可以將執行 ONTAP 儲存設備的內部部署 VMware 工作負載複寫到公有雲中的 VMware 軟體定義資料中心、或將其他內部部署站台複寫為災難恢復站台。</block>
-  <block id="67d87f62e2f6294a12829113edfa11b8" category="paragraph"><block ref="67d87f62e2f6294a12829113edfa11b8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="93716955add4f66b2af685a33bac4789" category="section-title">2024 年 5 月 15 日</block>
+  <block id="9df62cb4d6f151b560e84723841bd523" category="paragraph">此 BlueXP 災難恢復版本包含下列更新：</block>
+  <block id="7f1d1e9df7ef6953a6e373e29826ca55" category="list-text">* 將 VMware 工作負載從內部部署複製到內部部署 * 、現在已成為一般可用度功能。以前、這是一項功能有限的技術預覽。</block>
+  <block id="b7005516f0c1f875afae2146a2fb3617" category="list-text">* 授權更新 * ： 有了 BlueXP 災難恢復功能、您可以註冊 90 天免費試用版、向 Amazon Marketplace 購買隨用隨付（ PAYGO ）訂閱、或自帶授權（ BYOL ）、這是您從 NetApp 銷售代表或 NetApp 支援網站 （ NSS ）取得的 NetApp 授權檔案（ NLF ）。</block>
+  <block id="eb9506998f4dca4bcb82fe962448b79b" category="paragraph">如需設定 BlueXP 災難恢復授權的詳細資訊、請參閱 <block ref="eaa54a57026891d12cbf928afd176564" category="inline-link-macro-rx"></block>。</block>
+  <block id="8deb19747c06e3643bab5716cb645635" category="paragraph">如果這是您第一次登入此服務、就會出現登陸頁面、您可以註冊免費試用。</block>
+  <block id="ac3c6e071ee2b6acd7920433ae08c475" category="paragraph"><block ref="ac3c6e071ee2b6acd7920433ae08c475" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dd1ef091f49695b9c14e0e34da748ab7" category="list-text">如果您尚未新增 BlueXP Connector 、則需要新增 Connector 。若要新增 Connector 、請參閱<block ref="d6df7dcc2fc3105e10967a9194806ce5" category="inline-link-rx"></block>。</block>
+  <block id="e2066cd1f4f96874fad4da9c48f8715b" category="list-text">如果您已經在使用服務、當您選取「災難恢復」時、儀表板會出現。</block>
+  <block id="7cc1b1d71d565ea421a16ed9422fe6c2" category="list-text">透過 Amazon Web Services （ AWS ） Marketplace 購買隨用隨付（ PAYGO ）訂閱。</block>
+  <block id="23c019f17394a366e5bf51ef8a23b0a8" category="paragraph">設定 BYOL 之後、您可以在 BlueXP 數位錢包 * 資料服務授權 * 標籤中看到授權。</block>
+  <block id="4701248bbe25ed364a5f0c79467e9f29" category="list-text">請先新增 vCenter 。</block>
+  <block id="d780b26d8f0dcbe5b2593febbaacdb60" category="paragraph">如需詳細資訊、請參閱 <block ref="84d66f7662bc8a91a68e93706653efe2" category="inline-link-macro-rx"></block>。</block>
+  <block id="ad7911fdd21ff5752d10300d0446de95" category="section-title">試用結束後、請透過 AWS Marketplace 訂閱</block>
+  <block id="e1186eb5e41d3a9e96827c9ab4aef684" category="paragraph">免費試用結束後、您可以從 NetApp 購買授權、或透過 AWS Marketplace 訂閱。本程序提供如何直接在 AWS Marketplace 中訂閱的高階概觀。</block>
+  <block id="acce4a6c25bc51b4930085d68e3cb0cd" category="list-text">在 BlueXP 災難恢復中、您會看到免費試用即將到期的訊息。在訊息中、選取 * 訂閱或購買授權 * 。</block>
+  <block id="89642db6eeb3c89414135d980b0f379c" category="inline-image-macro">BlueXP 災難恢復付款方法頁面</block>
+  <block id="cd54cee81e627d252868fbc3cfc5731c" category="paragraph"><block ref="cd54cee81e627d252868fbc3cfc5731c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="584a50ae29d097d233ebd86ad952d305" category="list-text">選取 * 在 AWS Marketplace* 中訂閱。</block>
+  <block id="a06442e94af0d31f4eee679c83de7779" category="list-text">在 AWS Marketplace 中、選取 * 檢視購買選項 * 。</block>
+  <block id="266c58f74740e96b35f10409d3036f8f" category="list-text">使用 AWS Marketplace 訂閱 BlueXP 災難恢復。</block>
+  <block id="717132172ed170ccb94cc8674c35dfbd" category="list-text">當您返回 BlueXP 災難恢復時、會有一則訊息指出您已訂閱。</block>
+  <block id="6678054c83157276d9287735dd3e1d92" category="paragraph">若要在 BlueXP 數位錢包中檢視訂閱詳細資料、請選取 * 檢視訂閱詳細資料 * 、然後在 * 訂閱 * 頁面上檢視使用中的訂閱。</block>
+  <block id="0a504e78221db1ccaf51b7ad21bc16ce" category="inline-image-macro">BlueXP 數位錢包訂閱索引標籤</block>
+  <block id="f3688cd67baeb83949d8b3d8688cda8b" category="paragraph"><block ref="f3688cd67baeb83949d8b3d8688cda8b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4052ab6997dacca028b4d726754818d5" category="paragraph">* 啟動授權 *
+向 NetApp 銷售代表購買 BlueXP 災難恢復授權後、您可以輸入 BlueXP 災難恢復序號和 NetApp 支援網站 （ NSS ）帳戶資訊來啟動授權。</block>
+  <block id="19a9d224e357593876fd44c3faede4ab" category="paragraph">您可以從 BlueXP 頂端選取「 * 帳戶 * 」下拉式清單、然後選取帳戶旁邊的「 * 管理帳戶 * 」、以找到您的 BlueXP 帳戶 ID 。您的帳戶ID位於「總覽」索引標籤。</block>
+  <block id="3a00897c7ffb183a2673af94c243c5fd" category="paragraph">* 將授權新增至 BlueXP 數位錢包 *
+為 BlueXP 帳戶購買 BlueXP 災難恢復授權後、您必須將授權新增至 BlueXP 數位錢包。</block>
+  <block id="e4822c1e77f0d7746ffdde4c031a2109" category="inline-image-macro">BlueXP 災難恢復付款中繼資料頁面</block>
+  <block id="5646d601e859bd392516de29f6a97047" category="paragraph"><block ref="5646d601e859bd392516de29f6a97047" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="595da0c0edf936a84fa3d6a69bbbb4e5" category="paragraph"><block ref="595da0c0edf936a84fa3d6a69bbbb4e5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5d50de45dd75ac0ea74e9c427687d113" category="list-text">在 BlueXP 數位錢包中、從 * 資料服務授權 * 標籤中、選取 * 新增授權 * 。</block>
+  <block id="7744384d0e7b78819bc53ca36ef36369" category="list-text">選取 * 資料服務授權 * 標籤、選取要更新之服務序號的 * 動作 ... * 圖示、然後選取 * 更新授權 * 。</block>
+  <block id="fe16d01759ec350f7a6eaad418e37316" category="paragraph">BlueXP 災難恢復服務可搭配 NetApp 授權使用、或透過 Amazon Web Services Marketplace 使用年度訂閱方案。</block>
+  <block id="577219605d1e6146de9dc5b1e218ce65" category="paragraph">若要在 90 天試用之後繼續、您必須向雲端供應商取得隨用隨付（ PAYGO ）訂閱、或向 NetApp 購買 BYOL 授權。</block>
+  <block id="d66d706cd022ab39ed6479a713135515" category="paragraph"><block ref="d66d706cd022ab39ed6479a713135515" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="991e816286764c3a5ea9b023c35e1d77" category="paragraph"><block ref="991e816286764c3a5ea9b023c35e1d77" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f356176c4e01ac702abad1ad2e11449a" category="paragraph">您可以透過 AWS Marketplace 購買隨付（ PAYGO ）訂閱、或自帶授權（ BYOL ）、這是 NetApp 授權檔案（ NLF ）。</block>
+  <block id="b45dfe874eaba6a97e58e0436eba2402" category="sidebar">開始使用 BlueXP 災難恢復即服務實驗室即隨需實驗室</block>
 </blocks>
