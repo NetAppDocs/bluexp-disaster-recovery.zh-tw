@@ -4,6 +4,7 @@ settings:
   platform: cloud
   internal:
     pdf_enabled: true
+    termcheck_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: false
@@ -15,6 +16,7 @@ sidebar:
   - section: release-notes
   - section: get-started
   - section: use
+  - section: reference
   - section: support
   - title: 法律聲明
     url: "/legal-notices.html"

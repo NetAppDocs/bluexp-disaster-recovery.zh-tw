@@ -75,12 +75,8 @@ image:draas-landing2.png["BlueXP 災難恢復的登陸頁快照"]
 
 .步驟
 . 在 BlueXP 災難恢復中、您會看到免費試用即將到期的訊息。在訊息中、選取 * 訂閱或購買授權 * 。
-+
-image:draas-license-subscribe2.png["BlueXP 災難恢復付款方法頁面"]
-
 . 選取 * 在 AWS Marketplace* 中訂閱。
-. 在 AWS Marketplace 中、選取 * 檢視購買選項 * 。
-. 使用 AWS Marketplace 訂閱 BlueXP 災難恢復。
+. 在 AWS Marketplace 中、選取 * 檢視購買選項 * 。使用 AWS Marketplace 訂閱 BlueXP 災難恢復。
 . 當您返回 BlueXP 災難恢復時、會有一則訊息指出您已訂閱。
 +
 若要在 BlueXP 數位錢包中檢視訂閱詳細資料、請選取 * 檢視訂閱詳細資料 * 、然後在 * 訂閱 * 頁面上檢視使用中的訂閱。

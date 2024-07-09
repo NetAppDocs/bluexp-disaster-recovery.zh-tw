@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: get-started/dr-setup.html 
-keywords: bluexp, disaster recovery, aws, amazon web services 
+keywords: bluexp, disaster recovery, aws, amazon web services, amazon fsx for netapp ontap 
 summary: 若要使用 BlueXP 災難恢復、請執行幾個步驟來設定。 
 ---
-= 設定 BlueXP 災難恢復
+= 為 BlueXP 災難恢復設定基礎架構
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -19,13 +19,37 @@ TIP: 檢閱 link:../get-started/dr-prerequisites.html["先決條件"] 確保您�
 
 
 
-== 設定 AWS
+== 準備好進行 BlueXP 災難恢復
 
-在 AWS 中、您需要執行下列步驟：
+* 驗證您的正式作業環境。
++
+** 請確定您要保護的虛擬機器位於 NFS 資料存放區（使用 ONTAP NFS 磁碟區）或 VMFS 資料存放區（使用 NetApp iSCSI LUN ）上。
+** 確保您擁有內部部署 ONTAP 陣列、 vCenter 和 AWS 託管的 VMware 雲端執行個體的認證和存取金鑰。
 
-* 在 AWS 上部署和設定 VMware Cloud 。
-* 為 ONTAP 檔案系統建立 Amazon FSX 。為 ONTAP 配置和設定 FSX 。
-* 使用 VMware 帳戶並配置軟體定義資料中心（ SDDC ）。確保 SDDC 與適用於 ONTAP 的 FSX 有連線。
+
+* 建立或驗證您的災難恢復站台。
++
+** 建立或驗證您的 Amazon FSX 檔案系統已就緒。
+** 確保您的來源和目的地 VM 已被對等處理。
+
+
+
+
+
+
+== 設定 VMware Cloud for AWS SDDC
+
+設定 VMware Cloud for AWS 軟體定義資料中心（ SDDC ）。
+
+* 為 ONTAP 檔案系統建立 Amazon FSX 。為 ONTAP 配置和設定 FSX 。Amazon FSX for NetApp ONTAP Sfing是一項全託管服務、以熱門的NetApp ONTAP Sfor NetApp文件系統為基礎、提供高度可靠、可擴充、高效能且功能豐富的檔案儲存設備。
+* 請依照本和此處的步驟 https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-native-overview.html["連結"^] https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/task-getting-started-fsx.html["Amazon FSX for NetApp ONTAP 的快速入門"] 、為 NetApp ONTAP 配置和設定 FSX 。
+* 將 Amazon FSX for NetApp ONTAP 新增至工作環境、並新增適用於 ONTAP 的 FSX 的 AWS 認證。
+* 在 AWS 中、您需要執行下列步驟：
++
+** 在 AWS 上部署和設定 VMware Cloud 。
+** 使用 VMware 帳戶並配置 SDDC 。確保 SDDC 與適用於 ONTAP 的 FSX 有連線。
+
+
 
 
 
@@ -38,50 +62,14 @@ https://www.vmware.com/products/vmc-on-aws.html["AWS上的VMware Cloud"^] 為AWS
 
 
 
-=== 設定 Amazon FSX for NetApp ONTAP
-
-Amazon FSX for NetApp ONTAP Sfing是一項全託管服務、以熱門的NetApp ONTAP Sfor NetApp文件系統為基礎、提供高度可靠、可擴充、高效能且功能豐富的檔案儲存設備。請依照下列步驟操作 https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-native-overview.html["連結"^] 為 NetApp ONTAP 配置和設定 FSX 。
-
-
-
-== 設定 BlueXP 災難恢復
-
-下一步是在 BlueXP 中設定災難恢復。
-
-* 在 BlueXP 中建立 Connector 。
-* 部署及設定 SnapMirror for Amazon FSX for NetApp ONTAP 。
-* 將內部部署 ONTAP 儲存工作環境新增至 BlueXP 。這是來源 ONTAP 叢集。
-* 新增 BlueXP 帳戶、將 FSxN 新增至工作環境、並新增適用於 ONTAP 的 FSx 的 AWS 認證。
-
-
-
-
-=== 在 BlueXP 中建立 Connector
-
-您必須聯絡 NetApp 銷售代表、才能試用這項服務。然後、當您使用 BlueXP Connector 時、它會包含災難恢復服務的適當功能。
-
-若要在使用此服務之前在 BlueXP 中建立 Connector 、請參閱說明的 BlueXP 文件 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["如何建立連接器"^]。
-
-使用 BlueXP 內部部署 Connector 或 BlueXP AWS Connector 、可存取來源內部部署 vCenter 和目的地內部部署 vCenter 。
-
-
-
-=== 針對 Amazon FSX for NetApp ONTAP 設定 SnapMirror
-
-下一步是在 BlueXP 中設定災難恢復。
-
-. 在 BlueXP 中、新增帳戶。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html["BlueXP 說明文件、說明如何新增帳戶"^]。
-. 將 Amazon FSX for NetApp ONTAP 新增至工作環境。確保與 ONTAP 叢集的 SnapMirror 關係已就緒、且其目的地為 NetApp ONTAP 的 FSX 。請參閱 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html["如何為 ONTAP 工作環境設定 FSX"^]。
-. 在 BlueXP 中、將 SnapMirror 部署至適用於 NetApp ONTAP 的 FSX 。
-. 在 BlueXP 中、探索 AWS 執行個體上的已配置 FSX for NetApp ONTAP 、並以適當的頻率和 NetApp Snapshot 複製保留、將指定的資料存放區磁碟區從內部環境複寫到適用於 NetApp ONTAP 的 FSX 。
-
-
-
-
-=== 設定授權
+== 設定授權
 
 有了 BlueXP 災難恢復功能、您可以註冊 90 天免費試用。
 
-您可以透過 AWS Marketplace 購買隨付（ PAYGO ）訂閱、或自帶授權（ BYOL ）、這是 NetApp 授權檔案（ NLF ）。
+您可以購買下列其中一項：
 
-如需設定 BlueXP 災難恢復授權的詳細資訊、請參閱 link:../get-started/dr-licensing.html["設定 BlueXP 災難恢復授權"]。
+* AWS Marketplace 的隨用隨付（ PAYGO ）訂閱
+* 自帶授權（ BYOL ）、這是 NetApp 授權檔案（ NLF ）。
+
+
+請參閱 link:../get-started/dr-licensing.html["設定 BlueXP 災難恢復授權"]。

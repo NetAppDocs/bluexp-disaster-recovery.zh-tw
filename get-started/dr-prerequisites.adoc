@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: get-started/dr-prerequisites.html 
-keywords: what are bluexp disaster recovery requirements, disaster recovery prerequisites 
-summary: 驗證您的環境、網路存取、登入和網頁瀏覽器的支援、開始使用 BlueXP 災難恢復。 
+keywords: what are bluexp disaster recovery requirements, disaster recovery prerequisites, bluexp disaster recovery 
+summary: 在使用 BlueXP 災難恢復之前、您應確保環境符合 ONTAP 儲存設備、 VMware vCenter 叢集和 BlueXP 需求。 
 ---
 = BlueXP 災難恢復先決條件
 :hardbreaks:
@@ -12,32 +12,101 @@ summary: 驗證您的環境、網路存取、登入和網頁瀏覽器的支援�
 
 
 [role="lead"]
-首先、請確認您的營運環境、登入、網路存取和網頁瀏覽器是否準備就緒。
+在使用 BlueXP 災難恢復之前、您應確保環境符合 ONTAP 儲存設備、 VMware vCenter 叢集和 BlueXP 需求。
 
-若要使用 BlueXP 災難恢復、您應確保環境符合下列需求：
 
-* 內部部署 VMware 工作環境搭配 NetApp 儲存設備
-* 在 AWS 上：
+
+== ONTAP 儲存必要條件
+
+這些先決條件適用於 ONTAP 或 Amazon FSX for NetApp ONTAP 執行個體。
+
+* 來源叢集和目的地叢集必須具有對等關係。
+* 將主控災難恢復磁碟區的 SVM 必須存在於目的地叢集上。
+* 來源 SVM 和目的地 SVM 必須具有對等關係。
 +
-** 適用於 NetApp ONTAP 檔案系統的 Amazon FSX 。請參閱上的 Amazon FSX for ONTAP 文件 https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started-step1.html["如何開始使用"^]。
-** 在 AWS 上擁有軟體定義資料中心（ SDDC ）的 VMware 帳戶、也稱為 Virtual Machines Cloud 。在 VMware Cloud Console 中、使用管理員和 NSX Cloud Administrator 的服務角色。也可以使用組織擁有者擔任組織角色。請參閱 https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/vmware-cloud-ontap.html["Virtual Machines Cloud 文件"^]。
-** 將 SDDC 與 Amazon FSX for NetApp ONTAP 連結。請參閱 https://vmc.techzone.vmware.com/fsx-guide#overview["VMware Cloud on AWS 與 Amazon FSX for NetApp ONTAP 整合"^]。
 
+NOTE: 目的地 SVM 或 SVM 中的災難恢復磁碟區不應事先建立。BlueXP 災難恢復將根據複寫計畫的需要建立目的地磁碟區。
 
-* 在 BlueXP 中：
+* 如果使用 Amazon FSX for NetApp ONTAP 進行部署、則必須具備下列先決條件：
 +
-** 新增至 BlueXP 工作環境的 Amazon FSX for ONTAP 和 AWS 認證。
-** BlueXP Connector 需要在 BlueXP 中設定。內部部署和 Cloud Connector 應可連線至內部部署和 VMware Cloud （ VMC ） vCenter 與 ESXis 。如此一來、備份、容錯移轉、容錯回復和移轉功能就能與所需的網路和指令碼功能正常運作。
+** 要裝載 VMware DR 資料存放區的 Amazon FSX for NetApp ONTAP 執行個體必須存在於 VPC 中。請參閱上的 Amazon FSX for ONTAP 文件 https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started-step1.html["如何開始使用"^]。
+
+
+
+
+
+
+== VMware vCenter 叢集先決條件
+
+這些先決條件同時適用於內部部署 vCenter 叢集和 VMware Cloud for AWS 軟體定義資料中心（ SDDC ）。
+
+* 您想要 BlueXP 災難恢復管理的所有 VMware 叢集都必須裝載在 ONTAP 磁碟區上。
+* 所有由 BlueXP 災難恢復管理的 VMware 資料存放區都必須使用下列其中一種通訊協定：
 +
-BlueXP Connector 需要來源和目標 vCenter 伺服器的認證。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html["BlueXP 快速入門"^] 和 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-saas-console.html["BlueXP 網路資訊"^]。
+** NFS
+** 使用 iSCSI 傳輸協定的 VMFS （目前在技術預覽中）
 
-** 為了確保應用程式一致性程序成功、請確保符合下列先決條件：
+
+* 如果您使用的是 VMware Cloud SDDC 、則必須符合這些必要條件。
 +
-*** 確保 VMware 工具（或 Open VM 工具）正在受保護的 VM 上執行。
-*** 對於執行 SQL 或 Oracle 或兩者的 Windows VM 、資料庫應啟用其 VSS 寫入器、且資料庫應處於穩定狀態。
-*** 在 Linux 作業系統上執行的 Oracle 資料庫、應針對 Oracle 資料庫 SYSDBA 角色啟用作業系統使用者驗證。
+** 在 VMware Cloud Console 中、使用管理員和 NSX Cloud Administrator 的服務角色。也可以使用組織擁有者擔任組織角色。請參閱 https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/vmware-cloud-ontap.html["搭配 AWS FSX for NetApp ONTAP 文件使用 VMware Cloud Foundations"^]。
+** 將 VMware Cloud SDDC 與 Amazon FSX for NetApp ONTAP 執行個體連結。請參閱 https://vmc.techzone.vmware.com/fsx-guide#overview["VMware Cloud on AWS 與 Amazon FSX 整合、可提供 NetApp ONTAP 部署資訊"^]。
 
 
 
 
+
+
+== BlueXP 必要條件
+
+
+
+=== 收集 ONTAP 和 VMware 的認證資料
+
+* Amazon FSX for ONTAP 和 AWS 認證必須新增至 BlueXP 工作區內的工作環境、以用於管理 BlueXP 災難恢復。
+* BlueXP 災難恢復需要 vCenter 認證。當您在 BlueXP 災難恢復中新增站台時、請輸入 vCenter 認證。
++
+如需所需的 vCenter 權限清單、請 link:../reference/vcenter-privileges.html["BlueXP 災難恢復所需的 vCenter 權限"]參閱。如需如何新增網站的指示、請 link:../use/sites-add.html["新增網站"]參閱。
+
+
+
+
+
+=== 新增 BlueXP 帳戶
+
+在 BlueXP 中、如果您還沒有帳戶、就需要新增帳戶。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html["BlueXP 說明文件、說明如何新增帳戶"^]。
+
+
+
+=== 建立 BlueXP Connector
+
+BlueXP Connector 必須在 BlueXP 中設定。當您使用 BlueXP Connector 時、它會包含災難恢復服務的適當功能。
+
+* BlueXP 災難恢復僅適用於標準模式 Connector 部署。請參閱。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html["以標準模式開始使用 BlueXP"^]
+* 所需的 BlueXP Connector 類型：
++
+** * 內部部署到內部部署災難恢復 * ：在災難恢復站點中安裝 BlueXP 內部部署 Connector 。請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["在內部部署安裝並設定 Connector"^]。
+** * 內部部署至 AWS * ：在 AWS VPC 中安裝 BlueXP Connector for AWS 。請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-aws.html["AWS 中的連接器安裝選項"^]。
++
+
+TIP: 對於內部部署到內部部署、請使用 BlueXP 內部部署 Connector 。對於內部部署至 AWS 、請使用 BlueXP AWS Connector 、它可以存取來源內部部署 vCenter 和目的地內部部署 vCenter 。
+
+** 安裝的 BlueXP Connector 必須能夠存取 BlueXP 災難恢復所管理的任何 VMware 叢集。
+
+
+* 所有由 BlueXP 災難恢復管理的 ONTAP 陣列都必須新增至 BlueXP 工作區中用於管理 BlueXP 災難恢復的任何工作環境。
++
+請參閱。 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["探索內部部署ONTAP 的叢集"^]
+
+
+
+
+
+== 工作負載先決條件
+
+若要確保應用程式一致性程序成功、請套用下列先決條件：
+
+* 確保 VMware 工具（或 Open VM 工具）正在受保護的 VM 上執行。
+* 對於執行 Microsoft SQL Server 或 Oracle Database 或兩者的 Windows VM 、資料庫應啟用其 VSS 寫入器。
+* 在 Linux 作業系統上執行的 Oracle 資料庫、應針對 Oracle 資料庫 SYSDBA 角色啟用作業系統使用者驗證。
 

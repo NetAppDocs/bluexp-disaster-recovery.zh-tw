@@ -1,0 +1,6 @@
+---
+section: reference
+title: 參考資料
+entries:
+- title: BlueXP 災難恢復所需的 vCenter 權限
+  url: "/reference/vcenter-privileges.html"

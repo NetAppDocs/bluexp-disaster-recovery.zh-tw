@@ -1,0 +1,153 @@
+---
+sidebar: sidebar 
+permalink: reference/vcenter-privileges.html 
+keywords: disaster recovery, bluexp, vcenter, 
+summary: vCenter 帳戶必須具有一組最低的 vCenter 權限、才能讓 BlueXP 災難恢復執行其服務、例如登錄和取消登錄資料存放區、啟動和停止 VM 、以及重新設定虛擬機器（ VM ）。下表列出 BlueXP 災難恢復與 vCenter 叢集介面的所有必要權限。 
+---
+= BlueXP 災難恢復所需的 vCenter 權限
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/use/
+
+
+[role="lead"]
+vCenter 帳戶必須具有一組最低的 vCenter 權限、才能讓 BlueXP 災難恢復執行其服務、例如登錄和取消登錄資料存放區、啟動和停止 VM 、以及重新設定虛擬機器（ VM ）。下表列出 BlueXP 災難恢復與 vCenter 叢集介面的所有必要權限。
+
+[cols="25,35a,40a"]
+|===
+| 類型 | 權限名稱 | 說明 
+
+
+| *資料存放區*  a| 
+資料存放區。 設定資料存放區
+ a| 
+用於設定資料存放區。
+
+
+
+|   a| 
+資料存放區。 移除資料存放區
+ a| 
+用於移除資料存放區。
+
+
+
+| * 虛擬機器 *  a| 
+虛擬機器。組態。變更設定
+ a| 
+用於變更一般 VM 設定。
+
+
+
+|   a| 
+虛擬機器。組態。修改裝置設定
+ a| 
+用於變更現有裝置的內容。
+
+
+
+|   a| 
+虛擬機器 .Configuration.Reload from path
+ a| 
+用於變更 VM 組態修補程式、同時保留 VM 的身分識別。VMware vCenter Site Recovery Manager 等解決方案會使用此作業來維護容錯移轉和容錯回復期間的 VM 識別。
+
+
+
+|   a| 
+虛擬機器。組態。重新命名
+ a| 
+用於重新命名 VM 或修改 VM 的相關節點。
+
+
+
+|   a| 
+虛擬機器。組態。重設客體資訊
+ a| 
+用於編輯虛擬機器的客體作業系統資訊。
+
+
+
+|   a| 
+虛擬機器。組態。變更記憶體
+ a| 
+用於變更分配給 VM 的記憶體容量。
+
+
+
+|   a| 
+虛擬機器。組態。變更 CPU 數量
+ a| 
+用於變更虛擬 CPU 數量。
+
+
+
+| * 虛擬機器來賓 *  a| 
+虛擬機器： 來賓作業： 來賓作業系統修改
+ a| 
+啟用 VM 來賓作業、包括變更 VM 中的來賓作業系統、例如將檔案傳輸至 VM 。
+
+
+
+| * 虛擬機器互動 *  a| 
+虛擬機器 .Interaction.Power Off
+ a| 
+用於關閉已開機的 VM 。此作業會關閉客體作業系統。
+
+
+
+|   a| 
+虛擬機器 .Interaction.Power On
+ a| 
+用於開啟已關閉電源的 VM 並恢復已暫停的 VM 。
+
+
+
+|   a| 
+虛擬機器 .Interaction.VMware Tools 安裝
+ a| 
+用於掛載和卸載 VMware Tools CD 安裝程式、做為客體作業系統的 CD-ROM 。
+
+
+
+| * 虛擬機器庫存 *  a| 
+虛擬機器 .Inventory 。建立新的
+ a| 
+用於建立 VM 並分配資源以供其執行。
+
+
+
+|   a| 
+虛擬機器、 Inventory 、 Register
+ a| 
+用於將現有 VM 新增至 vCenter Server 或主機清查。
+
+
+
+|   a| 
+虛擬機器 .Inventory 。取消登錄
+ a| 
+用於從 vCenter Server 或主機清查中取消註冊 VM 。
+
+
+
+| * 虛擬機器狀態 *  a| 
+虛擬機器： Snapshot 管理： 建立快照
+ a| 
+用於從虛擬機器的目前狀態建立快照。
+
+
+
+|   a| 
+虛擬機器： Snapshot 管理： 移除 Snapshot
+ a| 
+用於從快照記錄中移除快照。
+
+
+
+|   a| 
+虛擬機器： Snapshot 管理： 回復至快照
+ a| 
+用於將虛擬機器設定為其在指定快照中所處的狀態。
+
+|===

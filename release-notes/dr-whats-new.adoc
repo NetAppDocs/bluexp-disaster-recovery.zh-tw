@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: release-notes/dr-whats-new.html 
-keywords: disaster recovery, bluexp, disaster recovery, vmware, vcenter 
+keywords: disaster recovery, bluexp, disaster recovery, vmware, vcenter, draas 
 summary: BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。有了適用於 VMware 的 BlueXP 災難恢復功能、您可以使用 NetApp 雲端儲存設備、將執行 ONTAP 儲存設備的內部部署 VMware 工作負載複寫到公有雲中的 VMware 軟體定義資料中心、做為災難恢復站台。 
 ---
 = 新功能
@@ -13,6 +13,46 @@ summary: BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化�
 
 [role="lead"]
 瞭解 BlueXP 災難恢復的新功能。
+
+
+
+== 2024 年 7 月 5 日
+
+此 BlueXP 災難恢復版本包含下列更新：
+
+* * 支援 AFF A 系列 * ：此版本支援 NetApp AFF A 系列硬體平台。
+
+
+* * 支援內部部署到內部部署的 VMware VMFS 資料存放區 * ：此版本包含對安裝在 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區（受保護於內部部署儲存區）上的虛擬機器的支援（技術預覽）。此版本支援災難恢復功能、可在內部部署 VMware 工作負載的技術預覽中進行、並可在內部部署 VMware 環境中使用 VMFS 資料存放區。
++
+
+NOTE: NetApp 不收取任何預覽工作負載容量的費用。
+
+* * 複寫計畫更新 * ：您可以在「應用程式」頁面上依資料存放區篩選虛擬機器、並在「資源對應」頁面上選取更多目標詳細資料、以更輕鬆地新增複寫計畫。
++
+請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
+
+* * 編輯複寫計畫 * ：此版本增強了容錯移轉對應頁面、以提高清晰度。
++
+請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["管理計畫"]。
+
+* * 編輯 VMS* ：在此版本中、規劃中的虛擬機器編輯程序包括一些小的 UI 改善。
++
+請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["管理 VM"]。
+
+* * 容錯移轉更新 * ：在啟動容錯移轉之前、您現在可以判斷 VM 的狀態、以及 VM 的電源是開啟還是關閉。現在、容錯移轉程序可讓您立即拍攝快照、或選擇快照。
++
+請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["將應用程式容錯移轉至遠端站台"]。
+
+* * 容錯移轉測試排程 * ：您現在可以編輯容錯移轉測試、並設定每日、每週和每月的容錯移轉測試排程。
++
+請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["管理計畫"]。
+
+* * 先決條件資訊的更新 * ： BlueXP 災難恢復先決條件資訊已更新。
++
+請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-prerequisites.html["BlueXP 災難恢復先決條件"]。
+
+
 
 
 

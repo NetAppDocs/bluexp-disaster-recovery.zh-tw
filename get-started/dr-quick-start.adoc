@@ -18,23 +18,23 @@ summary: 只需幾個步驟、就能開始使用 NetApp BlueXP 災難恢復服�
 [role="quick-margin-para"]
 link:../get-started/dr-prerequisites.html["確保您的環境符合這些要求"]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 設定災難恢復服務
-[role="quick-margin-para"]
-link:../get-started/dr-setup.html["完成設定服務的步驟"]。
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 設定 BlueXP 災難恢復服務
+[role="quick-margin-list"]
+* link:../get-started/dr-setup.html["設定服務的基礎架構"]。
+* link:../get-started/dr-licensing.html["設定授權"]。
 
-[role="quick-margin-para"]
-link:../get-started/dr-licensing.html["完成設定授權的步驟"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 接下來呢？
 [role="quick-margin-para"]
 設定服務之後、接下來您可以做些什麼。
 
 [role="quick-margin-list"]
-* link:../use/sites-add.html["新增 vCenter 站台"]。
-* link:../use/drplan-create.html["建立災難恢復計畫"]。
+* link:../use/sites-add.html["將 vCenter 站台新增至 BlueXP 災難恢復"]。
+* link:../use/manage.html#manage-resource-groups["建立第一個資源群組"]。
+* link:../use/drplan-create.html["建立第一個複寫計畫"]。
 * link:../use/replicate.html["將應用程式複寫到另一個站台"]。
 * link:../use/failover.html["將應用程式容錯移轉至遠端站台"]。
 * link:../use/failback.html["將應用程式容錯回復至原始來源站台"]。
-* link:../use/manage.html["管理站台、計畫、資料存放區和虛擬機器資訊"]。
+* link:../use/manage.html["管理站台、資源群組和複寫計畫"]。
 * link:../use/monitor-jobs.html["監控災難恢復作業"]。
 

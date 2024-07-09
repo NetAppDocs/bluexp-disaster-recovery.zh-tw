@@ -16,12 +16,6 @@ summary: 已知的限制可識別此服務版本不支援的平台、裝置或�
 
 
 
-== 容錯回復使用最新的 Snapshot 複本
-
-在目前版本中、容錯回復程序一律使用最新的 Snapshot 複本。即使您選擇要使用的特定 Snapshot 複本、也會發生這種情況。
-
-
-
 == BlueXP 可能無法探索 Amazon FSX for NetApp ONTAP
 
 有時候 BlueXP 無法探索適用於 NetApp ONTAP 叢集的 Amazon FSX 。這可能是因為 FSX 認證不正確。

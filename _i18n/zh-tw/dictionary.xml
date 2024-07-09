@@ -178,7 +178,6 @@
   <block id="405e835e0544bb4cc8bbd26a2c840b54" category="section-title">2023 年 5 月 18 日</block>
   <block id="acff175f1bababdb2baa1348412d501d" category="paragraph">這是 BlueXP 災難恢復的初始版本。</block>
   <block id="49bd2ef4087967b81353d56e27be132a" category="summary">有了適用於 VMware 的 BlueXP 災難恢復功能、您可以使用 NetApp 雲端儲存設備、將執行 ONTAP 儲存設備的內部部署 VMware 工作負載複寫到公有雲中的 VMware 軟體定義資料中心、做為災難恢復站台。</block>
-  <block id="02fce9b41a6b2efe9c45de00491f5b15" category="summary">災難恢復至雲端是一種彈性且具成本效益的方法、可保護工作負載免受站台中斷和資料毀損事件的影響。有了適用於 VMware 的 BlueXP 災難恢復功能、您可以使用 NetApp 雲端儲存設備、將執行 ONTAP 儲存設備的內部部署 VMware 工作負載複寫到公有雲中的 VMware 軟體定義資料中心、做為災難恢復站台。</block>
   <block id="a3c972b2a97e85a689b9fc36b1658dcf" category="inline-image-macro">顯示 VMware BlueXP 災難恢復元件的圖表</block>
   <block id="3f3839e5200c4d2924e47db9048f7236" category="list-text">透過多個時間點恢復作業、簡化 vCenter 探索及應用程式恢復的使用者體驗 </block>
   <block id="2b62fc3f49aa92691e24ff085ed87ebe" category="list-text">降低總體擁有成本、降低營運成本、並能以最少的資源建立及調整災難恢復計畫</block>
@@ -203,30 +202,13 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="b5b8e67d6a37d24ad73c89e4c7ac8c9e" category="inline-link-macro">先決條件</block>
   <block id="12e2dc5fcef627451410583ca25001f8" category="list-text">檢閱 <block ref="92ab8b24e9e19913fbd62d38b5e3558b" category="inline-link-macro-rx"></block> 確保您的環境已準備就緒。</block>
   <block id="5ca24c4b6c87e148e5e8719ec8dd13ee" category="list-text">在 AWS 上部署和設定 VMware Cloud 。</block>
-  <block id="87eb524d6c04a253599327cc1c7a60ee" category="list-text">為 ONTAP 檔案系統建立 Amazon FSX 。為 ONTAP 配置和設定 FSX 。</block>
-  <block id="4c3419728723e5cec0fdd6c5e0a79fbb" category="list-text">使用 VMware 帳戶並配置軟體定義資料中心（ SDDC ）。確保 SDDC 與適用於 ONTAP 的 FSX 有連線。</block>
-  <block id="7fc964519860ed011389afb142e2370e" category="list-text">在 BlueXP 中：</block>
-  <block id="322e46cbec275f2740ec8387b6dd48fd" category="list-text">將內部部署 ONTAP 儲存工作環境新增至 BlueXP 。這是來源 ONTAP 叢集。</block>
-  <block id="24b72cf7b78b1dabbeedc0e25ff165f8" category="list-text">新增 BlueXP 帳戶、將 FSxN 新增至工作環境、並新增適用於 ONTAP 的 FSx 的 AWS 認證。</block>
   <block id="832d5bf67a66aafc3f8182b31c2c8086" category="paragraph">在 AWS 中、您需要執行下列步驟：</block>
   <block id="824ad2eb4e12f7e91aa345fe67fa3e20" category="list-text">部署 VMware Cloud</block>
   <block id="4dab2f9796b0af6304d00e21e2b9dfb4" category="inline-link">AWS上的VMware Cloud</block>
   <block id="1b38656c5ec12ea70e00624b8b3d9551" category="paragraph"><block ref="aa736dbc3fc450bce1fb1f5726a687eb" category="inline-link-rx"></block> 為AWS生態系統中的VMware工作負載提供雲端原生體驗。每個 VMware 軟體定義資料中心（ SDDC ）都會在 Amazon Virtual Private Cloud （ VPC ）中執行、並提供完整的 VMware 堆疊（包括 vCenter Server ）、 NSX-T 軟體定義網路、 vSAN 軟體定義儲存設備、以及一或多個 ESXi 主機、為工作負載提供運算和儲存資源。</block>
   <block id="2a304a1348456ccd2234cd71a81bd338" category="inline-link">連結</block>
   <block id="fd14ed73e21c2af5ff119a635c30df95" category="paragraph">若要在AWS上設定VMC環境、請執行下列步驟<block ref="2482e32457e6109d0aff0016bbcce7d1" category="inline-link-rx"></block>。試行指示燈叢集也可用於災難恢復。</block>
-  <block id="813470cfb6b19cf55033bfb89dad5bc3" category="section-title">設定 Amazon FSX for NetApp ONTAP</block>
-  <block id="eb394b51d4a778c72332db5d64a1960b" category="paragraph">Amazon FSX for NetApp ONTAP Sfing是一項全託管服務、以熱門的NetApp ONTAP Sfor NetApp文件系統為基礎、提供高度可靠、可擴充、高效能且功能豐富的檔案儲存設備。請依照下列步驟操作<block ref="551566e1b64bc66251dbfe6d546a4bef" category="inline-link-rx"></block> 為 NetApp ONTAP 配置和設定 FSX 。</block>
-  <block id="496692430255798782df4a20f93d0e46" category="paragraph">下一步是在 BlueXP 中設定災難恢復。</block>
-  <block id="ccaaa0b1fdb9afd84865d38039f74d41" category="section-title">在 BlueXP 中建立 Connector</block>
-  <block id="d29bda09bea50f3d6b0e9d9d61015179" category="inline-link">如何建立連接器</block>
-  <block id="32ed92d70b140ee92a015de26f8ca076" category="paragraph">若要在使用此服務之前在 BlueXP 中建立 Connector 、請參閱說明的 BlueXP 文件<block ref="3be6fdd970ee3d2f07a043a29363ec05" category="inline-link-rx"></block>。</block>
-  <block id="42a965f76897c36cbf37b815d06aff80" category="section-title">針對 Amazon FSX for NetApp ONTAP 設定 SnapMirror</block>
   <block id="8578ea7cebd82d3ffa5a16500e105552" category="inline-link">BlueXP 說明文件、說明如何新增帳戶</block>
-  <block id="c1396f684f657bba5e27617a98a6991b" category="list-text">在 BlueXP 中、新增帳戶。請參閱<block ref="774d23f949c92eac0cff5269d4337483" category="inline-link-rx"></block>。</block>
-  <block id="7d7445247cf277d14bdf223b814aef8a" category="inline-link">如何為 ONTAP 工作環境設定 FSX</block>
-  <block id="0a4d5f87126861e7aba9f8041c6ece27" category="list-text">將 Amazon FSX for NetApp ONTAP 新增至工作環境。確保與 ONTAP 叢集的 SnapMirror 關係已就緒、且其目的地為 NetApp ONTAP 的 FSX 。請參閱<block ref="196f9f190bce8cf361111930a46ad787" category="inline-link-rx"></block>。</block>
-  <block id="c08a2521245530f9a6691450378e81e8" category="list-text">在 BlueXP 中、將 SnapMirror 部署至適用於 NetApp ONTAP 的 FSX 。</block>
-  <block id="8d6b654ad4c184e8b1a0e93a42951353" category="list-text">在 BlueXP 中、探索 AWS 執行個體上的已配置 FSX for NetApp ONTAP 、並以適當的頻率和 NetApp Snapshot 複製保留、將指定的資料存放區磁碟區從內部環境複寫到適用於 NetApp ONTAP 的 FSX 。</block>
   <block id="ee21d19e70e4611d4c782f9439377ba0" category="summary">只需幾個步驟、就能開始使用 NetApp BlueXP 災難恢復服務。</block>
   <block id="6923c085091f4d4b0d464355d7771240" category="doc">BlueXP 災難恢復快速入門</block>
   <block id="917c67acabedb60df299e96c679e04f8" category="paragraph">以下概述開始執行 BlueXP 災難恢復所需的步驟。每個步驟中的連結都會帶您前往提供更多詳細資料的頁面。</block>
@@ -235,9 +217,6 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="d73fd850784e1d8dbda69ab3ca51e7cf" category="inline-link-macro">確保您的環境符合這些要求</block>
   <block id="5b73a71df82c1c509b1e335875c6c2a0" category="paragraph"><block ref="ef4e7a1c239c49290925a35bbbb1cc25" category="inline-link-macro-rx"></block>。</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
-  <block id="218c645ebeb94f20d179bea9a6e08957" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 設定災難恢復服務</block>
-  <block id="cc6726e02ea7bc25f1ed413652107bdb" category="inline-link-macro">完成設定服務的步驟</block>
-  <block id="d55182b1f34fe59147eb3414ea0b2408" category="paragraph"><block ref="3bb756b4dc36bf4ce11b422d7c4281f9" category="inline-link-macro-rx"></block>。</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三</block>
   <block id="fb35cdd7029fec15aadbdddd879fa161" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 接下來呢？</block>
   <block id="0d5e44db30a371573d3409dc5db80551" category="paragraph">設定服務之後、接下來您可以做些什麼。</block>
@@ -251,7 +230,6 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="4f1f3c6d1472c505e740ebe57c2881ce" category="inline-link-macro">將應用程式容錯回復至原始來源站台</block>
   <block id="5faa19197effc4c0fdc74b32045263ef" category="list-text"><block ref="6fbeff9687fcc9f06bd89057c3ed5a34" category="inline-link-macro-rx"></block>。</block>
   <block id="b7cd69eed80f723036ef0a99b8bb375e" category="inline-link-macro">管理站台、計畫、資料存放區和虛擬機器資訊</block>
-  <block id="958608aea56e4e43ac86c03981cb1773" category="list-text"><block ref="9b74f5806b489674a9e6e3007bd00474" category="inline-link-macro-rx"></block>。</block>
   <block id="01a7e7f1580e9ccf4f0275e9f79a32dd" category="inline-link-macro">監控災難恢復作業</block>
   <block id="899a3601f4e45edcb69bd9d82c68fbef" category="list-text"><block ref="698cc22cc758157d8f18359f8b528216" category="inline-link-macro-rx"></block>。</block>
   <block id="976795b09ce57d46e36268967ec95a95" category="summary">存取 BlueXP 中的服務、開始使用 BlueXP 災難恢復功能。</block>
@@ -267,17 +245,8 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="04f45bf7defd11ead0b4c56cf8c3f371" category="paragraph">如果這是您第一次登入此服務、就會出現登陸頁面。</block>
   <block id="c6c7eb2270b5edb5f8ecf37392db8b4b" category="inline-image-macro">BlueXP 災難恢復的登陸頁快照</block>
   <block id="674a6bb0fdee8ed1d2d68faddc33d5e6" category="paragraph">否則、 BlueXP 災難恢復儀表板就會出現。</block>
-  <block id="e1d24b3118270d4224a54337f1f63f2c" category="summary">驗證您的環境、網路存取、登入和網頁瀏覽器的支援、開始使用 BlueXP 災難恢復。</block>
   <block id="ccf3c2f4a4ab48adb4cc5352e480655c" category="doc">BlueXP 災難恢復先決條件</block>
-  <block id="84804abf3404a430e85ae3299587a6b0" category="paragraph">首先、請確認您的營運環境、登入、網路存取和網頁瀏覽器是否準備就緒。</block>
-  <block id="e3bc55f0abc82785380fd56b902bf803" category="list-text">在 AWS 上：</block>
   <block id="9ff73081ad3af348b09105664054c18f" category="inline-link">如何開始使用</block>
-  <block id="308d77673e39dd171579985cc8579f92" category="list-text">適用於 NetApp ONTAP 檔案系統的 Amazon FSX 。請參閱上的 Amazon FSX for ONTAP 文件<block ref="db982a545763422931a00c332a8601c2" category="inline-link-rx"></block>。</block>
-  <block id="6f80b0ccdeb06755d08fcd10b6efd13c" category="inline-link">Virtual Machines Cloud 文件</block>
-  <block id="f2dcae9fff997e552832417884acefaa" category="inline-link">VMware Cloud on AWS 與 Amazon FSX for NetApp ONTAP 整合</block>
-  <block id="045482367f3cc5727ae8f097479439ee" category="list-text">將 SDDC 與 Amazon FSX for NetApp ONTAP 連結。請參閱<block ref="02b70b195fcb534ea97ab3bf74203889" category="inline-link-rx"></block>。</block>
-  <block id="69b085a23d3ed85c84455b9288792bf2" category="inline-link">BlueXP 快速入門</block>
-  <block id="45e7f38a8238b36c23e85bbe6436ba0b" category="inline-link">BlueXP 網路資訊</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律聲明提供版權聲明、商標、專利等存取權限。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版權</block>
@@ -322,7 +291,6 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="d0d1a7100fd604152ac7b93eb1abc016" category="list-text">在右側、選取 * 動作 * 選項 <block ref="2fddd650b01c7f9674be856867aae05d" category="inline-image-macro-rx" type="image"></block> 然後選擇 * 容錯移轉 * 。</block>
   <block id="c8876c4e46fed1dae800753bc202e67d" category="list-text">選擇要從中恢復的資料存放區的 Snapshot 。  預設為最新。</block>
   <block id="0362f1f30abcc40f31c3c6618b1a15c3" category="list-text">若要檢查進度、請在頂端功能表中選取 * 工作監控 * 。</block>
-  <block id="5e2bff09ac9b58d2dd6c2458c5ccea11" category="doc">管理站台、計畫、資料存放區和虛擬機器資訊</block>
   <block id="ceeed92bd86d67dc2a2a6016ed40a571" category="paragraph">您可以快速瞭解所有災難恢復資源、或仔細查看每個資源：</block>
   <block id="3faa64303d5f5bcd043bb88f6768e603" category="list-text">網站</block>
   <block id="a8fc43ecd23ee9eb5e9efa5c60cb20b9" category="list-text">複寫計畫</block>
@@ -333,7 +301,6 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="c59beae96d46d2c9b38ce64663e3d9d0" category="list-text">從頂端功能表中選取 * 站台 * 。</block>
   <block id="c4b621211240f640df1e2cfcc6cc5bec" category="list-text">編輯 vCenter 站台名稱和位置。</block>
   <block id="07851e0287e57a794c18de627c09e0e7" category="section-title">管理複寫計畫</block>
-  <block id="5fc6ce3a162e9142e8d530e890bcf33c" category="paragraph">您可以停用、啟用及刪除複寫計畫。</block>
   <block id="3058d1612836b55d5c4e71a540ba0c44" category="list-text">如果您想要暫時暫停複寫計畫、您可以停用該計畫、稍後再加以啟用。</block>
   <block id="98a6ed9560bddac4a68acf12bb7ce31c" category="list-text">如果您不再需要計畫、可以將其刪除。</block>
   <block id="eff6d6d4d66ab65f33be5de8b62e16d3" category="list-text">從上方功能表中、選取 * 複寫計畫 * 。</block>
@@ -341,7 +308,6 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="690ae5d914fd57de729046d81d5d2ffa" category="list-text">執行下列任一項：</block>
   <block id="5b10db4f07efa25e382abdf259d01eb2" category="list-text">若要編輯計畫詳細資料（變更週期）、請選取 * 計畫詳細資料 * 標籤、然後選取右側的 * 編輯 * 圖示。</block>
   <block id="843b9bb43d8bfd905c71d66766381bb3" category="list-text">若要編輯資源對應、請選取 * 容錯移轉對應 * 索引標籤、然後選取 * 編輯 * 圖示。</block>
-  <block id="8a0bade43f38138c2baa54ba51a11c49" category="list-text">若要新增或編輯虛擬機器、請選取 * 虛擬機器 * 索引標籤、然後選取 * 編輯 * 圖示。</block>
   <block id="a6dcfee4cd10f2ad60c3d81bc2a3b8ad" category="section-title">檢視資料存放區資訊</block>
   <block id="432624070ae1b8a0b19fd42c048a224c" category="paragraph">您可以檢視來源和目標上存在多少資料存放區的相關資訊。</block>
   <block id="5e141a758f792ce4ad7e1b2107b1f7a4" category="list-text">在站台列中選取 vCenter 。</block>
@@ -383,7 +349,6 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="c34daecc192d502d04e27e0d11bc8acd" category="list-text">在「應用程式」頁面左側、選取您要複寫的虛擬機器、然後指派給選取的群組。</block>
   <block id="deea58ba2c2a385f7b93c144b2d694e1" category="paragraph">選定的虛擬機器會自動新增至群組 1 、並啟動新的群組 2 。每次將虛擬機器新增至最後一個群組時、都會新增另一個群組。</block>
   <block id="4039eb9aa82f9a49f8096e652825e9c9" category="inline-image-macro">顯示「新增複寫計畫 &amp;gt; 要複寫的應用程式」頁面的螢幕擷取畫面</block>
-  <block id="021b658b4aef5f65124081043c92d29b" category="paragraph"><block ref="9ef4e2dba2a1d5ecef743359d937a39f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f60de6a7e37982bbcf6e675308bbbeb8" category="list-text">您也可以選擇執行下列任一動作：</block>
   <block id="8702576026497ff97614ecf3a246c6e5" category="list-text">若要變更群組、請按一下群組 * 編輯 * 圖示。</block>
   <block id="20b76027356378e48612a50cf35cca8a" category="list-text">若要從群組中移除虛擬機器、請選取 *X* 。</block>
@@ -409,7 +374,6 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="e0623856c2a2db53c0560ff5b20115df" category="section-title">確認複寫計畫</block>
   <block id="a879d1d71a73bdb6127bcb571303177d" category="paragraph">最後、請花點時間確認複寫計畫。</block>
   <block id="26ff2655fb5643a3e76370d9248a31df" category="admonition">您可以稍後停用或刪除複寫計畫。</block>
-  <block id="3ef49e9516f56dc6f2792feb59c1b116" category="list-text">檢閱每個索引標籤中的資訊：規劃詳細資料、容錯移轉對應、虛擬機器。</block>
   <block id="47324a4e5509aeccc192aa7b07cbcac7" category="list-text">選取 * 新增計畫 * 。</block>
   <block id="a9980df200522b9bbaa257521bc396fe" category="paragraph">計畫即會新增至計畫清單。</block>
   <block id="a9233ff25d3c8ffa3e005e6e453381fc" category="paragraph">在建立災難恢復計畫之前、您必須先在 BlueXP 中新增主要 vCenter 站台和目標 vCenter 災難恢復站台。</block>
@@ -506,7 +470,6 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="798f01bc27c71f62fd4a64e0bb155f2f" category="paragraph">此程序不會佔用內部部署 ONTAP 儲存設備上的額外實體容量、也不會佔用 AWS 中 NetApp ONTAP 儲存設備的 FSX 。原始來源磁碟區不會被修改、複本工作甚至可以在災難恢復期間繼續進行。</block>
   <block id="fc3e06260a2d82cbcdc61d0edfe814f2" category="paragraph">發生災難時、可隨需將主要內部部署 VMware 網站容錯移轉至其他內部部署 VMware 網站、或將 VMware Cloud on AWS with FSX for NetApp ONTAP 容錯移轉至其他內部部署 VMware 網站。</block>
   <block id="0e4406e2f319d2b24ab99a69613fbf47" category="list-text">資料存放區會根據複寫計畫中擷取的資訊、建立並掛載到 VMware 或 VMC 叢集或主機。</block>
-  <block id="f806e093eb7de418336ba62747d0d9ab" category="list-text">在測試容錯移轉頁面中、輸入複寫計畫名稱以確認、然後選取 * 容錯移轉 * 。</block>
   <block id="48b7a229446624a8bba6bae8e801d0ab" category="list-text">在左上方的麵包屑中選取「 Replication Plans 」、以返回計畫清單。</block>
   <block id="2ebea8fe68e78bc0ff591a0dfab2033d" category="list-text">若要對計畫執行動作、請從複寫計畫清單中選取 * 動作 * 選項 <block ref="2fddd650b01c7f9674be856867aae05d" category="inline-image-macro-rx" type="image"></block>  在計畫右側、選取任何選項、例如 * 編輯排程 * 、 * 測試容錯移轉 * 、 * 容錯移轉 * 、 * 容錯移轉 * 、 * 容錯移轉 * 、 * 停用 * 、 * 啟用 * 或 * 刪除 * 。</block>
   <block id="8fcc9f88ea38569445e7602709323556" category="summary">NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。</block>
@@ -551,9 +514,6 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="bc7f3cb185f48d451eb5ef976e8ad82d" category="list-text">* 目標 * ：</block>
   <block id="d23a9d83c87c6eacef309f00a2beb5d3" category="inline-image-macro">網站頁面螢幕快照</block>
   <block id="28f8c0c78028f2e899f7af50ce138e1b" category="paragraph"><block ref="28f8c0c78028f2e899f7af50ce138e1b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1835d0517fe4ffa8b6a639fa95e369ad" category="list-text">在 BlueXP 中建立 Connector 。</block>
-  <block id="25cb0baf366c7202daaabd5e60c16293" category="list-text">部署及設定 SnapMirror for Amazon FSX for NetApp ONTAP 。</block>
-  <block id="2a1f2380d9e50746902517055340629f" category="paragraph">使用 BlueXP 內部部署 Connector 或 BlueXP AWS Connector 、可存取來源內部部署 vCenter 和目的地內部部署 vCenter 。</block>
   <block id="6f5e3fdfa73285ac2283ba492cf2d47b" category="list-text">VMware Cloud （ VMC ） on AWS with Amazon FSX for NetApp ONTAP 或</block>
   <block id="b374472b15e644f23d1e6b059b5216b9" category="list-text">另一個內部部署的 NFS 型 VMware 環境、搭配 ONTAP 儲存設備</block>
   <block id="53c1c0c22e2a647591a0b52427852850" category="paragraph"><block ref="53c1c0c22e2a647591a0b52427852850" category="inline-image-macro-rx" type="image"></block></block>
@@ -562,7 +522,6 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="2aefc74ac286c583100431f62049590d" category="list-text">在發生災難時、可依需求將主要站台容錯移轉至災難恢復站台、該站台可以是 VMware Cloud on AWS with FSX for NetApp ONTAP 、或是內部部署的 VMware 環境搭配 ONTAP 。</block>
   <block id="a6a42e8e3070730d19bfd86d6a1d66fe" category="paragraph">下圖顯示內部部署到內部部署災難恢復計畫的架構。</block>
   <block id="20099229ad21726312a6ff50740b0b57" category="paragraph">當發生災難時、此服務可中斷 SnapMirror 關係、並讓目的地站台成為作用中、協助您在其他內部部署 VMware 環境或 VMC 中恢復虛擬機器。</block>
-  <block id="a675a2edc95f7fca650a735944e38f96" category="paragraph">若要使用 BlueXP 災難恢復、您應確保環境符合下列需求：</block>
   <block id="96ed64c294e585324853f8f980f9d78e" category="sidebar">將應用程式移轉至其他網站</block>
   <block id="36a7330c410600f4393af365b3d66e29" category="sidebar">BlueXP 災難恢復部落格</block>
   <block id="ad80d6168dc288f4361413eeca80dc5f" category="sidebar">移轉至其他站台</block>
@@ -664,21 +623,6 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="c68217420a685b93e20f298ae3ea72c8" category="paragraph">您可以在容錯移轉後的程序中加入 .sh 、 .bat 或 .ps1 格式的自訂指令碼。透過自訂指令碼、您可以在容錯移轉程序之後執行 BlueXP 災難恢復指令碼。例如、您可以使用自訂指令碼、在容錯移轉完成後恢復所有資料庫交易。</block>
   <block id="8b4399d7029673ba83df4f916514230b" category="paragraph">測試容錯移轉作業不會影響正式作業工作負載、測試站台上使用的 SnapMirror 關係、以及必須繼續正常運作的受保護工作負載。</block>
   <block id="22d1d4bc51673707e71b38cb5d9f8053" category="admonition">容錯移轉啟動後、可在災難恢復站台（虛擬機器、網路和資料存放區）的 vCenter 中看到復原的虛擬機器。根據預設、虛擬機器會還原至 Workload 資料夾。</block>
-  <block id="24391a0c4e58147fa07febdb32887a1a" category="section-title">取消工作</block>
-  <block id="0f6fb16278c8db9e7104435d2ca9b98f" category="paragraph">如果某個工作正在進行中、而您不想繼續、您可以取消該工作。如果工作卡在相同的狀態、而您想要釋放佇列中的下一個作業、您可能會想要取消工作。您可能想要在逾時之前取消工作。</block>
-  <block id="22b7400444d76583bfa01ad371bebbc5" category="paragraph">若要取消工作、請使用 Swagger 。</block>
-  <block id="90fcc3b3a806bdba15ead6130adbd9a9" category="paragraph">若要取消工作、您必須擁有帳戶 ID 。</block>
-  <block id="26abc41be60bda806b144bd6ecedad10" category="list-text">在「工作監控」頁面中、記下您要取消的工作 ID 。</block>
-  <block id="336ff1e9aa6177ea7a71984fa8c241b9" category="inline-link">swagger</block>
-  <block id="5273316399077a35494eb5acbbcf7801" category="list-text">存取 BlueXP 災難恢復交換器 URL ：<block ref="9e4854fddaa37e1b0c806d7c99538b64" category="inline-link-rx"></block>。</block>
-  <block id="cfe384e99d913d27036c11c367a847da" category="paragraph"><block ref="cfe384e99d913d27036c11c367a847da" category="inline-link-rx"></block></block>
-  <block id="7a01c0f2bb049f0040198121da3c115e" category="inline-image-macro">顯示如何取消工作的瀏覽器頁面</block>
-  <block id="3c54383fbe7b935cfc38e6a4118698cb" category="paragraph"><block ref="3c54383fbe7b935cfc38e6a4118698cb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5f8add33c48ab0f59f2908faa8d36196" category="inline-link">swagger 文件</block>
-  <block id="e124a230be11158b2df2a4490b5bc010" category="paragraph">如需 Swagger 的詳細資訊、請參閱<block ref="851cca880157b178ca93e5f9f752f929" category="inline-link-rx"></block>。</block>
-  <block id="ae46b3f9f499c97dfc5b7c1e327aeea1" category="list-text">從 Swagger 取得安全性權杖、也稱為 _bonstoner 權杖、可從授權選項取得。</block>
-  <block id="d46acb5ac038cd8e0a5d3f7165605907" category="list-text">輸入帳戶 ID 和工作 ID 。</block>
-  <block id="b1f85b610b71ac9db3be3c5efe00f9a4" category="list-text">選擇*試用*。</block>
   <block id="7133b9cf238828da0a287b89ce855ec3" category="paragraph"><block ref="7133b9cf238828da0a287b89ce855ec3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0e17ce70dd39a8a056cb5ca0081d4526" category="list-text">* 執行中 * ： vCenter 已連線、運作正常且正在執行。</block>
   <block id="ed4bdaafb191f860f256d0b1e88eb50e" category="list-text">* 停機 * ： vCenter 無法連線或連線問題。</block>
@@ -706,8 +650,6 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="0a003809d85acf4d6a198955e5780ac3" category="list-text">若要在容錯移轉測試完成後清理測試環境、請核取 * 測試容錯移轉後自動清理 * 。</block>
   <block id="20ace5d6661ce95df08950b97c500ddc" category="admonition">此程序會從測試位置取消暫存虛擬機器的登錄、刪除所建立的 FlexClone Volume 、並卸載暫存資料存放區。</block>
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">選擇*保存*。</block>
-  <block id="8f6793a82f1110a347dbefe3c3758178" category="section-title">容錯回復使用最新的 Snapshot 複本</block>
-  <block id="9ee4d1cdb3c09e86e561a895a7ab9345" category="paragraph">在目前版本中、容錯回復程序一律使用最新的 Snapshot 複本。即使您選擇要使用的特定 Snapshot 複本、也會發生這種情況。</block>
   <block id="4d519f9cb24d082270f8f88ccccd42e3" category="paragraph">瞭解 BlueXP 災難恢復的新功能。</block>
   <block id="592997dde366d5775e7e052816854f74" category="section-title">2024 年 3 月 5 日</block>
   <block id="23f1adcf87ca650c2ac077f4be520c97" category="paragraph">這是 BlueXP 災難恢復的一般可用度版本、其中包括下列更新。</block>
@@ -719,18 +661,13 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="4b2bfa262e877a668b7102f58d207f63" category="inline-link">建立複寫計畫</block>
   <block id="976dcedce9d4c9dc14db60abc49c5867" category="paragraph">如需詳細資訊、請參閱<block ref="8026234d3eaba16fdffb266108c2804b" category="inline-link-rx"></block>。</block>
   <block id="0468e5ced7eddf7112cb542d124a006f" category="paragraph">此 BlueXP 災難恢復預覽版本包含下列更新：</block>
-  <block id="c35429358a46b999fafa3eb39893122c" category="inline-link-macro">完成設定授權的步驟</block>
-  <block id="c46b74d8fea462e40a3a35bd54771989" category="paragraph"><block ref="3d00f62ff93b742ed767a11952d4b89c" category="inline-link-macro-rx"></block>。</block>
   <block id="5f6035a41d2be8c5780281ca63dc230a" category="paragraph">* 您是否需要使用 BlueXP 災難恢復的授權？ *
 完整存取需要 BlueXP 災難恢復授權。不過、您可以免費試用。</block>
   <block id="65b8710d9a2596e72f3f9c24620b97a3" category="inline-link-macro">設定 BlueXP 災難恢復授權</block>
   <block id="a4812a60b42128cc371c18f06197d9ab" category="paragraph">如需設定 BlueXP 災難恢復授權的詳細資訊、請參閱 <block ref="0ba47d7cccc1dc28f47670d48274167c" category="inline-link-macro-rx"></block>。</block>
   <block id="78a065b9fb649a31c2037ac8b6adf208" category="paragraph">若要使用 BlueXP 災難恢復、請執行幾個步驟、在 Amazon Web Services （ AWS ）和 BlueXP 中設定。</block>
-  <block id="456948be6cc17bd9f797492f175ff847" category="section-title">設定 AWS</block>
-  <block id="724c7536b89d0d851109ea9f7868da08" category="paragraph">您必須聯絡 NetApp 銷售代表、才能試用這項服務。然後、當您使用 BlueXP Connector 時、它會包含災難恢復服務的適當功能。</block>
   <block id="878214f294066da0bab8a3693a1f802a" category="doc">瞭解適用於 VMware 的 BlueXP 災難恢復</block>
   <block id="e04cb1e00b4f2d764efe09d0b22a6b43" category="paragraph">災難恢復至雲端是一種彈性且具成本效益的方法、可保護工作負載免受站台中斷和資料毀損事件的影響。透過 BlueXP 災難恢復 for VMware 、您可以使用 NetApp 雲端儲存設備、將內部部署的執行 ONTAP 儲存設備的 VMware 工作負載複寫到公有雲中的 VMware 軟體定義資料中心、或將 ONTAP 儲存設備做為災難恢復站台的內部部署 VMware 環境。</block>
-  <block id="81cd6d5889a00f3187d6e30af0f9838e" category="paragraph">BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。起初、透過 BlueXP 災難恢復服務、您可以將執行 NetApp 儲存設備的內部部署 NFS 型 VMware 工作負載、保護到下列其中一項：</block>
   <block id="fbec25bffbcdefa11c9ca28adb0b824c" category="paragraph">BlueXP 災難恢復使用 ONTAP SnapMirror 技術作爲災難恢復站點的複製傳輸。這可在主要和次要站台上實現業界最佳的儲存效率（壓縮和重複資料刪除）。</block>
   <block id="3c524eb32d863a57c821ef5ffecb96ee" category="section-title">使用 BlueXP 災難恢復 for VMware 可以做什麼</block>
   <block id="0ad83d5f52e2b8f6dfc6ec26ef91aa38" category="paragraph">BlueXP 災難恢復可讓您充分運用多項 NetApp 技術來達成下列目標：</block>
@@ -740,14 +677,7 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="c809a23426c6fb72cef75816c461ade9" category="paragraph">所有 BlueXP 服務的授權均由 BlueXP 數位錢包服務管理。設定 BYOL 之後、您可以在 BlueXP 數位錢包中看到該服務的有效授權。</block>
   <block id="8eb586b1b79ddd3ae7c3123b39d4420e" category="admonition">BlueXP 災難恢復費用是根據來源站台上已配置的資料存放區容量而定、因為至少有一個 VM 具有複寫計畫。容錯移轉資料存放區的容錯容量不包含在容量限制中。對於 BYOL 而言、如果資料超過允許容量、則服務中的作業將受到限制、直到您取得額外容量授權或升級 BlueXP 數位錢包中的授權為止。</block>
   <block id="27be91c80d5e97799bb6e73e37370e5d" category="paragraph">您可以隨時購買授權、直到 90 天試用結束為止、您將不會被收取費用。</block>
-  <block id="da329ee75f8833283c259789372600f6" category="list-text">內部部署 VMware 工作環境搭配 NetApp 儲存設備</block>
-  <block id="0f5757c2302ddb1a6b48cf01d0fe295d" category="list-text">在 AWS 上擁有軟體定義資料中心（ SDDC ）的 VMware 帳戶、也稱為 Virtual Machines Cloud 。在 VMware Cloud Console 中、使用管理員和 NSX Cloud Administrator 的服務角色。也可以使用組織擁有者擔任組織角色。請參閱<block ref="e0529c1c92608a25886bf41835abea27" category="inline-link-rx"></block>。</block>
-  <block id="10158aa869cd2a07a9e35313b86f48f8" category="list-text">新增至 BlueXP 工作環境的 Amazon FSX for ONTAP 和 AWS 認證。</block>
-  <block id="fce90829059c8b31e3882fa3db9f644c" category="list-text">BlueXP Connector 需要在 BlueXP 中設定。內部部署和 Cloud Connector 應可連線至內部部署和 VMware Cloud （ VMC ） vCenter 與 ESXis 。如此一來、備份、容錯移轉、容錯回復和移轉功能就能與所需的網路和指令碼功能正常運作。</block>
-  <block id="54acd3bad890d9cacb0dd0970cbf3cd4" category="paragraph">BlueXP Connector 需要來源和目標 vCenter 伺服器的認證。請參閱<block ref="4b1866f17dc6bd66f88d9d6839084df6" category="inline-link-rx"></block> 和<block ref="8b2e3c99c244ff11d22f3c561bd167b2" category="inline-link-rx"></block>。</block>
-  <block id="4b23440b522693ef465ede54b1e9df88" category="list-text">為了確保應用程式一致性程序成功、請確保符合下列先決條件：</block>
   <block id="7033a5d3e074f0c7401499ee4e48f38a" category="list-text">確保 VMware 工具（或 Open VM 工具）正在受保護的 VM 上執行。</block>
-  <block id="7c480d19e9a60d89cc5b027f95938aa8" category="list-text">對於執行 SQL 或 Oracle 或兩者的 Windows VM 、資料庫應啟用其 VSS 寫入器、且資料庫應處於穩定狀態。</block>
   <block id="af77ac64a97a80925dee7dc916344004" category="list-text">在 Linux 作業系統上執行的 Oracle 資料庫、應針對 Oracle 資料庫 SYSDBA 角色啟用作業系統使用者驗證。</block>
   <block id="e23539b066371b4dcfdd50b7d80417d8" category="paragraph">在免費試用結束或授權過期之後、您仍可在服務中執行下列動作：</block>
   <block id="1594f78ebbb281f7b5359eb6d2b89912" category="list-text">執行試用期間或授權期間所建立的所有排程作業。</block>
@@ -777,11 +707,7 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="ad7911fdd21ff5752d10300d0446de95" category="section-title">試用結束後、請透過 AWS Marketplace 訂閱</block>
   <block id="e1186eb5e41d3a9e96827c9ab4aef684" category="paragraph">免費試用結束後、您可以從 NetApp 購買授權、或透過 AWS Marketplace 訂閱。本程序提供如何直接在 AWS Marketplace 中訂閱的高階概觀。</block>
   <block id="acce4a6c25bc51b4930085d68e3cb0cd" category="list-text">在 BlueXP 災難恢復中、您會看到免費試用即將到期的訊息。在訊息中、選取 * 訂閱或購買授權 * 。</block>
-  <block id="89642db6eeb3c89414135d980b0f379c" category="inline-image-macro">BlueXP 災難恢復付款方法頁面</block>
-  <block id="cd54cee81e627d252868fbc3cfc5731c" category="paragraph"><block ref="cd54cee81e627d252868fbc3cfc5731c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="584a50ae29d097d233ebd86ad952d305" category="list-text">選取 * 在 AWS Marketplace* 中訂閱。</block>
-  <block id="a06442e94af0d31f4eee679c83de7779" category="list-text">在 AWS Marketplace 中、選取 * 檢視購買選項 * 。</block>
-  <block id="266c58f74740e96b35f10409d3036f8f" category="list-text">使用 AWS Marketplace 訂閱 BlueXP 災難恢復。</block>
   <block id="717132172ed170ccb94cc8674c35dfbd" category="list-text">當您返回 BlueXP 災難恢復時、會有一則訊息指出您已訂閱。</block>
   <block id="6678054c83157276d9287735dd3e1d92" category="paragraph">若要在 BlueXP 數位錢包中檢視訂閱詳細資料、請選取 * 檢視訂閱詳細資料 * 、然後在 * 訂閱 * 頁面上檢視使用中的訂閱。</block>
   <block id="0a504e78221db1ccaf51b7ad21bc16ce" category="inline-image-macro">BlueXP 數位錢包訂閱索引標籤</block>
@@ -796,10 +722,186 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="595da0c0edf936a84fa3d6a69bbbb4e5" category="paragraph"><block ref="595da0c0edf936a84fa3d6a69bbbb4e5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5d50de45dd75ac0ea74e9c427687d113" category="list-text">在 BlueXP 數位錢包中、從 * 資料服務授權 * 標籤中、選取 * 新增授權 * 。</block>
   <block id="7744384d0e7b78819bc53ca36ef36369" category="list-text">選取 * 資料服務授權 * 標籤、選取要更新之服務序號的 * 動作 ... * 圖示、然後選取 * 更新授權 * 。</block>
-  <block id="fe16d01759ec350f7a6eaad418e37316" category="paragraph">BlueXP 災難恢復服務可搭配 NetApp 授權使用、或透過 Amazon Web Services Marketplace 使用年度訂閱方案。</block>
   <block id="577219605d1e6146de9dc5b1e218ce65" category="paragraph">若要在 90 天試用之後繼續、您必須向雲端供應商取得隨用隨付（ PAYGO ）訂閱、或向 NetApp 購買 BYOL 授權。</block>
   <block id="d66d706cd022ab39ed6479a713135515" category="paragraph"><block ref="d66d706cd022ab39ed6479a713135515" category="inline-image-macro-rx" type="image"></block></block>
   <block id="991e816286764c3a5ea9b023c35e1d77" category="paragraph"><block ref="991e816286764c3a5ea9b023c35e1d77" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f356176c4e01ac702abad1ad2e11449a" category="paragraph">您可以透過 AWS Marketplace 購買隨付（ PAYGO ）訂閱、或自帶授權（ BYOL ）、這是 NetApp 授權檔案（ NLF ）。</block>
   <block id="b45dfe874eaba6a97e58e0436eba2402" category="sidebar">開始使用 BlueXP 災難恢復即服務實驗室即隨需實驗室</block>
+  <block id="439704735653d5132727cb9c21bc97c8" category="paragraph">BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。起初、透過 BlueXP 災難恢復服務、您可以保護內部部署、 NFS 型工作負載、並在技術預覽中、將執行 NetApp 儲存的 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區移至下列其中一項：</block>
+  <block id="d5368fed025a9875e8a424b419508bef" category="admonition">此版本支援災難恢復功能、可在內部部署 VMware 工作負載的技術預覽中、透過 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區進行內部部署 VMware 環境。NetApp 不收取任何預覽工作負載容量的費用。</block>
+  <block id="0dc4a26bb39078be4974284a72d54f64" category="paragraph">BlueXP 災難恢復服務可搭配 NetApp 授權使用、或透過 Amazon Web Services 使用年度訂閱方案。</block>
+  <block id="66a7384fcc7d6c71e8da6dc152b82593" category="admonition">部分版本包含技術預覽。NetApp 不收取任何預覽工作負載容量的費用。如需最新技術預覽的相關資訊、請參閱 <block ref="431ce6b88c6d5399033553c1891688aa" category="inline-link-macro-rx"></block> 。</block>
+  <block id="cb29907626b2fabe5961e9265140cc76" category="list-text">在 AWS Marketplace 中、選取 * 檢視購買選項 * 。使用 AWS Marketplace 訂閱 BlueXP 災難恢復。</block>
+  <block id="82dea2c8434a1770d46c03eb8b4c2389" category="summary">在使用 BlueXP 災難恢復之前、您應確保環境符合 ONTAP 儲存設備、 VMware vCenter 叢集和 BlueXP 需求。</block>
+  <block id="d28c14a0fc5b1bfa37eb72dd0ac54a13" category="section-title">ONTAP 儲存必要條件</block>
+  <block id="911d68300fa1a1a181b338683eb2e1b9" category="paragraph">這些先決條件適用於 ONTAP 或 Amazon FSX for NetApp ONTAP 執行個體。</block>
+  <block id="07a02bd33ebc759fa2827fd098fe4d5b" category="list-text">來源叢集和目的地叢集必須具有對等關係。</block>
+  <block id="4a240de94d3b8b2cf85c70ef705ec1ad" category="list-text">將主控災難恢復磁碟區的 SVM 必須存在於目的地叢集上。</block>
+  <block id="49a62cf19d5f5549f15f53e7cc0931a4" category="list-text">來源 SVM 和目的地 SVM 必須具有對等關係。</block>
+  <block id="03d4e4f8142b74599e73a9baef34f455" category="admonition">目的地 SVM 或 SVM 中的災難恢復磁碟區不應事先建立。BlueXP 災難恢復將根據複寫計畫的需要建立目的地磁碟區。</block>
+  <block id="3c6fc169e2cb30ab2f19198ee948214f" category="list-text">如果使用 Amazon FSX for NetApp ONTAP 進行部署、則必須具備下列先決條件：</block>
+  <block id="416e7e2f04e50d9ce77de6997e876b89" category="list-text">要裝載 VMware DR 資料存放區的 Amazon FSX for NetApp ONTAP 執行個體必須存在於 VPC 中。請參閱上的 Amazon FSX for ONTAP 文件<block ref="db982a545763422931a00c332a8601c2" category="inline-link-rx"></block>。</block>
+  <block id="78ac16e6d697b73a4da8c7145ce2ebf3" category="section-title">VMware vCenter 叢集先決條件</block>
+  <block id="e43184d3dcdfbef8d9c719533929f538" category="paragraph">這些先決條件同時適用於內部部署 vCenter 叢集和 VMware Cloud for AWS 軟體定義資料中心（ SDDC ）。</block>
+  <block id="f5091f12fda6dcb8b160780e3352bbd5" category="list-text">您想要 BlueXP 災難恢復管理的所有 VMware 叢集都必須裝載在 ONTAP 磁碟區上。</block>
+  <block id="a103c229873d833279c49def9ebe9fc3" category="list-text">所有由 BlueXP 災難恢復管理的 VMware 資料存放區都必須使用下列其中一種通訊協定：</block>
+  <block id="1d1a594959ec615f56516f5d0f5e8ddb" category="list-text">NFS</block>
+  <block id="47e0fa80d3fa1add35dfaada74c496e9" category="list-text">使用 iSCSI 傳輸協定的 VMFS （目前在技術預覽中）</block>
+  <block id="b48bd09b37dbbe2233bba9ccc258e634" category="list-text">如果您使用的是 VMware Cloud SDDC 、則必須符合這些必要條件。</block>
+  <block id="7fc6ed2196514db323edb5f8ee464448" category="inline-link">搭配 AWS FSX for NetApp ONTAP 文件使用 VMware Cloud Foundations</block>
+  <block id="f2fc5fa158eeee58eae505a362a866b3" category="list-text">在 VMware Cloud Console 中、使用管理員和 NSX Cloud Administrator 的服務角色。也可以使用組織擁有者擔任組織角色。請參閱<block ref="87df9e87408172a2291d5738f3ae5f4f" category="inline-link-rx"></block>。</block>
+  <block id="4e1ddb83fcf4e704fe454a7d694377b4" category="inline-link">VMware Cloud on AWS 與 Amazon FSX 整合、可提供 NetApp ONTAP 部署資訊</block>
+  <block id="7122f5fb62a64795817462bf41ff7862" category="list-text">將 VMware Cloud SDDC 與 Amazon FSX for NetApp ONTAP 執行個體連結。請參閱<block ref="703588ab376df01744e79984f081d5fd" category="inline-link-rx"></block>。</block>
+  <block id="96888c442fac1de0bbc3ba9d00f296a4" category="section-title">BlueXP 必要條件</block>
+  <block id="2111321b91f7f03ee0c9d795126e728d" category="section-title">收集 ONTAP 和 VMware 的認證資料</block>
+  <block id="40d6832bb97021f07389b0bb1371ebc8" category="list-text">Amazon FSX for ONTAP 和 AWS 認證必須新增至 BlueXP 工作區內的工作環境、以用於管理 BlueXP 災難恢復。</block>
+  <block id="a3322827dcb371ce03fcea3e6f6dac4b" category="list-text">BlueXP 災難恢復需要 vCenter 認證。當您在 BlueXP 災難恢復中新增站台時、請輸入 vCenter 認證。</block>
+  <block id="af48f45a45fa68c1e7482428d13d3ae2" category="inline-link-macro">BlueXP 災難恢復所需的 vCenter 權限</block>
+  <block id="663ac415354a0662169e04ba51a80ee1" category="inline-link-macro">新增網站</block>
+  <block id="04d842fd50a052e8aa0d29fecc18a42b" category="paragraph">如需所需的 vCenter 權限清單、請 <block ref="2c677a2a2de566e8f203663d6f65fae2" category="inline-link-macro-rx"></block>參閱。如需如何新增網站的指示、請 <block ref="4e15c40290645aa1bfcc516405624ad3" category="inline-link-macro-rx"></block>參閱。</block>
+  <block id="d5e44723931260e9fb1d91641ec67565" category="section-title">新增 BlueXP 帳戶</block>
+  <block id="55d6d6a5af12f879c7cc9cc76ddabdec" category="paragraph">在 BlueXP 中、如果您還沒有帳戶、就需要新增帳戶。請參閱<block ref="774d23f949c92eac0cff5269d4337483" category="inline-link-rx"></block>。</block>
+  <block id="a5085066220b6bc77291e8a3ba481c5a" category="section-title">建立 BlueXP Connector</block>
+  <block id="6bdd2270b2444eb60c9eb649a9ca2c48" category="paragraph">BlueXP Connector 必須在 BlueXP 中設定。當您使用 BlueXP Connector 時、它會包含災難恢復服務的適當功能。</block>
+  <block id="d45c08fd27c89f889429a0d0279aa820" category="inline-link">以標準模式開始使用 BlueXP</block>
+  <block id="9617f94c4d0db3b59bc87478ad69a2e3" category="list-text">BlueXP 災難恢復僅適用於標準模式 Connector 部署。請參閱。<block ref="8d7d3151883721ed32dc6ccb054ca1c1" category="inline-link-rx"></block></block>
+  <block id="7355396a11c2997a2e012d54ec400c23" category="list-text">所需的 BlueXP Connector 類型：</block>
+  <block id="1fb392a56edc456b1bc3eddb57b0906b" category="inline-link">在內部部署安裝並設定 Connector</block>
+  <block id="4606ca846bc1047c423bf2f388cae62e" category="list-text">* 內部部署到內部部署災難恢復 * ：在災難恢復站點中安裝 BlueXP 內部部署 Connector 。請參閱<block ref="1757fdffe316429694b3d2e3fbccb91f" category="inline-link-rx"></block>。</block>
+  <block id="eca3237a9ea860ef946ba4cdd489bc59" category="inline-link">AWS 中的連接器安裝選項</block>
+  <block id="5429b4727bb6860d719abc5d18c2c7ee" category="list-text">* 內部部署至 AWS * ：在 AWS VPC 中安裝 BlueXP Connector for AWS 。請參閱<block ref="5b7871abcfa07c659c7f1c6cfa3aafba" category="inline-link-rx"></block>。</block>
+  <block id="12162c662baf903fc463cab971a2c144" category="admonition">對於內部部署到內部部署、請使用 BlueXP 內部部署 Connector 。對於內部部署至 AWS 、請使用 BlueXP AWS Connector 、它可以存取來源內部部署 vCenter 和目的地內部部署 vCenter 。</block>
+  <block id="b44186c8f26107b5ae7810b1a74e8093" category="list-text">安裝的 BlueXP Connector 必須能夠存取 BlueXP 災難恢復所管理的任何 VMware 叢集。</block>
+  <block id="a342d0b5394cc9bc5595d491d2a70101" category="list-text">所有由 BlueXP 災難恢復管理的 ONTAP 陣列都必須新增至 BlueXP 工作區中用於管理 BlueXP 災難恢復的任何工作環境。</block>
+  <block id="c5fbee6586294d81141f8dd158707985" category="inline-link">探索內部部署ONTAP 的叢集</block>
+  <block id="c99bafeb844cf906e2f562103d12d623" category="paragraph">請參閱。<block ref="8cab2f9c49f209aeaa6ba3d7ce4342f6" category="inline-link-rx"></block></block>
+  <block id="9d5cd03b2fcfbe5b4558a93d2fd07ca2" category="section-title">工作負載先決條件</block>
+  <block id="6a84d76f499de61c5fe29550fe09a932" category="paragraph">若要確保應用程式一致性程序成功、請套用下列先決條件：</block>
+  <block id="53967495fd407c118c305a84866ca152" category="list-text">對於執行 Microsoft SQL Server 或 Oracle Database 或兩者的 Windows VM 、資料庫應啟用其 VSS 寫入器。</block>
+  <block id="a906261e8914cac100bb85be774d5451" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 設定 BlueXP 災難恢復服務</block>
+  <block id="bba2d28657478d7f1f8cfa1202334b6c" category="inline-link-macro">設定服務的基礎架構</block>
+  <block id="922a3f684ad3f3d8beda0f750bdbb18f" category="list-text"><block ref="d5f560af5db6cf4511b8e34e3209d0d9" category="inline-link-macro-rx"></block>。</block>
+  <block id="143a2ad68b93a4241fb25dee71d34878" category="list-text"><block ref="eaa54a57026891d12cbf928afd176564" category="inline-link-macro-rx"></block>。</block>
+  <block id="0b513f7730ddab41ea5b37d6963c756d" category="inline-link-macro">將 vCenter 站台新增至 BlueXP 災難恢復</block>
+  <block id="1e92a19963b0c5825cc688d14c3c7952" category="list-text"><block ref="2502be63ed2d6f89316c7fbe34a648d3" category="inline-link-macro-rx"></block>。</block>
+  <block id="b65e0d1bdfae52b7003edeca0851a1cd" category="inline-link-macro">建立第一個資源群組</block>
+  <block id="2694ce9387b386ed8def037e0ef2a01c" category="list-text"><block ref="92830d5aa0eb820db09685f71801553b" category="inline-link-macro-rx"></block>。</block>
+  <block id="81b20ae68e2b688ed9a18df38cce62c6" category="inline-link-macro">建立第一個複寫計畫</block>
+  <block id="1bef08da93920d58af9116d6cc82018e" category="list-text"><block ref="3447feddfbfb06a3f88061bcb344494c" category="inline-link-macro-rx"></block>。</block>
+  <block id="e111b7436e71ef6b7b99d4ab60693716" category="inline-link-macro">管理站台、資源群組和複寫計畫</block>
+  <block id="9c0c127bbcf25422e200cf3bf5c94728" category="list-text"><block ref="b808936e11943a7ce505d2bf605d808d" category="inline-link-macro-rx"></block>。</block>
+  <block id="7297a33a5c9a50db535ceb180e4e6c29" category="doc">為 BlueXP 災難恢復設定基礎架構</block>
+  <block id="fc75fa7bbac9e87518d6f17a91cfce8b" category="section-title">準備好進行 BlueXP 災難恢復</block>
+  <block id="1c1d912a4b5c8c14cabacde67a6ba702" category="list-text">驗證您的正式作業環境。</block>
+  <block id="23c17aafeb6f23d40515eff8b860e5f4" category="list-text">請確定您要保護的虛擬機器位於 NFS 資料存放區（使用 ONTAP NFS 磁碟區）或 VMFS 資料存放區（使用 NetApp iSCSI LUN ）上。</block>
+  <block id="179525e812f4f22c9d701388e129164d" category="list-text">確保您擁有內部部署 ONTAP 陣列、 vCenter 和 AWS 託管的 VMware 雲端執行個體的認證和存取金鑰。</block>
+  <block id="013c9bec06c7786c33c0cfb5f4a32bcf" category="list-text">建立或驗證您的災難恢復站台。</block>
+  <block id="6d269e8a65127766658cd3b13af2c081" category="list-text">建立或驗證您的 Amazon FSX 檔案系統已就緒。</block>
+  <block id="d7398479ae0f9ae38ae2ed32d89ad5a7" category="list-text">確保您的來源和目的地 VM 已被對等處理。</block>
+  <block id="c279ea5c4d51358b229e0e39c4308144" category="section-title">設定 VMware Cloud for AWS SDDC</block>
+  <block id="fd087c8a3a1df61c75b0ddc129a87874" category="paragraph">設定 VMware Cloud for AWS 軟體定義資料中心（ SDDC ）。</block>
+  <block id="b667fcb6ff2b158ecaa3e62d1e56452e" category="list-text">為 ONTAP 檔案系統建立 Amazon FSX 。為 ONTAP 配置和設定 FSX 。Amazon FSX for NetApp ONTAP Sfing是一項全託管服務、以熱門的NetApp ONTAP Sfor NetApp文件系統為基礎、提供高度可靠、可擴充、高效能且功能豐富的檔案儲存設備。</block>
+  <block id="c2ca61cdaafcad548af5836df039fcb3" category="inline-link">Amazon FSX for NetApp ONTAP 的快速入門</block>
+  <block id="ef30511465fed8e5a5b5c3a9aae4795a" category="list-text">請依照本和此處的步驟<block ref="551566e1b64bc66251dbfe6d546a4bef" category="inline-link-rx"></block><block ref="594efabf60d7236eeecf072ead1cf02b" category="inline-link-rx"></block> 、為 NetApp ONTAP 配置和設定 FSX 。</block>
+  <block id="e65c19fddc907d69ae5172a0084b710b" category="list-text">將 Amazon FSX for NetApp ONTAP 新增至工作環境、並新增適用於 ONTAP 的 FSX 的 AWS 認證。</block>
+  <block id="95e1164f78d2b6799a19e13081137cbd" category="list-text">使用 VMware 帳戶並配置 SDDC 。確保 SDDC 與適用於 ONTAP 的 FSX 有連線。</block>
+  <block id="23b186d0b29dfdb5e0e175ad6de4147e" category="paragraph">您可以購買下列其中一項：</block>
+  <block id="e5cadf619f38981c2b6059a9e6577ec3" category="list-text">AWS Marketplace 的隨用隨付（ PAYGO ）訂閱</block>
+  <block id="90d5e71753c6b7ee358df340daa5fe4c" category="list-text">自帶授權（ BYOL ）、這是 NetApp 授權檔案（ NLF ）。</block>
+  <block id="8e794011cc1f1c5c04b70473672767c4" category="paragraph">請參閱 <block ref="0ba47d7cccc1dc28f47670d48274167c" category="inline-link-macro-rx"></block>。</block>
+  <block id="b63b041aeb212763ffab8f16313f009d" category="inline-link-macro">BlueXP 災難恢復注意事項</block>
+  <block id="54ad6e999d021c5f10d0b688267e8d17" category="paragraph"><block ref="54ad6e999d021c5f10d0b688267e8d17" category="inline-link-macro-rx"></block></block>
+  <block id="30bc3f8ec3b5e171c9e8c063eec0ebce" category="summary">vCenter 帳戶必須具有一組最低的 vCenter 權限、才能讓 BlueXP 災難恢復執行其服務、例如登錄和取消登錄資料存放區、啟動和停止 VM 、以及重新設定虛擬機器（ VM ）。下表列出 BlueXP 災難恢復與 vCenter 叢集介面的所有必要權限。</block>
+  <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">類型</block>
+  <block id="f31fadcb7ced5ed0e7fbc3d65d0ab660" category="cell">權限名稱</block>
+  <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">說明</block>
+  <block id="2051881d2c94079273dde07614b52317" category="cell">*資料存放區*</block>
+  <block id="39e17557e52f8908bd58f0aa8f90e589" category="paragraph">資料存放區。 設定資料存放區</block>
+  <block id="b0156af1fabe28340f5f515de85b8ba2" category="paragraph">用於設定資料存放區。</block>
+  <block id="16ca70be6373a69d7a7a4054b8740d5f" category="paragraph">資料存放區。 移除資料存放區</block>
+  <block id="5d7a7f943775e5b9f23c14409254d31f" category="paragraph">用於移除資料存放區。</block>
+  <block id="0d710447bc4b3d240dbec4ffdff78d7f" category="cell">* 虛擬機器 *</block>
+  <block id="0d027ba13a066afab0e72091146c32c3" category="paragraph">虛擬機器。組態。變更設定</block>
+  <block id="ac5fed24b3778885bc91821ce7badce7" category="paragraph">用於變更一般 VM 設定。</block>
+  <block id="877b1c9b324b92cc7eb4c734fa176de9" category="paragraph">虛擬機器。組態。修改裝置設定</block>
+  <block id="a470a1e5aa63361f7bba6f9b3753f58d" category="paragraph">用於變更現有裝置的內容。</block>
+  <block id="1c48d7d8b2a2dfea7d4778be6f8adce8" category="paragraph">虛擬機器 .Configuration.Reload from path</block>
+  <block id="a21bfc06d31dc57593c8038b2c5c0e18" category="paragraph">用於變更 VM 組態修補程式、同時保留 VM 的身分識別。VMware vCenter Site Recovery Manager 等解決方案會使用此作業來維護容錯移轉和容錯回復期間的 VM 識別。</block>
+  <block id="936b25ae8b1305df4de41cc7edd3fb3c" category="paragraph">虛擬機器。組態。重新命名</block>
+  <block id="eb6647b772f29fe6d76a2ff596d8da2e" category="paragraph">用於重新命名 VM 或修改 VM 的相關節點。</block>
+  <block id="4553fbef402a1d8731c1816f91ce505e" category="paragraph">虛擬機器。組態。重設客體資訊</block>
+  <block id="c0acbac48fd78801142c21bfcc2d7f80" category="paragraph">用於編輯虛擬機器的客體作業系統資訊。</block>
+  <block id="b7f2f93f9ded16ef0cf42386d0a084de" category="paragraph">虛擬機器。組態。變更記憶體</block>
+  <block id="7e417510f4c5b448e5e913a6e30e26c2" category="paragraph">用於變更分配給 VM 的記憶體容量。</block>
+  <block id="0a90330abb3eb200a7ba0bf8a956104c" category="paragraph">虛擬機器。組態。變更 CPU 數量</block>
+  <block id="7099548d8fb2bdd522f5dd68ea188fa2" category="paragraph">用於變更虛擬 CPU 數量。</block>
+  <block id="9dea3c37393731c874e9363f748cf20b" category="cell">* 虛擬機器來賓 *</block>
+  <block id="5254bee77444f0715c2e30f4220be885" category="paragraph">虛擬機器： 來賓作業： 來賓作業系統修改</block>
+  <block id="864141f9bd9cc6a2551f6a1a984099e3" category="paragraph">啟用 VM 來賓作業、包括變更 VM 中的來賓作業系統、例如將檔案傳輸至 VM 。</block>
+  <block id="21cb03054cbe3a67055ca3df7a2ab77b" category="cell">* 虛擬機器互動 *</block>
+  <block id="075d18862c516c291ccc18b4ef715fe5" category="paragraph">虛擬機器 .Interaction.Power Off</block>
+  <block id="198a48c49bf020db667c8efb024e757e" category="paragraph">用於關閉已開機的 VM 。此作業會關閉客體作業系統。</block>
+  <block id="10bd34b60a2bda547e4bc8e9973f3e31" category="paragraph">虛擬機器 .Interaction.Power On</block>
+  <block id="3fc8744b9995cd14b4bb7379533c3ba6" category="paragraph">用於開啟已關閉電源的 VM 並恢復已暫停的 VM 。</block>
+  <block id="5192d6f694edc454343369b22dbfc5c6" category="paragraph">虛擬機器 .Interaction.VMware Tools 安裝</block>
+  <block id="30519066cd3534ef7d314b2c9aacd55d" category="paragraph">用於掛載和卸載 VMware Tools CD 安裝程式、做為客體作業系統的 CD-ROM 。</block>
+  <block id="66fdc82624c87dcd5ceb484e44a95fdd" category="cell">* 虛擬機器庫存 *</block>
+  <block id="bb9a532fb645f8d94cb7c827a61302ea" category="paragraph">虛擬機器 .Inventory 。建立新的</block>
+  <block id="00b57b9dfd38ba20e57b6ef930030e86" category="paragraph">用於建立 VM 並分配資源以供其執行。</block>
+  <block id="c28cfecb65a13c8091d476d8c65457e1" category="paragraph">虛擬機器、 Inventory 、 Register</block>
+  <block id="8e8abc11ed45aba5690c57962484db6d" category="paragraph">用於將現有 VM 新增至 vCenter Server 或主機清查。</block>
+  <block id="db6d9006d2f72f5cf22c40fa1220b43a" category="paragraph">虛擬機器 .Inventory 。取消登錄</block>
+  <block id="fa8ff1e1f1b39d6eb3b65050b2b1d275" category="paragraph">用於從 vCenter Server 或主機清查中取消註冊 VM 。</block>
+  <block id="3d021ff57844dddc6d9f4674f6934243" category="cell">* 虛擬機器狀態 *</block>
+  <block id="a9b3b608e7046721eb5ab1e0dbaf0c7d" category="paragraph">虛擬機器： Snapshot 管理： 建立快照</block>
+  <block id="0386636d5860b389e6185a8e3d1fc157" category="paragraph">用於從虛擬機器的目前狀態建立快照。</block>
+  <block id="18f05db9c4723f1a48e0cddc8e00ec23" category="paragraph">虛擬機器： Snapshot 管理： 移除 Snapshot</block>
+  <block id="653c42e482faf281af92e05d3ba79031" category="paragraph">用於從快照記錄中移除快照。</block>
+  <block id="d3aa03526082ef556ffca1a6a35a1775" category="paragraph">虛擬機器： Snapshot 管理： 回復至快照</block>
+  <block id="3817fbf7d76df44f4565ed3cde76a690" category="paragraph">用於將虛擬機器設定為其在指定快照中所處的狀態。</block>
+  <block id="d8e45589bc9d86b39aed3bcde52935ac" category="section-title">2024 年 7 月 5 日</block>
+  <block id="7ee40b46e664d0d7baaad4da422c7457" category="list-text">* 支援 AFF A 系列 * ：此版本支援 NetApp AFF A 系列硬體平台。</block>
+  <block id="a1961f9eb07acee12f93a3f0b929745e" category="list-text">* 支援內部部署到內部部署的 VMware VMFS 資料存放區 * ：此版本包含對安裝在 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區（受保護於內部部署儲存區）上的虛擬機器的支援（技術預覽）。此版本支援災難恢復功能、可在內部部署 VMware 工作負載的技術預覽中進行、並可在內部部署 VMware 環境中使用 VMFS 資料存放區。</block>
+  <block id="710abd7c1d5a2a3be1aa4c7dbff890cf" category="admonition">NetApp 不收取任何預覽工作負載容量的費用。</block>
+  <block id="282dc334473cc4944da587c83b4a1761" category="list-text">* 複寫計畫更新 * ：您可以在「應用程式」頁面上依資料存放區篩選虛擬機器、並在「資源對應」頁面上選取更多目標詳細資料、以更輕鬆地新增複寫計畫。</block>
+  <block id="a1975f713c38b2cbf1c095ed7dbadabe" category="list-text">* 編輯複寫計畫 * ：此版本增強了容錯移轉對應頁面、以提高清晰度。</block>
+  <block id="e9558a079e21d43034f54a99b19f2ad7" category="inline-link">管理計畫</block>
+  <block id="583edef1d12ac8fcf925b864da2d76c6" category="paragraph">請參閱<block ref="a8a4a23c947d3e2e3dc169027b7cac12" category="inline-link-rx"></block>。</block>
+  <block id="2343906acc207119786e118da0bbadf7" category="list-text">* 編輯 VMS* ：在此版本中、規劃中的虛擬機器編輯程序包括一些小的 UI 改善。</block>
+  <block id="5f1df9fa6d6ce95c36680ae870250af7" category="inline-link">管理 VM</block>
+  <block id="f7e4cafc0e54e03cc0ff738b39e333cb" category="paragraph">請參閱<block ref="1d44a072309f2a4f38fd6e17ed7eb631" category="inline-link-rx"></block>。</block>
+  <block id="51c73608632a284eecfb3fce29106b26" category="list-text">* 容錯移轉更新 * ：在啟動容錯移轉之前、您現在可以判斷 VM 的狀態、以及 VM 的電源是開啟還是關閉。現在、容錯移轉程序可讓您立即拍攝快照、或選擇快照。</block>
+  <block id="ab132121a366abdd7667443cc98f3a69" category="paragraph">請參閱<block ref="1cbf59ee3e77dd0082612a21b0900f81" category="inline-link-rx"></block>。</block>
+  <block id="66dacd6d538323484187ed3f8c9ef650" category="list-text">* 容錯移轉測試排程 * ：您現在可以編輯容錯移轉測試、並設定每日、每週和每月的容錯移轉測試排程。</block>
+  <block id="42b40c3ce2e25adae8327795c655116d" category="list-text">* 先決條件資訊的更新 * ： BlueXP 災難恢復先決條件資訊已更新。</block>
+  <block id="8a62eb7f743049ce2523fe7eb67fb48f" category="paragraph">請參閱<block ref="dfd63f4ad4adb15a66b44e212e2488b7" category="inline-link-rx"></block>。</block>
+  <block id="2e57ab34890abd985ae5cff7c16db6f6" category="list-text">在「應用程式」頁面左側、選擇性地搜尋資料存放區。</block>
+  <block id="9d84acdf93849adb3b0acbaaf1af7071" category="paragraph"><block ref="0a9d2462a8c27f9a697547bddae93987" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8020af4fa709c3156161baa6bf00e88a" category="inline-image-macro">複寫計畫、資源對應索引標籤</block>
+  <block id="0d5dff4bbd2c70484d25c822afa80986" category="paragraph"><block ref="0d5dff4bbd2c70484d25c822afa80986" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="da06c5c1d28e308403236438dda209dc" category="list-text">* 來源與目標資料中心 *</block>
+  <block id="bf0db130eb2746cb5707eb7ebd4e997b" category="list-text">* 目標主機 * （選用）</block>
+  <block id="228db5aff5c10fb4007bcfc106b96eac" category="list-text">* 目標叢集 * （選用）</block>
+  <block id="396f79fd09d35663fad706f8d93d48ba" category="list-text">* 目標 VM 資料夾 * （選用）：使用此資料夾來建立新的根資料夾來儲存所選的 VM 。</block>
+  <block id="210dfd955522333f74e13d0843ab02ff" category="paragraph">視您的選擇而定、此區段可能會啟用或停用。</block>
+  <block id="30cb4638cdd1e514eba27473e745afb4" category="paragraph">在測試對應索引標籤上、虛擬機器和資料存放區對應會停用。</block>
+  <block id="ebcc6bc6ad0c177b30c661fc23c0f951" category="list-text">檢閱每個索引標籤中的資訊：規劃詳細資料、容錯移轉對應、 VM 。</block>
+  <block id="711c35de4b0430b043159f5d91f6752f" category="inline-image-macro">容錯移轉頁面</block>
+  <block id="c29c6e0ccfc363d2f29bc8ad4397f5bb" category="paragraph"><block ref="c29c6e0ccfc363d2f29bc8ad4397f5bb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="418818fc05931805b481fbdf48b3a075" category="list-text">在容錯移轉頁面中、立即初始化快照、或選擇要從中恢復的資料存放區的 Snapshot 。預設為最新。</block>
+  <block id="51d5fa513676d68f3e574487650b021d" category="paragraph">在發生容錯移轉之前、將會擷取目前來源的快照並複寫到目前目的地。</block>
+  <block id="7d0da89e5c4df500c537ba4145ed8fae" category="list-text">或者、如果您希望容錯移轉發生、即使偵測到通常會阻止容錯移轉發生的錯誤、也可以選取 * 強制容錯移轉 * 。</block>
+  <block id="544bb990c26b075198ab3593eb235cab" category="list-text">在方塊中輸入「容錯移轉」。</block>
+  <block id="d3c41fabd7d85897eb0f306101f87e33" category="list-text">選擇 * 容錯移轉 * 。</block>
+  <block id="9aaabae265e2785e58b6618d73b8e267" category="summary">您可以快速瀏覽所有 BlueXP 災難恢復資源、並管理 vCenter 站台、資源群組和複寫計畫。</block>
+  <block id="592189bb19e09b41686c42842ae7f60a" category="doc">管理站台、資源群組、複寫計畫、資料存放區和虛擬機器資訊</block>
+  <block id="88947748ef8b3b00cf2cf0c3999a702e" category="paragraph">您可以停用、啟用及刪除複寫計畫。您可以變更排程。</block>
+  <block id="fa62d17ad222d305b611f8c161aab288" category="list-text">若要新增或編輯虛擬機器、請選取 * 虛擬機器 * 索引標籤、然後選取 * 新增 VMS* 選項或 * 編輯 * 圖示。</block>
+  <block id="714c8620cd504e0c90291fad7b5c119f" category="list-text">若要設定或變更測試容錯移轉排程或設定法規遵循頻率檢查、請選取計畫右側的 * 動作 * 選項 <block ref="2fddd650b01c7f9674be856867aae05d" category="inline-image-macro-rx" type="image"></block> 、然後選取 * 編輯排程 * 。</block>
+  <block id="6774836d1489d59b22c26b6c62f0749c" category="list-text">在「編輯排程」頁面中、輸入容錯移轉規範檢查的發生頻率（以分鐘為單位）。</block>
+  <block id="919f04c7393ca337da4d5ecf62b924fc" category="list-text">核取 * 排程執行測試容錯移轉 * 。</block>
+  <block id="87446024d70eefcd64c28443544975b4" category="list-text">在重複選項中、選取每日、每週或每月排程。</block>
+  <block id="a1d594c41e91785ad3637cf3bff4ade5" category="summary">NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。您可以監控所有災難恢復工作、並判斷其進度。</block>
+  <block id="554cfab3938e21d9270bd6b75931f96f" category="sidebar">影片</block>
+  <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">參考資料</block>
+  <block id="b80f9ccd1ed052ae2d1a95c50bd37d8b" category="sidebar">BlueXP 災難恢復所需的 vCenter 權限</block>
 </blocks>
