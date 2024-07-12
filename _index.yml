@@ -35,10 +35,6 @@ indexpage:
       url: "/use/failover.html"
     - title: 將應用程式容錯回復至原始來源網站
       url: "/use/failback.html"
-    - title: 管理站台、計畫、資料存放區和虛擬機器資訊
-      url: "/use/manage.html"
-    - title: 監控災難恢復工作
-      url: "/use/monitor-jobs.html"
   - title: 部落格與社群
     links:
     - title: NetApp社群
