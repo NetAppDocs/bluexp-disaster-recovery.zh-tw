@@ -904,4 +904,24 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="554cfab3938e21d9270bd6b75931f96f" category="sidebar">影片</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">參考資料</block>
   <block id="b80f9ccd1ed052ae2d1a95c50bd37d8b" category="sidebar">BlueXP 災難恢復所需的 vCenter 權限</block>
+  <block id="f4c84d2d214fb7f3e3cae921398c8e4a" category="section-title">2024 年 7 月 17 日</block>
+  <block id="e96e73e43a84335e9de1d02f80f7d655" category="list-text">* 容錯移轉測試排程 * ：此版本包含容錯移轉測試排程結構的更新、這是支援每日和每週排程所需的。此更新需要您停用並重新啟用所有現有的複寫計畫、才能使用新的每日和每週容錯移轉測試排程。這是一次性要求。</block>
+  <block id="7043d4fb27c94bc9a206c106cef9d80c" category="paragraph">方法如下：</block>
+  <block id="2ae04d8f24d0c8f552b0d3857c0953b3" category="list-text">選取計畫、然後選取「動作」圖示以顯示下拉式功能表。</block>
+  <block id="dbf8ea65a71d9e2042b03a97a0da4095" category="list-text">選擇*停用*。</block>
+  <block id="9ffe587f372d96c9b0db66cfe333c0cf" category="list-text">幾分鐘後、選取 * 啟用 * 。</block>
+  <block id="dc6efda4f2a86706d886df508f873039" category="list-text">* 複寫計畫更新 * ：此版本包含複寫計畫資料的更新、可解決「找不到快照」的問題。這需要您將所有複寫計畫中的保留計數變更為 1 、然後啟動隨需快照。此程序會建立新的備份、並移除所有較舊的備份。</block>
+  <block id="3d3e2652059a9417e7a9b8801e83b99d" category="list-text">選取複寫計畫、按一下 * 容錯移轉對應 * 標籤、然後按一下 * 編輯 * 鉛筆圖示。</block>
+  <block id="f05351f8a712da4ff1e724d342c4670b" category="list-text">按一下 * 資料存放區 * 箭號加以展開。</block>
+  <block id="ee9e0fb0a09a468f33fa6f2dabc4ff49" category="inline-image-macro">編輯容錯移轉對應頁面</block>
+  <block id="7cbc4647aa042fa4dbc711ee9aa94612" category="paragraph"><block ref="7cbc4647aa042fa4dbc711ee9aa94612" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0d59b78804ed5feec9399254629a60f1" category="list-text">請注意複寫計畫中保留計數的值。完成這些步驟後、您必須恢復此原始值。</block>
+  <block id="e9c686cd7f0fc0f9a24375142cf2639b" category="list-text">將數量減至 1 。</block>
+  <block id="94eec0eecc897e0613b4dca05f1db3b5" category="list-text">啟動隨選快照。若要這麼做、請在「複寫計畫」頁面上選取計畫、按一下「動作」圖示、然後選取 * 立即擷取快照 * 。</block>
+  <block id="4be920e5d3a5c6a1a13e6a9ed1ea0d96" category="list-text">快照工作成功完成後、請將複寫計畫中的計數增加回您在第一步中記下的原始值。</block>
+  <block id="fcf0bc475de9e6576c18ef6dcf5d7506" category="list-text">對所有現有的複寫計畫重複這些步驟。</block>
+  <block id="f51ae48fcef0eb66752ca677561d408c" category="section-title">變更容錯移轉排程的保留計數</block>
+  <block id="b138bbcc2a9cc6e505caed49815b326b" category="paragraph">您可以變更保留的資料存放區數量。</block>
+  <block id="2aef38b97efb9369d3e496e8d062d8fd" category="paragraph"><block ref="2aef38b97efb9369d3e496e8d062d8fd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="51c600bec26d8fec2fcc4cb42728fd01" category="list-text">變更複寫計畫中保留計數的值。</block>
 </blocks>
