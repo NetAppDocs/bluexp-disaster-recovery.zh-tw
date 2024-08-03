@@ -16,6 +16,23 @@ summary: BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化�
 
 
 
+== 2024 年 8 月 2 日
+
+此 BlueXP 災難恢復版本包含下列更新：
+
+* * 支援內部部署到內部部署的 VMware VMFS FC 資料存放區 * ：此版本包含對安裝在 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區上的虛擬機器（ VM ）支援的技術預覽（ _Technology preview_ ）、以供 FC 保護到內部部署儲存設備。此服務先前提供技術預覽、支援 iSCI 的 VMFS 資料存放區。在此版本中、 BlueXP 災難恢復功能可支援內部部署 VMware 工作負載的技術預覽、以及內部部署的 VMware 環境、以及 FC 的 VMFS 資料存放區。
++
+
+NOTE: NetApp 不收取任何預覽工作負載容量的費用。
+
+* * 工作取消 * ：使用此版本、您現在可以在工作監控 UI 中取消工作。
++
+請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html["監控工作"]。
+
+
+
+
+
 == 2024 年 7 月 17 日
 
 此 BlueXP 災難恢復版本包含下列更新：
@@ -65,10 +82,7 @@ image:use/dr-plan-failover-edit.png["編輯容錯移轉對應頁面"]
 
 NOTE: NetApp 不收取任何預覽工作負載容量的費用。
 
-* * 複寫計畫更新 * ：您可以在「應用程式」頁面上依資料存放區篩選虛擬機器、並在「資源對應」頁面上選取更多目標詳細資料、以更輕鬆地新增複寫計畫。
-+
-請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
-
+* * 複寫計畫更新 * ：您可以在「應用程式」頁面上依資料存放區篩選 VM 、並選擇 / / 參閱、以更輕鬆地新增複寫計畫 link:../use/drplan-create.html["建立複寫計畫"]。請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。 在資源對應頁面上顯示更多目標詳細資料。
 * * 編輯複寫計畫 * ：此版本增強了容錯移轉對應頁面、以提高清晰度。
 +
 請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["管理計畫"]。

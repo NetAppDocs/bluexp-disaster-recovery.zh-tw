@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: use/monitor-jobs.html 
-keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, monitor 
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, monitor, bluexp 
 summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。您可以監控所有災難恢復工作、並判斷其進度。 
 ---
 = 監控災難恢復工作
@@ -20,4 +20,20 @@ summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自
 . 探索與營運相關的所有工作、並檢閱其時間戳記和狀態。
 . 若要檢視特定工作的詳細資料、請選取該列。
 . 若要重新整理資訊、請選取 * 重新整理 * 。
+
+
+
+
+== 取消工作
+
+如果工作正在進行中或處於佇列狀態、而您不想繼續、您可以取消它。如果工作卡在相同的狀態、而您想要釋放佇列中的下一個作業、您可能會想要取消工作。您可能想要在逾時之前取消工作。
+
+.步驟
+. 從 BlueXP 左側導航中，選擇 * 保護 * > * 災難恢復 * 。
+. 從頂端功能表中、選取 * 工作監控 * 。
+. 在「工作監控」頁面中、記下您要取消的工作 ID 。
++
+工作必須處於「進行中」或「佇列中」狀態。
+
+. 在 Actions （操作）列中，選擇 *Cancel* （取消）。
 

@@ -862,7 +862,6 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="7ee40b46e664d0d7baaad4da422c7457" category="list-text">* 支援 AFF A 系列 * ：此版本支援 NetApp AFF A 系列硬體平台。</block>
   <block id="a1961f9eb07acee12f93a3f0b929745e" category="list-text">* 支援內部部署到內部部署的 VMware VMFS 資料存放區 * ：此版本包含對安裝在 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區（受保護於內部部署儲存區）上的虛擬機器的支援（技術預覽）。此版本支援災難恢復功能、可在內部部署 VMware 工作負載的技術預覽中進行、並可在內部部署 VMware 環境中使用 VMFS 資料存放區。</block>
   <block id="710abd7c1d5a2a3be1aa4c7dbff890cf" category="admonition">NetApp 不收取任何預覽工作負載容量的費用。</block>
-  <block id="282dc334473cc4944da587c83b4a1761" category="list-text">* 複寫計畫更新 * ：您可以在「應用程式」頁面上依資料存放區篩選虛擬機器、並在「資源對應」頁面上選取更多目標詳細資料、以更輕鬆地新增複寫計畫。</block>
   <block id="a1975f713c38b2cbf1c095ed7dbadabe" category="list-text">* 編輯複寫計畫 * ：此版本增強了容錯移轉對應頁面、以提高清晰度。</block>
   <block id="e9558a079e21d43034f54a99b19f2ad7" category="inline-link">管理計畫</block>
   <block id="583edef1d12ac8fcf925b864da2d76c6" category="paragraph">請參閱<block ref="a8a4a23c947d3e2e3dc169027b7cac12" category="inline-link-rx"></block>。</block>
@@ -924,4 +923,15 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="b138bbcc2a9cc6e505caed49815b326b" category="paragraph">您可以變更保留的資料存放區數量。</block>
   <block id="2aef38b97efb9369d3e496e8d062d8fd" category="paragraph"><block ref="2aef38b97efb9369d3e496e8d062d8fd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="51c600bec26d8fec2fcc4cb42728fd01" category="list-text">變更複寫計畫中保留計數的值。</block>
+  <block id="895b67d31a903fc743f186c56aeecff6" category="section-title">2024 年 8 月 2 日</block>
+  <block id="8bf3903af15d79402b4af83735a56d33" category="list-text">* 支援內部部署到內部部署的 VMware VMFS FC 資料存放區 * ：此版本包含對安裝在 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區上的虛擬機器（ VM ）支援的技術預覽（ _Technology preview_ ）、以供 FC 保護到內部部署儲存設備。此服務先前提供技術預覽、支援 iSCI 的 VMFS 資料存放區。在此版本中、 BlueXP 災難恢復功能可支援內部部署 VMware 工作負載的技術預覽、以及內部部署的 VMware 環境、以及 FC 的 VMFS 資料存放區。</block>
+  <block id="b9dbe1e85847c069664ebe888e76d35c" category="list-text">* 工作取消 * ：使用此版本、您現在可以在工作監控 UI 中取消工作。</block>
+  <block id="4639d0e2e2909a747265c2f704128bca" category="inline-link">監控工作</block>
+  <block id="5ef55533619d84d0298304b37a76eeff" category="paragraph">請參閱<block ref="786959fe8223b685d5c08f8e62246672" category="inline-link-rx"></block>。</block>
+  <block id="7967654ba38c10467e0d83677de0e180" category="list-text">* 複寫計畫更新 * ：您可以在「應用程式」頁面上依資料存放區篩選 VM 、並選擇 / / 參閱、以更輕鬆地新增複寫計畫 <block ref="8aa3c94c171b2c9d7252afb28ee019a7" category="inline-link-macro-rx"></block>。請參閱<block ref="5cf2140f2775e5f1ccc24bb836a069a3" category="inline-link-rx"></block>。 在資源對應頁面上顯示更多目標詳細資料。</block>
+  <block id="24391a0c4e58147fa07febdb32887a1a" category="section-title">取消工作</block>
+  <block id="eead8518396b0c1b849be084fbe4f31a" category="paragraph">如果工作正在進行中或處於佇列狀態、而您不想繼續、您可以取消它。如果工作卡在相同的狀態、而您想要釋放佇列中的下一個作業、您可能會想要取消工作。您可能想要在逾時之前取消工作。</block>
+  <block id="26abc41be60bda806b144bd6ecedad10" category="list-text">在「工作監控」頁面中、記下您要取消的工作 ID 。</block>
+  <block id="49e474835558193a9bed54c7dadf777e" category="paragraph">工作必須處於「進行中」或「佇列中」狀態。</block>
+  <block id="98d5e6f769dc6d114da618f41d9ba70d" category="list-text">在 Actions （操作）列中，選擇 *Cancel* （取消）。</block>
 </blocks>
