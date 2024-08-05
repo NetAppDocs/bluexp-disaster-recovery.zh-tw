@@ -35,5 +35,5 @@ summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自
 +
 工作必須處於「進行中」或「佇列中」狀態。
 
-. 在 Actions （操作）列中，選擇 *Cancel* （取消）。
+. 在 Actions （操作）列中，選擇 *Cancel job* （取消作業）。
 
