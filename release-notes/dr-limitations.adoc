@@ -16,6 +16,12 @@ summary: 已知的限制可識別此服務版本不支援的平台、裝置或�
 
 
 
+== 請等到容錯回復完成後再執行探索
+
+容錯移轉完成後、請勿手動在來源 vCenter 上啟動探索。等到容錯回復完成、然後在來源 vCenter 上啟動探索。
+
+
+
 == BlueXP 可能無法探索 Amazon FSX for NetApp ONTAP
 
 有時候 BlueXP 無法探索適用於 NetApp ONTAP 叢集的 Amazon FSX 。這可能是因為 FSX 認證不正確。
