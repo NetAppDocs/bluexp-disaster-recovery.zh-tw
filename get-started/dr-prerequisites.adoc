@@ -61,20 +61,20 @@ NOTE: 目的地 SVM 或 SVM 中的災難恢復磁碟區不應事先建立。Blue
 
 
 
+=== 開始使用BlueXP
+
+如果您尚未這麼做、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-sign-up-saas.html["註冊 BlueXP  並建立組織"^]
+
+
+
 === 收集 ONTAP 和 VMware 的認證資料
 
-* Amazon FSX for ONTAP 和 AWS 認證必須新增至 BlueXP 工作區內的工作環境、以用於管理 BlueXP 災難恢復。
+* 必須將 Amazon FSX for ONTAP 和 AWS 認證新增至 BlueXP  專案中用於管理 BlueXP  災難恢復的工作環境。
 * BlueXP 災難恢復需要 vCenter 認證。當您在 BlueXP 災難恢復中新增站台時、請輸入 vCenter 認證。
 +
 如需所需的 vCenter 權限清單、請 link:../reference/vcenter-privileges.html["BlueXP 災難恢復所需的 vCenter 權限"]參閱。如需如何新增網站的指示、請 link:../use/sites-add.html["新增網站"]參閱。
 
 
-
-
-
-=== 新增 BlueXP 帳戶
-
-在 BlueXP 中、如果您還沒有帳戶、就需要新增帳戶。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html["BlueXP 說明文件、說明如何新增帳戶"^]。
 
 
 
@@ -94,7 +94,7 @@ TIP: 對於內部部署到內部部署、請使用 BlueXP 內部部署 Connector
 ** 安裝的 BlueXP Connector 必須能夠存取 BlueXP 災難恢復所管理的任何 VMware 叢集。
 
 
-* 所有由 BlueXP 災難恢復管理的 ONTAP 陣列都必須新增至 BlueXP 工作區中用於管理 BlueXP 災難恢復的任何工作環境。
+* 所有由 BlueXP  災難恢復管理的 ONTAP 陣列都必須新增至 BlueXP  專案中用於管理 BlueXP  災難恢復的任何工作環境。
 +
 請參閱。 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["探索內部部署ONTAP 的叢集"^]
 

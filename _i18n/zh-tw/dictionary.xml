@@ -26,7 +26,6 @@
   <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">選擇 * 建立案例 * 、與 NetApp 支援專家一起開啟 Ticket ：</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*服務*：選取問題相關的服務。例如、特定於服務工作流程或功能的技術支援問題的BlueXP。</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*工作環境*：如果適用於儲存設備、請選取* Cloud Volumes ONTAP 《*》或*《內部部署*》、然後選取相關的工作環境。</block>
-  <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">工作環境清單位於您在服務的最上層橫幅中所選的BlueXP帳戶、工作區和Connector範圍內。</block>
   <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*案例優先順序*：選擇案例的優先順序、可以是低、中、高或嚴重。</block>
   <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">若要深入瞭解這些優先順序、請將滑鼠游標暫留在欄位名稱旁的資訊圖示上。</block>
   <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*問題說明*：提供問題的詳細說明、包括任何適用的錯誤訊息或您執行的疑難排解步驟。</block>
@@ -80,7 +79,6 @@
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">註冊以取得支援</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支援登錄總覽</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">有兩種登錄形式可啟動支援服務權利：</block>
-  <block id="2322ca552c2b0ebe090c8485519246a8" category="list-text">註冊您的BlueXP帳戶ID支援訂閱（您的20位數960xxxxxxx序號位於BlueXP的「Support Resources（支援資源）」頁面）。</block>
   <block id="23fdcbefa6d9cd877be7ceb7a18bb936" category="paragraph">這是您在BlueXP內任何服務的單一支援訂閱ID。每個BlueXP帳戶層級的支援訂閱都必須註冊。</block>
   <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">在Cloud Volumes ONTAP 雲端供應商的市場中註冊與訂閱相關的支援服務序號（這些序號為20位數909601xxxxxxxx序號）。</block>
   <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">這些序號通常稱為「_PAYGO」序號、並在Cloud Volumes ONTAP 部署時由BlueXP產生。</block>
@@ -91,18 +89,14 @@
   <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">適用於 Google Cloud Cloud Volumes Service</block>
   <block id="cf14bff66a8b72d3675db8ffe0f02ee3" category="list-text"><block ref="cf14bff66a8b72d3675db8ffe0f02ee3" category="inline-link-macro-rx"></block></block>
-  <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">註冊您的 BlueXP 帳戶以取得 NetApp 支援</block>
-  <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">若要註冊以取得支援並啟動支援授權、 BlueXP 帳戶中的一位使用者必須將 NetApp 支援網站 帳戶與其 BlueXP 登入建立關聯。您如何註冊NetApp支援取決於您是否已擁有NetApp 支援網站 一個NetApp（NSS）帳戶。</block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">現有的客戶、擁有一個新服務客戶帳戶</block>
   <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">如果您是擁有NSS帳戶的NetApp客戶、您只需透過BlueXP註冊即可獲得支援。</block>
   <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。</block>
   <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">選取 * 使用者認證 * 。</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">選取 * 新增 NSS 認證 * 、然後遵循 NetApp 支援網站 （ NSS ）驗證提示。</block>
   <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">若要確認註冊程序是否成功、請選取「說明」圖示、然後選取 * 「支援 * 」。</block>
-  <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">「 * 資源 * 」頁面應顯示您的帳戶已註冊以取得支援。</block>
   <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">螢幕擷取畫面會顯示帳戶序號和綠色核取方塊、以及註冊支援的文字。</block>
   <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d9a01bdcfab6f0a10fc126999b4d5988" category="paragraph">請注意、如果其他 BlueXP 使用者尚未將 NetApp 支援網站 帳戶與 BlueXP 登入建立關聯、則不會看到此相同的支援登錄狀態。不過、這並不表示您的 BlueXP 帳戶尚未註冊支援。只要帳戶中有一位使用者已遵循這些步驟、您的帳戶就已登錄。</block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">現有客戶、但無NSS.帳戶</block>
   <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">如果您是現有的 NetApp 客戶、擁有現有的授權和序號、但沒有 NSS_ 帳戶、則需要建立一個 NSS 帳戶、並將其與您的 BlueXP 登入建立關聯。</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">《使用者登錄表》NetApp 支援網站</block>
@@ -125,18 +119,14 @@
   <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">系統會立即將電子郵件傳送至提供的信箱、以完成此安全交易。如果驗證電子郵件在幾分鐘內未送達、請務必檢查您的垃圾郵件資料夾。</block>
   <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">確認電子郵件中的行動。</block>
   <block id="201080500e946070a2e4873042507c77" category="paragraph">確認將您的申請提交給NetApp、並建議您建立NetApp 支援網站 一個申請表。</block>
-  <block id="cc8b0535948da368f832027c19b7f853" category="list-text">請務必複製上述序號欄位使用的帳戶序號（960xxxx）。這將加速帳戶處理。</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">在此過程中、NetApp應與您聯絡。這是新使用者的一次性就職練習。</block>
   <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">擁有 NetApp 支援網站 帳戶後、請完成下的步驟、將帳戶與 BlueXP 登入建立關聯 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
   <block id="3e616bae81890a6c8fae17c9b45af152" category="section-title">建立 NSS 認證的關聯、以取得 Cloud Volumes ONTAP 支援</block>
-  <block id="d8f0da67cbab6e43f6d266bdab68cdc8" category="paragraph">若要為 Cloud Volumes ONTAP 啟用下列關鍵工作流程、必須將 NetApp 支援網站 認證與 BlueXP 帳戶建立關聯：</block>
   <block id="a0518a10626dc11fd00e2d20265ad240" category="list-text">註冊隨用隨付 Cloud Volumes ONTAP 系統以取得支援</block>
   <block id="321aadf78ef73521712291b7aba6411f" category="paragraph">您必須提供您的NSS帳戶、才能啟動系統支援、並取得NetApp技術支援資源的存取權。</block>
   <block id="d51b2b497db445a16b1c9583c1abbb59" category="list-text">自帶授權（Cloud Volumes ONTAP BYOL）即可部署</block>
   <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">您必須提供您的NSS帳戶、才能讓BlueXP上傳授權金鑰、並啟用您所購買期間的訂閱。這包括定期續約的自動更新。</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">升級Cloud Volumes ONTAP 更新版的更新版</block>
-  <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">將 NSS 認證與 BlueXP 帳戶建立關聯、與 BlueXP 使用者登入相關的 NSS 帳戶不同。</block>
-  <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">這些 NSS 認證會與您的特定 BlueXP 帳戶 ID 相關聯。屬於BlueXP帳戶的使用者可以從*支援&gt; nss管理*存取這些認證資料。</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">如果您有客戶層級的帳戶、可以新增一或多個NSS帳戶。</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">如果您有合作夥伴或經銷商帳戶、您可以新增一或多個NSS帳戶、但這些帳戶無法與客戶層級帳戶一起新增。</block>
   <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">選取 *NSS Management &gt; Add NSS Account* 。</block>
@@ -208,7 +198,6 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="1b38656c5ec12ea70e00624b8b3d9551" category="paragraph"><block ref="aa736dbc3fc450bce1fb1f5726a687eb" category="inline-link-rx"></block> 為AWS生態系統中的VMware工作負載提供雲端原生體驗。每個 VMware 軟體定義資料中心（ SDDC ）都會在 Amazon Virtual Private Cloud （ VPC ）中執行、並提供完整的 VMware 堆疊（包括 vCenter Server ）、 NSX-T 軟體定義網路、 vSAN 軟體定義儲存設備、以及一或多個 ESXi 主機、為工作負載提供運算和儲存資源。</block>
   <block id="2a304a1348456ccd2234cd71a81bd338" category="inline-link">連結</block>
   <block id="fd14ed73e21c2af5ff119a635c30df95" category="paragraph">若要在AWS上設定VMC環境、請執行下列步驟<block ref="2482e32457e6109d0aff0016bbcce7d1" category="inline-link-rx"></block>。試行指示燈叢集也可用於災難恢復。</block>
-  <block id="8578ea7cebd82d3ffa5a16500e105552" category="inline-link">BlueXP 說明文件、說明如何新增帳戶</block>
   <block id="ee21d19e70e4611d4c782f9439377ba0" category="summary">只需幾個步驟、就能開始使用 NetApp BlueXP 災難恢復服務。</block>
   <block id="6923c085091f4d4b0d464355d7771240" category="doc">BlueXP 災難恢復快速入門</block>
   <block id="917c67acabedb60df299e96c679e04f8" category="paragraph">以下概述開始執行 BlueXP 災難恢復所需的步驟。每個步驟中的連結都會帶您前往提供更多詳細資料的頁面。</block>
@@ -568,10 +557,6 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="c3964fe08c9dd95815cc67d8aaee9323" category="list-text">在文字方塊中輸入「 End 試用」。</block>
   <block id="44a320573c319d1f30b840c2d11a4e26" category="list-text">選取 * 結束 * 。</block>
   <block id="3906249fde1cef9339402436007bb4f7" category="paragraph">如果您攜帶自己的授權（ BYOL ）、設定包括購買授權、取得 NetApp 授權檔案（ NLF ）、以及將授權新增至 BlueXP 數位錢包。</block>
-  <block id="e3286b69a705d4ed944e904722ab7c8f" category="paragraph">開始之前、您必須先取得下列資訊：</block>
-  <block id="43ae1d792e09f6126441ea0d91d847c7" category="list-text">BlueXP 災難恢復序號</block>
-  <block id="079aeecf06b109e4316b0a68ea943f2b" category="paragraph">請從您的銷售訂單中找出此號碼、或聯絡客戶團隊以取得此資訊。</block>
-  <block id="bcbbd9a155e07caa8b31001adc835c79" category="list-text">BlueXP 帳戶 ID</block>
   <block id="c8508c0ce4da6dc634b7c66b1df15681" category="list-text">選擇*新增授權*。</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
   <block id="7c8c5dfa7e1cbe0ce55b88149d634d69" category="paragraph">BlueXP 數位錢包現在以授權證明災難恢復。</block>
@@ -696,9 +681,6 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="f3688cd67baeb83949d8b3d8688cda8b" category="paragraph"><block ref="f3688cd67baeb83949d8b3d8688cda8b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4052ab6997dacca028b4d726754818d5" category="paragraph">* 啟動授權 *
 向 NetApp 銷售代表購買 BlueXP 災難恢復授權後、您可以輸入 BlueXP 災難恢復序號和 NetApp 支援網站 （ NSS ）帳戶資訊來啟動授權。</block>
-  <block id="19a9d224e357593876fd44c3faede4ab" category="paragraph">您可以從 BlueXP 頂端選取「 * 帳戶 * 」下拉式清單、然後選取帳戶旁邊的「 * 管理帳戶 * 」、以找到您的 BlueXP 帳戶 ID 。您的帳戶ID位於「總覽」索引標籤。</block>
-  <block id="3a00897c7ffb183a2673af94c243c5fd" category="paragraph">* 將授權新增至 BlueXP 數位錢包 *
-為 BlueXP 帳戶購買 BlueXP 災難恢復授權後、您必須將授權新增至 BlueXP 數位錢包。</block>
   <block id="e4822c1e77f0d7746ffdde4c031a2109" category="inline-image-macro">BlueXP 災難恢復付款中繼資料頁面</block>
   <block id="5646d601e859bd392516de29f6a97047" category="paragraph"><block ref="5646d601e859bd392516de29f6a97047" category="inline-image-macro-rx" type="image"></block></block>
   <block id="595da0c0edf936a84fa3d6a69bbbb4e5" category="paragraph"><block ref="595da0c0edf936a84fa3d6a69bbbb4e5" category="inline-image-macro-rx" type="image"></block></block>
@@ -735,13 +717,10 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="7122f5fb62a64795817462bf41ff7862" category="list-text">將 VMware Cloud SDDC 與 Amazon FSX for NetApp ONTAP 執行個體連結。請參閱<block ref="703588ab376df01744e79984f081d5fd" category="inline-link-rx"></block>。</block>
   <block id="96888c442fac1de0bbc3ba9d00f296a4" category="section-title">BlueXP 必要條件</block>
   <block id="2111321b91f7f03ee0c9d795126e728d" category="section-title">收集 ONTAP 和 VMware 的認證資料</block>
-  <block id="40d6832bb97021f07389b0bb1371ebc8" category="list-text">Amazon FSX for ONTAP 和 AWS 認證必須新增至 BlueXP 工作區內的工作環境、以用於管理 BlueXP 災難恢復。</block>
   <block id="a3322827dcb371ce03fcea3e6f6dac4b" category="list-text">BlueXP 災難恢復需要 vCenter 認證。當您在 BlueXP 災難恢復中新增站台時、請輸入 vCenter 認證。</block>
   <block id="af48f45a45fa68c1e7482428d13d3ae2" category="inline-link-macro">BlueXP 災難恢復所需的 vCenter 權限</block>
   <block id="663ac415354a0662169e04ba51a80ee1" category="inline-link-macro">新增網站</block>
   <block id="04d842fd50a052e8aa0d29fecc18a42b" category="paragraph">如需所需的 vCenter 權限清單、請 <block ref="2c677a2a2de566e8f203663d6f65fae2" category="inline-link-macro-rx"></block>參閱。如需如何新增網站的指示、請 <block ref="4e15c40290645aa1bfcc516405624ad3" category="inline-link-macro-rx"></block>參閱。</block>
-  <block id="d5e44723931260e9fb1d91641ec67565" category="section-title">新增 BlueXP 帳戶</block>
-  <block id="55d6d6a5af12f879c7cc9cc76ddabdec" category="paragraph">在 BlueXP 中、如果您還沒有帳戶、就需要新增帳戶。請參閱<block ref="774d23f949c92eac0cff5269d4337483" category="inline-link-rx"></block>。</block>
   <block id="a5085066220b6bc77291e8a3ba481c5a" category="section-title">建立 BlueXP Connector</block>
   <block id="6bdd2270b2444eb60c9eb649a9ca2c48" category="paragraph">BlueXP Connector 必須在 BlueXP 中設定。當您使用 BlueXP Connector 時、它會包含災難恢復服務的適當功能。</block>
   <block id="d45c08fd27c89f889429a0d0279aa820" category="inline-link">以標準模式開始使用 BlueXP</block>
@@ -753,7 +732,6 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="5429b4727bb6860d719abc5d18c2c7ee" category="list-text">* 內部部署至 AWS * ：在 AWS VPC 中安裝 BlueXP Connector for AWS 。請參閱<block ref="5b7871abcfa07c659c7f1c6cfa3aafba" category="inline-link-rx"></block>。</block>
   <block id="12162c662baf903fc463cab971a2c144" category="admonition">對於內部部署到內部部署、請使用 BlueXP 內部部署 Connector 。對於內部部署至 AWS 、請使用 BlueXP AWS Connector 、它可以存取來源內部部署 vCenter 和目的地內部部署 vCenter 。</block>
   <block id="b44186c8f26107b5ae7810b1a74e8093" category="list-text">安裝的 BlueXP Connector 必須能夠存取 BlueXP 災難恢復所管理的任何 VMware 叢集。</block>
-  <block id="a342d0b5394cc9bc5595d491d2a70101" category="list-text">所有由 BlueXP 災難恢復管理的 ONTAP 陣列都必須新增至 BlueXP 工作區中用於管理 BlueXP 災難恢復的任何工作環境。</block>
   <block id="c5fbee6586294d81141f8dd158707985" category="inline-link">探索內部部署ONTAP 的叢集</block>
   <block id="c99bafeb844cf906e2f562103d12d623" category="paragraph">請參閱。<block ref="8cab2f9c49f209aeaa6ba3d7ce4342f6" category="inline-link-rx"></block></block>
   <block id="9d5cd03b2fcfbe5b4558a93d2fd07ca2" category="section-title">工作負載先決條件</block>
@@ -972,4 +950,21 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="65db0a5300ccaa6099d24aaf16150200" category="paragraph">自訂報告會出現在自訂報告清單中。</block>
   <block id="b7a41431aa1eee1607db390ac47d2a65" category="admonition">若要查看報告中包含的所有站台或計畫、請按一下報告名稱或計畫名稱右側的數字。</block>
   <block id="a99780537c030fe162f59c129be8e471" category="list-text">按一下 * 下載 * 下載 * 即可下載您的自訂報告。</block>
+  <block id="fca90381d84b0e9a022fdeac2012d4ab" category="paragraph">您需要 BlueXP  災難恢復序號。請從您的銷售訂單中找出此號碼、或聯絡客戶團隊以取得此資訊。</block>
+  <block id="20efb062527877ed8fd82ba191b8951b" category="paragraph">* 將授權新增至 BlueXP  數位錢包 * 購買 BlueXP  災難恢復授權後、您必須將授權新增至 BlueXP  數位錢包。</block>
+  <block id="61b173efd5c260fd3e3f446d9d4b37e7" category="section-title">開始使用BlueXP</block>
+  <block id="eb596a544acd0e757253fec1e32880e2" category="inline-link">註冊 BlueXP  並建立組織</block>
+  <block id="5c162fb1edd17998f73f4b49374c4871" category="paragraph">如果您尚未這麼做、<block ref="6286584d7da60f5fb185c973c7a25fca" category="inline-link-rx"></block></block>
+  <block id="4a14dfd2121c83ce14ebfbbcb15fcdb1" category="list-text">必須將 Amazon FSX for ONTAP 和 AWS 認證新增至 BlueXP  專案中用於管理 BlueXP  災難恢復的工作環境。</block>
+  <block id="7ac3ff2f395874b9e6146a5d359e67d0" category="list-text">所有由 BlueXP  災難恢復管理的 ONTAP 陣列都必須新增至 BlueXP  專案中用於管理 BlueXP  災難恢復的任何工作環境。</block>
+  <block id="98d90e398fc56688ddc647e5f49075ec" category="paragraph">工作環境清單位於您在服務頂端橫幅中選取的 BlueXP  組織（或帳戶）、專案（或工作區）和 Connector 範圍內。</block>
+  <block id="29360bfcdbc91d3f1514c372b4585965" category="list-text">註冊您的 BlueXP  帳戶序號（您的 20 位數 960xxxxxxxxx 序號位於 BlueXP  的「支援資源」頁面）。</block>
+  <block id="444b74bc81e823cc1c4c704219ad8ed3" category="section-title">註冊 BlueXP  以獲得 NetApp 支援</block>
+  <block id="b3bf31f8a918c712f26cdf493a908825" category="paragraph">若要註冊取得支援並啟動支援授權、您 BlueXP  組織（或帳戶）中的一位使用者必須將 NetApp 支援網站帳戶與其 BlueXP  登入建立關聯。您如何註冊NetApp支援取決於您是否已擁有NetApp 支援網站 一個NetApp（NSS）帳戶。</block>
+  <block id="2ba7f9eae7a02f9c3ac0fc07517d1c48" category="paragraph">「 * 資源 * 」頁面應顯示您的 BlueXP  組織已註冊取得支援。</block>
+  <block id="c05e530d1466e986d570cfe3f92656c3" category="paragraph">請注意、如果其他 BlueXP 使用者尚未將 NetApp 支援網站 帳戶與 BlueXP 登入建立關聯、則不會看到此相同的支援登錄狀態。不過、這並不表示您的 BlueXP  組織尚未註冊取得支援。只要組織中有一位使用者遵循這些步驟、您的組織就已註冊。</block>
+  <block id="a2454703f88e5bf5b433ae850a87151b" category="list-text">請務必複製上述序號欄位使用的帳戶序號（960xxxx）。這將加快處理速度。</block>
+  <block id="0ca08a23718c0a91743dd6c0146ca353" category="paragraph">若要為 Cloud Volumes ONTAP 啟用下列關鍵工作流程、必須將 NetApp 支援網站認證與您的 BlueXP  組織建立關聯：</block>
+  <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">將 NSS 認證與您的 BlueXP  組織建立關聯、不同於與 BlueXP  使用者登入相關聯的 NSS 帳戶。</block>
+  <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">這些 NSS 認證會與您的特定 BlueXP  組織 ID 相關聯。屬於 BlueXP  組織的使用者可從 * 支援 &gt; NSS 管理 * 存取這些認證。</block>
 </blocks>
