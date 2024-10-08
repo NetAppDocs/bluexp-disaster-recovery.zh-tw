@@ -185,8 +185,6 @@
   <block id="942a771213d3b59ba27960f61d97b1ac" category="inline-link"><block ref="942a771213d3b59ba27960f61d97b1ac" category="inline-link-rx"></block></block>
   <block id="6a203fd0003e1b252502653eca1a6c02" category="paragraph">* 什麼是 BlueXP 災難恢復 URL ？ *
 對於 URL 、請在瀏覽器中輸入：<block ref="6db7b50bf17b27cbede9f07c4fbc973e" category="inline-link-rx"></block> 存取 BlueXP 主控台。</block>
-  <block id="1510b9c9694467bb88815a127c906757" category="paragraph">* 如何存取 BlueXP 災難恢復？ *
-BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 BlueXP 左側導覽中。</block>
   <block id="89f19c30a67510e64ff4f90eede35bff" category="summary">若要使用 BlueXP 災難恢復、請執行幾個步驟來設定。</block>
   <block id="7b6761de8fbe584a66fa50ad6fa3dd19" category="doc">設定 BlueXP 災難恢復</block>
   <block id="b5b8e67d6a37d24ad73c89e4c7ac8c9e" category="inline-link-macro">先決條件</block>
@@ -690,7 +688,6 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="d66d706cd022ab39ed6479a713135515" category="paragraph"><block ref="d66d706cd022ab39ed6479a713135515" category="inline-image-macro-rx" type="image"></block></block>
   <block id="991e816286764c3a5ea9b023c35e1d77" category="paragraph"><block ref="991e816286764c3a5ea9b023c35e1d77" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b45dfe874eaba6a97e58e0436eba2402" category="sidebar">開始使用 BlueXP 災難恢復即服務實驗室即隨需實驗室</block>
-  <block id="439704735653d5132727cb9c21bc97c8" category="paragraph">BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。起初、透過 BlueXP 災難恢復服務、您可以保護內部部署、 NFS 型工作負載、並在技術預覽中、將執行 NetApp 儲存的 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區移至下列其中一項：</block>
   <block id="d5368fed025a9875e8a424b419508bef" category="admonition">此版本支援災難恢復功能、可在內部部署 VMware 工作負載的技術預覽中、透過 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區進行內部部署 VMware 環境。NetApp 不收取任何預覽工作負載容量的費用。</block>
   <block id="0dc4a26bb39078be4974284a72d54f64" category="paragraph">BlueXP 災難恢復服務可搭配 NetApp 授權使用、或透過 Amazon Web Services 使用年度訂閱方案。</block>
   <block id="66a7384fcc7d6c71e8da6dc152b82593" category="admonition">部分版本包含技術預覽。NetApp 不收取任何預覽工作負載容量的費用。如需最新技術預覽的相關資訊、請參閱 <block ref="431ce6b88c6d5399033553c1891688aa" category="inline-link-macro-rx"></block> 。</block>
@@ -709,7 +706,6 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="f5091f12fda6dcb8b160780e3352bbd5" category="list-text">您想要 BlueXP 災難恢復管理的所有 VMware 叢集都必須裝載在 ONTAP 磁碟區上。</block>
   <block id="a103c229873d833279c49def9ebe9fc3" category="list-text">所有由 BlueXP 災難恢復管理的 VMware 資料存放區都必須使用下列其中一種通訊協定：</block>
   <block id="1d1a594959ec615f56516f5d0f5e8ddb" category="list-text">NFS</block>
-  <block id="47e0fa80d3fa1add35dfaada74c496e9" category="list-text">使用 iSCSI 傳輸協定的 VMFS （目前在技術預覽中）</block>
   <block id="b48bd09b37dbbe2233bba9ccc258e634" category="list-text">如果您使用的是 VMware Cloud SDDC 、則必須符合這些必要條件。</block>
   <block id="7fc6ed2196514db323edb5f8ee464448" category="inline-link">搭配 AWS FSX for NetApp ONTAP 文件使用 VMware Cloud Foundations</block>
   <block id="f2fc5fa158eeee58eae505a362a866b3" category="list-text">在 VMware Cloud Console 中、使用管理員和 NSX Cloud Administrator 的服務角色。也可以使用組織擁有者擔任組織角色。請參閱<block ref="87df9e87408172a2291d5738f3ae5f4f" category="inline-link-rx"></block>。</block>
@@ -967,4 +963,7 @@ BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 
   <block id="0ca08a23718c0a91743dd6c0146ca353" category="paragraph">若要為 Cloud Volumes ONTAP 啟用下列關鍵工作流程、必須將 NetApp 支援網站認證與您的 BlueXP  組織建立關聯：</block>
   <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">將 NSS 認證與您的 BlueXP  組織建立關聯、不同於與 BlueXP  使用者登入相關聯的 NSS 帳戶。</block>
   <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">這些 NSS 認證會與您的特定 BlueXP  組織 ID 相關聯。屬於 BlueXP  組織的使用者可從 * 支援 &gt; NSS 管理 * 存取這些認證。</block>
+  <block id="d4f0533448e4984685ae016d36dba83a" category="paragraph">* 如何存取 BlueXP  災難恢復？ *BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 BlueXP 左側導覽中。</block>
+  <block id="bc483ba843f73e5d609495aa94d035b9" category="paragraph">BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。透過 BlueXP  災難恢復服務、您可以保護內部部署、 NFS 型工作負載和 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區、以用於執行 NetApp 儲存設備的 iSCSI 和 FC 、並將其保護至下列其中一項：</block>
+  <block id="412e382a6d6d3bd8a3bfd94b856f9f4e" category="list-text">使用 iSCSI 或 FC 傳輸協定的 VMFS</block>
 </blocks>

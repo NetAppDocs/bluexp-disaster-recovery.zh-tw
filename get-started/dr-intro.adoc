@@ -14,7 +14,7 @@ summary: 災難恢復至雲端是一種彈性且具成本效益的方法、可�
 [role="lead"]
 災難恢復至雲端是一種彈性且具成本效益的方法、可保護工作負載免受站台中斷和資料毀損事件的影響。透過 BlueXP 災難恢復 for VMware 、您可以使用 NetApp 雲端儲存設備、將內部部署的執行 ONTAP 儲存設備的 VMware 工作負載複寫到公有雲中的 VMware 軟體定義資料中心、或將 ONTAP 儲存設備做為災難恢復站台的內部部署 VMware 環境。
 
-BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。起初、透過 BlueXP 災難恢復服務、您可以保護內部部署、 NFS 型工作負載、並在技術預覽中、將執行 NetApp 儲存的 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區移至下列其中一項：
+BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。透過 BlueXP  災難恢復服務、您可以保護內部部署、 NFS 型工作負載和 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區、以用於執行 NetApp 儲存設備的 iSCSI 和 FC 、並將其保護至下列其中一項：
 
 * VMware Cloud （ VMC ） on AWS with Amazon FSX for NetApp ONTAP 或
 * 另一個內部部署的 NFS 型 VMware 環境、搭配 ONTAP 儲存設備

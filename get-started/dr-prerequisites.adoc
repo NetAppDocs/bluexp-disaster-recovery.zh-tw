@@ -44,7 +44,7 @@ NOTE: 目的地 SVM 或 SVM 中的災難恢復磁碟區不應事先建立。Blue
 * 所有由 BlueXP 災難恢復管理的 VMware 資料存放區都必須使用下列其中一種通訊協定：
 +
 ** NFS
-** 使用 iSCSI 傳輸協定的 VMFS （目前在技術預覽中）
+** 使用 iSCSI 或 FC 傳輸協定的 VMFS
 
 
 * 如果您使用的是 VMware Cloud SDDC 、則必須符合這些必要條件。

@@ -22,5 +22,4 @@ summary: 如果您只是想要快速回答問題、這個常見問題集就能�
 
 如需設定 BlueXP 災難恢復授權的詳細資訊、請參閱 link:../get-started/dr-licensing.html["設定 BlueXP 災難恢復授權"]。
 
-* 如何存取 BlueXP 災難恢復？ *
-BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 BlueXP 左側導覽中。
+* 如何存取 BlueXP  災難恢復？ *BlueXP 災難恢復不需要任何啓用。災難恢復選項會自動出現在 BlueXP 左側導覽中。
