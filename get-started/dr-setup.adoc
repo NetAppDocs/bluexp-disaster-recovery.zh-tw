@@ -59,17 +59,3 @@ TIP: 檢閱 link:../get-started/dr-prerequisites.html["先決條件"] 確保您�
 https://www.vmware.com/products/vmc-on-aws.html["AWS上的VMware Cloud"^] 為AWS生態系統中的VMware工作負載提供雲端原生體驗。每個 VMware 軟體定義資料中心（ SDDC ）都會在 Amazon Virtual Private Cloud （ VPC ）中執行、並提供完整的 VMware 堆疊（包括 vCenter Server ）、 NSX-T 軟體定義網路、 vSAN 軟體定義儲存設備、以及一或多個 ESXi 主機、為工作負載提供運算和儲存資源。
 
 若要在AWS上設定VMC環境、請執行下列步驟 https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-setup.html["連結"^]。試行指示燈叢集也可用於災難恢復。
-
-
-
-== 設定授權
-
-有了 BlueXP 災難恢復功能、您可以註冊 90 天免費試用。
-
-您可以購買下列其中一項：
-
-* AWS Marketplace 的隨用隨付（ PAYGO ）訂閱
-* 自帶授權（ BYOL ）、這是 NetApp 授權檔案（ NLF ）。
-
-
-請參閱 link:../get-started/dr-licensing.html["設定 BlueXP 災難恢復授權"]。

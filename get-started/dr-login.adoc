@@ -27,7 +27,7 @@ summary: 存取 BlueXP 中的服務、開始使用 BlueXP 災難恢復功能。
 如果這是您第一次登入此服務、就會出現登陸頁面、您可以註冊免費試用。
 
 +
-image:draas-landing3-free-trial.png["BlueXP 災難恢復的登陸頁快照"]
+image:draas-landing4-free-trial.png["BlueXP 災難恢復的登陸頁快照"]
 
 +
 否則、 BlueXP 災難恢復儀表板就會出現。

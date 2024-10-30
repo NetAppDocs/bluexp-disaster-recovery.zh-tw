@@ -22,3 +22,5 @@ entries:
   url: "/use/manage.html"
 - title: 監控災難恢復工作
   url: "/use/monitor-jobs.html"
+- title: 建立災難恢復報告
+  url: "/use/reports.html"
