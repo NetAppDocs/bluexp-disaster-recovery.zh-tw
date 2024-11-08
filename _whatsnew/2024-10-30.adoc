@@ -1,0 +1,89 @@
+= 報告
+:allow-uri-read: 
+
+
+
+
+=== 報告
+
+您現在可以產生及下載報告、以協助您分析環境。預先設計的報告會摘要容錯移轉和容錯移轉、顯示所有站台的複寫詳細資料、以及顯示過去七天的工作詳細資料。
+
+請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/reports.html["建立災難恢復報告"]。
+
+
+
+=== 30 天免費試用
+
+您現在可以註冊免費試用 30 天的 BlueXP  災難恢復。以前、免費試用期為 90 天。
+
+請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html["設定授權"]。
+
+
+
+=== 停用及啟用複寫計畫
+
+先前版本包含容錯移轉測試排程結構的更新、這是支援每日和每週排程所需的更新。此更新需要您停用並重新啟用所有現有的複寫計畫、才能使用新的每日和每週容錯移轉測試排程。這是一次性要求。
+
+方法如下：
+
+. 從上方功能表中、選取 * 複寫計畫 * 。
+. 選取計畫、然後選取「動作」圖示以顯示下拉式功能表。
+. 選擇*停用*。
+. 幾分鐘後、選取 * 啟用 * 。
+
+
+
+
+=== 資料夾對應
+
+建立複寫計畫和對應運算資源時、您現在可以對應資料夾、以便將 VM 恢復到您指定的資料夾中、以供資料中心、叢集和主機使用。
+
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
+
+
+
+=== VM 詳細資料可用於容錯移轉、容錯回復及測試容錯移轉
+
+當發生故障、而您正在啟動容錯移轉、執行容錯回復或測試容錯移轉時、您現在可以查看 VM 的詳細資料、並識別哪些 VM 未重新啟動。
+
+請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["將應用程式容錯移轉至遠端站台"]。
+
+
+
+=== VM 開機延遲、並依序執行開機順序
+
+建立複寫計畫時、您現在可以為計畫中的每個 VM 設定開機延遲。這可讓您設定 VM 開始的順序、以確保在啟動後續優先順序 VM 之前、有一個 VM 正在執行所有優先順序。
+
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
+
+
+
+=== VM 作業系統資訊
+
+當您建立複寫計畫時、現在可以在計畫中看到每個 VM 的作業系統。這有助於決定如何將 VM 群組在資源群組中。
+
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
+
+
+
+=== VM 名稱別名
+
+當您建立複寫計畫時、現在可以在災難恢復會議上新增 VM 名稱的前置字元和後置字元。這可讓您在計畫中為 VM 使用更具描述性的名稱。
+
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
+
+
+
+=== 清理舊的快照
+
+您可以刪除任何超出指定保留數量的不再需要的快照。快照可能會隨著時間而累積、因此您可以減少快照保留數量、然後移除快照以釋出空間。您可以隨時視需要或刪除複寫計畫來執行此作業。
+
+如需詳細資訊、請 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["管理站台、資源群組、複寫計畫、資料存放區和虛擬機器資訊"]參閱。
+
+
+
+=== 協調快照
+
+您現在可以協調來源和目標之間不同步的快照。如果在 BlueXP  災難恢復之外的目標上刪除快照、可能會發生這種情況。服務會每 24 小時自動刪除來源上的快照。不過、您可以隨需執行此作業。此功能可讓您確保所有站台的快照一致。
+
+如需詳細資訊、請 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["管理複寫計畫"]參閱。

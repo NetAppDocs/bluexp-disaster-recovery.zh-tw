@@ -18,124 +18,164 @@ summary: BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化�
 
 == 2024 年 10 月 30 日
 
-此 BlueXP 災難恢復版本包含下列更新：
 
-* * 報告 * ：有了此版本、您現在可以產生及下載報告、協助您分析您的環境。預先設計的報告會摘要容錯移轉和容錯移轉、顯示所有站台的複寫詳細資料、以及顯示過去七天的工作詳細資料。
-+
+
+=== 報告
+
+您現在可以產生及下載報告、以協助您分析環境。預先設計的報告會摘要容錯移轉和容錯移轉、顯示所有站台的複寫詳細資料、以及顯示過去七天的工作詳細資料。
+
 請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/reports.html["建立災難恢復報告"]。
 
-* * 30 天免費試用 * ：有了此版本、您現在可以註冊免費試用 30 天的 BlueXP  災難恢復。以前、免費試用期為 90 天。
-+
+
+
+=== 30 天免費試用
+
+您現在可以註冊免費試用 30 天的 BlueXP  災難恢復。以前、免費試用期為 90 天。
+
 請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html["設定授權"]。
 
-* * 停用及啟用複寫計畫 * ：先前版本包含容錯移轉測試排程結構的更新、這是支援每日和每週排程所需的。此更新需要您停用並重新啟用所有現有的複寫計畫、才能使用新的每日和每週容錯移轉測試排程。這是一次性要求。
-+
+
+
+=== 停用及啟用複寫計畫
+
+先前版本包含容錯移轉測試排程結構的更新、這是支援每日和每週排程所需的更新。此更新需要您停用並重新啟用所有現有的複寫計畫、才能使用新的每日和每週容錯移轉測試排程。這是一次性要求。
+
 方法如下：
 
-+
-.. 從上方功能表中、選取 * 複寫計畫 * 。
-.. 選取計畫、然後選取「動作」圖示以顯示下拉式功能表。
-.. 選擇*停用*。
-.. 幾分鐘後、選取 * 啟用 * 。
+. 從上方功能表中、選取 * 複寫計畫 * 。
+. 選取計畫、然後選取「動作」圖示以顯示下拉式功能表。
+. 選擇*停用*。
+. 幾分鐘後、選取 * 啟用 * 。
 
 
-* * 資料夾對應 * ：建立複寫計畫並對應運算資源時、您現在可以對應資料夾、以便將 VM 恢復到您指定的資料夾中、以供資料中心、叢集和主機使用。
-+
+
+
+=== 資料夾對應
+
+建立複寫計畫和對應運算資源時、您現在可以對應資料夾、以便將 VM 恢復到您指定的資料夾中、以供資料中心、叢集和主機使用。
+
 如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
 
-* * VM 詳細資料可用於容錯移轉、容錯回復及測試容錯移轉 * ：當發生故障且您正在啟動容錯移轉、執行容錯回復或測試容錯移轉時、您現在可以查看 VM 的詳細資料、並識別哪些 VM 未重新啟動。
-+
+
+
+=== VM 詳細資料可用於容錯移轉、容錯回復及測試容錯移轉
+
+當發生故障、而您正在啟動容錯移轉、執行容錯回復或測試容錯移轉時、您現在可以查看 VM 的詳細資料、並識別哪些 VM 未重新啟動。
+
 請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["將應用程式容錯移轉至遠端站台"]。
 
-* * 依順序開機順序的 VM 開機延遲 * ：建立複寫計畫時、您現在可以為計畫中的每個 VM 設定開機延遲。這可讓您設定 VM 開始的順序、以確保在啟動後續優先順序 VM 之前、有一個 VM 正在執行所有優先順序。
-+
+
+
+=== VM 開機延遲、並依序執行開機順序
+
+建立複寫計畫時、您現在可以為計畫中的每個 VM 設定開機延遲。這可讓您設定 VM 開始的順序、以確保在啟動後續優先順序 VM 之前、有一個 VM 正在執行所有優先順序。
+
 如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
 
-* * VM 作業系統資訊 * ：建立複寫計畫時、您現在可以在計畫中看到每個 VM 的作業系統。這有助於決定如何將 VM 群組在資源群組中。
-+
+
+
+=== VM 作業系統資訊
+
+當您建立複寫計畫時、現在可以在計畫中看到每個 VM 的作業系統。這有助於決定如何將 VM 群組在資源群組中。
+
 如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
 
-* * 虛擬機器名稱別名 * ：建立複寫計畫時、您現在可以在災難恢復站點的虛擬機器名稱中新增字首和字尾。這可讓您在計畫中為 VM 使用更具描述性的名稱。
-+
+
+
+=== VM 名稱別名
+
+當您建立複寫計畫時、現在可以在災難恢復會議上新增 VM 名稱的前置字元和後置字元。這可讓您在計畫中為 VM 使用更具描述性的名稱。
+
 如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
 
-* * 清除舊的快照 * ：使用此版本、您可以刪除超出指定保留數的任何不再需要的快照。快照可能會隨著時間而累積、因此您可以減少快照保留數量、然後移除快照以釋出空間。您可以隨時視需要或刪除複寫計畫來執行此作業。
-+
+
+
+=== 清理舊的快照
+
+您可以刪除任何超出指定保留數量的不再需要的快照。快照可能會隨著時間而累積、因此您可以減少快照保留數量、然後移除快照以釋出空間。您可以隨時視需要或刪除複寫計畫來執行此作業。
+
 如需詳細資訊、請 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["管理站台、資源群組、複寫計畫、資料存放區和虛擬機器資訊"]參閱。
 
-* * 同步化快照 * ：使用此版本、您現在可以協調來源與目標之間不同步的快照。如果在 BlueXP  災難恢復之外的目標上刪除快照、可能會發生這種情況。服務會每 24 小時自動刪除來源上的快照。不過、您可以隨需執行此作業。此功能可讓您確保所有站台的快照一致。
-+
+
+
+=== 協調快照
+
+您現在可以協調來源和目標之間不同步的快照。如果在 BlueXP  災難恢復之外的目標上刪除快照、可能會發生這種情況。服務會每 24 小時自動刪除來源上的快照。不過、您可以隨需執行此作業。此功能可讓您確保所有站台的快照一致。
+
 如需詳細資訊、請 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["管理複寫計畫"]參閱。
-
-
 
 
 
 == 2024 年 9 月 20 日
 
-此 BlueXP  災難恢復版本包含下列更新。
 
-* * 支援內部部署到內部部署的 VMware VMFS 資料存放區 * ：此版本支援安裝在 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區上的虛擬機器、適用於受內部部署儲存保護的 iSCSI 和 FC 。此服務先前提供 _ 技術預覽 _ 、支援 iSCSI 和 FC 的 VMFS 資料存放區。
-+
+
+=== 支援內部部署到內部部署的 VMware VMFS 資料存放區
+
+此版本支援安裝在 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區上的虛擬機器、以供 iSCSI 和 FC 受內部部署儲存保護。此服務先前提供 _ 技術預覽 _ 、支援 iSCSI 和 FC 的 VMFS 資料存放區。
+
 以下是 iSCSI 和 FC 通訊協定的其他考量事項：
 
-+
-** FC 支援適用於用戶端前端通訊協定、而非複寫。
-** BlueXP  災難恢復每個 ONTAP 磁碟區僅支援單一 LUN 。磁碟區不應有多個 LUN 。
-** 對於任何複寫計畫、目的地 ONTAP Volume 應使用與主控受保護 VM 的來源 ONTAP Volume 相同的傳輸協定。例如、如果來源使用 FC 傳輸協定、則目的地也應該使用 FC 。
-
-
+* FC 支援適用於用戶端前端通訊協定、而非複寫。
+* BlueXP  災難恢復每個 ONTAP 磁碟區僅支援單一 LUN 。磁碟區不應有多個 LUN 。
+* 對於任何複寫計畫、目的地 ONTAP Volume 應使用與主控受保護 VM 的來源 ONTAP Volume 相同的傳輸協定。例如、如果來源使用 FC 傳輸協定、則目的地也應該使用 FC 。
 
 
 
 
 == 2024 年 8 月 2 日
 
-此 BlueXP 災難恢復版本包含下列更新：
 
-* * 支援內部部署到內部部署的 VMware VMFS FC 資料存放區 * ：此版本包含對安裝在 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區上的虛擬機器（ VM ）支援的技術預覽（ _Technology preview_ ）、以供 FC 保護到內部部署儲存設備。此服務先前提供技術預覽、可支援 iSCSI 的 VMFS 資料存放區。
-+
+
+=== 支援內部部署到內部部署的 VMware VMFS FC 資料存放區
+
+此版本包含 _ 技術預覽 _ 、可支援安裝在 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區上的 VM 、以供 FC 保護至內部部署儲存設備。此服務先前提供技術預覽、可支援 iSCSI 的 VMFS 資料存放區。
+
 
 NOTE: NetApp 不收取任何預覽工作負載容量的費用。
 
-* * 工作取消 * ：使用此版本、您現在可以在工作監控 UI 中取消工作。
-+
+
+
+=== 工作取消
+
+使用此版本、您現在可以在工作監控 UI 中取消工作。
+
 請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html["監控工作"]。
-
-
 
 
 
 == 2024 年 7 月 17 日
 
-此 BlueXP 災難恢復版本包含下列更新：
 
-* * 容錯移轉測試排程 * ：此版本包含容錯移轉測試排程結構的更新、這是支援每日和每週排程所需的。此更新需要您停用並重新啟用所有現有的複寫計畫、才能使用新的每日和每週容錯移轉測試排程。這是一次性要求。
-+
+
+=== 容錯移轉測試排程
+
+此版本包含容錯移轉測試排程結構的更新、這是支援每日和每週排程所需的更新。此更新需要您停用並重新啟用所有現有的複寫計畫、才能使用新的每日和每週容錯移轉測試排程。這是一次性要求。
+
 方法如下：
 
-+
-.. 從上方功能表中、選取 * 複寫計畫 * 。
-.. 選取計畫、然後選取「動作」圖示以顯示下拉式功能表。
-.. 選擇*停用*。
-.. 幾分鐘後、選取 * 啟用 * 。
+. 從上方功能表中、選取 * 複寫計畫 * 。
+. 選取計畫、然後選取「動作」圖示以顯示下拉式功能表。
+. 選擇*停用*。
+. 幾分鐘後、選取 * 啟用 * 。
 
 
-* * 複寫計畫更新 * ：此版本包含複寫計畫資料的更新、可解決「找不到快照」的問題。這需要您將所有複寫計畫中的保留計數變更為 1 、然後啟動隨需快照。此程序會建立新的備份、並移除所有較舊的備份。
-+
+
+
+=== 複寫計畫更新
+
+此版本包含複寫計畫資料的更新、可解決「找不到快照」的問題。這需要您將所有複寫計畫中的保留計數變更為 1 、然後啟動隨需快照。此程序會建立新的備份、並移除所有較舊的備份。
+
 方法如下：
 
-+
-.. 從上方功能表中、選取 * 複寫計畫 * 。
-.. 選取複寫計畫、按一下 * 容錯移轉對應 * 標籤、然後按一下 * 編輯 * 鉛筆圖示。
-.. 按一下 * 資料存放區 * 箭號加以展開。
-.. 請注意複寫計畫中保留計數的值。完成這些步驟後、您必須恢復此原始值。
-.. 將數量減至 1 。
-.. 啟動隨選快照。若要這麼做、請在「複寫計畫」頁面上選取計畫、按一下「動作」圖示、然後選取 * 立即擷取快照 * 。
-.. 快照工作成功完成後、請將複寫計畫中的計數增加回您在第一步中記下的原始值。
-.. 對所有現有的複寫計畫重複這些步驟。
-
-
+. 從上方功能表中、選取 * 複寫計畫 * 。
+. 選取複寫計畫、按一下 * 容錯移轉對應 * 標籤、然後按一下 * 編輯 * 鉛筆圖示。
+. 按一下 * 資料存放區 * 箭號加以展開。
+. 請注意複寫計畫中保留計數的值。完成這些步驟後、您必須恢復此原始值。
+. 將數量減至 1 。
+. 啟動隨選快照。若要這麼做、請在「複寫計畫」頁面上選取計畫、按一下「動作」圖示、然後選取 * 立即擷取快照 * 。
+. 快照工作成功完成後、請將複寫計畫中的計數增加回您在第一步中記下的原始值。
+. 對所有現有的複寫計畫重複這些步驟。
 
 
 
@@ -144,36 +184,66 @@ NOTE: NetApp 不收取任何預覽工作負載容量的費用。
 
 此 BlueXP 災難恢復版本包含下列更新：
 
-* * 支援 AFF A 系列 * ：此版本支援 NetApp AFF A 系列硬體平台。
 
 
-* * 支援內部部署到內部部署的 VMware VMFS 資料存放區 * ：此版本包含對安裝在 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區（受保護於內部部署儲存區）上的虛擬機器的支援（技術預覽）。此版本支援災難恢復功能、可在內部部署 VMware 工作負載的技術預覽中進行、並可在內部部署 VMware 環境中使用 VMFS 資料存放區。
-+
+=== 支援 AFF A 系列
+
+此版本支援 NetApp AFF A 系列硬體平台。
+
+
+
+=== 支援內部部署到內部部署的 VMware VMFS 資料存放區
+
+此版本包含 _ 技術預覽 _ 、可支援安裝在 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區上、並受保護至內部部署儲存設備的 VM 。此版本支援災難恢復功能、可在內部部署 VMware 工作負載的技術預覽中進行、並可在內部部署 VMware 環境中使用 VMFS 資料存放區。
+
 
 NOTE: NetApp 不收取任何預覽工作負載容量的費用。
 
-* * 複寫計畫更新 * ：您可以在「應用程式」頁面上依資料存放區篩選 VM 、並選擇 / / 參閱、以更輕鬆地新增複寫計畫 link:../use/drplan-create.html["建立複寫計畫"]。請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。 在資源對應頁面上顯示更多目標詳細資料。
-* * 編輯複寫計畫 * ：此版本增強了容錯移轉對應頁面、以提高清晰度。
-+
+
+
+=== 複寫計畫更新
+
+您可以在「應用程式」頁面上依資料存放區篩選虛擬機器、並在「資源對應」頁面上選取更多目標詳細資料、以更輕鬆地新增複寫計畫。請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
+
+
+
+=== 編輯複寫計畫
+
+此版本已增強容錯移轉對應頁面、以獲得更清楚的資訊。
+
 請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["管理計畫"]。
 
-* * 編輯 VMS* ：在此版本中、規劃中的虛擬機器編輯程序包括一些小的 UI 改善。
-+
+
+
+=== 編輯 VM
+
+在此版本中、規劃中的虛擬機器編輯程序包括一些細微的 UI 改善。
+
 請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["管理 VM"]。
 
-* * 容錯移轉更新 * ：在啟動容錯移轉之前、您現在可以判斷 VM 的狀態、以及 VM 的電源是開啟還是關閉。現在、容錯移轉程序可讓您立即拍攝快照、或選擇快照。
-+
+
+
+=== 容錯移轉更新
+
+在您啟動容錯移轉之前、您現在可以判斷 VM 的狀態、以及 VM 的電源是開啟還是關閉。現在、容錯移轉程序可讓您立即拍攝快照、或選擇快照。
+
 請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["將應用程式容錯移轉至遠端站台"]。
 
-* * 容錯移轉測試排程 * ：您現在可以編輯容錯移轉測試、並設定每日、每週和每月的容錯移轉測試排程。
-+
+
+
+=== 容錯移轉測試排程
+
+您現在可以編輯容錯移轉測試、並設定容錯移轉測試的每日、每週和每月排程。
+
 請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["管理計畫"]。
 
-* * 先決條件資訊的更新 * ： BlueXP 災難恢復先決條件資訊已更新。
-+
+
+
+=== 更新必要資訊
+
+BlueXP  災難恢復先決條件資訊已更新。
+
 請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-prerequisites.html["BlueXP 災難恢復先決條件"]。
-
-
 
 
 
@@ -181,12 +251,19 @@ NOTE: NetApp 不收取任何預覽工作負載容量的費用。
 
 此 BlueXP 災難恢復版本包含下列更新：
 
-* * 將 VMware 工作負載從內部部署複製到內部部署 * 、現在已成為一般可用度功能。以前、這是一項功能有限的技術預覽。
-* * 授權更新 * ： 有了 BlueXP 災難恢復功能、您可以註冊 90 天免費試用版、向 Amazon Marketplace 購買隨用隨付（ PAYGO ）訂閱、或自帶授權（ BYOL ）、這是您從 NetApp 銷售代表或 NetApp 支援網站 （ NSS ）取得的 NetApp 授權檔案（ NLF ）。
-+
+
+
+=== 將 VMware 工作負載從內部部署複寫到內部部署
+
+這項功能現在已作為一般可用度功能發行。以前、這是一項功能有限的技術預覽。
+
+
+
+=== 授權更新
+
+有了 BlueXP  災難恢復功能、您可以註冊 90 天免費試用版、透過 Amazon Marketplace 購買隨付（ PAYGO ）訂閱、或自帶授權（ BYOL ）、這是您從 NetApp 銷售代表或 NetApp 支援網站（ NSS ）取得的 NetApp 授權檔案（ NLF ）。
+
 如需設定 BlueXP 災難恢復授權的詳細資訊、請參閱 link:../get-started/dr-licensing.html["設定授權"]。
-
-
 
 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["深入瞭解 BlueXP 災難恢復"]。
 
@@ -196,20 +273,23 @@ https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html
 
 這是 BlueXP 災難恢復的一般可用度版本、其中包括下列更新。
 
-* * 授權更新 * ：使用 BlueXP 災難恢復功能、您可以註冊 90 天免費試用版、或自帶授權（ BYOL ）、這是您從 NetApp 銷售代表處取得的 NetApp 授權檔案（ NLF ）您可以使用授權序號、在 BlueXP 數位錢包中啟動 BYOL 。BlueXP 災難恢復費用是根據資料存放區的已配置容量而定。
-+
+
+
+=== 授權更新
+
+透過 BlueXP  災難恢復、您可以註冊 90 天免費試用版、或自帶授權（ BYOL ）、這是您從 NetApp 銷售代表處取得的 NetApp 授權檔案（ NLF ）您可以使用授權序號、在 BlueXP 數位錢包中啟動 BYOL 。BlueXP 災難恢復費用是根據資料存放區的已配置容量而定。
+
 如需設定 BlueXP 災難恢復授權的詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html["設定授權"]。
 
-+
 如需管理 * 全部 * BlueXP 服務授權的詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["管理所有 BlueXP 服務的授權"^]。
 
 
 
-* * 編輯排程 * ：使用此版本、您現在可以設定排程來測試法規遵循和容錯移轉測試、確保它們能在您需要時正常運作。
-+
+=== 編輯排程
+
+有了這個版本、您現在可以設定測試法規遵循和容錯移轉測試的排程、確保它們在您需要時能正常運作。
+
 如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
-
-
 
 
 
@@ -217,36 +297,57 @@ https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html
 
 此 BlueXP 災難恢復預覽版本包含下列更新：
 
-* * 網路增強 * ：現在您可以使用此版本調整 VM CPU 和 RAM 值的大小。您現在也可以為虛擬機器選取網路 DHCP 或靜態 IP 位址。
-+
-** DHCP ：如果您選擇此選項、則會提供 VM 的認證。
-** 靜態 IP ：您可以從來源 VM 選取相同或不同的資訊。如果您選擇的來源相同、則不需要輸入認證。另一方面、如果您選擇使用來源的不同資訊、則可以提供認證、 IP 位址、子網路遮罩、 DNS 和閘道資訊。
-+
+
+
+=== 網路強化
+
+使用此版本、您現在可以調整 VM CPU 和 RAM 值的大小。您現在也可以為虛擬機器選取網路 DHCP 或靜態 IP 位址。
+
+* DHCP ：如果您選擇此選項、則會提供 VM 的認證。
+* 靜態 IP ：您可以從來源 VM 選取相同或不同的資訊。如果您選擇的來源相同、則不需要輸入認證。另一方面、如果您選擇使用來源的不同資訊、則可以提供認證、 IP 位址、子網路遮罩、 DNS 和閘道資訊。
+
+
 如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
 
 
 
-* * 自訂指令碼 * 現在可以納入容錯移轉後程序。透過自訂指令碼、您可以在容錯移轉程序之後執行 BlueXP 災難恢復指令碼。例如、您可以使用自訂指令碼、在容錯移轉完成後恢復所有資料庫交易。
-+
+=== 自訂指令碼
+
+現在可以納入容錯移轉後程序。透過自訂指令碼、您可以在容錯移轉程序之後執行 BlueXP 災難恢復指令碼。例如、您可以使用自訂指令碼、在容錯移轉完成後恢復所有資料庫交易。
+
 如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["容錯移轉至遠端站台"]。
 
-* *SnapMirror 關係 * ：您現在可以在開發複寫計畫時建立 SnapMirror 關係。以前、您必須在 BlueXP 災難恢復之外建立關係。
-+
-如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
 
-* * 一致性群組 * ：建立複寫計畫時、您可以納入來自不同磁碟區和不同 SVM 的 VM 。BlueXP 災難恢復通過包括所有卷並更新所有輔助位置來創建一致性組快照。
-+
-如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
 
-* * VM 開機延遲選項 * ：建立複寫計畫時、您可以將 VM 新增至資源群組。使用資源群組、您可以在每個 VM 上設定延遲、以便它們啟動延遲的順序。
-+
-如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
+=== SnapMirror關係
 
-* * 應用程式一致的 Snapshot 複本 * ：您可以指定建立應用程式一致的 Snapshot 複本。服務將會先將應用程式設為「自動快照」、然後再製作「快照」、以取得應用程式的一致狀態。
-+
+您現在可以在開發複寫計畫時建立 SnapMirror 關係。以前、您必須在 BlueXP 災難恢復之外建立關係。
+
 如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
 
 
+
+=== 一致性群組
+
+建立複寫計畫時、您可以納入來自不同磁碟區和不同 SVM 的 VM 。BlueXP 災難恢復通過包括所有卷並更新所有輔助位置來創建一致性組快照。
+
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
+
+
+
+=== VM 開機延遲選項
+
+建立複寫計畫時、您可以將 VM 新增至資源群組。使用資源群組、您可以在每個 VM 上設定延遲、以便它們啟動延遲的順序。
+
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
+
+
+
+=== 應用程式一致的Snapshot複本
+
+您可以指定建立應用程式一致的 Snapshot 複本。服務將會先將應用程式設為「自動快照」、然後再製作「快照」、以取得應用程式的一致狀態。
+
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
 
 
 
@@ -254,8 +355,11 @@ https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html
 
 此 BlueXP 災難恢復預覽版本包含下列更新：
 
-* 使用此版本、您可以更快速地從儀表板存取其他頁面上的資訊。
 
+
+=== 儀表板更快速
+
+使用此版本、您可以更快速地從儀表板存取其他頁面上的資訊。
 
 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["瞭解 BlueXP 災難恢復"]。
 
@@ -264,6 +368,10 @@ https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html
 == 2023 年 10 月 20 日
 
 此 BlueXP 災難恢復預覽版本包含下列更新。
+
+
+
+=== 保護內部部署的 NFS 型 VMware 工作負載
 
 現在有了 BlueXP 災難恢復功能、除了公有雲之外、您還可以保護內部部署的 NFS 型 VMware 工作負載、使其免受災難影響、不受其他內部部署、 NFS 型 VMware 環境的影響。BlueXP 災難恢復可協調災難恢復計畫的完成。
 
@@ -278,34 +386,38 @@ https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html
 
 此 BlueXP 災難恢復預覽版本包含下列更新：
 
-* * 儀表板更新 * ：您現在可以按一下儀表板上的選項、讓您更輕鬆地快速檢閱資訊。此外、儀表板現在也會顯示容錯移轉和移轉的狀態。
-+
+
+
+=== 儀表板更新
+
+您現在可以按一下儀表板上的選項、以便更輕鬆地快速檢閱資訊。此外、儀表板現在也會顯示容錯移轉和移轉的狀態。
+
 請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/dashboard-view.html["在儀表板上檢視災難恢復計畫的健全狀況"]。
 
-* * 複寫計畫更新 * ：
-+
-** * RPO * ：您現在可以在複寫計畫的資料存放區區區區段中輸入恢復點目標（ RPO ）和保留計數。這表示必須存在的資料量、其長度不得早於設定時間。例如、如果您將其設為 5 分鐘、則在發生災難而不影響業務關鍵需求的情況下、系統最多可能會遺失 5 分鐘的資料。
+
+
+=== 複寫計畫更新
+
+* * RPO * ：您現在可以在複寫計畫的資料存放區區區區段中輸入恢復點目標（ RPO ）和保留計數。這表示必須存在的資料量、其長度不得早於設定時間。例如、如果您將其設為 5 分鐘、則在發生災難而不影響業務關鍵需求的情況下、系統最多可能會遺失 5 分鐘的資料。
 +
 請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
 
-** * 網路功能增強 * ：當您在複寫計畫的虛擬機器區段中對應來源和目標位置之間的網路時、 BlueXP 災難恢復現在提供兩個選項： DHCP 或靜態 IP 。以前只支援 DHCP 。對於靜態 IP 、您可以設定子網路、閘道和 DNS 伺服器。此外、您現在可以輸入虛擬機器的認證。
+* * 網路功能增強 * ：當您在複寫計畫的虛擬機器區段中對應來源和目標位置之間的網路時、 BlueXP 災難恢復現在提供兩個選項： DHCP 或靜態 IP 。以前只支援 DHCP 。對於靜態 IP 、您可以設定子網路、閘道和 DNS 伺服器。此外、您現在可以輸入虛擬機器的認證。
 +
 請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
 
-** * 編輯排程 * ：您現在可以更新複寫計畫排程。
+* * 編輯排程 * ：您現在可以更新複寫計畫排程。
 +
 請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["管理資源"]。
 
-** *SnapMirror 自動化 * ：當您在此版本中建立複寫計畫時、您可以在下列其中一個組態中定義來源磁碟區與目標磁碟區之間的 SnapMirror 關係：
+* *SnapMirror 自動化 * ：當您在此版本中建立複寫計畫時、您可以在下列其中一個組態中定義來源磁碟區與目標磁碟區之間的 SnapMirror 關係：
 +
-*** 1 對 1
-*** 在扇出架構中有 1 對多個
-*** 一致性群組中有多對 1
-*** 多到多
+** 1 對 1
+** 在扇出架構中有 1 對多個
+** 一致性群組中有多對 1
+** 多到多
 +
 請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
-
-
 
 
 
@@ -314,6 +426,10 @@ https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html
 
 
 == 2023 年 8 月 1 日
+
+
+
+=== BlueXP  災難恢復預覽
 
 BlueXP 災難恢復預覽是一種雲端型災難恢復服務、可自動化災難恢復工作流程。最初、透過 BlueXP 災難恢復預覽、您可以保護內部部署、以 NFS 為基礎的 VMware 工作負載、在 AWS 上執行 NetApp 儲存設備、將其移轉至 VMware Cloud （ VMC ）、並搭配 Amazon FSX for ONTAP 。
 
@@ -324,17 +440,39 @@ https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html
 
 此版本包含下列更新：
 
-* * 開機順序的資源群組更新 * ：建立災難恢復或複寫計畫時、您可以將虛擬機器新增至功能性資源群組。資源群組可讓您將一組相關的虛擬機器放入符合您需求的邏輯群組。例如、群組可能包含可在恢復時執行的開機順序。在此版本中、每個資源群組可以包含一或多個虛擬機器。虛擬機器將根據您將其納入計畫的順序來啟動。請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html#select-applications-to-replicate-and-assign-resource-groups["選取要複寫及指派資源群組的應用程式"]。
-* * 複寫驗證 * ：建立災難恢復或複寫計畫後、請在精靈中找出重複發生的情形、並啟動複寫至災難恢復站台、每 30 分鐘執行一次 BlueXP 災難恢復、就會驗證複寫是否確實根據計畫進行。您可以在「工作監控」頁面中監控進度。請參閱  https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/replicate.html["將應用程式複寫到另一個站台"]。
-* * 複寫計畫顯示恢復點目標（ RPO ）傳輸排程 * ：建立災難恢復或複寫計畫時、您可以選取虛擬機器。在此版本中、您現在可以檢視與資料存放區或 VM 相關聯的每個磁碟區相關聯的 SnapMirror 。您也可以查看與 SnapMirror 排程相關的 RPO 傳輸排程。RPO 可協助您判斷備份排程是否足以在災難後恢復。請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
-* * 工作監控更新 * ：「工作監控」頁面現在包含「重新整理」選項、可讓您取得最新的作業狀態。請參閱  https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html["監控災難恢復工作"]。
 
+
+=== 開機順序的資源群組更新
+
+建立災難恢復或複寫計畫時、您可以將虛擬機器新增至功能性資源群組。資源群組可讓您將一組相關的虛擬機器放入符合您需求的邏輯群組。例如、群組可能包含可在恢復時執行的開機順序。在此版本中、每個資源群組可以包含一或多個虛擬機器。虛擬機器將根據您將其納入計畫的順序來啟動。請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html#select-applications-to-replicate-and-assign-resource-groups["選取要複寫及指派資源群組的應用程式"]。
+
+
+
+=== 複寫驗證
+
+建立災難恢復或複寫計畫後、請在精靈中識別週期、並開始複寫至災難恢復站台、每 30 分鐘 BlueXP  災難恢復就會驗證複寫是否確實根據計畫進行。您可以在「工作監控」頁面中監控進度。請參閱  https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/replicate.html["將應用程式複寫到另一個站台"]。
+
+
+
+=== 複寫計畫顯示恢復點目標（ RPO ）傳輸排程
+
+當您建立災難恢復或複寫計畫時、請選取虛擬機器。在此版本中、您現在可以檢視與資料存放區或 VM 相關聯的每個磁碟區相關聯的 SnapMirror 。您也可以查看與 SnapMirror 排程相關的 RPO 傳輸排程。RPO 可協助您判斷備份排程是否足以在災難後恢復。請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
+
+
+
+=== 工作監控更新
+
+「工作監控」頁面現在包含「重新整理」選項、可讓您取得最新的作業狀態。請參閱  https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html["監控災難恢復工作"]。
 
 
 
 == 2023 年 5 月 18 日
 
 這是 BlueXP 災難恢復的初始版本。
+
+
+
+=== 雲端型災難恢復服務
 
 BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。最初、透過 BlueXP 災難恢復預覽、您可以保護內部部署、以 NFS 為基礎的 VMware 工作負載、在 AWS 上執行 NetApp 儲存設備、將其移轉至 VMware Cloud （ VMC ）、並搭配 Amazon FSX for ONTAP 。
 

@@ -1,0 +1,16 @@
+= 支援內部部署到內部部署的 VMware VMFS 資料存放區
+:allow-uri-read: 
+
+
+
+
+=== 支援內部部署到內部部署的 VMware VMFS 資料存放區
+
+此版本支援安裝在 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區上的虛擬機器、以供 iSCSI 和 FC 受內部部署儲存保護。此服務先前提供 _ 技術預覽 _ 、支援 iSCSI 和 FC 的 VMFS 資料存放區。
+
+以下是 iSCSI 和 FC 通訊協定的其他考量事項：
+
+* FC 支援適用於用戶端前端通訊協定、而非複寫。
+* BlueXP  災難恢復每個 ONTAP 磁碟區僅支援單一 LUN 。磁碟區不應有多個 LUN 。
+* 對於任何複寫計畫、目的地 ONTAP Volume 應使用與主控受保護 VM 的來源 ONTAP Volume 相同的傳輸協定。例如、如果來源使用 FC 傳輸協定、則目的地也應該使用 FC 。
+

@@ -1,0 +1,20 @@
+= 支援內部部署到內部部署的 VMware VMFS FC 資料存放區
+:allow-uri-read: 
+
+
+
+
+=== 支援內部部署到內部部署的 VMware VMFS FC 資料存放區
+
+此版本包含 _ 技術預覽 _ 、可支援安裝在 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區上的 VM 、以供 FC 保護至內部部署儲存設備。此服務先前提供技術預覽、可支援 iSCSI 的 VMFS 資料存放區。
+
+
+NOTE: NetApp 不收取任何預覽工作負載容量的費用。
+
+
+
+=== 工作取消
+
+使用此版本、您現在可以在工作監控 UI 中取消工作。
+
+請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html["監控工作"]。
