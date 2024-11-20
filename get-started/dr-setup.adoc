@@ -19,43 +19,58 @@ TIP: 檢閱 link:../get-started/dr-prerequisites.html["先決條件"] 確保您�
 
 
 
-== 準備好進行 BlueXP 災難恢復
+== 準備好進行 BlueXP  災難恢復，以提供內部部署到內部部署的保護
 
-* 驗證您的正式作業環境。
+在您設定內部部署到內部部署保護的 BlueXP  災難恢復之前，請確保符合下列要求：
+
+* 儲存ONTAP
++
+** 請確定您擁有 ONTAP 認證。
+** 建立或驗證您的災難恢復站台。
+** 建立或驗證目的地 ONTAP SVM 。
+** 確保您的來源和目的地 ONTAP VM 已被對等處理。
+
+
+* vCenter 叢集
 +
 ** 請確定您要保護的虛擬機器位於 NFS 資料存放區（使用 ONTAP NFS 磁碟區）或 VMFS 資料存放區（使用 NetApp iSCSI LUN ）上。
-** 確保您擁有內部部署 ONTAP 陣列、 vCenter 和 AWS 託管的 VMware 雲端執行個體的認證和存取金鑰。
+** BlueXP  災難恢復需要審查link:../reference/vcenter-privileges.html["vCenter Privileges"]。
+** 建立災難恢復使用者帳戶（非預設 vCenter 管理帳戶），並將 vCenter Privileges 指派給帳戶。
 
 
-* 建立或驗證您的災難恢復站台。
+
+
+
+
+== 準備好使用 AWS 進行 BlueXP  災難恢復，以實現內部部署到雲端的保護
+
+若要使用 AWS 設定 BlueXP  災難恢復以進行內部部署到雲端保護，您需要設定下列項目：
+
+* 設定 AWS FSX for NetApp ONTAP
+* 在 AWS SDDC 上設定 VMware Cloud
+
+
+
+
+=== 設定 AWS FSX for NetApp ONTAP
+
+* 為 NetApp ONTAP 檔案系統建立 Amazon FSX 。
 +
-** 建立或驗證您的 Amazon FSX 檔案系統已就緒。
-** 確保您的來源和目的地 VM 已被對等處理。
+** 為 ONTAP 配置和設定 FSX 。Amazon FSX for NetApp ONTAP 是一項完全託管的服務，以 NetApp ONTAP 檔案系統為基礎，提供高度可靠，可擴充，高效能且功能豐富的檔案儲存設備。
+** 請遵循和 https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/task-getting-started-fsx.html["Amazon FSX for NetApp ONTAP 的快速入門"]中的步驟 https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-native-overview.html["技術報告 4938 ：在 AWS 上使用 VMware Cloud 將 Amazon FSX ONTAP 掛載為 NFS 資料存放區"^]，為 ONTAP 配置和設定 FSX 。
+
+
+* 將 Amazon FSX for ONTAP 新增至工作環境，並新增適用於 ONTAP 的 FSX 的 AWS 認證。
+* 在 AWS FSX for ONTAP 執行個體中建立或驗證目的地 ONTAP SVM 。
+* 在來源內部部署 ONTAP 叢集與 BlueXP  中的 FSX for ONTAP 執行個體之間設定複寫。
+
+
+ https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html["如何為 ONTAP 工作環境設定 FSX"^]如需詳細步驟，請參閱。
 
 
 
-
-
-
-== 設定 VMware Cloud for AWS SDDC
-
-設定 VMware Cloud for AWS 軟體定義資料中心（ SDDC ）。
-
-* 為 ONTAP 檔案系統建立 Amazon FSX 。為 ONTAP 配置和設定 FSX 。Amazon FSX for NetApp ONTAP Sfing是一項全託管服務、以熱門的NetApp ONTAP Sfor NetApp文件系統為基礎、提供高度可靠、可擴充、高效能且功能豐富的檔案儲存設備。
-* 請依照本和此處的步驟 https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-native-overview.html["連結"^] https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/task-getting-started-fsx.html["Amazon FSX for NetApp ONTAP 的快速入門"] 、為 NetApp ONTAP 配置和設定 FSX 。
-* 將 Amazon FSX for NetApp ONTAP 新增至工作環境、並新增適用於 ONTAP 的 FSX 的 AWS 認證。
-* 在 AWS 中、您需要執行下列步驟：
-+
-** 在 AWS 上部署和設定 VMware Cloud 。
-** 使用 VMware 帳戶並配置 SDDC 。確保 SDDC 與適用於 ONTAP 的 FSX 有連線。
-
-
-
-
-
-
-=== 部署 VMware Cloud
+=== 在 AWS SDDC 上設定 VMware Cloud
 
 https://www.vmware.com/products/vmc-on-aws.html["AWS上的VMware Cloud"^] 為AWS生態系統中的VMware工作負載提供雲端原生體驗。每個 VMware 軟體定義資料中心（ SDDC ）都會在 Amazon Virtual Private Cloud （ VPC ）中執行、並提供完整的 VMware 堆疊（包括 vCenter Server ）、 NSX-T 軟體定義網路、 vSAN 軟體定義儲存設備、以及一或多個 ESXi 主機、為工作負載提供運算和儲存資源。
 
-若要在AWS上設定VMC環境、請執行下列步驟 https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-setup.html["連結"^]。試行指示燈叢集也可用於災難恢復。
+若要在 AWS 上設定 VMware Cloud 環境，請依照中的步驟 https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-setup.html["在AWS上部署及設定虛擬化環境"^]進行。試行指示燈叢集也可用於災難恢復用途。
