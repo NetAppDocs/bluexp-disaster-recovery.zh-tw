@@ -580,7 +580,6 @@
   <block id="924cc6eaf82618251de609e2689ed733" category="paragraph">您可以使用下列授權類型：</block>
   <block id="2caf85d76a31b7bef7132937ff28e9dc" category="list-text">請自帶授權（ BYOL ）、這是您從 NetApp 銷售代表處取得的 NetApp 授權檔案（ NLF ）您可以使用授權序號、在 BlueXP 數位錢包中啟動 BYOL 。</block>
   <block id="c809a23426c6fb72cef75816c461ade9" category="paragraph">所有 BlueXP 服務的授權均由 BlueXP 數位錢包服務管理。設定 BYOL 之後、您可以在 BlueXP 數位錢包中看到該服務的有效授權。</block>
-  <block id="8eb586b1b79ddd3ae7c3123b39d4420e" category="admonition">BlueXP 災難恢復費用是根據來源站台上已配置的資料存放區容量而定、因為至少有一個 VM 具有複寫計畫。容錯移轉資料存放區的容錯容量不包含在容量限制中。對於 BYOL 而言、如果資料超過允許容量、則服務中的作業將受到限制、直到您取得額外容量授權或升級 BlueXP 數位錢包中的授權為止。</block>
   <block id="7033a5d3e074f0c7401499ee4e48f38a" category="list-text">確保 VMware 工具（或 Open VM 工具）正在受保護的 VM 上執行。</block>
   <block id="af77ac64a97a80925dee7dc916344004" category="list-text">在 Linux 作業系統上執行的 Oracle 資料庫、應針對 Oracle 資料庫 SYSDBA 角色啟用作業系統使用者驗證。</block>
   <block id="e23539b066371b4dcfdd50b7d80417d8" category="paragraph">在免費試用結束或授權過期之後、您仍可在服務中執行下列動作：</block>
@@ -1040,4 +1039,5 @@
   <block id="c71c9ca45b74f3ddf3435fee65f93cfc" category="paragraph">虛擬機器的預設值已對應。預設對應使用的設定與虛擬機器在正式作業環境中使用的設定相同（相同的 IP 位址，子網路遮罩和閘道）。</block>
   <block id="a82971318b0c070daea6677a10d3473c" category="paragraph">如果您對預設設定進行任何變更，則必須將目標 IP 欄位變更為「與來源不同」。</block>
   <block id="04b2f4a0441b492909bf4cd55502f663" category="admonition">如果您將設定變更為「與來源不同」，則需要提供 VM 來賓作業系統認證。</block>
+  <block id="935b6ea2b85c115a6475786fc3f54c7b" category="admonition">BlueXP  災難恢復費用是根據來源站台上資料存放區的已用容量來計算，因為至少有一部 VM 具有複寫計畫。容錯移轉資料存放區的容錯容量不包含在容量限制中。對於 BYOL 而言、如果資料超過允許容量、則服務中的作業將受到限制、直到您取得額外容量授權或升級 BlueXP 數位錢包中的授權為止。</block>
 </blocks>
