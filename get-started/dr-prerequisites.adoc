@@ -47,6 +47,7 @@ NOTE: 目的地 SVM 或 SVM 中的災難恢復磁碟區不應事先建立。Blue
 ** 使用 iSCSI 或 FC 傳輸協定的 VMFS
 
 
+* VMware vSphere 7.0 Update 3 （ 7.0v3 ）或更新版本
 * 如果您使用的是 VMware Cloud SDDC 、則必須符合這些必要條件。
 +
 ** 在 VMware Cloud Console 中、使用管理員和 NSX Cloud Administrator 的服務角色。也可以使用組織擁有者擔任組織角色。請參閱 https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/vmware-cloud-ontap.html["搭配 AWS FSX for NetApp ONTAP 文件使用 VMware Cloud Foundations"^]。

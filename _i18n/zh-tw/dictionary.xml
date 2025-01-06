@@ -335,7 +335,6 @@
   <block id="26ff2655fb5643a3e76370d9248a31df" category="admonition">您可以稍後停用或刪除複寫計畫。</block>
   <block id="47324a4e5509aeccc192aa7b07cbcac7" category="list-text">選取 * 新增計畫 * 。</block>
   <block id="a9980df200522b9bbaa257521bc396fe" category="paragraph">計畫即會新增至計畫清單。</block>
-  <block id="a9233ff25d3c8ffa3e005e6e453381fc" category="paragraph">在建立災難恢復計畫之前、您必須先在 BlueXP 中新增主要 vCenter 站台和目標 vCenter 災難恢復站台。</block>
   <block id="9809a26603cc2fbdd8049c848bf77835" category="paragraph">新增後、 BlueXP 災難恢復會深入探索 vCenter 環境、包括 vCenter 叢集、 ESXi 主機、資料存放區、儲存足部列印、 虛擬機器詳細資料、 SnapMirror 複本和虛擬機器網路。</block>
   <block id="6df4f43f22118c6a361990f481e6ed83" category="list-text">登入 BlueXP 、然後從左側導航中選取 * Protection * &gt; * Disaster recovery * 。</block>
   <block id="2f11fab4722695438910176065d838b4" category="paragraph">您將進入 BlueXP 災難恢復儀表板頁面。當您第一次開始使用服務時、需要新增 vCenter 資訊。之後、儀表板會顯示站台和複寫計畫的相關資料。</block>
@@ -343,7 +342,6 @@
   <block id="5a05572673bc07b0b94f07c482a67d13" category="inline-image-macro">新增 vCenter Server 螢幕擷取畫面 </block>
   <block id="c65c0c2ea94db5e745008fb8af0f7f2e" category="paragraph"><block ref="c65c0c2ea94db5e745008fb8af0f7f2e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0eb5074333c815ccb54d1f6917e8d217" category="list-text">新增站台、選取 BlueXP Connector 並提供 vCenter 認證。</block>
-  <block id="50a0d7853565af772351213d1b833aa4" category="list-text">若要接受來源 vCenter 的自我簽署憑證、請核取方塊。</block>
   <block id="1909b7ffbea69e2cc7b387ed9d255c18" category="admonition">自我簽署的憑證不如其他憑證安全。如果您的 vCenter * 未 * 組態為憑證授權單位（ CA ）憑證、您應該勾選此方塊、否則無法連線至 vCenter 。</block>
   <block id="fa12509cfb8e8ccded16e2a254e988c4" category="list-text">選取*「Add*」。</block>
   <block id="a0fa7543e8627767b57d6c2797fbbda9" category="paragraph">接下來、您將新增目標 vCenter 。</block>
@@ -1040,4 +1038,12 @@
   <block id="a82971318b0c070daea6677a10d3473c" category="paragraph">如果您對預設設定進行任何變更，則必須將目標 IP 欄位變更為「與來源不同」。</block>
   <block id="04b2f4a0441b492909bf4cd55502f663" category="admonition">如果您將設定變更為「與來源不同」，則需要提供 VM 來賓作業系統認證。</block>
   <block id="935b6ea2b85c115a6475786fc3f54c7b" category="admonition">BlueXP  災難恢復費用是根據來源站台上資料存放區的已用容量來計算，因為至少有一部 VM 具有複寫計畫。容錯移轉資料存放區的容錯容量不包含在容量限制中。對於 BYOL 而言、如果資料超過允許容量、則服務中的作業將受到限制、直到您取得額外容量授權或升級 BlueXP 數位錢包中的授權為止。</block>
+  <block id="6264bc70be3baed8dcf906aafe1dfe41" category="list-text">VMware vSphere 7.0 Update 3 （ 7.0v3 ）或更新版本</block>
+  <block id="cbbec7a47b1589919d37bd2c9f68a2dd" category="summary">在建立災難恢復計畫之前，您必須先在 BlueXP  災難恢復中新增主要 vCenter 站台和目標 vCenter 災難恢復站台。</block>
+  <block id="7f7acb13c0fa74ab37cf6b6545c8b18a" category="doc">新增 vCenter 至網站</block>
+  <block id="d7004fe84ddef44ffb8f6fd482ea7b17" category="paragraph">在建立災難恢復計畫之前，您必須先將主要 vCenter 伺服器新增至 BlueXP  中的站台和目標 vCenter 災難恢復站台。</block>
+  <block id="1a575de6e97bed53905ae3b55c22dd29" category="admonition">視您要新增的網站類型而定，會出現不同的欄位。</block>
+  <block id="7dbf01d6d33098287eb82c71ea10ea1e" category="list-text">（僅適用於內部部署站台）若要接受來源 vCenter 的自我簽署憑證，請勾選方塊。</block>
+  <block id="c2a573f83674b01d424b4f0c10fdc5f1" category="list-text">（僅適用於雲端站台） * API 權杖 * ：輸入 API 權杖以授權組織的服務存取。提供特定的組織和服務角色來建立 API 權杖。</block>
+  <block id="92d0331e97c92cd07178f7a7c2ab56da" category="list-text">（僅適用於雲端站台） * 長組織 ID* ：輸入組織的唯一 ID 。您可以按一下 BlueXP  主控台「帳戶」區段中的使用者名稱來識別此 ID 。</block>
 </blocks>

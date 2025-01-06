@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: use/sites-add.html 
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
-summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。 
+summary: 在建立災難恢復計畫之前，您必須先在 BlueXP  災難恢復中新增主要 vCenter 站台和目標 vCenter 災難恢復站台。 
 ---
-= 新增 vCenter 站台
+= 新增 vCenter 至網站
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自
 
 
 [role="lead"]
-在建立災難恢復計畫之前、您必須先在 BlueXP 中新增主要 vCenter 站台和目標 vCenter 災難恢復站台。
+在建立災難恢復計畫之前，您必須先將主要 vCenter 伺服器新增至 BlueXP  中的站台和目標 vCenter 災難恢復站台。
 
 新增後、 BlueXP 災難恢復會深入探索 vCenter 環境、包括 vCenter 叢集、 ESXi 主機、資料存放區、儲存足部列印、 虛擬機器詳細資料、 SnapMirror 複本和虛擬機器網路。
 
@@ -20,6 +20,10 @@ summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自
 . 登入 BlueXP 、然後從左側導航中選取 * Protection * > * Disaster recovery * 。
 +
 您將進入 BlueXP 災難恢復儀表板頁面。當您第一次開始使用服務時、需要新增 vCenter 資訊。之後、儀表板會顯示站台和複寫計畫的相關資料。
+
++
+
+NOTE: 視您要新增的網站類型而定，會出現不同的欄位。
 
 . * 來源 * ：選取 * 探索 vCenter 伺服器 * 以輸入來源 vCenter 站台的相關資訊。
 +
@@ -30,17 +34,19 @@ TIP: 如果某些 vCenter 站台已經存在、而您想要新增更多、請從
 image:vcenter-add.png["新增 vCenter Server 螢幕擷取畫面 "]
 
 +
-.. 新增站台、選取 BlueXP Connector 並提供 vCenter 認證。
-.. 若要接受來源 vCenter 的自我簽署憑證、請核取方塊。
+** 新增站台、選取 BlueXP Connector 並提供 vCenter 認證。
+** （僅適用於內部部署站台）若要接受來源 vCenter 的自我簽署憑證，請勾選方塊。
 +
 
 NOTE: 自我簽署的憑證不如其他憑證安全。如果您的 vCenter * 未 * 組態為憑證授權單位（ CA ）憑證、您應該勾選此方塊、否則無法連線至 vCenter 。
 
-.. 選取*「Add*」。
+** （僅適用於雲端站台） * API 權杖 * ：輸入 API 權杖以授權組織的服務存取。提供特定的組織和服務角色來建立 API 權杖。
+** （僅適用於雲端站台） * 長組織 ID* ：輸入組織的唯一 ID 。您可以按一下 BlueXP  主控台「帳戶」區段中的使用者名稱來識別此 ID 。
+
+
+. 選取*「Add*」。
 +
 接下來、您將新增目標 vCenter 。
-
-
 
 . * 目標 * ：
 +

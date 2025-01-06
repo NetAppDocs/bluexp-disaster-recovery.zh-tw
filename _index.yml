@@ -23,7 +23,7 @@ indexpage:
       url: "/get-started/dr-faq.html"
   - title: 使用 BlueXP 災難恢復
     links:
-    - title: 新增 vCenter 站台
+    - title: 新增 vCenter 至網站
       url: "/use/sites-add.html"
     - title: 建立災難恢復計畫
       url: "/use/drplan-create.html"
