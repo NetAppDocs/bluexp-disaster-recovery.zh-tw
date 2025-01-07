@@ -452,7 +452,6 @@
   <block id="901540dd7e45eaf2226327527c8d78b4" category="list-text">* 來源 * ：選取 * 探索 vCenter 伺服器 * 以輸入來源 vCenter 站台的相關資訊。</block>
   <block id="bc7f3cb185f48d451eb5ef976e8ad82d" category="list-text">* 目標 * ：</block>
   <block id="d23a9d83c87c6eacef309f00a2beb5d3" category="inline-image-macro">網站頁面螢幕快照</block>
-  <block id="28f8c0c78028f2e899f7af50ce138e1b" category="paragraph"><block ref="28f8c0c78028f2e899f7af50ce138e1b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6f5e3fdfa73285ac2283ba492cf2d47b" category="list-text">VMware Cloud （ VMC ） on AWS with Amazon FSX for NetApp ONTAP 或</block>
   <block id="b374472b15e644f23d1e6b059b5216b9" category="list-text">另一個內部部署的 NFS 型 VMware 環境、搭配 ONTAP 儲存設備</block>
   <block id="53c1c0c22e2a647591a0b52427852850" category="paragraph"><block ref="53c1c0c22e2a647591a0b52427852850" category="inline-image-macro-rx" type="image"></block></block>
@@ -1046,4 +1045,5 @@
   <block id="7dbf01d6d33098287eb82c71ea10ea1e" category="list-text">（僅適用於內部部署站台）若要接受來源 vCenter 的自我簽署憑證，請勾選方塊。</block>
   <block id="c2a573f83674b01d424b4f0c10fdc5f1" category="list-text">（僅適用於雲端站台） * API 權杖 * ：輸入 API 權杖以授權組織的服務存取。提供特定的組織和服務角色來建立 API 權杖。</block>
   <block id="92d0331e97c92cd07178f7a7c2ab56da" category="list-text">（僅適用於雲端站台） * 長組織 ID* ：輸入組織的唯一 ID 。您可以按一下 BlueXP  主控台「帳戶」區段中的使用者名稱來識別此 ID 。</block>
+  <block id="15a58a3d11cafa89812a0ab9b55e93b0" category="paragraph"><block ref="15a58a3d11cafa89812a0ab9b55e93b0" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
