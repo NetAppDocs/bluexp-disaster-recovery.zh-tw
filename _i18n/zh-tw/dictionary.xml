@@ -1046,4 +1046,13 @@
   <block id="c2a573f83674b01d424b4f0c10fdc5f1" category="list-text">（僅適用於雲端站台） * API 權杖 * ：輸入 API 權杖以授權組織的服務存取。提供特定的組織和服務角色來建立 API 權杖。</block>
   <block id="92d0331e97c92cd07178f7a7c2ab56da" category="list-text">（僅適用於雲端站台） * 長組織 ID* ：輸入組織的唯一 ID 。您可以按一下 BlueXP  主控台「帳戶」區段中的使用者名稱來識別此 ID 。</block>
   <block id="15a58a3d11cafa89812a0ab9b55e93b0" category="paragraph"><block ref="15a58a3d11cafa89812a0ab9b55e93b0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ca716ff875c64c5d237c8e862b62065c" category="doc">ASA R2 支援 VMFS 儲存設備上的 VM 和資料存放區</block>
+  <block id="1979efa5817be86acee4a8fbdf309a1a" category="paragraph">此版本的 BlueXP  災難恢復可為 VMFS 儲存設備上的虛擬機器和資料存放區提供 ASA R2 支援。在 ASA R2 系統上， ONTAP 軟體支援基本的 SAN 功能，同時移除 SAN 環境中不支援的功能。</block>
+  <block id="d154d7f159ffe4fedd65f7894a405e59" category="paragraph">此版本支援 ASA R2 的下列功能：</block>
+  <block id="38e9022b7f95524a99b3126af89eb640" category="list-text">主要儲存設備的一致性群組資源配置（僅限平面一致性群組，表示只有一個層級沒有階層式結構）</block>
+  <block id="bbc4e3ff648912e4a892f88fcb03c65b" category="list-text">備份（一致性群組）作業，包括 SnapMirror 自動化</block>
+  <block id="7e13cc5491f076161e0aefc0728bf351" category="paragraph">BlueXP  災難恢復中對 ASA R2 的支援使用 ONTAP 9.16.1 。</block>
+  <block id="60a0836359d058db16981cf45c24594f" category="paragraph">雖然資料存放區可以掛載在 ONTAP 磁碟區或 ASA R2 儲存單元上，但 BlueXP  災難恢復中的資源群組不能同時包含來自 ONTAP 的資料存放區和來自 ASA R2 的資料存放區。您可以從 ONTAP 選取資料存放區，或從資源群組中的 ASA R2 選取資料存放區。</block>
+  <block id="79043fd5ff3b61216207b60882cd72cd" category="section-title">2025 年 19 月 2 日</block>
+  <block id="c3687f641cfdd19b41b8fe6f7cb68897" category="paragraph">版本 4.2</block>
 </blocks>
