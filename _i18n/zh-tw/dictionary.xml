@@ -178,7 +178,6 @@
   <block id="d244f191aaddadced4c31b2f67d06c9c" category="inline-image-macro">顯示 VMware 服務基礎架構 BlueXP 災難恢復架構的圖表</block>
   <block id="7599cfdf730a164b0625ccc661508efa" category="list-text">此服務也可讓您將虛擬機器容錯回復至原始來源位置。</block>
   <block id="a6d3ce8aba8914f5380d164c99d7dab0" category="list-text">您可以在不中斷原始虛擬機器的情況下、測試災難恢復容錯移轉程序。此測試會建立 Volume 的 FlexClone 、將虛擬機器還原至隔離的網路。</block>
-  <block id="b5a43a585d1a40908cfd5ee656c8579c" category="list-text">對於容錯移轉或測試容錯移轉程序、您可以選擇最新的（預設）或選取的 Snapshot 來復原您的虛擬機器。</block>
   <block id="b1151aae9531d2f5e85d085e8878cea6" category="summary">如果您只是想要快速回答問題、這個常見問題集就能幫上忙。</block>
   <block id="3c3dfe6244a41574842edaa31699ec7f" category="doc">BlueXP 災難恢復的常見問題集</block>
   <block id="942a771213d3b59ba27960f61d97b1ac" category="inline-link"><block ref="942a771213d3b59ba27960f61d97b1ac" category="inline-link-rx"></block></block>
@@ -259,14 +258,11 @@
   <block id="036828752e0e356c83a2f88c3a26b344" category="list-text">在測試容錯移轉頁面中、輸入「清除容錯移轉」、然後選取 * 清除容錯移轉測試 * 。</block>
   <block id="ce68649418f9a08c1ca788541d81a5fc" category="section-title">將來源站台容錯移轉至災難恢復站台</block>
   <block id="f5a93054f0d69f6d7904ca9d2efa38f0" category="paragraph">容錯移轉程序涉及下列作業：</block>
-  <block id="f2e9bb6d97b8634fb3fa438072480445" category="list-text">如果您選擇了最新的 Snapshot 、 SnapMirror 更新會執行以複寫最新變更。</block>
   <block id="14e6c9bc0f37651c006424bfafce5ae9" category="list-text">來源虛擬機器已關機。</block>
   <block id="98699ecbd563a31e2c5c4fbb9c9a84b3" category="list-text">SnapMirror 關係中斷、目標磁碟區變成讀取 / 寫入。</block>
-  <block id="07c2b4a1db2bc2d52a733c5592ccde94" category="list-text">根據 Snapshot 的選擇、作用中的檔案系統會還原至指定的 Snapshot （最新或選取）</block>
   <block id="9bddce206efcc2640b7dea26d41cc5fb" category="list-text">目標虛擬機器會根據「資源群組」頁面中擷取的順序進行登錄和開機。</block>
   <block id="c1942c862f0687fdf3f5a7564e0eadfa" category="list-text">SnapMirror 關係會從目標虛擬機器反轉至來源虛擬機器。</block>
   <block id="d0d1a7100fd604152ac7b93eb1abc016" category="list-text">在右側、選取 * 動作 * 選項 <block ref="2fddd650b01c7f9674be856867aae05d" category="inline-image-macro-rx" type="image"></block> 然後選擇 * 容錯移轉 * 。</block>
-  <block id="c8876c4e46fed1dae800753bc202e67d" category="list-text">選擇要從中恢復的資料存放區的 Snapshot 。  預設為最新。</block>
   <block id="0362f1f30abcc40f31c3c6618b1a15c3" category="list-text">若要檢查進度、請在頂端功能表中選取 * 工作監控 * 。</block>
   <block id="ceeed92bd86d67dc2a2a6016ed40a571" category="paragraph">您可以快速瞭解所有災難恢復資源、或仔細查看每個資源：</block>
   <block id="3faa64303d5f5bcd043bb88f6768e603" category="list-text">網站</block>
@@ -302,7 +298,6 @@
   <block id="c292b94d404e989038191db88d347fc7" category="list-text">要對資源組執行操作，請選擇 *Actions* 選項 <block ref="2fddd650b01c7f9674be856867aae05d" category="inline-image-macro-rx" type="image"></block>  在右側，選擇任何選項，例如 * 編輯資源組 * 或 * 刪除資源組 * 。</block>
   <block id="d88f9a7fc239e91ef7446fdd0e2c26a4" category="list-text">在右側、選取 * 動作 * 選項 <block ref="2fddd650b01c7f9674be856867aae05d" category="inline-image-macro-rx" type="image"></block> 然後選擇 * Replicate * 。</block>
   <block id="4e76033871d8eb52e7a46330cc531bd8" category="doc">將應用程式容錯回復至原始來源</block>
-  <block id="9fd81a4e73d3e91025886de67c06b95d" category="paragraph">災難解決後、請從災難恢復站台容錯回復至來源站台、以恢復正常作業。您可以選擇要從中恢復的 Snapshot 。</block>
   <block id="95c065ae2a71de38942ceb973d97399b" category="paragraph">在此工作流程中、 BlueXP 災難恢復會先將任何變更複寫回原始來源虛擬機器、然後再還原複寫方向。此程序從已完成容錯移轉至目標的關係開始、並涉及下列步驟：</block>
   <block id="c6e71b0dcb6847124e49e97ed111f902" category="list-text">在目標站台上、虛擬機器會關閉並取消登錄、磁碟區也會取消掛載。</block>
   <block id="187b70ae9883d244642e7af4f1b374c6" category="list-text">原始來源上的 SnapMirror 關係已中斷、無法讀取 / 寫入。</block>
@@ -517,7 +512,6 @@
   <block id="208ae1835c38717d827d78f2184f1eb8" category="paragraph">NetApp 不會向您收取使用試用版 BlueXP 災難恢復的費用。</block>
   <block id="49cc6e59fe89d60aa8a69d475908ad17" category="section-title">BlueXP 災難恢復的運作方式</block>
   <block id="53bb415fa5ffe0063bff5bf128aceea8" category="paragraph">BlueXP 災難恢復可將從內部部署站台複寫到 Amazon FSX for ONTAP 或其他內部部署站台的工作負載恢復。這項服務可從 SnapMirror 層級、透過虛擬機器登錄至 Virtual Machine Cloud （ VMC ）、以及直接在 VMware 網路虛擬化與安全平台 NSS-T 上進行網路對應、將還原作業自動化此功能隨附於所有 Virtual Machine Cloud 環境中。</block>
-  <block id="79121a92993faaa181b6eb7b104f73ea" category="paragraph">BlueXP 災難恢復採用 ONTAP SnapMirror 技術、可提供高效率的複寫、並保留 ONTAP 的永久遞增 Snapshot 效率。SnapMirror 複寫可確保應用程式一致的 Snapshot 複本永遠保持同步、而且資料在容錯移轉後立即可用。</block>
   <block id="e907b41f5f3d7332bee5a43fbbf78a08" category="section-title">設定授權</block>
   <block id="db9425c5e893fb09212aa796b71ab4ff" category="paragraph"><block ref="db9425c5e893fb09212aa796b71ab4ff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9aea41391b3a188365a351addd6cf6fc" category="list-text">如果您是具有現有 Connector 的 BlueXP 使用者、當您選取「災難恢復」時、會出現一則關於註冊的訊息。</block>
@@ -740,7 +734,6 @@
   <block id="210dfd955522333f74e13d0843ab02ff" category="paragraph">視您的選擇而定、此區段可能會啟用或停用。</block>
   <block id="30cb4638cdd1e514eba27473e745afb4" category="paragraph">在測試對應索引標籤上、虛擬機器和資料存放區對應會停用。</block>
   <block id="711c35de4b0430b043159f5d91f6752f" category="inline-image-macro">容錯移轉頁面</block>
-  <block id="418818fc05931805b481fbdf48b3a075" category="list-text">在容錯移轉頁面中、立即初始化快照、或選擇要從中恢復的資料存放區的 Snapshot 。預設為最新。</block>
   <block id="51d5fa513676d68f3e574487650b021d" category="paragraph">在發生容錯移轉之前、將會擷取目前來源的快照並複寫到目前目的地。</block>
   <block id="7d0da89e5c4df500c537ba4145ed8fae" category="list-text">或者、如果您希望容錯移轉發生、即使偵測到通常會阻止容錯移轉發生的錯誤、也可以選取 * 強制容錯移轉 * 。</block>
   <block id="544bb990c26b075198ab3593eb235cab" category="list-text">在方塊中輸入「容錯移轉」。</block>
@@ -792,7 +785,6 @@
   <block id="c28e8a3b83f3f2cce376fe3daa7ad95d" category="paragraph"><block ref="64eb1ec301597178e47fa7deed0121dc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="10936c8535aaede0ed75f5d8d4fa6aaf" category="list-text">* 保留計數 * ：輸入您要保留的快照數。</block>
   <block id="8772d236d3c62b688c3b57224d982ee1" category="paragraph"><block ref="8772d236d3c62b688c3b57224d982ee1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1267d6fc2aff2a3372b02b4d25a9f397" category="list-text">執行容錯移轉測試；虛擬機器會暫時建立。BlueXP  災難恢復會從選取的快照建立新的 FlexClone Volume 、並將備份 FlexClone Volume 的暫存資料存放區對應至 ESXi 主機。此程序不會佔用內部部署 ONTAP 儲存設備上的額外實體容量、也不會佔用 AWS 中 NetApp ONTAP 儲存設備的 FSX 。原始來源磁碟區不會被修改、複本工作甚至可以在災難恢復期間繼續進行。</block>
   <block id="76e4d72594030fca0b96279d0f8392dc" category="section-title">有助於您進行 BlueXP  災難恢復的術語</block>
   <block id="b7b26d16c3d1d84d3872afa1f04c92d6" category="paragraph">瞭解與災難恢復相關的一些術語可能會使您受益。</block>
   <block id="7f800e59a5bd3f98ce900fa6e543f67d" category="list-text">* 站台 * ：通常與實體資料中心或雲端供應商相關的邏輯容器。</block>
@@ -917,7 +909,6 @@
   <block id="950fa88679103c3c7c4e449423d8bfcc" category="list-text">如果 VM 來自同一個 Volume 和同一個 SVM 、則服務會執行標準 ONTAP 快照、並更新次要目的地。</block>
   <block id="a47d6910008cc9bb73921a36d6609a08" category="list-text">如果 VM 來自不同的 Volume 和相同的 SVM 、則服務會加入所有的 Volume 並更新次要目的地、以建立一致性群組快照。</block>
   <block id="3cc1e8e247fa51b1c7d6f2a7c029a515" category="list-text">如果 VM 來自不同的 Volume 和不同的 SVM 、服務會執行一致性群組啟動階段和提交階段快照、方法是將所有磁碟區納入相同或不同的叢集中、並更新次要目的地。</block>
-  <block id="0657f436653f92c50e703ca7f83a706d" category="list-text">在容錯移轉期間、您可以選取任何快照。如果您選取最新的 Snapshot 、服務會建立隨需備份、更新目的地、並使用該 Snapshot 進行容錯移轉。</block>
   <block id="e829ce8109ca652cb970cd9d2014a52e" category="section-title">測試對應</block>
   <block id="a8c55ad0456d667323e1ede0b2d4845d" category="list-text">若要為測試環境設定不同的對應、請取消勾選方塊、然後選取 * 測試對應 * 標籤。</block>
   <block id="3d2d89948829d5041f9ae015297d638b" category="list-text">請像以前一樣瀏覽每個標籤、但這次是測試環境的標籤。</block>
@@ -1055,4 +1046,13 @@
   <block id="60a0836359d058db16981cf45c24594f" category="paragraph">雖然資料存放區可以掛載在 ONTAP 磁碟區或 ASA R2 儲存單元上，但 BlueXP  災難恢復中的資源群組不能同時包含來自 ONTAP 的資料存放區和來自 ASA R2 的資料存放區。您可以從 ONTAP 選取資料存放區，或從資源群組中的 ASA R2 選取資料存放區。</block>
   <block id="79043fd5ff3b61216207b60882cd72cd" category="section-title">2025 年 19 月 2 日</block>
   <block id="c3687f641cfdd19b41b8fe6f7cb68897" category="paragraph">版本 4.2</block>
+  <block id="75545af7eb41c43555af0a11b94202cc" category="list-text">執行容錯移轉測試；虛擬機器會暫時建立。BlueXP  災難恢復會從選取的快照建立新的 FlexClone 磁碟區，並將作為 FlexClone 磁碟區備份的暫存資料存放區對應至 ESXi 主機。此程序不會佔用內部部署 ONTAP 儲存設備上的額外實體容量、也不會佔用 AWS 中 NetApp ONTAP 儲存設備的 FSX 。原始來源磁碟區不會被修改、複本工作甚至可以在災難恢復期間繼續進行。</block>
+  <block id="b5fe2c2cf0d0a4131f853fb3f3902712" category="paragraph">BlueXP  災難恢復採用 ONTAP SnapMirror 技術，可提供高效率的複寫功能，並保留 ONTAP 永久遞增快照效率。SnapMirror 複寫可確保應用程式一致的快照複本永遠保持同步，而且資料在容錯移轉後立即可用。</block>
+  <block id="e626451f7ddf34243167a5b335e8772b" category="list-text">對於容錯移轉或測試容錯移轉程序，您可以選擇最新（預設）或選取的快照，從中還原虛擬機器。</block>
+  <block id="7fdb47d52c8257466211bbfeff754a21" category="list-text">在容錯移轉期間、您可以選取任何快照。如果您選取最新的快照，服務會建立隨需備份，更新目的地，並使用該快照進行容錯移轉。</block>
+  <block id="f644f24f13324a7f89c132498723a6bc" category="paragraph">災難解決後、請從災難恢復站台容錯回復至來源站台、以恢復正常作業。您可以選擇要從中恢復的快照。</block>
+  <block id="55d7313e1fd3e987d9d8070f2418d3a0" category="list-text">選擇要從中恢復的資料存放區快照。預設為最新。</block>
+  <block id="2b56dea239dc4c074a14290431d91d6a" category="list-text">如果您選取最新的快照，則會執行 SnapMirror 更新來複寫最新的變更。</block>
+  <block id="380342b2d65f473fe650200caef78e53" category="list-text">根據快照的選擇，作用中的檔案系統會還原至指定的快照（最新或已選取）</block>
+  <block id="c05fbe62f8e4ec67f1b21ca8610fda50" category="list-text">在容錯移轉頁面中，立即初始化快照，或選擇要從中恢復的資料存放區快照。預設為最新。</block>
 </blocks>
