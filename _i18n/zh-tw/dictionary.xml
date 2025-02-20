@@ -481,8 +481,6 @@
   <block id="e6e80588e9fe7cf89218fea44300f7ca" category="inline-link">深入瞭解連接器</block>
   <block id="7530875db6f7eceea689fdfeb6a12778" category="paragraph">若要新增 Connector 、請參閱<block ref="d6df7dcc2fc3105e10967a9194806ce5" category="inline-link-rx"></block>。</block>
   <block id="ee6d03e51dd7b0fc10c6b3c8fcab3718" category="section-title">試用結束後、請透過 NetApp 購買 BYOL 授權</block>
-  <block id="b11106bafac141be455d28549bfe177d" category="list-text">選取 * 新增授權至 BlueXP* 。您將會被引導至 BlueXP 數位錢包。</block>
-  <block id="d2ec998008b95e1189b9d8f3dbc6ed64" category="inline-image-macro">BlueXP 數位錢包新增授權頁面</block>
   <block id="8d4d6551ee286317b2a4f297766952f5" category="section-title">結束免費試用</block>
   <block id="859b0ef2563ddd8c6712d419656bde38" category="paragraph">您可以隨時停止免費試用、也可以等到免費試用到期。</block>
   <block id="d940bc2868fa1d10a5c804aa0df8fd1b" category="list-text">在 BlueXP 災難恢復中，選擇右上角的 * 免費試用 - 查看詳細信息 * 。</block>
@@ -494,19 +492,10 @@
   <block id="c3964fe08c9dd95815cc67d8aaee9323" category="list-text">在文字方塊中輸入「 End 試用」。</block>
   <block id="44a320573c319d1f30b840c2d11a4e26" category="list-text">選取 * 結束 * 。</block>
   <block id="3906249fde1cef9339402436007bb4f7" category="paragraph">如果您攜帶自己的授權（ BYOL ）、設定包括購買授權、取得 NetApp 授權檔案（ NLF ）、以及將授權新增至 BlueXP 數位錢包。</block>
-  <block id="c8508c0ce4da6dc634b7c66b1df15681" category="list-text">選擇*新增授權*。</block>
-  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
-  <block id="7c8c5dfa7e1cbe0ce55b88149d634d69" category="paragraph">BlueXP 數位錢包現在以授權證明災難恢復。</block>
-  <block id="72e3dbb78819e204c1d67c9aaba1d190" category="inline-image-macro">NetApp BlueXP 數位錢包</block>
-  <block id="0cc39117ac352982de03de8143c8e3f5" category="paragraph"><block ref="0cc39117ac352982de03de8143c8e3f5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="53ea2f641b462d658be2f78d3070c4e8" category="section-title">BlueXP 授權到期時請更新</block>
   <block id="847676092f852cc523c768a478d757f1" category="paragraph">如果您的授權期限即將到期、或是您的授權容量已達到上限、您將會在 BlueXP 災難恢復 UI 中收到通知。您可以在 BlueXP 災難恢復授權過期前更新、以確保您存取掃描資料的能力不會中斷。</block>
   <block id="a274f4d4670213a9045ce258c6c56b80" category="inline-link">通知</block>
   <block id="9cb535dcfcda2b04cab5b48ce4b5044b" category="admonition">此訊息也會出現在 BlueXP 數位錢包和中<block ref="b553b83f4f3ab8ad7adf12f36cefd6a6" category="inline-link-rx"></block>。</block>
-  <block id="2f3cc4968532c87cc8b40e840f800717" category="list-text">選取 BlueXP 右下角的聊天圖示、以申請延長您的期限、或申請額外的授權容量、以取得特定序號。您也可以傳送電子郵件要求更新授權。</block>
-  <block id="b23b97d3c26b0f7e2265329756cea9ca" category="paragraph">在您支付授權費用並向 NetApp 支援網站 註冊之後、 BlueXP 會自動更新 BlueXP 數位錢包中的授權、而「資料服務授權」頁面則會在 5 到 10 分鐘內反映變更。</block>
-  <block id="5810a6765696da7b12979cf90b9b287c" category="list-text">如果BlueXP無法自動更新授權（例如、安裝在暗點）、則您需要手動上傳授權檔案。</block>
-  <block id="147b35ab5352426bba38d99d810db4ed" category="list-text">您可以從 NetApp 支援網站 取得授權檔案。</block>
   <block id="3a46f989d3db91bd2030de32947cd608" category="section-title">使用 BlueXP 災難恢復 for VMware 的優點</block>
   <block id="cce8630c08ede8fc88504929ae963b37" category="paragraph">BlueXP 災難恢復具有以下優點：</block>
   <block id="208ae1835c38717d827d78f2184f1eb8" category="paragraph">NetApp 不會向您收取使用試用版 BlueXP 災難恢復的費用。</block>
@@ -577,12 +566,7 @@
   <block id="1594f78ebbb281f7b5359eb6d2b89912" category="list-text">執行試用期間或授權期間所建立的所有排程作業。</block>
   <block id="01c014f2e37e5bf6d3ce893bea0197cb" category="list-text">設定 Connector 之後、在 BlueXP 災難恢復登陸頁面中、新增 Connector 的按鈕會變更為按鈕、以開始免費試用。選擇 * 開始免費試用 * 。</block>
   <block id="b9ef842238fa8d82db6b7559f33adc6c" category="paragraph">試用結束後、您可以透過 NetApp 銷售代表購買授權</block>
-  <block id="9bdfa376bcb2fa79aff92c39d0b24fcd" category="list-text">取得授權後、請返回 BlueXP 災難恢復。選取右上角的 * 檢視付款方式 * 選項。或者、在免費試用即將到期的訊息中、選取 * 訂閱或購買授權 * 。</block>
-  <block id="d2a39678e393e2b473354681a2c1e5f4" category="inline-image-macro">BlueXP 數位錢包資料服務授權標籤</block>
-  <block id="7578ebad24c71aee2f2992e5efe1118d" category="list-text">在「新增授權」頁面中、輸入序號和 NetApp 支援網站 帳戶資訊。</block>
-  <block id="c6711fc66daa9915490ca9f9bdc7f08f" category="paragraph"><block ref="c6711fc66daa9915490ca9f9bdc7f08f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="be94b7e6fbf892064754b145ecdeb994" category="paragraph"><block ref="be94b7e6fbf892064754b145ecdeb994" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9fc7e8cb24850b1f0912cebc8da32620" category="list-text">存取 BlueXP 數位錢包。</block>
   <block id="be976ba4e18c887ae57e14f6ebfbbab3" category="sidebar">災難恢復至雲端是一種彈性且具成本效益的方法、可保護工作負載免受站台中斷和資料毀損事件（例如勒索軟體）的影響。使用 BlueXP 災難恢復 for VMware 、您可以將執行 ONTAP 儲存設備的內部部署 VMware 工作負載複寫到公有雲中的 VMware 軟體定義資料中心、或將其他內部部署站台複寫為災難恢復站台。</block>
   <block id="93716955add4f66b2af685a33bac4789" category="section-title">2024 年 5 月 15 日</block>
   <block id="9df62cb4d6f151b560e84723841bd523" category="paragraph">此 BlueXP 災難恢復版本包含下列更新：</block>
@@ -591,7 +575,6 @@
   <block id="dd1ef091f49695b9c14e0e34da748ab7" category="list-text">如果您尚未新增 BlueXP Connector 、則需要新增 Connector 。若要新增 Connector 、請參閱<block ref="d6df7dcc2fc3105e10967a9194806ce5" category="inline-link-rx"></block>。</block>
   <block id="e2066cd1f4f96874fad4da9c48f8715b" category="list-text">如果您已經在使用服務、當您選取「災難恢復」時、儀表板會出現。</block>
   <block id="7cc1b1d71d565ea421a16ed9422fe6c2" category="list-text">透過 Amazon Web Services （ AWS ） Marketplace 購買隨用隨付（ PAYGO ）訂閱。</block>
-  <block id="23c019f17394a366e5bf51ef8a23b0a8" category="paragraph">設定 BYOL 之後、您可以在 BlueXP 數位錢包 * 資料服務授權 * 標籤中看到授權。</block>
   <block id="4701248bbe25ed364a5f0c79467e9f29" category="list-text">請先新增 vCenter 。</block>
   <block id="d780b26d8f0dcbe5b2593febbaacdb60" category="paragraph">如需詳細資訊、請參閱 <block ref="84d66f7662bc8a91a68e93706653efe2" category="inline-link-macro-rx"></block>。</block>
   <block id="ad7911fdd21ff5752d10300d0446de95" category="section-title">試用結束後、請透過 AWS Marketplace 訂閱</block>
@@ -599,16 +582,6 @@
   <block id="acce4a6c25bc51b4930085d68e3cb0cd" category="list-text">在 BlueXP 災難恢復中、您會看到免費試用即將到期的訊息。在訊息中、選取 * 訂閱或購買授權 * 。</block>
   <block id="584a50ae29d097d233ebd86ad952d305" category="list-text">選取 * 在 AWS Marketplace* 中訂閱。</block>
   <block id="717132172ed170ccb94cc8674c35dfbd" category="list-text">當您返回 BlueXP 災難恢復時、會有一則訊息指出您已訂閱。</block>
-  <block id="6678054c83157276d9287735dd3e1d92" category="paragraph">若要在 BlueXP 數位錢包中檢視訂閱詳細資料、請選取 * 檢視訂閱詳細資料 * 、然後在 * 訂閱 * 頁面上檢視使用中的訂閱。</block>
-  <block id="0a504e78221db1ccaf51b7ad21bc16ce" category="inline-image-macro">BlueXP 數位錢包訂閱索引標籤</block>
-  <block id="f3688cd67baeb83949d8b3d8688cda8b" category="paragraph"><block ref="f3688cd67baeb83949d8b3d8688cda8b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4052ab6997dacca028b4d726754818d5" category="paragraph">* 啟動授權 *
-向 NetApp 銷售代表購買 BlueXP 災難恢復授權後、您可以輸入 BlueXP 災難恢復序號和 NetApp 支援網站 （ NSS ）帳戶資訊來啟動授權。</block>
-  <block id="e4822c1e77f0d7746ffdde4c031a2109" category="inline-image-macro">BlueXP 災難恢復付款中繼資料頁面</block>
-  <block id="5646d601e859bd392516de29f6a97047" category="paragraph"><block ref="5646d601e859bd392516de29f6a97047" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="595da0c0edf936a84fa3d6a69bbbb4e5" category="paragraph"><block ref="595da0c0edf936a84fa3d6a69bbbb4e5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5d50de45dd75ac0ea74e9c427687d113" category="list-text">在 BlueXP 數位錢包中、從 * 資料服務授權 * 標籤中、選取 * 新增授權 * 。</block>
-  <block id="7744384d0e7b78819bc53ca36ef36369" category="list-text">選取 * 資料服務授權 * 標籤、選取要更新之服務序號的 * 動作 ... * 圖示、然後選取 * 更新授權 * 。</block>
   <block id="d66d706cd022ab39ed6479a713135515" category="paragraph"><block ref="d66d706cd022ab39ed6479a713135515" category="inline-image-macro-rx" type="image"></block></block>
   <block id="991e816286764c3a5ea9b023c35e1d77" category="paragraph"><block ref="991e816286764c3a5ea9b023c35e1d77" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b45dfe874eaba6a97e58e0436eba2402" category="sidebar">開始使用 BlueXP 災難恢復即服務實驗室即隨需實驗室</block>
@@ -801,8 +774,6 @@
   <block id="8e635b1aadad234871ba0e012309361f" category="list-text">識別週期、執行來賓主控指令碼、設定開機順序、然後選取還原點目標。</block>
   <block id="1c10305a999dce53cb52dd4f6b8d89ff" category="list-text">檢閱計畫。</block>
   <block id="054b753af44fc4eeee43c9ba6037caaa" category="doc">建立災難恢復報告</block>
-  <block id="fca90381d84b0e9a022fdeac2012d4ab" category="paragraph">您需要 BlueXP  災難恢復序號。請從您的銷售訂單中找出此號碼、或聯絡客戶團隊以取得此資訊。</block>
-  <block id="20efb062527877ed8fd82ba191b8951b" category="paragraph">* 將授權新增至 BlueXP  數位錢包 * 購買 BlueXP  災難恢復授權後、您必須將授權新增至 BlueXP  數位錢包。</block>
   <block id="61b173efd5c260fd3e3f446d9d4b37e7" category="section-title">開始使用BlueXP</block>
   <block id="eb596a544acd0e757253fec1e32880e2" category="inline-link">註冊 BlueXP  並建立組織</block>
   <block id="5c162fb1edd17998f73f4b49374c4871" category="paragraph">如果您尚未這麼做、<block ref="6286584d7da60f5fb185c973c7a25fca" category="inline-link-rx"></block></block>
@@ -1055,4 +1026,13 @@
   <block id="2b56dea239dc4c074a14290431d91d6a" category="list-text">如果您選取最新的快照，則會執行 SnapMirror 更新來複寫最新的變更。</block>
   <block id="380342b2d65f473fe650200caef78e53" category="list-text">根據快照的選擇，作用中的檔案系統會還原至指定的快照（最新或已選取）</block>
   <block id="c05fbe62f8e4ec67f1b21ca8610fda50" category="list-text">在容錯移轉頁面中，立即初始化快照，或選擇要從中恢復的資料存放區快照。預設為最新。</block>
+  <block id="2847599cd91bec7d486721243d329494" category="inline-link-macro">深入瞭解數位錢包</block>
+  <block id="2b04b3177ca047bdf9530f96b48dc58a" category="paragraph"><block ref="177b16e5e66adf0c0c4922a109055a31" category="inline-link-macro-rx"></block>。</block>
+  <block id="9e8edb5d154a8f2c2ab3efde5a90b95d" category="inline-link-macro">深入瞭解如何使用數位錢包管理訂閱</block>
+  <block id="61ebc53e0bf68b97af4405116db69639" category="paragraph">您可以在 BlueXP  數位錢包中檢視訂閱詳細資料。<block ref="c076e949682edba51af0e34c4227dbba" category="inline-link-macro-rx"></block>。</block>
+  <block id="745499562c1b6475b616a3cdf246c3d8" category="paragraph">* 將授權新增至 BlueXP  數位錢包 ** 向 NetApp 銷售代表購買 BlueXP  災難恢復授權後，您就可以管理數位錢包的授權。</block>
+  <block id="2fb18b7eb7edfd6ac0fa8586ecbd9a12" category="inline-link">瞭解如何使用數位錢包新增授權</block>
+  <block id="e2a36029181f04d6208811edf66b0c62" category="paragraph"><block ref="039fd09b60dad6f86188402eac2ef738" category="inline-link-rx"></block>。</block>
+  <block id="5d3579189b9441a8b42010228d169cbc" category="inline-link">瞭解如何使用數位錢包更新授權</block>
+  <block id="597c7a7ee6e647859f8aa98b20be3cb0" category="paragraph"><block ref="1180f9bbf40cd0c05f379b347ef1d8f9" category="inline-link-rx"></block>。</block>
 </blocks>

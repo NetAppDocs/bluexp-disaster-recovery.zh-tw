@@ -24,7 +24,7 @@ summary: 有了 BlueXP 災難恢復、您可以使用不同的授權方案、包
 
 NOTE: BlueXP  災難恢復費用是根據來源站台上資料存放區的已用容量來計算，因為至少有一部 VM 具有複寫計畫。容錯移轉資料存放區的容錯容量不包含在容量限制中。對於 BYOL 而言、如果資料超過允許容量、則服務中的作業將受到限制、直到您取得額外容量授權或升級 BlueXP 數位錢包中的授權為止。
 
-設定 BYOL 之後、您可以在 BlueXP 數位錢包 * 資料服務授權 * 標籤中看到授權。
+link:https://docs.netapp.com/us-en/bluexp-digital-wallet/concept-digital-wallet.html["深入瞭解數位錢包"^]。
 
 在免費試用結束或授權過期之後、您仍可在服務中執行下列動作：
 
@@ -79,10 +79,7 @@ image:draas-landing2.png["BlueXP 災難恢復的登陸頁快照"]
 . 在 AWS Marketplace 中、選取 * 檢視購買選項 * 。使用 AWS Marketplace 訂閱 BlueXP 災難恢復。
 . 當您返回 BlueXP 災難恢復時、會有一則訊息指出您已訂閱。
 +
-若要在 BlueXP 數位錢包中檢視訂閱詳細資料、請選取 * 檢視訂閱詳細資料 * 、然後在 * 訂閱 * 頁面上檢視使用中的訂閱。
-
-+
-image:digital-wallet-subscriptions2.png["BlueXP 數位錢包訂閱索引標籤"]
+您可以在 BlueXP  數位錢包中檢視訂閱詳細資料。link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-homepage.html["深入瞭解如何使用數位錢包管理訂閱"^]。
 
 
 
@@ -94,33 +91,9 @@ image:digital-wallet-subscriptions2.png["BlueXP 數位錢包訂閱索引標籤"]
 
 如果您攜帶自己的授權（ BYOL ）、設定包括購買授權、取得 NetApp 授權檔案（ NLF ）、以及將授權新增至 BlueXP 數位錢包。
 
-* 啟動授權 *
-向 NetApp 銷售代表購買 BlueXP 災難恢復授權後、您可以輸入 BlueXP 災難恢復序號和 NetApp 支援網站 （ NSS ）帳戶資訊來啟動授權。
+* 將授權新增至 BlueXP  數位錢包 ** 向 NetApp 銷售代表購買 BlueXP  災難恢復授權後，您就可以管理數位錢包的授權。
 
-您需要 BlueXP  災難恢復序號。請從您的銷售訂單中找出此號碼、或聯絡客戶團隊以取得此資訊。
-
-* 將授權新增至 BlueXP  數位錢包 * 購買 BlueXP  災難恢復授權後、您必須將授權新增至 BlueXP  數位錢包。
-
-. 取得授權後、請返回 BlueXP 災難恢復。選取右上角的 * 檢視付款方式 * 選項。或者、在免費試用即將到期的訊息中、選取 * 訂閱或購買授權 * 。
-+
-image:draas-license-subscribe2.png["BlueXP 災難恢復付款中繼資料頁面"]
-
-. 選取 * 新增授權至 BlueXP* 。您將會被引導至 BlueXP 數位錢包。
-+
-image:digital-wallet-data-services-licenses-tab3.png["BlueXP 數位錢包資料服務授權標籤"]
-
-. 在 BlueXP 數位錢包中、從 * 資料服務授權 * 標籤中、選取 * 新增授權 * 。
-. 在「新增授權」頁面中、輸入序號和 NetApp 支援網站 帳戶資訊。
-+
-image:byol-digital-wallet-license-add2.png["BlueXP 數位錢包新增授權頁面"]
-
-. 選擇*新增授權*。
-
-
-.結果
-BlueXP 數位錢包現在以授權證明災難恢復。
-
-image:byol-digital-wallet-licenses-added.png["NetApp BlueXP 數位錢包"]
+https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["瞭解如何使用數位錢包新增授權"^]。
 
 
 
@@ -131,19 +104,7 @@ image:byol-digital-wallet-licenses-added.png["NetApp BlueXP 數位錢包"]
 
 TIP: 此訊息也會出現在 BlueXP 數位錢包和中 https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#monitoring-operations-status-using-the-notification-center["通知"]。
 
-.步驟
-. 選取 BlueXP 右下角的聊天圖示、以申請延長您的期限、或申請額外的授權容量、以取得特定序號。您也可以傳送電子郵件要求更新授權。
-+
-在您支付授權費用並向 NetApp 支援網站 註冊之後、 BlueXP 會自動更新 BlueXP 數位錢包中的授權、而「資料服務授權」頁面則會在 5 到 10 分鐘內反映變更。
-
-. 如果BlueXP無法自動更新授權（例如、安裝在暗點）、則您需要手動上傳授權檔案。
-+
-.. 您可以從 NetApp 支援網站 取得授權檔案。
-.. 存取 BlueXP 數位錢包。
-.. 選取 * 資料服務授權 * 標籤、選取要更新之服務序號的 * 動作 ... * 圖示、然後選取 * 更新授權 * 。
-
-
-
+https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["瞭解如何使用數位錢包更新授權"^]。
 
 
 
