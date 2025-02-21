@@ -14,8 +14,9 @@ summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自
 [role="lead"]
 使用 BlueXP 災難恢復、您可以達成下列目標：
 
-* link:../use/dashboard-view.html["檢視災難恢復計畫的健全狀況"]
+* link:../use/dashboard-view.html["檢視災難恢復計畫的健全狀況"]。
 * link:../use/sites-add.html["新增 vCenter 站台"]。
+* link:../use/resource-group.html["建立資源群組以將 VM 組織在一起"]
 * link:../use/drplan-create.html["建立災難恢復計畫"]。
 * link:../use/replicate.html["複寫 VMware 應用程式"] 使用 SnapMirror 複寫、在主站台上移轉至雲端中的災難恢復遠端站台。
 * link:../use/migrate.html["移轉 VMware 應用程式"] 在您的主要網站上移至其他網站。

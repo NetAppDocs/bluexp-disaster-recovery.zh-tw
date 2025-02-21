@@ -435,7 +435,6 @@
   <block id="c7e296ab461bd699a5d9cbf0801b389c" category="paragraph">在開始移轉之前、您應該先建立複寫計畫、然後選擇移轉應用程式。然後、「動作」功能表中會出現 * 移轉 * 選項。</block>
   <block id="4b832a5ef0d288f92d7b413054dc905f" category="list-text">在右側、選取 * 動作 * 選項 <block ref="2fddd650b01c7f9674be856867aae05d" category="inline-image-macro-rx" type="image"></block> 然後選取 * 移轉 * 。</block>
   <block id="9d8650f8b712e42ae65b817a2d362674" category="inline-link-macro">檢視災難恢復計畫的健全狀況</block>
-  <block id="baed892bed9a88570cd5a5931581b00c" category="list-text"><block ref="baed892bed9a88570cd5a5931581b00c" category="inline-link-macro-rx"></block></block>
   <block id="15d1e8fd5353c6a7e30202b501b639c3" category="inline-link-macro">移轉 VMware 應用程式</block>
   <block id="946772510dcd559e9d7d09458b2abd6f" category="list-text"><block ref="4c49990f7ea38fc4135c764bbfcd7786" category="inline-link-macro-rx"></block> 在您的主要網站上移至其他網站。</block>
   <block id="46da469bb05d1d3a2c620e2963f1531a" category="list-text"><block ref="698cc22cc758157d8f18359f8b528216" category="inline-link-macro-rx"></block> 在「工作監控」頁面上。</block>
@@ -1035,4 +1034,44 @@
   <block id="e2a36029181f04d6208811edf66b0c62" category="paragraph"><block ref="039fd09b60dad6f86188402eac2ef738" category="inline-link-rx"></block>。</block>
   <block id="5d3579189b9441a8b42010228d169cbc" category="inline-link">瞭解如何使用數位錢包更新授權</block>
   <block id="597c7a7ee6e647859f8aa98b20be3cb0" category="paragraph"><block ref="1180f9bbf40cd0c05f379b347ef1d8f9" category="inline-link-rx"></block>。</block>
+  <block id="4f65b71af0098f41a96bfdb343f2f325" category="doc">建立資源群組以將 VM 組織在一起</block>
+  <block id="37c560d4a7e5a6e37f98651719bd2745" category="paragraph">新增 vCenter 站台之後，您可能會想要建立資源群組，將 VM 群組在一起。資源群組可讓您將一組相關 VM 組織成符合您需求的邏輯群組。例如，您可以將與某個應用程式相關聯的虛擬機器分組，或是將具有類似階層的應用程式分組。另一個例子是，群組可能包含延遲開機順序，可在恢復時執行。</block>
+  <block id="142aa3cf2c56c4cee9658fbb7fa95634" category="paragraph">您可以使用下列方法建立資源群組：</block>
+  <block id="ad2f31d93207199cb75dd53824344fab" category="list-text">從資源群組索引標籤</block>
+  <block id="0d87bb4775c6c24807b2e814da0b9ca1" category="list-text">當您建立災難恢復或複寫計畫時。如果來源 vCenter 叢集託管了許多 VM ，則在建立複寫計畫時，建立資源群組可能會比較容易。有關在創建複製計劃時創建資源組的說明，請參見<block ref="ea54fcb5e693965efa13773dde42c832" category="inline-link-macro-rx"></block>。</block>
+  <block id="47debb7f83ae8dcccb80828c89238e3a" category="admonition">每個資源群組可以包含一或多個 VM 。虛擬機器將根據您將其納入複寫計畫的順序來啟動。您可以上下拖曳虛擬機器來變更資源群組清單的順序。</block>
+  <block id="ae21aa75d137aec3ba200318a51f9166" category="paragraph-title">關於資源群組</block>
+  <block id="f957d687562e057bff825e71ab7e802e" category="paragraph">資源群組可讓您將與營運相關且需要保護的虛擬機器合併為單一單元。</block>
+  <block id="b945eb631601c78c15db23da09ea1c09" category="paragraph">例如，銷售點應用程式可能包含數個裝載資料庫的虛擬機器，多個裝載業務邏輯規則管理的虛擬機器，以及數個充當 Web 伺服器型店面的虛擬機器。將這些虛擬機器放在單一資源群組中，以單一保護程序來管理整個應用程式的可用度，可能會有幫助。</block>
+  <block id="97f2b89685ef06c98b9ff744b4147e33" category="paragraph">設定資源群組後，您可以套用複寫計畫規則，以取得適當的 VM 啟動順序，網路連線等資訊，以確保應用程式所需的所有 VM 都能正常恢復。</block>
+  <block id="359f9e79e746fa9f684e5cda9e60ca2e" category="paragraph-title">如何運作？</block>
+  <block id="99cdeb2169c5824046ba94f263a554c7" category="paragraph">BlueXP  災難恢復可複寫基礎 ONTAP 磁碟區和 LUN ，將 VM 託管在資源群組中，藉此保護 VM 。為達成此目的，系統會查詢 vCenter ，以取得在資源群組中裝載 VM 的每個資料存放區名稱。然後 BlueXP  災難恢復會識別託管該資料儲存區的來源 ONTAP 磁碟區或 LUN 。所有保護都是使用 SnapMirror 複寫在 ONTAP 磁碟區層級執行。</block>
+  <block id="6004bd2544cbcf534e33d76e01ce9721" category="paragraph">如果資源群組中的虛擬機器裝載於不同的資料存放區， BlueXP  災難恢復會使用下列其中一種方法來建立 ONTAP 磁碟區或 LUN 的資料一致快照。</block>
+  <block id="4c97b19bdb39e81e1e7c0c1a8b6222c5" category="cell">FlexVol 磁碟區的相對位置</block>
+  <block id="ddbeb84a2d597ac93e26f8e4ccfed259" category="cell">Snapshot 複本程序</block>
+  <block id="6d01f51b0e5a556d95395c7f71ed087e" category="cell">多個資料儲存區 - 位於 * 相同 SVM* 中的 FlexVol 磁碟區</block>
+  <block id="1431ebf6966cf7875d79c646755a0ac4" category="list-text">已建立 ONTAP 一致性群組</block>
+  <block id="244e1723989c81e9a2ce04f721a2db41" category="list-text">所拍攝一致性群組的快照</block>
+  <block id="b73116544f9b4e58ae13b79847ef2c41" category="list-text">已執行 Volume 範圍的 SnapMirror 複寫</block>
+  <block id="afb49150087c45237455b2d82f867be8" category="cell">多個資料儲存區 - FlexVol Volume 位於 * 多個 SVMS* 中</block>
+  <block id="669001397154a9e2d2d9e8a107cb041d" category="list-text">ONTAP API ：<block ref="b5ab07cdecf9303ff94db49578282528" prefix=" " category="inline-code"></block>。靜止所有磁碟區，以便拍攝快照，並啟動所有資源群組磁碟區的磁碟區範圍快照。</block>
+  <block id="87f2c3aeec6e1ba638ce1869ba610ea4" category="list-text">ONTAP API ：<block ref="393c6bdee070ba1b7e80e63101108f36" prefix=" " category="inline-code"></block>。在所有磁碟區上恢復 I/O ，並在拍攝快照後啟用磁碟區範圍的 SnapMirror 複寫。</block>
+  <block id="8633fcc27ccd2122fe46b210f44553cf" category="paragraph">建立資源群組時，請考慮下列問題：</block>
+  <block id="8892a1b3251335ec20c65f05270cae24" category="list-text">單一資料存放區不應裝載受多個複寫計畫保護的 VM 。</block>
+  <block id="85d8f006f7e8ceeb46f30e2eba810828" category="list-text">請勿在同一個資料存放區上裝載受保護和未受保護的 VM 。如果受保護和未受保護的 VM 託管在同一個資料存放區，可能會發生下列問題：</block>
+  <block id="01c88b8825d68ac74c4f3a900e529850" category="list-text">由於 BlueXP  災難恢復使用 SnapMirror ，系統會複寫整個 ONTAP 磁碟區，因此該磁碟區的使用容量會用於授權考量。在這種情況下，受保護和未受保護的虛擬機器所消耗的磁碟區空間會納入此計算。</block>
+  <block id="fd30c9137bf3e65eb4cbb0b3b65c45d8" category="list-text">如果資源群組及其相關資料存放區需要容錯移轉至災難恢復站台，則來源站台上的容錯移轉程序將不再存在任何未受保護的虛擬機器（ VM 不屬於資源群組的一部分，但裝載於 ONTAP Volume 上），導致來源站台上的未受保護虛擬機器故障。此外， BlueXP  災難恢復也不會在容錯移轉 vCenter 站台啟動那些未受保護的 VM 。</block>
+  <block id="8a63c65b056310ba2a8c9f7b25cb1011" category="list-text">若要保護 VM ，必須將其包含在資源群組中。</block>
+  <block id="4314245dac1433ba0b4e2677f01da1cf" category="paragraph">* 最佳實務做法 * ：在部署 BlueXP  災難恢復之前，先組織好您的虛擬機器，以將「資料存放區過度擴張」降至最低。將需要保護的虛擬機器放在資料儲存區的子集上，並將不會受到保護的虛擬機器放在不同的資料儲存區子集上。確保任何指定資料存放區上的 VM 不受不同複寫計畫的保護。</block>
+  <block id="b0111a1bb823a7c75cdcdc06c66703ca" category="list-text">從 BlueXP  災難恢復功能表中，選取 * 資源群組 * 。</block>
+  <block id="fa4d1c967d467deb12174bc6b1b3355b" category="list-text">輸入資源群組的名稱。</block>
+  <block id="23a0cad5b0151418367a15f201a54ad3" category="list-text">選取 VM 所在的來源 vCenter 叢集。</block>
+  <block id="dca4029f87bca2c081e4f75bba3b9b28" category="list-text">在「新增資源群組」頁面的左側，選取您要保護的 VM 。</block>
+  <block id="38b6edfcfacd5ae9860834f850083003" category="inline-image-macro">顯示「新增資源群組」頁面的螢幕擷取畫面</block>
+  <block id="1a4be911d3882d1b3762fb71915599c8" category="paragraph"><block ref="1a4be911d3882d1b3762fb71915599c8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c021ba8d319c1c5278738c67a531bc28" category="list-text">或者，您也可以上下拖曳每個虛擬機器，以變更右側虛擬機器的順序。虛擬機器將根據您加入的順序來啟動。</block>
+  <block id="ee3e1a92f28abbcd26a1a39655c0465a" category="list-text"><block ref="baed892bed9a88570cd5a5931581b00c" category="inline-link-macro-rx"></block>。</block>
+  <block id="1b98100fdedab345bec758f9fe534c9b" category="inline-link-macro">建立資源群組以將 VM 組織在一起</block>
+  <block id="7d1ee868f80080dd430c4c762c071750" category="list-text"><block ref="7d1ee868f80080dd430c4c762c071750" category="inline-link-macro-rx"></block></block>
+  <block id="548b49f4267cb06525a994818f01fc03" category="sidebar">建立資源群組</block>
 </blocks>
