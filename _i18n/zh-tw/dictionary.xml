@@ -172,7 +172,6 @@
   <block id="2b62fc3f49aa92691e24ff085ed87ebe" category="list-text">降低總體擁有成本、降低營運成本、並能以最少的資源建立及調整災難恢復計畫</block>
   <block id="fdc22ef10c3a7384ef6c52b17d799754" category="list-text">持續進行災難恢復準備、並進行虛擬容錯移轉測試、不會中斷作業</block>
   <block id="06c4e885d0b84b88cbc1cfc207ec029b" category="list-text">透過 IT 環境的動態變更、以及在災難恢復計畫中解決 IT 問題的能力、加快實現價值所需的時間</block>
-  <block id="665fccb70331e8dfa8afd40c0bbb51f0" category="list-text">災難解決後、可隨需從災難恢復站台容錯回復至主要站台。</block>
   <block id="da43ae6496f10d6bfd475400915e2865" category="admonition">vSphere 伺服器的組態是在 vSphere Server 的 BlueXP 災難恢復之外完成。</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
   <block id="d244f191aaddadced4c31b2f67d06c9c" category="inline-image-macro">顯示 VMware 服務基礎架構 BlueXP 災難恢復架構的圖表</block>
@@ -291,7 +290,6 @@
   <block id="3849da8702f93c4c73b8b2d18d7d3b4d" category="list-text">選取 * 虛擬機器 * 。</block>
   <block id="2e91c6382e139b4d3b0307917725df9c" category="list-text">檢視虛擬機器資訊。</block>
   <block id="ec972bce7640d5d440d3549702031815" category="section-title">管理資源群組</block>
-  <block id="eb0ce25134b7ddab2efc8b2970a1fd4f" category="paragraph">雖然您可以將資源群組新增為建立複寫計畫的一部分、但您可能會發現在計畫中個別新增群組、之後再使用這些群組會更方便。</block>
   <block id="21b6410f349f79c305b5485d62f171ca" category="paragraph">您也可以編輯和刪除資源群組。</block>
   <block id="b1190a0ce1a0e51d67d2bdd169a714b0" category="list-text">從頂端功能表中、選取 * 資源群組 * 。</block>
   <block id="fb64cb9f2eb5e660830a8f202d12f794" category="list-text">若要新增資源群組、請選取 * 新增群組 * 。</block>
@@ -330,7 +328,6 @@
   <block id="26ff2655fb5643a3e76370d9248a31df" category="admonition">您可以稍後停用或刪除複寫計畫。</block>
   <block id="47324a4e5509aeccc192aa7b07cbcac7" category="list-text">選取 * 新增計畫 * 。</block>
   <block id="a9980df200522b9bbaa257521bc396fe" category="paragraph">計畫即會新增至計畫清單。</block>
-  <block id="9809a26603cc2fbdd8049c848bf77835" category="paragraph">新增後、 BlueXP 災難恢復會深入探索 vCenter 環境、包括 vCenter 叢集、 ESXi 主機、資料存放區、儲存足部列印、 虛擬機器詳細資料、 SnapMirror 複本和虛擬機器網路。</block>
   <block id="6df4f43f22118c6a361990f481e6ed83" category="list-text">登入 BlueXP 、然後從左側導航中選取 * Protection * &gt; * Disaster recovery * 。</block>
   <block id="2f11fab4722695438910176065d838b4" category="paragraph">您將進入 BlueXP 災難恢復儀表板頁面。當您第一次開始使用服務時、需要新增 vCenter 資訊。之後、儀表板會顯示站台和複寫計畫的相關資料。</block>
   <block id="6b3b905a38750ec7a08fa2e97d6315bf" category="admonition">如果某些 vCenter 站台已經存在、而您想要新增更多、請從頂端功能表中選取 * 站台 * 、然後選取 * 新增 * 。</block>
@@ -451,7 +448,6 @@
   <block id="53c1c0c22e2a647591a0b52427852850" category="paragraph"><block ref="53c1c0c22e2a647591a0b52427852850" category="inline-image-macro-rx" type="image"></block></block>
   <block id="add8d69a5f7975ffd43124657fc5030d" category="list-text">使用 SnapMirror 複寫、將內部部署正式作業站台上的 VMware 應用程式複寫到雲端或內部部署的災難恢復遠端站台。</block>
   <block id="dcc9d99320099ed731ca2f05b3e501a7" category="list-text">將 VMware 工作負載從原始站台移轉至其他站台。</block>
-  <block id="2aefc74ac286c583100431f62049590d" category="list-text">在發生災難時、可依需求將主要站台容錯移轉至災難恢復站台、該站台可以是 VMware Cloud on AWS with FSX for NetApp ONTAP 、或是內部部署的 VMware 環境搭配 ONTAP 。</block>
   <block id="a6a42e8e3070730d19bfd86d6a1d66fe" category="paragraph">下圖顯示內部部署到內部部署災難恢復計畫的架構。</block>
   <block id="20099229ad21726312a6ff50740b0b57" category="paragraph">當發生災難時、此服務可中斷 SnapMirror 關係、並讓目的地站台成為作用中、協助您在其他內部部署 VMware 環境或 VMC 中恢復虛擬機器。</block>
   <block id="96ed64c294e585324853f8f980f9d78e" category="sidebar">將應用程式移轉至其他網站</block>
@@ -485,9 +481,7 @@
   <block id="d940bc2868fa1d10a5c804aa0df8fd1b" category="list-text">在 BlueXP 災難恢復中，選擇右上角的 * 免費試用 - 查看詳細信息 * 。</block>
   <block id="2c6b9011807f7d1e8a37a31be26bb7c0" category="list-text">在下拉式詳細資料中、選取 * 結束免費試用 * 。</block>
   <block id="fc145d0284ba4e60c3b5f315355ac505" category="inline-image-macro">結束免費試用頁面</block>
-  <block id="3c90e08e219b34e50a8fec5640b6f2e8" category="list-text">如果您要刪除所有資料、請勾選 * 當我的試用結束時刪除所有資料 * 。</block>
   <block id="cb4cbd8ce32849060814e41e57e5db7f" category="paragraph">這會刪除所有排程、複寫計畫、資源群組、 vCenter 和站台。稽核資料、作業記錄和工作記錄會保留到產品生命週期結束為止。</block>
-  <block id="fd4452ba53d2010757fb183f23851efd" category="admonition">如果您結束免費試用、而不要求刪除資料、而且您沒有購買授權或訂閱、則在免費試用結束 60 天後、 BlueXP 災難恢復會刪除您所有的資料。</block>
   <block id="c3964fe08c9dd95815cc67d8aaee9323" category="list-text">在文字方塊中輸入「 End 試用」。</block>
   <block id="44a320573c319d1f30b840c2d11a4e26" category="list-text">選取 * 結束 * 。</block>
   <block id="3906249fde1cef9339402436007bb4f7" category="paragraph">如果您攜帶自己的授權（ BYOL ）、設定包括購買授權、取得 NetApp 授權檔案（ NLF ）、以及將授權新增至 BlueXP 數位錢包。</block>
@@ -807,15 +801,7 @@
   <block id="3eddfb488d257605e7713c24d210beee" category="inline-link">管理站台、資源群組、複寫計畫、資料存放區和虛擬機器資訊</block>
   <block id="310c40c0ef022c90f1370d1fe91ca720" category="paragraph">如需詳細資訊、請<block ref="db7c318fcbcad8cfb9a44ac897b870b2" category="inline-link-rx"></block>參閱。</block>
   <block id="9a3a6422d384602f3e19e123263dc99f" category="paragraph">如需詳細資訊、請<block ref="59c3623215c45197e971057378c86d42" category="inline-link-rx"></block>參閱。</block>
-  <block id="f2cdd0bbe9f89ecac35fe20b5c70e9fb" category="paragraph">下一步是將所需的虛擬機器分組為功能性資源群組。資源群組可讓您將一組相關的 VM 分組為符合您需求的邏輯群組。例如、群組可能包含延遲開機順序、可在恢復時執行。</block>
-  <block id="4d179ba15a8047d595a41bbd6175c3be" category="paragraph">在複寫計畫中選取應用程式時、您可以在計畫中看到每個 VM 的作業系統。這有助於決定如何將 VM 群組在資源群組中。</block>
-  <block id="7eb18c1801bc45dc00317e09e6cc2211" category="admonition">每個資源群組可以包含一或多個 VM 。虛擬機器將根據您在此加入的順序來啟動。</block>
-  <block id="794c0f8f77c0af0e4613492580e6d7ab" category="list-text">在「應用程式」頁面左側、選取您要保護的虛擬機器、然後指派給選取的群組。</block>
-  <block id="87661bcc452e9da5afed70a3b9cf3e39" category="paragraph">選取的 VM 會自動新增至群組 1 、並啟動新的群組 2 。每次將 VM 新增至最後一個群組時、都會新增另一個群組。</block>
-  <block id="81c61db52db9a56a1819f55910f10afa" category="paragraph"><block ref="37056fc036b85c73069e7f1371212abb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bcc94af8bc9c7e6ef8fd57214884e7f1" category="list-text">若要變更群組名稱、請按一下群組 * 編輯 * <block ref="8254d7ced29032ec76a59e7648759881" category="inline-image-macro-rx" type="image"></block>圖示。</block>
-  <block id="a218e8ce5f9879c5e643831c2aa0e36a" category="list-text">若要從群組中移除 VM 、請選取 VM 旁的 * X* 。</block>
-  <block id="a63398300e6fbe20dc11a32121bd6bfa" category="list-text">若要將虛擬機器移至其他群組、請將其拖放至新群組。</block>
   <block id="86cbb58fb6d06cab306fbf4379c5c40e" category="paragraph">群組中的每個 VM 都會根據此處的訂單依序啟動。</block>
   <block id="b09b7f24f5b2d0187b19263b47fb2cdf" category="paragraph">在資源對應步驟中、指定來源環境中的資源應如何對應至目標。建立複寫計畫時、您可以為計畫中的每個 VM 設定開機延遲和順序。這可讓您設定虛擬機器啟動順序。</block>
   <block id="da06c5c1d28e308403236438dda209dc" category="list-text">* 來源與目標資料中心 *</block>
@@ -852,8 +838,6 @@
   <block id="835e92deb53775d3ce75f1bab2ff7fe5" category="list-text">選取複寫計畫後、選取「動作」功能表、選取「清理舊快照」以移除目標上的舊快照、以符合新的保留計數。</block>
   <block id="4fcb591c27b70823ff71112c0db6af4f" category="summary">檢閱災難恢復報告可協助您分析災難恢復準備情況。預先設計的報告包括容錯移轉和容錯移轉的摘要、所有站台的複寫詳細資料、以及過去一年的工作詳細資料。</block>
   <block id="8c909df77f7b5e2e6b77ff66ee6bd3e7" category="paragraph">檢閱災難恢復報告可協助您分析災難恢復準備情況。預先設計的報告包括過去七天內、在帳戶內所有站台上的測試容錯移轉摘要、複寫計畫詳細資料和工作詳細資料。</block>
-  <block id="50772b7f62153c22aff0a022f47038ef" category="paragraph">您可以下載 HTML 或 JSON 格式的報告。</block>
-  <block id="a023ebf9b7aa4bcf4be9bcca1ad988b9" category="admonition">您可以使用瀏覽器的選項、將 HTML 頁面轉換成 PDF 。</block>
   <block id="cd463f7ca5dbc8268a82ea8d8f5e4281" category="paragraph">下載連結的有效期限為六小時。</block>
   <block id="5e521694fac83ef0acfcb6f722d2b3cf" category="list-text">從 BlueXP  左側導航中，選擇 * 保護 * &gt; * 災難恢復 * &gt; * 複製計劃 * 。</block>
   <block id="40f8ac7caaab02ab3b9834517b54c7a4" category="list-text">從頁面頂端選取 * 建立報告 * 。</block>
@@ -862,12 +846,10 @@
   <block id="5da6bcdd6ceb1c5910fb17277177402d" category="admonition">報告可能需要幾分鐘的時間才能顯示。</block>
   <block id="ab6b0c72784c216662673e59f1357cc1" category="list-text">若要下載報告、請選取 * 下載報告 * 、然後在管理員的下載資料夾中選取報告。</block>
   <block id="fa9f16c02f8fd7bab6992dec65c5838d" category="paragraph">新增 vCenter 站台之後、您就可以準備好建立災難恢復或複寫計畫。選取來源和目的地 vCenter 、挑選資源群組、然後群組應用程式的還原和開機方式。例如、您可以將與某個應用程式相關的虛擬機器（ VM ）分組、或是將具有類似階層的應用程式分組。</block>
-  <block id="cfb3b856fe141dd537038393a8052d33" category="list-text">選取您要複寫的虛擬機器、然後指派群組。</block>
   <block id="50e34508d81a64564e31500b942aef1c" category="paragraph">建立計畫時、您應遵循以下準則：</block>
   <block id="05bbe166de3c0c72c8dde33285c35767" category="list-text">對計畫中的所有 VM 使用相同的認證。</block>
   <block id="98ce844145386e78d8c9d936d1b8591b" category="list-text">為計畫中的所有 VM 使用相同的指令碼。</block>
   <block id="970b99aab999d5cc3afca09ebfb3ae92" category="list-text">規劃中的所有 VM 都使用相同的子網路、 DNS 和閘道。</block>
-  <block id="7168b459722d34d971b0a9d5df12edfd" category="list-text">或者、在「應用程式」頁面左側、依虛擬機器的資料存放區篩選虛擬機器。您也可以依名稱搜尋特定 VM 。</block>
   <block id="3380eb8d26d8e7c43e790421698a18a1" category="list-text">* IP 位址類型 * ：重新設定 VM 組態、以符合目標虛擬網路需求。BlueXP  災難恢復提供兩種選項： DHCP 或靜態 IP 。對於靜態 IP 、請設定子網路遮罩、閘道和 DNS 伺服器。此外、請輸入 VM 的認證。</block>
   <block id="8914a354aeff1b07a47e178ccae21e27" category="list-text">*DHCP/* ：如果您希望 VM 從 DHCP 伺服器取得網路組態資訊、請選取此設定。如果您選擇此選項、則只會提供 VM 的認證。</block>
   <block id="fac29f06ba242d5478f84ec94ec5b901" category="list-text">* 指令碼 * ：您可以在容錯移轉後的程序中加入 .sh 、 .bat 或 .ps1 格式的自訂指令碼。透過自訂指令碼、您可以在容錯移轉程序之後執行 BlueXP 災難恢復指令碼。例如、您可以使用自訂指令碼、在容錯移轉完成後恢復所有資料庫交易。</block>
@@ -1035,13 +1017,9 @@
   <block id="5d3579189b9441a8b42010228d169cbc" category="inline-link">瞭解如何使用數位錢包更新授權</block>
   <block id="597c7a7ee6e647859f8aa98b20be3cb0" category="paragraph"><block ref="1180f9bbf40cd0c05f379b347ef1d8f9" category="inline-link-rx"></block>。</block>
   <block id="4f65b71af0098f41a96bfdb343f2f325" category="doc">建立資源群組以將 VM 組織在一起</block>
-  <block id="37c560d4a7e5a6e37f98651719bd2745" category="paragraph">新增 vCenter 站台之後，您可能會想要建立資源群組，將 VM 群組在一起。資源群組可讓您將一組相關 VM 組織成符合您需求的邏輯群組。例如，您可以將與某個應用程式相關聯的虛擬機器分組，或是將具有類似階層的應用程式分組。另一個例子是，群組可能包含延遲開機順序，可在恢復時執行。</block>
   <block id="142aa3cf2c56c4cee9658fbb7fa95634" category="paragraph">您可以使用下列方法建立資源群組：</block>
   <block id="ad2f31d93207199cb75dd53824344fab" category="list-text">從資源群組索引標籤</block>
-  <block id="0d87bb4775c6c24807b2e814da0b9ca1" category="list-text">當您建立災難恢復或複寫計畫時。如果來源 vCenter 叢集託管了許多 VM ，則在建立複寫計畫時，建立資源群組可能會比較容易。有關在創建複製計劃時創建資源組的說明，請參見<block ref="ea54fcb5e693965efa13773dde42c832" category="inline-link-macro-rx"></block>。</block>
-  <block id="47debb7f83ae8dcccb80828c89238e3a" category="admonition">每個資源群組可以包含一或多個 VM 。虛擬機器將根據您將其納入複寫計畫的順序來啟動。您可以上下拖曳虛擬機器來變更資源群組清單的順序。</block>
   <block id="ae21aa75d137aec3ba200318a51f9166" category="paragraph-title">關於資源群組</block>
-  <block id="f957d687562e057bff825e71ab7e802e" category="paragraph">資源群組可讓您將與營運相關且需要保護的虛擬機器合併為單一單元。</block>
   <block id="b945eb631601c78c15db23da09ea1c09" category="paragraph">例如，銷售點應用程式可能包含數個裝載資料庫的虛擬機器，多個裝載業務邏輯規則管理的虛擬機器，以及數個充當 Web 伺服器型店面的虛擬機器。將這些虛擬機器放在單一資源群組中，以單一保護程序來管理整個應用程式的可用度，可能會有幫助。</block>
   <block id="97f2b89685ef06c98b9ff744b4147e33" category="paragraph">設定資源群組後，您可以套用複寫計畫規則，以取得適當的 VM 啟動順序，網路連線等資訊，以確保應用程式所需的所有 VM 都能正常恢復。</block>
   <block id="359f9e79e746fa9f684e5cda9e60ca2e" category="paragraph-title">如何運作？</block>
@@ -1056,13 +1034,8 @@
   <block id="afb49150087c45237455b2d82f867be8" category="cell">多個資料儲存區 - FlexVol Volume 位於 * 多個 SVMS* 中</block>
   <block id="669001397154a9e2d2d9e8a107cb041d" category="list-text">ONTAP API ：<block ref="b5ab07cdecf9303ff94db49578282528" prefix=" " category="inline-code"></block>。靜止所有磁碟區，以便拍攝快照，並啟動所有資源群組磁碟區的磁碟區範圍快照。</block>
   <block id="87f2c3aeec6e1ba638ce1869ba610ea4" category="list-text">ONTAP API ：<block ref="393c6bdee070ba1b7e80e63101108f36" prefix=" " category="inline-code"></block>。在所有磁碟區上恢復 I/O ，並在拍攝快照後啟用磁碟區範圍的 SnapMirror 複寫。</block>
-  <block id="8633fcc27ccd2122fe46b210f44553cf" category="paragraph">建立資源群組時，請考慮下列問題：</block>
-  <block id="8892a1b3251335ec20c65f05270cae24" category="list-text">單一資料存放區不應裝載受多個複寫計畫保護的 VM 。</block>
-  <block id="85d8f006f7e8ceeb46f30e2eba810828" category="list-text">請勿在同一個資料存放區上裝載受保護和未受保護的 VM 。如果受保護和未受保護的 VM 託管在同一個資料存放區，可能會發生下列問題：</block>
   <block id="01c88b8825d68ac74c4f3a900e529850" category="list-text">由於 BlueXP  災難恢復使用 SnapMirror ，系統會複寫整個 ONTAP 磁碟區，因此該磁碟區的使用容量會用於授權考量。在這種情況下，受保護和未受保護的虛擬機器所消耗的磁碟區空間會納入此計算。</block>
-  <block id="fd30c9137bf3e65eb4cbb0b3b65c45d8" category="list-text">如果資源群組及其相關資料存放區需要容錯移轉至災難恢復站台，則來源站台上的容錯移轉程序將不再存在任何未受保護的虛擬機器（ VM 不屬於資源群組的一部分，但裝載於 ONTAP Volume 上），導致來源站台上的未受保護虛擬機器故障。此外， BlueXP  災難恢復也不會在容錯移轉 vCenter 站台啟動那些未受保護的 VM 。</block>
   <block id="8a63c65b056310ba2a8c9f7b25cb1011" category="list-text">若要保護 VM ，必須將其包含在資源群組中。</block>
-  <block id="4314245dac1433ba0b4e2677f01da1cf" category="paragraph">* 最佳實務做法 * ：在部署 BlueXP  災難恢復之前，先組織好您的虛擬機器，以將「資料存放區過度擴張」降至最低。將需要保護的虛擬機器放在資料儲存區的子集上，並將不會受到保護的虛擬機器放在不同的資料儲存區子集上。確保任何指定資料存放區上的 VM 不受不同複寫計畫的保護。</block>
   <block id="b0111a1bb823a7c75cdcdc06c66703ca" category="list-text">從 BlueXP  災難恢復功能表中，選取 * 資源群組 * 。</block>
   <block id="fa4d1c967d467deb12174bc6b1b3355b" category="list-text">輸入資源群組的名稱。</block>
   <block id="23a0cad5b0151418367a15f201a54ad3" category="list-text">選取 VM 所在的來源 vCenter 叢集。</block>
@@ -1074,4 +1047,81 @@
   <block id="1b98100fdedab345bec758f9fe534c9b" category="inline-link-macro">建立資源群組以將 VM 組織在一起</block>
   <block id="7d1ee868f80080dd430c4c762c071750" category="list-text"><block ref="7d1ee868f80080dd430c4c762c071750" category="inline-link-macro-rx"></block></block>
   <block id="548b49f4267cb06525a994818f01fc03" category="sidebar">建立資源群組</block>
+  <block id="f2265cb494c0b6dc346cf3703718b766" category="doc">虛擬機器排程探索</block>
+  <block id="a1cc1dbaf027adca720112f5a8c48e4d" category="paragraph">BlueXP  災難恢復每 24 小時執行一次發現。有了這個版本，您現在可以自訂探索排程，以滿足您的需求，並在需要時降低對效能的影響。例如，如果您有大量 VM ，則可以將探索排程設定為每 48 小時執行一次。如果 VM 數量不多，您可以將探索排程設定為每 12 小時執行一次。</block>
+  <block id="7e2d4377602fe8c7a718d5ef8759c008" category="paragraph">如果您不想排程探索，您可以停用排程探索選項，並隨時手動重新整理探索。</block>
+  <block id="d04fa3ae362a3ea46fde26bdba81b204" category="inline-link">新增 vCenter 伺服器站台</block>
+  <block id="0002b275859484d6cdca867fbab8e165" category="paragraph">如需詳細資訊、請<block ref="54555db921feb31b73553520fa282341" category="inline-link-rx"></block>參閱。</block>
+  <block id="84307a139104b06aba6c6de9c728b2ff" category="section-title">資源群組資料存放區支援</block>
+  <block id="ed0d134f0d7b751b80633ad848722c7a" category="paragraph">以前，您只能由 VM 建立資源群組。在此版本中，您可以依資料存放區建立資源群組。當您建立複寫計畫並為該計畫建立資源群組時，資料存放區中的所有 VM 都會列出。如果您有大量虛擬機器，而且想要依資料存放區將其分組，這項功能就很實用。</block>
+  <block id="84ae8aaf40a4b59fed9a4fa741ccf225" category="paragraph">您可以使用下列方式建立具有資料存放區的資源群組：</block>
+  <block id="ee64b17e5379b689c5eb4ab50027f625" category="list-text">當您使用資料存放區新增資源群組時，可以看到資料存放區清單。您可以選取一或多個資料存放區來建立資源群組。</block>
+  <block id="3043e1ee38988e4248b9d1966e6dd1a4" category="list-text">當您建立複寫計畫並在計畫中建立資源群組時，可以在資料存放區中看到 VM 。</block>
+  <block id="f7a1d657a7b8993c917f63602c0774a1" category="section-title">免費試用或授權到期通知</block>
+  <block id="38a9b45e86982c8330edcb875da55284" category="paragraph">此版本會通知您免費試用將在 60 天內到期，以確保您有時間取得授權。此版本也會在授權到期日提供通知。</block>
+  <block id="5d940e67e8d433508306c751ff0ea678" category="section-title">服務更新通知</block>
+  <block id="9bdd52eb995b6f47a02ffa6aa4318399" category="paragraph">在此版本中，頂端會出現橫幅，表示服務正在升級，且服務處於維護模式。升級服務時會顯示橫幅，升級完成後會消失。雖然您可以在升級進行期間繼續在 UI 中工作，但您無法提交新工作。排程工作會在更新完成後執行，服務會返回正式作業模式。</block>
+  <block id="6bed87054cd375e075020297134f5ec2" category="paragraph">災難恢復至雲端是一種彈性且具成本效益的方法、可保護工作負載免受站台中斷和資料毀損事件的影響。有了適用於 VMware 的 BlueXP  災難恢復功能，您可以使用 NetApp 雲端儲存設備，將內部部署的 VMware VM 或執行 ONTAP 儲存設備的資料存放區工作負載複寫到公有雲中的 VMware 軟體定義資料中心，或是將 ONTAP 儲存設備做為災難恢復站台的內部部署 VMware 環境。</block>
+  <block id="ece6a9df8de79d152a543985204b6221" category="list-text">在發生災難時，可依需求將主要站台容錯移轉至災難恢復站台，該站台可以是採用 Amazon FSX for NetApp ONTAP 的 AWS 上的 VMware Cloud ，或是採用 ONTAP 的內部部署 VMware 環境。</block>
+  <block id="75bb2df7399afeb7147c24fce3704107" category="list-text">災難解決後、可隨需從災難恢復站台容錯回復至主要站台。* 將虛擬機器或資料存放區分組為邏輯資源群組，以便有效管理。</block>
+  <block id="70fdbb4fe1ac448b07e3ab48c5bd8bb1" category="list-text">如果您要刪除所有資料，請勾選 * 結束免費試用後立即刪除資料 * 。</block>
+  <block id="ba1769c41cb5cf97045fc108e9213d38" category="admonition">如果您結束免費試用，並未要求刪除資料，也未購買授權或訂閱，則 BlueXP  災難恢復會在免費試用結束 60 天後刪除所有資料。</block>
+  <block id="801c0fa0d304ca22d8afec06189bcf93" category="section-title">2025 年 4 月 16 日</block>
+  <block id="e1b61136672bccd13e6828fe7987e4f6" category="paragraph">版本 4.3</block>
+  <block id="61e45ffabe7cc2e3542ca9a55a1a53bf" category="paragraph">只有當複寫計畫處於下列其中一種狀態時，才能保護 VM ：</block>
+  <block id="e7d31fc0602fb2ede144d18cdffd816b" category="list-text">準備好</block>
+  <block id="eca4b06cc957b067c25916bf563bfcb1" category="list-text">已認可容錯回復</block>
+  <block id="55af57d923ed95c2495c25a0e4762077" category="list-text">測試已認可的容錯移轉</block>
+  <block id="cffe0c1b9d43854c0d95a5d592e6102c" category="list-text">選取您要複寫並指派資源群組的 VM 或資料存放區。</block>
+  <block id="335e98e9e03c56f037d977ec4b92f533" category="paragraph">下一步是將必要的 VM 或資料存放區分組到功能性資源群組中。資源群組可讓您將一組相關 VM 或資料存放區分組為符合您需求的邏輯群組。例如、群組可能包含延遲開機順序、可在恢復時執行。</block>
+  <block id="418330af51c4a26653da43f1476e3d4f" category="paragraph">在複寫計畫中選取應用程式時，您可以在計畫中看到每個 VM 或資料存放區的作業系統。這有助於決定如何將資源群組中的虛擬機器或資料存放區分組。</block>
+  <block id="f8842a88bb1ca78d43e06472d4679889" category="admonition">每個資源群組可以包含一或多個 VM 或資料存放區。虛擬機器將根據您在此加入的順序來啟動。</block>
+  <block id="5e90d93870eb5779de0b40ced0f92445" category="paragraph">建立資源群組時，請考慮下列問題：</block>
+  <block id="de634b3bd311c5e5e1c0b9d53d9d242f" category="list-text">在將資料存放區新增至資源群組之前，請先開始手動探索或排程探索 VM 。如此可確保探索虛擬機器，並將其列在資源群組中。如果您未觸發手動探索，則虛擬機器可能不會列在資源群組中。</block>
+  <block id="312258bdb1152123e04c06cf90952de2" category="list-text">確保資料存放區中至少有一個 VM 。如果資料存放區中沒有 VM ，則不會探索資料存放區。</block>
+  <block id="9fa2d89f680762c7614753f04e0aad6b" category="list-text">單一資料存放區不應裝載受多個複寫計畫保護的 VM 。</block>
+  <block id="dfbb0d3c710884104551edbd929afe76" category="list-text">請勿在同一個資料存放區上裝載受保護和未受保護的 VM 。如果受保護和未受保護的 VM 託管在同一個資料存放區上，可能會發生下列問題：</block>
+  <block id="2ec187db789cd0f14313072722cd5c3d" category="list-text">如果資源群組及其相關的資料存放區需要容錯移轉至災難恢復站台，則來源站台上不再存在任何未受保護的 VM （ VM 不屬於資源群組的一部分，而是裝載於 ONTAP Volume 上），因為容錯移轉程序而導致來源站台上未受保護的 VM 故障。此外， BlueXP  災難恢復也不會在容錯移轉 vCenter 站台啟動那些未受保護的 VM 。</block>
+  <block id="2ff74859cf5b70036f96d6c35b5ac3f0" category="paragraph">* 最佳實務做法 * ：在部署 BlueXP  災難恢復之前，先組織好您的虛擬機器，以將「資料存放區過度擴張」降至最低。將需要保護的虛擬機器放在資料存放區子集上，並將不受保護的虛擬機器放在不同的資料存放區子集上。確保任何指定資料存放區上的虛擬機器不受不同複寫計畫的保護。</block>
+  <block id="6f9c40e36ae73e33332b46ebad53611b" category="list-text">選取 * 虛擬機器 * 或 * 資料存放區 * 。</block>
+  <block id="1e37304672f6f6f473c93804e891eacb" category="list-text">您也可以依名稱搜尋特定的 VM 或資料存放區。</block>
+  <block id="b3736de6232ff120d2109e988d051825" category="list-text">在「應用程式」頁面左側，選取您要保護的虛擬機器或資料存放區，然後指派給選取的群組。</block>
+  <block id="08c396946743aa0cf55cd76038c264b7" category="paragraph">選取的資源會自動新增至群組 1 ，並啟動新的群組 2 。每次將資源新增至最後一個群組時，都會新增另一個群組。</block>
+  <block id="0f71807fe3313792a56d8deaefc042cd" category="paragraph"><block ref="fe2b15a06d13ce51dd26ce76b278185c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9614731ca9a6da0007a983f0a2437843" category="paragraph">或者，對於資料存放區：</block>
+  <block id="07445ca0ae375259d669e5ff34c73c99" category="paragraph"><block ref="0900e5e3c0a693c1efb9cc1c9f020053" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8d2514ca702dd19c69d05151f9ca0dde" category="list-text">若要從群組中移除資源，請選取資源旁邊的 * X* 。</block>
+  <block id="f0a0692b11f1b8e73cde7a3fa59cce87" category="list-text">若要將資源移至其他群組，請將其拖放至新群組。</block>
+  <block id="d92fbdb4e21242a727db9edab622f2e7" category="admonition">若要將資料存放區移至不同的資源群組，請取消選取不需要的資料存放區，然後提交複寫計畫。然後，建立或編輯其他複寫計畫，並重新選取資料儲存設備。</block>
+  <block id="df5bd7f92bf7a899cafe7f5f4cede250" category="paragraph">雖然您可以將資源群組新增為建立複寫計畫的一部分、但您可能會發現在計畫中個別新增群組、之後再使用這些群組會更方便。您可以依虛擬機器或資料存放區建立資源群組。</block>
+  <block id="f14421e984d67b669d82e97c5f322ee1" category="paragraph">您可以使用下列方式，依資料存放區建立資源群組：</block>
+  <block id="8c0063a0e5fb937e4b6c45cefbf9765b" category="paragraph">您可以下載 PDF ， HTML 或 JSON 格式的報告。</block>
+  <block id="4f3a59f3915b8beff0db268e9200f32d" category="paragraph">新增 vCenter 站台之後，您可能會想要建立資源群組，以便依 VM 或資料存放區將 VM 群組在一起。資源群組可讓您將一組相關 VM 組織成符合您需求的邏輯群組。例如，您可以將與某個應用程式相關聯的虛擬機器分組，或是將具有類似階層的應用程式分組。另一個例子是，群組可能包含延遲開機順序，可在恢復時執行。</block>
+  <block id="68924c47e2eb51445ff8e93c1ce1bbc2" category="paragraph">您可以將虛擬機器本身或虛擬機器分組在資料存放區中。</block>
+  <block id="29a34a7d63a066ce71bffd4a4d5c57dd" category="list-text">當您建立災難恢復或複寫計畫時。如果來源 vCenter 叢集託管了許多 VM ，則在建立複寫計畫時，建立資源群組可能會比較容易。有關在創建複製計劃時創建資源組的說明，請參見<block ref="808c9323236f2ed48bff12970a5f1c49" category="inline-link-macro-rx"></block>。</block>
+  <block id="d9d4ae88e38b24479af2edb7b1d29c42" category="admonition">每個資源群組可以包含一或多個 VM 或資料存放區。虛擬機器將根據您將其納入複寫計畫的順序來啟動。您可以上下拖曳資源群組清單中的虛擬機器或資料存放區，以變更順序。</block>
+  <block id="335cb5cb2353aeb9863b45bfe205a67d" category="paragraph">資源群組可讓您將虛擬機器或資料存放區合併，這些虛擬機器包含在作業上相關且需要以單一單元保護的虛擬機器。</block>
+  <block id="1525aedb2680936263642e1258b66620" category="list-text">根據您想要的搜尋方式，選取 * 虛擬機器 * 或 * 資料存放區 * 。</block>
+  <block id="6bc8606bc16628bb91d45fae4e7a2398" category="list-text">選取 * 新增資源群組 * 索引標籤。系統會列出所選 vCenter 叢集中的所有資料存放區或 VM 。如果您選取 * 資料存放區 * ，系統會列出所選 vCenter 叢集中的所有資料存放區。如果您選取 * 虛擬機器 * ，系統會列出所選 vCenter 叢集中的所有 VM 。</block>
+  <block id="20391328f727df103455848410020c4e" category="paragraph"><block ref="20391328f727df103455848410020c4e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d4621be8c4e595ac641222751fcbbd4b" category="paragraph">新增 vCenter 之後， BlueXP  災難恢復會深入探索 vCenter 環境，包括 vCenter 叢集， ESXi 主機，資料存放區，儲存區足部列印，虛擬機器詳細資料， SnapMirror 複本和虛擬機器網路。</block>
+  <block id="fc548d74f5fe5eda5c2ac1776a3251d8" category="paragraph">如果您在舊版中新增 vCenter 並想要自訂探索排程，則必須編輯 vCenter 伺服器站台並設定排程。</block>
+  <block id="63645e7c57622b218c40eb8c4228f755" category="admonition">BlueXP  災難恢復每 24 小時執行一次發現。設定網站之後，您可以稍後編輯 vCenter ，以自訂符合您需求的探索排程。例如，如果您有大量 VM ，您可以將探索排程設定為每 23 小時 59 分鐘執行一次。如果 VM 數量不多，您可以將探索排程設定為每 12 小時執行一次。最短間隔為 30 分鐘，最長 24 小時。</block>
+  <block id="f77a5149ff25436d00205500f56a3671" category="paragraph">您應該先執行一些手動探索，以取得有關您環境的最新資訊。之後，您可以將排程設定為自動執行。</block>
+  <block id="89f2a6d4b35cc4d13e0976279d928bd2" category="paragraph">新增或刪除的虛擬機器會在下一次排定的探索中或在立即手動探索期間被辨識。</block>
+  <block id="478565a725726768e967dd6c2076bfe8" category="section-title">編輯 vCenter 伺服器站台並自訂探索排程</block>
+  <block id="c170e69d4eaf4587e77f4ee6b622167a" category="paragraph">您可以編輯 vCenter 伺服器站台，以自訂探索排程。例如，如果您有大量 VM ，您可以將探索排程設定為每 23 小時 59 分鐘執行一次。如果 VM 數量不多，您可以將探索排程設定為每 12 小時執行一次。</block>
+  <block id="edb77224438876f48ac2411fc9d426ee" category="paragraph">如果您不想排程探索，可以停用排程探索選項，並隨時手動重新整理探索。</block>
+  <block id="9dbde0ef17659bc614c76bb72c33cd6a" category="list-text">從 BlueXP  災難恢復功能表中，選取 * 站台 * 。</block>
+  <block id="f656f053f38993274db0418e245cdf05" category="list-text">選取您要編輯的網站。</block>
+  <block id="5ad3e303fff11348579be9fa7186a3bf" category="inline-image-macro">動作圖示</block>
+  <block id="51acadcc6b05f2ea7857f94de518b41c" category="list-text">選取右側的「動作」<block ref="145ad72607e9a3c177918d31007a191e" category="inline-image-macro-rx" type="image"></block>圖示，然後選取 * 編輯 * 。</block>
+  <block id="a352c615ea385a6739b336754188419a" category="list-text">在「編輯 vCenter 伺服器」頁面中，視需要編輯欄位。</block>
+  <block id="61704e16fae21afe2e06c2208fb7d289" category="list-text">若要自訂探索排程，請勾選 * 啟用排程探索 * 方塊，然後選取您要的日期和時間間隔。</block>
+  <block id="56b0e91275c81a9a7d2c23d702bfd24f" category="inline-image-macro">編輯探索排程螢幕擷取畫面</block>
+  <block id="11db3dad3390f21a6a077fc4dce96388" category="paragraph"><block ref="11db3dad3390f21a6a077fc4dce96388" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7eceff55f91319d0902ed1cce46f6389" category="section-title">手動重新整理探索</block>
+  <block id="c2104ad12897a5730ad3b288494cdd97" category="paragraph">您可以隨時手動重新整理探索。如果您已新增或移除虛擬機器，並且想要更新 BlueXP  災難恢復中的資訊，這項功能就很實用。</block>
+  <block id="5196afaaa8fb34fc7153a30daf14514e" category="list-text">選取您要重新整理的網站。</block>
+  <block id="c87fc74cb4f8f9196e191287a96f80dd" category="list-text">選取右側的「動作」<block ref="145ad72607e9a3c177918d31007a191e" category="inline-image-macro-rx" type="image"></block>圖示，然後選取 * 重新整理 * 。</block>
 </blocks>
