@@ -18,7 +18,7 @@ summary: BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化�
 
 == 2025 年 4 月 16 日
 
-版本 4.3
+版本 4.2.2
 
 
 
@@ -55,6 +55,34 @@ BlueXP  災難恢復每 24 小時執行一次發現。有了這個版本，您�
 === 服務更新通知
 
 在此版本中，頂端會出現橫幅，表示服務正在升級，且服務處於維護模式。升級服務時會顯示橫幅，升級完成後會消失。雖然您可以在升級進行期間繼續在 UI 中工作，但您無法提交新工作。排程工作會在更新完成後執行，服務會返回正式作業模式。
+
+
+
+== 2025 年 3 月 10 日
+
+版本 4.2.1
+
+
+
+=== 智慧型 Proxy 支援
+
+BlueXP  Connector 支援智慧型 Proxy 。智慧型 Proxy 是一種輕量，安全且有效率的方法，可將內部環境連線至 BlueXP  服務。它可在您的環境和 BlueXP  服務之間提供安全連線，而不需要 VPN 或直接網際網路存取。這項最佳化的 Proxy 實作可卸載本機網路內的 API 流量。
+
+設定 Proxy 時， BlueXP  災難恢復會嘗試直接與 VMware 或 ONTAP 通訊，並在直接通訊失敗時使用設定的 Proxy 。
+
+BlueXP  災難恢復 Proxy 實作需要連接器與任何 vCenter Server 和 ONTAP 陣列之間使用 HTTPS 通訊協定進行連接埠 443 通訊。Connector 內的 BlueXP  災難恢復代理程式在執行任何動作時，會直接與 VMware vSphere ， VC 或 ONTAP 通訊。
+
+如需 BlueXP  災難恢復智慧型 Proxy 的詳細資訊，請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-setup.html["為 BlueXP 災難恢復設定基礎架構"]。
+
+如需在 BlueXP  中設定一般 Proxy 的詳細資訊，請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["設定連接器以使用Proxy伺服器"^]。
+
+
+
+=== 隨時結束免費試用
+
+您可以在任何時間停止免費試用，也可以等到試用期到期。
+
+請參閱。 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html#end-the-free-trial["結束免費試用"]
 
 
 

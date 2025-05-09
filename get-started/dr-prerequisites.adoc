@@ -99,6 +99,7 @@ TIP: 對於內部部署到內部部署、請使用 BlueXP 內部部署 Connector
 +
 請參閱。 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["探索內部部署ONTAP 的叢集"^]
 
+* 如需設定智慧型 Proxy 以進行 BlueXP  災難恢復的相關資訊，請參閱link:../get-started/dr-setup.html["為 BlueXP 災難恢復設定基礎架構"]。
 
 
 

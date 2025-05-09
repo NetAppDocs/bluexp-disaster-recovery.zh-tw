@@ -1067,7 +1067,6 @@
   <block id="70fdbb4fe1ac448b07e3ab48c5bd8bb1" category="list-text">如果您要刪除所有資料，請勾選 * 結束免費試用後立即刪除資料 * 。</block>
   <block id="ba1769c41cb5cf97045fc108e9213d38" category="admonition">如果您結束免費試用，並未要求刪除資料，也未購買授權或訂閱，則 BlueXP  災難恢復會在免費試用結束 60 天後刪除所有資料。</block>
   <block id="801c0fa0d304ca22d8afec06189bcf93" category="section-title">2025 年 4 月 16 日</block>
-  <block id="e1b61136672bccd13e6828fe7987e4f6" category="paragraph">版本 4.3</block>
   <block id="61e45ffabe7cc2e3542ca9a55a1a53bf" category="paragraph">只有當複寫計畫處於下列其中一種狀態時，才能保護 VM ：</block>
   <block id="e7d31fc0602fb2ede144d18cdffd816b" category="list-text">準備好</block>
   <block id="eca4b06cc957b067c25916bf563bfcb1" category="list-text">已認可容錯回復</block>
@@ -1124,4 +1123,18 @@
   <block id="c2104ad12897a5730ad3b288494cdd97" category="paragraph">您可以隨時手動重新整理探索。如果您已新增或移除虛擬機器，並且想要更新 BlueXP  災難恢復中的資訊，這項功能就很實用。</block>
   <block id="5196afaaa8fb34fc7153a30daf14514e" category="list-text">選取您要重新整理的網站。</block>
   <block id="c87fc74cb4f8f9196e191287a96f80dd" category="list-text">選取右側的「動作」<block ref="145ad72607e9a3c177918d31007a191e" category="inline-image-macro-rx" type="image"></block>圖示，然後選取 * 重新整理 * 。</block>
+  <block id="78e5de64c036a105265b3f447a5fbbca" category="doc">智慧型 Proxy 支援</block>
+  <block id="12430fc7d9e2c156fb2dc1af2bf60126" category="paragraph">BlueXP  Connector 支援智慧型 Proxy 。智慧型 Proxy 是一種輕量，安全且有效率的方法，可將內部環境連線至 BlueXP  服務。它可在您的環境和 BlueXP  服務之間提供安全連線，而不需要 VPN 或直接網際網路存取。這項最佳化的 Proxy 實作可卸載本機網路內的 API 流量。</block>
+  <block id="2baae43f4fa62104c66585e956c51e1e" category="paragraph">設定 Proxy 時， BlueXP  災難恢復會嘗試直接與 VMware 或 ONTAP 通訊，並在直接通訊失敗時使用設定的 Proxy 。</block>
+  <block id="a115e6ab8acfcda534f22a18d1d6940d" category="paragraph">BlueXP  災難恢復 Proxy 實作需要連接器與任何 vCenter Server 和 ONTAP 陣列之間使用 HTTPS 通訊協定進行連接埠 443 通訊。Connector 內的 BlueXP  災難恢復代理程式在執行任何動作時，會直接與 VMware vSphere ， VC 或 ONTAP 通訊。</block>
+  <block id="a7a0475144b255eccfff4d2ee3e7a5c4" category="paragraph">如需 BlueXP  災難恢復智慧型 Proxy 的詳細資訊，請參閱<block ref="bf1bf7a536149f2406a2eab17db3a297" category="inline-link-rx"></block>。</block>
+  <block id="146adb7944757e88795676b780c31811" category="inline-link">設定連接器以使用Proxy伺服器</block>
+  <block id="635abfb2f80497d39998f2a81dfecd7e" category="paragraph">如需在 BlueXP  中設定一般 Proxy 的詳細資訊，請參閱<block ref="4d83a369cd8d5456206d71335578eaaa" category="inline-link-rx"></block>。</block>
+  <block id="7469dc0d82ce9411c03b852f2163d515" category="section-title">隨時結束免費試用</block>
+  <block id="38567a6024618c3687de90b3e2cff86e" category="paragraph">您可以在任何時間停止免費試用，也可以等到試用期到期。</block>
+  <block id="b618f30aeca114d464120de119b19ced" category="paragraph">請參閱。<block ref="5f37f8bd4230e4b629c60b7dc23a5850" category="inline-link-rx"></block></block>
+  <block id="74027f9fc959ea61e0fe4228f42245b9" category="list-text">如需設定智慧型 Proxy 以進行 BlueXP  災難恢復的相關資訊，請參閱<block ref="b42f106c81bf8d9365b4d08b31fa2987" category="inline-link-macro-rx"></block>。</block>
+  <block id="848964f0743e2416b5d061a5e088ca73" category="paragraph">版本 4.2.2</block>
+  <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">2025 年 3 月 10 日</block>
+  <block id="ae493f6fb938d3c8c6db8b5a9e623794" category="paragraph">版本 4.2.1</block>
 </blocks>

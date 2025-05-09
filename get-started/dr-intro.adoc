@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: get-started/dr-intro.html 
-keywords: how bluexp disaster recovery works, what is disaster recovery, bluexp, vmware, vcenter, draas, replicate, failover, failback, fail over, fail back 
+keywords: how bluexp disaster recovery works, what is disaster recovery, bluexp, vmware, vcenter, draas, replicate, failover, failback, fail over, fail back, vmware cloud 
 summary: 災難恢復至雲端是一種彈性且具成本效益的方法、可保護工作負載免受站台中斷和資料毀損事件的影響。透過 BlueXP 災難恢復 for VMware 、您可以使用 NetApp 雲端儲存設備、將內部部署的執行 ONTAP 儲存設備的 VMware 工作負載複寫到公有雲中的 VMware 軟體定義資料中心、或將 ONTAP 儲存設備做為災難恢復站台的內部部署 VMware 環境。 
 ---
 = 瞭解適用於 VMware 的 BlueXP 災難恢復
