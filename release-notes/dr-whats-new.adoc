@@ -54,7 +54,7 @@ VM1 具有連接至網路 A 的 VNIC （ 10.1.1.50 ）。網路 A 會對應到�
 
 原始來源網站恢復上線後，您可以從「複寫計畫動作」功能表中選取「 * 保護資源 * 」，以建立反向保護。這會嘗試為計畫中的每個磁碟區建立反向複寫關係。您可以重複執行此工作，直到還原保護為止。還原保護時，您可以依照一般方式啟動容錯回復。
 
-有關跳過保護的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["將 Ovre 應用程式容錯移轉至遠端站台"]。
+有關跳過保護的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["將應用程式容錯移轉至遠端站台"]。
 
 
 
@@ -68,7 +68,7 @@ BlueXP  災難恢復現在支援使用外部快照管理解決方案，例如�
 
 設定此選項之後，服務不會定期擷取任何排程的快照，而是仰賴外部實體來拍攝和更新這些快照。
 
-有關跳過保護的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
+如需在複寫計畫中使用外部快照解決方案的詳細資訊，請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
 
 
 
