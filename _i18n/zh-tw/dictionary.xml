@@ -1122,20 +1122,16 @@
   <block id="c8512209d54525f96f71aef40bda4d89" category="paragraph">VM1 具有連接至網路 A 的 VNIC （ 10.1.1.50 ）。網路 A 會對應到複寫計畫設定中的網路 B 。</block>
   <block id="54f173771463f16f3b7367756ee8a6df" category="paragraph">在容錯移轉時， BlueXP  災難恢復會取代原始 IP 位址（ 10.1.1 ）的網路部分，並保留原始 IP 位址（ 10.1.1.50 ）的主機位址（ .50 ）。對於 VM1 ， BlueXP  災難恢復會查看網路 B 的 CIDR 設定，並使用網路 B 網路部份 192.168.1 ，同時保留主機部份（ .50 ）來為 VM1 建立新的 IP 位址。新 IP 會變成 192.168.1.50 。</block>
   <block id="726a53952ba1f868d3ec9d1d32a62b2e" category="paragraph">總而言之，主機位址保持不變，而網路位址則會取代站台子網路對應中所設定的任何項目。這可讓您更輕鬆地在容錯移轉時管理 IP 位址重新指派，尤其是當您有數百個網路和數千個 VM 需要管理時。</block>
-  <block id="774b32328f5b31268d0c32cb8b2b7cba" category="paragraph">如需在站台中包含子網路對應的詳細資訊，請參閱<block ref="2646d8ece134cab5b4abb346406774b7" category="inline-link-macro-rx"></block>。</block>
   <block id="a16eb72c6e9708bc4bdfd310db9a1760" category="section-title">跳過保護</block>
   <block id="18a26d8a69342321f82f23b0b9667a2b" category="paragraph">您現在可以略過保護，這樣在複寫計畫容錯移轉之後，服務就不會自動建立反向保護關係。如果您想要在還原的網站上執行其他作業，然後在 BlueXP  災難恢復中將其重新上線，這項功能就很實用。</block>
   <block id="83f2c5047d69bb49c6372714354b223e" category="paragraph">當您啟動容錯移轉時，如果原始來源站台在線上，依預設，服務會自動為複寫計畫中的每個磁碟區建立反向保護關係。這表示該服務會從目標站台建立 SnapMirror 關係，並將其還原至來源站台。當您啟動容錯回復時，服務也會自動反轉 SnapMirror 關係。</block>
   <block id="39adaab4c8da99c378ac7814cd837b82" category="paragraph">啟動容錯移轉時，您現在可以選擇 * 略過保護 * 選項。如此一來，服務就不會自動反轉 SnapMirror 關係。而是將可寫入的磁碟區保留在複寫計畫的兩側。</block>
   <block id="0ed1a7f2cfa308cb3f608d5a24b47b8f" category="paragraph">原始來源網站恢復上線後，您可以從「複寫計畫動作」功能表中選取「 * 保護資源 * 」，以建立反向保護。這會嘗試為計畫中的每個磁碟區建立反向複寫關係。您可以重複執行此工作，直到還原保護為止。還原保護時，您可以依照一般方式啟動容錯回復。</block>
-  <block id="f53838e4f91966e1f320316dc6686a4a" category="paragraph">如需略過保護的詳細資訊，請參閱<block ref="524f5a32773e3e832b74877ecf58916f" category="inline-link-macro-rx"></block>。</block>
   <block id="bc1bbd522e7b060cf5530955a21a60e0" category="section-title">SnapMirror 會在複寫計畫中排程更新</block>
   <block id="c8c9a99c726a6f5a1158a1753fb72b2a" category="paragraph">BlueXP  災難恢復現在支援使用外部快照管理解決方案，例如原生 ONTAP SnapMirror 原則排程器或與 ONTAP 的協力廠商整合。如果複寫計畫中的每個資料存放區（ Volume ）都已有 SnapMirror 關係，而該關係正在其他地方管理，您可以將這些快照作為 BlueXP  災難恢復的恢復點。</block>
   <block id="51b94dd4c3836facc3789590ed219960" category="paragraph">若要設定，請在「複寫計畫」 &gt; 「資源對應」區段中，勾選「設定資料存放區對應時，使用平台管理的備份和保留排程 * 」核取方塊。</block>
   <block id="c837cc2aab74d32ef3dcbbce527bd24b" category="paragraph">選取此選項時， BlueXP  災難恢復不會設定備份排程。不過，您仍需要設定保留排程，因為仍可能需要拍攝快照來執行測試，容錯移轉和容錯回復作業。</block>
   <block id="84c71600543673f6d7dd403d3e7a164a" category="paragraph">設定此選項之後，服務不會定期擷取任何排程的快照，而是仰賴外部實體來拍攝和更新這些快照。</block>
-  <block id="e70edcdb01d149c4328ebb491c2aa090" category="paragraph">如需複寫計畫中使用外部快照解決方案的詳細資訊，請參閱<block ref="8aa3c94c171b2c9d7252afb28ee019a7" category="inline-link-macro-rx"></block>。</block>
-  <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">2025 年 12 月 5 日</block>
   <block id="5a31c17caa12408e3b6093ed864c9821" category="paragraph">版本 4.2.3</block>
   <block id="f17de33c8bac2ab69dd89149aac16c6c" category="paragraph">下一步是將必要的 VM 或資料存放區分組到功能性資源群組中。資源群組可讓您使用通用快照來保護一組 VM 或資料存放區。</block>
   <block id="516dbf8e2c43d00664357bb38d1575a6" category="admonition">每個資源群組可以包含一或多個 VM 或資料存放區。</block>
@@ -1180,4 +1176,9 @@
   <block id="d56562607152896b0efda703821ab816" category="paragraph"><block ref="d56562607152896b0efda703821ab816" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a60af3ebe60a5e3cebadd89e2c407a9c" category="list-text">在 *Target IP* 欄位中，從下拉式清單中選取 * 使用子網路對應 * 。</block>
   <block id="88497a7ce9c844d7b07cc838ad7754d6" category="list-text">繼續建立複寫計畫。</block>
+  <block id="e28871dd1f9f31bb54d653e42ab61487" category="paragraph">有關在站點中包括子網映射的詳細信息，請參閱<block ref="54555db921feb31b73553520fa282341" category="inline-link-rx"></block>。</block>
+  <block id="647215431eb63495be0e5e7c6321e640" category="inline-link">將 Ovre 應用程式容錯移轉至遠端站台</block>
+  <block id="6631bb487a9f2386aeff1e4dcc55b137" category="paragraph">有關跳過保護的詳細信息，請參閱<block ref="9e9114c1de2c071902864db54b7b6286" category="inline-link-rx"></block>。</block>
+  <block id="e638472ab7fa0db5c2038455cbfd2531" category="paragraph">有關跳過保護的詳細信息，請參閱<block ref="5cf2140f2775e5f1ccc24bb836a069a3" category="inline-link-rx"></block>。</block>
+  <block id="71df7d09aaee8e6796df0c3d10989fbd" category="section-title">2025 年 13 月 5 日</block>
 </blocks>
