@@ -313,22 +313,14 @@
   <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">選擇*下一步*。</block>
   <block id="4039eb9aa82f9a49f8096e652825e9c9" category="inline-image-macro">顯示「新增複寫計畫 &amp;gt; 要複寫的應用程式」頁面的螢幕擷取畫面</block>
   <block id="f60de6a7e37982bbcf6e675308bbbeb8" category="list-text">您也可以選擇執行下列任一動作：</block>
-  <block id="84ffccfa6f5368695a086e51333e6494" category="list-text">當您有多個資源群組時、請確定群組的順序符合應該發生的操作順序。</block>
   <block id="94884044f731a17cf6d266f3acc71d30" category="section-title">將來源資源對應至目標</block>
   <block id="15be2bc9d482c70a11a63e89eada5ce4" category="list-text">在「資源對應」頁面中、若要對容錯移轉和測試作業使用相同的對應、請核取方塊。</block>
   <block id="137f19e6e2dc1219f33553b812627bc2" category="list-text">虛擬機器</block>
   <block id="eff845e03ea7f765e5646b3de0aa3188" category="list-text">資料存放區</block>
   <block id="0516742190fe9dfeaffe988ba6abe786" category="admonition">您可以稍後測試整個計畫。現在您正在設定測試環境的對應。</block>
-  <block id="3f015374311e085394976bb9595d4f23" category="section-title">識別週期</block>
-  <block id="709c15cd0537a2fac696156d542aebf9" category="list-text">在 Recurence （循環）頁面中，選擇 *Migrate* 或 *Replicate* 。</block>
-  <block id="b6f87dbacc6d25d61a3ccb8d788eee83" category="list-text">* 移轉 * ：選取以將應用程式移至目標位置。</block>
-  <block id="061664c141fcaa8d32bae574640392e5" category="list-text">* Replicate * ：在週期性複寫中、將目標複本與來源複本的變更保持在最新狀態。</block>
-  <block id="a807f56da9b717d84bb632ebfde49e6e" category="inline-image-macro">顯示新增複寫計畫 &amp;gt; 週期性的螢幕擷取畫面</block>
-  <block id="b6b37c618f509f4cd72b3116ce0f0a69" category="paragraph"><block ref="b647bf0b099c797a2c2c6a3a40882045" category="inline-image-macro-rx" type="image"></block></block>
   <block id="26ff2655fb5643a3e76370d9248a31df" category="admonition">您可以稍後停用或刪除複寫計畫。</block>
   <block id="47324a4e5509aeccc192aa7b07cbcac7" category="list-text">選取 * 新增計畫 * 。</block>
   <block id="a9980df200522b9bbaa257521bc396fe" category="paragraph">計畫即會新增至計畫清單。</block>
-  <block id="6df4f43f22118c6a361990f481e6ed83" category="list-text">登入 BlueXP 、然後從左側導航中選取 * Protection * &gt; * Disaster recovery * 。</block>
   <block id="2f11fab4722695438910176065d838b4" category="paragraph">您將進入 BlueXP 災難恢復儀表板頁面。當您第一次開始使用服務時、需要新增 vCenter 資訊。之後、儀表板會顯示站台和複寫計畫的相關資料。</block>
   <block id="6b3b905a38750ec7a08fa2e97d6315bf" category="admonition">如果某些 vCenter 站台已經存在、而您想要新增更多、請從頂端功能表中選取 * 站台 * 、然後選取 * 新增 * 。</block>
   <block id="5a05572673bc07b0b94f07c482a67d13" category="inline-image-macro">新增 vCenter Server 螢幕擷取畫面 </block>
@@ -438,8 +430,6 @@
   <block id="3c47c0bca0e482b13e82a95a95df0741" category="list-text">輸入複寫計畫名稱以確認並啟動容錯回復。</block>
   <block id="d813bc25d25a7f816dde51c17f6c6ba0" category="list-text">對應來源環境中的資源如何對應到目的地。</block>
   <block id="c456b58190fd5c21d84750f126197baf" category="paragraph">首先、您選取來源 vCenter 、然後選取目的地 vCenter 。</block>
-  <block id="7fceed43db5d7f111f8ef8f9351ffecd" category="paragraph">選擇是要將資料（一次性移動）移轉至另一個目標、還是要以 SnapMirror 頻率複寫資料。</block>
-  <block id="a6263fdec62a2bd89f463f2208f79331" category="paragraph">如果您想複寫資料、請確定資料應多久鏡射一次。</block>
   <block id="901540dd7e45eaf2226327527c8d78b4" category="list-text">* 來源 * ：選取 * 探索 vCenter 伺服器 * 以輸入來源 vCenter 站台的相關資訊。</block>
   <block id="bc7f3cb185f48d451eb5ef976e8ad82d" category="list-text">* 目標 * ：</block>
   <block id="d23a9d83c87c6eacef309f00a2beb5d3" category="inline-image-macro">網站頁面螢幕快照</block>
@@ -526,8 +516,6 @@
   <block id="4e305fe14ce90c5da1d1d11ea08f5fe4" category="list-text">選取您要執行這些測試的月份和時間。</block>
   <block id="294642716409ca930af5721f2db940c1" category="list-text">當您想要開始測試時、請以 yyyy-mm-dd 格式輸入日期。</block>
   <block id="e3afddca17ec740a7556918c2bbdc013" category="inline-image-macro">顯示您可以編輯排程的螢幕擷取畫面</block>
-  <block id="380f2a79a88b8118529d87c864cff3d8" category="paragraph"><block ref="380f2a79a88b8118529d87c864cff3d8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0a003809d85acf4d6a198955e5780ac3" category="list-text">若要在容錯移轉測試完成後清理測試環境、請核取 * 測試容錯移轉後自動清理 * 。</block>
   <block id="20ace5d6661ce95df08950b97c500ddc" category="admonition">此程序會從測試位置取消暫存虛擬機器的登錄、刪除所建立的 FlexClone Volume 、並卸載暫存資料存放區。</block>
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">選擇*保存*。</block>
   <block id="4d519f9cb24d082270f8f88ccccd42e3" category="paragraph">瞭解 BlueXP 災難恢復的新功能。</block>
@@ -750,7 +738,6 @@
   <block id="a358a5c755a9f869690207e2a0726737" category="list-text">* 虛擬機器 * ：在容錯移轉對應標籤中、選取 * 虛擬機器 * 旁的向下箭頭。</block>
   <block id="c28e8a3b83f3f2cce376fe3daa7ad95d" category="paragraph"><block ref="64eb1ec301597178e47fa7deed0121dc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="10936c8535aaede0ed75f5d8d4fa6aaf" category="list-text">* 保留計數 * ：輸入您要保留的快照數。</block>
-  <block id="8772d236d3c62b688c3b57224d982ee1" category="paragraph"><block ref="8772d236d3c62b688c3b57224d982ee1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="76e4d72594030fca0b96279d0f8392dc" category="section-title">有助於您進行 BlueXP  災難恢復的術語</block>
   <block id="b7b26d16c3d1d84d3872afa1f04c92d6" category="paragraph">瞭解與災難恢復相關的一些術語可能會使您受益。</block>
   <block id="7f800e59a5bd3f98ce900fa6e543f67d" category="list-text">* 站台 * ：通常與實體資料中心或雲端供應商相關的邏輯容器。</block>
@@ -802,7 +789,6 @@
   <block id="310c40c0ef022c90f1370d1fe91ca720" category="paragraph">如需詳細資訊、請<block ref="db7c318fcbcad8cfb9a44ac897b870b2" category="inline-link-rx"></block>參閱。</block>
   <block id="9a3a6422d384602f3e19e123263dc99f" category="paragraph">如需詳細資訊、請<block ref="59c3623215c45197e971057378c86d42" category="inline-link-rx"></block>參閱。</block>
   <block id="bcc94af8bc9c7e6ef8fd57214884e7f1" category="list-text">若要變更群組名稱、請按一下群組 * 編輯 * <block ref="8254d7ced29032ec76a59e7648759881" category="inline-image-macro-rx" type="image"></block>圖示。</block>
-  <block id="86cbb58fb6d06cab306fbf4379c5c40e" category="paragraph">群組中的每個 VM 都會根據此處的訂單依序啟動。</block>
   <block id="b09b7f24f5b2d0187b19263b47fb2cdf" category="paragraph">在資源對應步驟中、指定來源環境中的資源應如何對應至目標。建立複寫計畫時、您可以為計畫中的每個 VM 設定開機延遲和順序。這可讓您設定虛擬機器啟動順序。</block>
   <block id="da06c5c1d28e308403236438dda209dc" category="list-text">* 來源與目標資料中心 *</block>
   <block id="7067fdfe055fabd950bd45a1a17e1642" category="list-text">* 目標叢集 *</block>
@@ -810,14 +796,9 @@
   <block id="6d9f48430941cb04802ac18d9c695e65" category="admonition">如果 vCenter 已設定分散式資源排程器（ DRS ）來管理叢集中的多部主機、則不需要選取主機。如果您選取主機、 BlueXP  災難恢復會將所有虛擬機器放置在所選的主機上。</block>
   <block id="999becf997185f87ea1b5bd029bf5b34" category="list-text">* 目標 VM 資料夾 * （選用）：建立新的根資料夾來儲存所選的 VM 。</block>
   <block id="0a8bc9b2bb8f581fa27738fc437d64b3" category="paragraph">根據您的選擇、此區段可能會顯示不同的欄位。</block>
-  <block id="16bd7bddefb51b87ff4fbcf4c8831a1d" category="list-text">* 靜態 IP* ：如果您想手動指定 IP 組態資訊、請選取此設定。您可以從來源 VM 選取相同或不同的資訊。如果您選擇的來源相同、則不需要輸入認證。另一方面、如果您選擇使用來源的不同資訊、則可以提供認證、 VM 的 IP 位址、子網路遮罩、 DNS 和閘道資訊。VM 來賓作業系統認證應提供給全域層級或每個 VM 層級。</block>
   <block id="7b2b025be41dbbc4cda9601c1b5523a5" category="list-text">* 目標 VM 前置詞和後置詞 * ：在虛擬機器詳細資料下、您可以選擇性地將前置詞和後置詞新增至 VM 名稱。</block>
   <block id="230dc85a08275a2466390ae799703f92" category="list-text">* 來源 VM CPU 和 RAM* ：在虛擬機器詳細資料下、您可以選擇性地調整 VM CPU 和 RAM 參數的大小。</block>
   <block id="97bbe2658500151382594a4fae0afc57" category="paragraph"><block ref="1dcb46a6f5cf6fb93122072f061a9e9e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="77506f26f3b4a989168bfd6da6435808" category="list-text">* 開機順序 * ：您可以在跨資源群組的所有選定虛擬機器進行容錯移轉後、修改開機順序。根據預設、會使用在資源群組選擇期間選取的開機順序；不過、您可以在此階段進行變更。這有助於確保在後續優先順序 VM 啟動之前、所有優先順序為一部 VM 都在執行中。</block>
-  <block id="f4acab8352ab5ba21dd2d6ce32fc9f2a" category="paragraph">開機順序編號僅適用於資源群組。如果您在一個群組中有「 2 」、在另一個群組中有「 2 」、則第一個群組中的虛擬機器會依其順序啟動、而第二個群組中的虛擬機器則會依其順序啟動。</block>
-  <block id="8cad29fca944093d9257fcd28c5a17d5" category="list-text">循序開機：為每個 VM 指派唯一的編號、以指定的順序開機、例如 1 、 2 、 3 、 4 、 5</block>
-  <block id="8043065a3a1affdc7e75a0083d3349b1" category="list-text">同步開機：將相同數目指派給所有 VM 、以便同時開機、例如 1 、 1 、 1 、 2 、 3 、 4 、 4 。</block>
   <block id="aa54fb3621577f63cab9b508032a995d" category="list-text">* 開機延遲 * ：調整開機動作的延遲時間（以分鐘為單位）。</block>
   <block id="517ed43dc67f057cadcb1c29ecbd75ef" category="admonition">若要將開機順序重設為預設值、請選取 * 將虛擬機器設定重設為預設值 * 、然後選擇要變更回預設值的設定。</block>
   <block id="2a4ddf396205dca12c00a6eb7e16285a" category="section-title">檢閱複寫計畫</block>
@@ -855,13 +836,10 @@
   <block id="fac29f06ba242d5478f84ec94ec5b901" category="list-text">* 指令碼 * ：您可以在容錯移轉後的程序中加入 .sh 、 .bat 或 .ps1 格式的自訂指令碼。透過自訂指令碼、您可以在容錯移轉程序之後執行 BlueXP 災難恢復指令碼。例如、您可以使用自訂指令碼、在容錯移轉完成後恢復所有資料庫交易。</block>
   <block id="df6b8c791e4694210c8862ed040048ef" category="list-text">* 建立應用程式一致的複本 * ：指出是否要建立應用程式一致的快照複本。服務會先將應用程式設為「已」、然後再建立快照、以取得應用程式的一致狀態。在 Windows 和 Linux 上執行的 Oracle 、以及在 Windows 上執行的 SQL Server 、都支援此功能。</block>
   <block id="708b68cf49e909f729ce67863a2f6de3" category="list-text">* 資料存放區 * ：選取 * 資料存放區 * 旁的向下箭頭。根據VM的選擇、會自動選取資料存放區對應。</block>
-  <block id="c5bb1e7845a8d9ffe23d02cceec9e4bf" category="list-text">* RPO * ：輸入恢復點目標（ RPO ）以指示要恢復的資料量（以時間為單位）。例如、如果您輸入的 RPO 為 60 分鐘、則還原的資料一定不會超過 60 分鐘。如果發生災難、您最多可以損失 60 分鐘的資料。同時輸入所有資料存放區要保留的快照複本數量。</block>
   <block id="27ee5986957f012b4e37ee29afe29c7f" category="list-text">* 來源和目標資料存放區 * ：如果存在多個（扇出） SnapMirror 關係、您可以選取要使用的目的地。如果某個 Volume 已經建立 SnapMirror 關係、則會顯示對應的來源和目標資料存放區。如果磁碟區沒有 SnapMirror 關係、您現在可以選取目標叢集、目標 SVM 並提供磁碟區名稱來建立一個。服務將建立 Volume 和 SnapMirror 關係。</block>
-  <block id="3c65044e501ce692cb21ad3d837dab25" category="list-text">當您指定恢復點目標（ RPO ）時、服務會根據 RPO 排程主要備份、並更新次要目的地。</block>
   <block id="950fa88679103c3c7c4e449423d8bfcc" category="list-text">如果 VM 來自同一個 Volume 和同一個 SVM 、則服務會執行標準 ONTAP 快照、並更新次要目的地。</block>
   <block id="a47d6910008cc9bb73921a36d6609a08" category="list-text">如果 VM 來自不同的 Volume 和相同的 SVM 、則服務會加入所有的 Volume 並更新次要目的地、以建立一致性群組快照。</block>
   <block id="3cc1e8e247fa51b1c7d6f2a7c029a515" category="list-text">如果 VM 來自不同的 Volume 和不同的 SVM 、服務會執行一致性群組啟動階段和提交階段快照、方法是將所有磁碟區納入相同或不同的叢集中、並更新次要目的地。</block>
-  <block id="e829ce8109ca652cb970cd9d2014a52e" category="section-title">測試對應</block>
   <block id="a8c55ad0456d667323e1ede0b2d4845d" category="list-text">若要為測試環境設定不同的對應、請取消勾選方塊、然後選取 * 測試對應 * 標籤。</block>
   <block id="3d2d89948829d5041f9ae015297d638b" category="list-text">請像以前一樣瀏覽每個標籤、但這次是測試環境的標籤。</block>
   <block id="74ba4c0b5e2da8a64b8dee1c0d8ba2eb" category="paragraph">發生災難時、請將主要內部部署 VMware 網站容錯移轉至其他內部部署 VMware 網站或 VMware Cloud on AWS 。您可以測試容錯移轉程序、確保在需要時成功。</block>
@@ -1072,9 +1050,7 @@
   <block id="eca4b06cc957b067c25916bf563bfcb1" category="list-text">已認可容錯回復</block>
   <block id="55af57d923ed95c2495c25a0e4762077" category="list-text">測試已認可的容錯移轉</block>
   <block id="cffe0c1b9d43854c0d95a5d592e6102c" category="list-text">選取您要複寫並指派資源群組的 VM 或資料存放區。</block>
-  <block id="335e98e9e03c56f037d977ec4b92f533" category="paragraph">下一步是將必要的 VM 或資料存放區分組到功能性資源群組中。資源群組可讓您將一組相關 VM 或資料存放區分組為符合您需求的邏輯群組。例如、群組可能包含延遲開機順序、可在恢復時執行。</block>
   <block id="418330af51c4a26653da43f1476e3d4f" category="paragraph">在複寫計畫中選取應用程式時，您可以在計畫中看到每個 VM 或資料存放區的作業系統。這有助於決定如何將資源群組中的虛擬機器或資料存放區分組。</block>
-  <block id="f8842a88bb1ca78d43e06472d4679889" category="admonition">每個資源群組可以包含一或多個 VM 或資料存放區。虛擬機器將根據您在此加入的順序來啟動。</block>
   <block id="5e90d93870eb5779de0b40ced0f92445" category="paragraph">建立資源群組時，請考慮下列問題：</block>
   <block id="de634b3bd311c5e5e1c0b9d53d9d242f" category="list-text">在將資料存放區新增至資源群組之前，請先開始手動探索或排程探索 VM 。如此可確保探索虛擬機器，並將其列在資源群組中。如果您未觸發手動探索，則虛擬機器可能不會列在資源群組中。</block>
   <block id="312258bdb1152123e04c06cf90952de2" category="list-text">確保資料存放區中至少有一個 VM 。如果資料存放區中沒有 VM ，則不會探索資料存放區。</block>
@@ -1137,4 +1113,71 @@
   <block id="848964f0743e2416b5d061a5e088ca73" category="paragraph">版本 4.2.2</block>
   <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">2025 年 3 月 10 日</block>
   <block id="ae493f6fb938d3c8c6db8b5a9e623794" category="paragraph">版本 4.2.1</block>
+  <block id="c362166d3b35c5afaa0ddfbe7e69494b" category="doc">子網路對應</block>
+  <block id="2418e16fab8ca1ca0d50d0811f88b6eb" category="paragraph">在此版本中，您可以使用子網路對應，以新的方式管理容錯移轉時的 IP 位址，讓您為每個 vCenter 新增子網路。這樣做時，您可以定義每個虛擬網路的 IPv4 CIDR ，預設閘道和 DNS 。</block>
+  <block id="eb784040bffb80024e0c56694e09283d" category="paragraph">在容錯移轉時， BlueXP  災難恢復會查看為對應虛擬網路提供的 CIDR ，並使用它來衍生新的 IP 位址，藉此判斷每個 vNIC 的適當 IP 位址。</block>
+  <block id="506c2c0c7f5b70af3df68c45c46f45a7" category="paragraph">例如：</block>
+  <block id="7f1dd179b7af043e895b4af287c713da" category="list-text">網路 A = 10.1.1.0/24</block>
+  <block id="130ee01552bdfbbae122682d96ada96f" category="list-text">網路 B = 192.168.1.0/24</block>
+  <block id="c8512209d54525f96f71aef40bda4d89" category="paragraph">VM1 具有連接至網路 A 的 VNIC （ 10.1.1.50 ）。網路 A 會對應到複寫計畫設定中的網路 B 。</block>
+  <block id="54f173771463f16f3b7367756ee8a6df" category="paragraph">在容錯移轉時， BlueXP  災難恢復會取代原始 IP 位址（ 10.1.1 ）的網路部分，並保留原始 IP 位址（ 10.1.1.50 ）的主機位址（ .50 ）。對於 VM1 ， BlueXP  災難恢復會查看網路 B 的 CIDR 設定，並使用網路 B 網路部份 192.168.1 ，同時保留主機部份（ .50 ）來為 VM1 建立新的 IP 位址。新 IP 會變成 192.168.1.50 。</block>
+  <block id="726a53952ba1f868d3ec9d1d32a62b2e" category="paragraph">總而言之，主機位址保持不變，而網路位址則會取代站台子網路對應中所設定的任何項目。這可讓您更輕鬆地在容錯移轉時管理 IP 位址重新指派，尤其是當您有數百個網路和數千個 VM 需要管理時。</block>
+  <block id="774b32328f5b31268d0c32cb8b2b7cba" category="paragraph">如需在站台中包含子網路對應的詳細資訊，請參閱<block ref="2646d8ece134cab5b4abb346406774b7" category="inline-link-macro-rx"></block>。</block>
+  <block id="a16eb72c6e9708bc4bdfd310db9a1760" category="section-title">跳過保護</block>
+  <block id="18a26d8a69342321f82f23b0b9667a2b" category="paragraph">您現在可以略過保護，這樣在複寫計畫容錯移轉之後，服務就不會自動建立反向保護關係。如果您想要在還原的網站上執行其他作業，然後在 BlueXP  災難恢復中將其重新上線，這項功能就很實用。</block>
+  <block id="83f2c5047d69bb49c6372714354b223e" category="paragraph">當您啟動容錯移轉時，如果原始來源站台在線上，依預設，服務會自動為複寫計畫中的每個磁碟區建立反向保護關係。這表示該服務會從目標站台建立 SnapMirror 關係，並將其還原至來源站台。當您啟動容錯回復時，服務也會自動反轉 SnapMirror 關係。</block>
+  <block id="39adaab4c8da99c378ac7814cd837b82" category="paragraph">啟動容錯移轉時，您現在可以選擇 * 略過保護 * 選項。如此一來，服務就不會自動反轉 SnapMirror 關係。而是將可寫入的磁碟區保留在複寫計畫的兩側。</block>
+  <block id="0ed1a7f2cfa308cb3f608d5a24b47b8f" category="paragraph">原始來源網站恢復上線後，您可以從「複寫計畫動作」功能表中選取「 * 保護資源 * 」，以建立反向保護。這會嘗試為計畫中的每個磁碟區建立反向複寫關係。您可以重複執行此工作，直到還原保護為止。還原保護時，您可以依照一般方式啟動容錯回復。</block>
+  <block id="f53838e4f91966e1f320316dc6686a4a" category="paragraph">如需略過保護的詳細資訊，請參閱<block ref="524f5a32773e3e832b74877ecf58916f" category="inline-link-macro-rx"></block>。</block>
+  <block id="bc1bbd522e7b060cf5530955a21a60e0" category="section-title">SnapMirror 會在複寫計畫中排程更新</block>
+  <block id="c8c9a99c726a6f5a1158a1753fb72b2a" category="paragraph">BlueXP  災難恢復現在支援使用外部快照管理解決方案，例如原生 ONTAP SnapMirror 原則排程器或與 ONTAP 的協力廠商整合。如果複寫計畫中的每個資料存放區（ Volume ）都已有 SnapMirror 關係，而該關係正在其他地方管理，您可以將這些快照作為 BlueXP  災難恢復的恢復點。</block>
+  <block id="51b94dd4c3836facc3789590ed219960" category="paragraph">若要設定，請在「複寫計畫」 &gt; 「資源對應」區段中，勾選「設定資料存放區對應時，使用平台管理的備份和保留排程 * 」核取方塊。</block>
+  <block id="c837cc2aab74d32ef3dcbbce527bd24b" category="paragraph">選取此選項時， BlueXP  災難恢復不會設定備份排程。不過，您仍需要設定保留排程，因為仍可能需要拍攝快照來執行測試，容錯移轉和容錯回復作業。</block>
+  <block id="84c71600543673f6d7dd403d3e7a164a" category="paragraph">設定此選項之後，服務不會定期擷取任何排程的快照，而是仰賴外部實體來拍攝和更新這些快照。</block>
+  <block id="e70edcdb01d149c4328ebb491c2aa090" category="paragraph">如需複寫計畫中使用外部快照解決方案的詳細資訊，請參閱<block ref="8aa3c94c171b2c9d7252afb28ee019a7" category="inline-link-macro-rx"></block>。</block>
+  <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">2025 年 12 月 5 日</block>
+  <block id="5a31c17caa12408e3b6093ed864c9821" category="paragraph">版本 4.2.3</block>
+  <block id="f17de33c8bac2ab69dd89149aac16c6c" category="paragraph">下一步是將必要的 VM 或資料存放區分組到功能性資源群組中。資源群組可讓您使用通用快照來保護一組 VM 或資料存放區。</block>
+  <block id="516dbf8e2c43d00664357bb38d1575a6" category="admonition">每個資源群組可以包含一或多個 VM 或資料存放區。</block>
+  <block id="93e9f135ef101bbb0b9a89e0d337eed7" category="paragraph">* 最佳實務做法 * ：在部署 BlueXP  災難恢復之前，先組織好您的虛擬機器，以將「資料存放區過度擴張」降至最低。將需要保護的虛擬機器放在資料存放區子集上，並將不受保護的虛擬機器放在不同的資料存放區子集上。使用資料存放區型保護，確保任何指定資料存放區上的虛擬機器受到保護。</block>
+  <block id="666631afadc4073ef682cc54bda0a691" category="list-text">* 靜態 IP* ：如果您想手動指定 IP 組態資訊、請選取此設定。您可以選取下列其中一項：與來源相同，來源不同或子網路對應。如果您選擇的來源相同、則不需要輸入認證。另一方面、如果您選擇使用來源的不同資訊、則可以提供認證、 VM 的 IP 位址、子網路遮罩、 DNS 和閘道資訊。VM 來賓作業系統認證應提供給全域層級或每個 VM 層級。</block>
+  <block id="983a4203041e2ae3715f09be44011da8" category="list-text">* 開機順序 * ：您可以在跨資源群組的所有選定虛擬機器進行容錯移轉後、修改開機順序。依預設，所有 VM 都會平行開機；不過，您可以在此階段進行變更。這有助於確保在後續優先順序 VM 啟動之前、所有優先順序為一部 VM 都在執行中。</block>
+  <block id="bf14a1ee6deee051f47c837ed6d22140" category="paragraph">任何具有相同開機順序編號的 VM 都會平行開機。</block>
+  <block id="354a69710d188806a2240038216a8fe4" category="list-text">循序開機：為每個 VM 指派唯一的編號，以指定的順序來開機，例如 1 ， 2 ， 3 ， 4 ， 5 。</block>
+  <block id="917743345c16934d4f46d0d5f7c82682" category="list-text">同步開機：將相同的數目指派給任何 VM 以同時開機，例如 1 ， 1 ， 1 ， 2 ， 3 ， 4 ， 4 。</block>
+  <block id="42c98bfa79541df9e68d059bf2193bb0" category="list-text">* 使用平台管理的備份與保留排程 * ：如果您使用的是外部快照管理解決方案，請勾選此方塊。BlueXP  災難恢復支援使用外部快照管理解決方案，例如原生 ONTAP SnapMirror 原則排程器或協力廠商整合。如果複寫計畫中的每個資料存放區（ Volume ）都已有 SnapMirror 關係，而該關係正在其他地方管理，您可以將這些快照作為 BlueXP  災難恢復的恢復點。</block>
+  <block id="23c4ec9f7f759cf6773cc360abd2a7ec" category="list-text">* 開始時間 * ：輸入開始執行備份與保留的日期與時間。</block>
+  <block id="7a565b2606e153ac342f6305eef26c26" category="list-text">* 執行時間間隔 * ：以小時和分鐘為單位輸入時間間隔。例如，如果您輸入 1 小時，服務會每小時拍攝一次快照。</block>
+  <block id="49511806f0e60c638845968f2dbb17f7" category="section-title">新增測試容錯移轉對應</block>
+  <block id="bb9d0bc96dc8ebc0c65b92fdd57252dc" category="paragraph"><block ref="bb9d0bc96dc8ebc0c65b92fdd57252dc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="02e6e8fc80c61f6b451734eea7a7f500" category="list-text">* 使用隨需快照進行排程測試容錯移轉 * ：若要在啟動自動測試容錯移轉之前先建立新的快照，請勾選此方塊。</block>
+  <block id="e2b5a46119afa4b27f999635653125bc" category="list-text">若要在容錯移轉測試完成後清理測試環境，請核取 * 測試容錯移轉後自動清理 * ，然後輸入您要在清除開始前等待的分鐘數。</block>
+  <block id="746c84b1b109b4fcfeb29ff36be21f14" category="paragraph"><block ref="746c84b1b109b4fcfeb29ff36be21f14" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="98641f673a386c741c6b574c2680a3b0" category="list-text">或者，如果您希望服務在複寫計畫容錯移轉之後，不要自動建立反向 SnapMirror 保護關係，請選取 * 略過保護 * 。如果您想要在還原的網站上執行其他作業，然後在 BlueXP  災難恢復中將其重新上線，這項功能就很實用。</block>
+  <block id="c446892b6c8669077c04a02123055cec" category="admonition">您可以從「複寫計畫動作」功能表中選取「 * 保護資源 * 」來建立反向保護。這會嘗試為計畫中的每個磁碟區建立反向複寫關係。您可以重複執行此工作，直到還原保護為止。還原保護時，您可以依照一般方式啟動容錯回復。</block>
+  <block id="739e15bc616753303863f1d41c4f1dc8" category="list-text">登入 BlueXP  ，然後從左側瀏覽功能表中選取 * 保護 * &gt; * 災難恢復 * 。</block>
+  <block id="cd2cbb6fc58931677c030707b031e23e" category="section-title">新增 vCenter 站台的子網路對應</block>
+  <block id="81d27c563cf029b3cbc2c174dbb30b80" category="paragraph">使用子網路對應，以全新方式管理容錯移轉時的 IP 位址，讓您為每個 vCenter 新增子網路。這樣做時，您可以定義每個虛擬網路的 IPv4 CIDR ，預設閘道和 DNS 。</block>
+  <block id="a1a6715a7937fe9363315624c6ceaadb" category="paragraph">使用子網路對應是選擇性的兩個步驟程序：</block>
+  <block id="6590c0edd1a0a382e900baf3a1f8a010" category="list-text">首先，新增每個 vCenter 站台的子網路對應。</block>
+  <block id="e4732c2c80313e687a43461e8ec657b5" category="list-text">其次，在複寫計畫中，指出您要使用子網路對應。</block>
+  <block id="4d77e4e4a55e61e8953b736cb501c2ba" category="list-text">從頂部的 BlueXP  災難恢復菜單中，選擇 *Sites" （站點） * 。</block>
+  <block id="b042826a9a8b22d6bf6c06fc590b4075" category="list-text">從右側的「動作」圖示中，<block ref="145ad72607e9a3c177918d31007a191e" category="inline-image-macro-rx" type="image"></block>選取 * 新增子網路 * 。</block>
+  <block id="326afcda8f54b18d75e38743a0369422" category="inline-image-macro">新增子網路對應螢幕擷取畫面</block>
+  <block id="d585acea0a85edac2c9d2026c5f9248c" category="paragraph"><block ref="d585acea0a85edac2c9d2026c5f9248c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ff511fb5d23236d5840c75032b0fbb69" category="list-text">在「設定子網路」頁面中，輸入下列資訊：</block>
+  <block id="7a0a9fd1dad462e95d3a0078043e2446" category="list-text">子網路：輸入最多 /32 個子網路的 IPv4 CIDR 。</block>
+  <block id="0d9abd8b694d3e4ae8a94e1a0a0b18bb" category="admonition">CIDR 表示法是一種指定 IP 位址及其網路遮罩的方法。/24 表示網路遮罩。此數字由 IP 位址組成，其數字位於「 / 」之後，表示 IP 位址的位元數表示網路。例如， 192 ． 168 ． 0 ． 50/24 ， IP 地址爲 192 ． 168 ． 0 ． 50 ，網絡地址中的位總數爲 24 。192.168.0.50 255.255.255.0 成為 192.168.0.0/24 。</block>
+  <block id="6e97137634986390ce97649599f559fd" category="list-text">閘道：輸入子網路的預設閘道。</block>
+  <block id="63ce92a4f80f0a4537b368a9328864ae" category="list-text">DNS ：輸入子網路的 DNS 。</block>
+  <block id="dfe0c1da4b3edcbe4d22c95489f82cd4" category="list-text">選取 * 新增子網路對應 * 。</block>
+  <block id="38fa2ee831111000771942f096ee8f7f" category="section-title">選取複寫計畫的子網路對應</block>
+  <block id="44adc79b2aa170c08a741f65097ea642" category="paragraph">建立複寫計畫時，您可以選取複寫計畫的子網路對應。</block>
+  <block id="0a9e3f0ed6f4b452c344fdb924016695" category="list-text">選取 * 新增 * 以新增複寫計畫。</block>
+  <block id="807059f044473e420c53e102505d49cf" category="list-text">以一般方式填寫欄位，方法是新增 vCenter 伺服器，選取資源群組或應用程式，然後完成對應。</block>
+  <block id="6a1727ba4109844c2f1bf48438eb19f5" category="list-text">在「複寫計畫 &gt; 資源對應」頁面中，選取 * 虛擬機器 * 區段。</block>
+  <block id="b743f75136ce51e05e36623ebf8d0373" category="inline-image-macro">子網路對應選擇螢幕擷取畫面</block>
+  <block id="d56562607152896b0efda703821ab816" category="paragraph"><block ref="d56562607152896b0efda703821ab816" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a60af3ebe60a5e3cebadd89e2c407a9c" category="list-text">在 *Target IP* 欄位中，從下拉式清單中選取 * 使用子網路對應 * 。</block>
+  <block id="88497a7ce9c844d7b07cc838ad7754d6" category="list-text">繼續建立複寫計畫。</block>
 </blocks>
