@@ -112,6 +112,12 @@ VM1 具有連接至網路 A 的 VNIC （ 10.1.1.50 ）。網路 A 會對應到�
 . 從頂部的 BlueXP  災難恢復菜單中，選擇 *Sites" （站點） * 。
 . 從右側的「動作」圖示中，image:icon-vertical-dots.png["動作圖示"]選取 * 新增子網路 * 。
 +
+image:dr-sites-subnet-menu.png["新增子網路功能表螢幕快照"]
+
++
+此時將顯示 Configure subnet 頁面：
+
++
 image:sites-subnet-add.png["新增子網路對應螢幕擷取畫面"]
 
 . 在「設定子網路」頁面中，輸入下列資訊：
@@ -140,9 +146,13 @@ TIP: CIDR 表示法是一種指定 IP 位址及其網路遮罩的方法。/24 �
 . 以一般方式填寫欄位，方法是新增 vCenter 伺服器，選取資源群組或應用程式，然後完成對應。
 . 在「複寫計畫 > 資源對應」頁面中，選取 * 虛擬機器 * 區段。
 +
-image:dr-plan-create-subnet-mapping.png["子網路對應選擇螢幕擷取畫面"]
+image:dr-plan-vm-subnet-option.png["子網路對應選擇螢幕擷取畫面"]
 
 . 在 *Target IP* 欄位中，從下拉式清單中選取 * 使用子網路對應 * 。
++
+
+NOTE: 如果有兩個 VM （例如，一個是 Linux ，另一個是 Windows ），則只有 Windows 需要認證。
+
 . 繼續建立複寫計畫。
 
 

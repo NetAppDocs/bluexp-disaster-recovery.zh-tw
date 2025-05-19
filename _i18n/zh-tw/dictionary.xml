@@ -731,8 +731,6 @@
   <block id="caa1e25984e775c1ab44cfd42620d720" category="inline-image-macro">鉛筆圖示</block>
   <block id="7906e2e007c3bad108fcd7ed7311a131" category="paragraph"><block ref="7906e2e007c3bad108fcd7ed7311a131" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6dbc81f47f4a822cd11ce7c8403756ed" category="list-text">在容錯移轉對應索引標籤中、選取每個資源右側的向下箭頭、並對應每個資源中的資源。</block>
-  <block id="022ab008c31f5588f9d15da4dc3439fb" category="list-text">* 運算資源 * ：選取 * 運算資源 * 旁的向下箭頭。</block>
-  <block id="a358a5c755a9f869690207e2a0726737" category="list-text">* 虛擬機器 * ：在容錯移轉對應標籤中、選取 * 虛擬機器 * 旁的向下箭頭。</block>
   <block id="c28e8a3b83f3f2cce376fe3daa7ad95d" category="paragraph"><block ref="64eb1ec301597178e47fa7deed0121dc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="10936c8535aaede0ed75f5d8d4fa6aaf" category="list-text">* 保留計數 * ：輸入您要保留的快照數。</block>
   <block id="76e4d72594030fca0b96279d0f8392dc" category="section-title">有助於您進行 BlueXP  災難恢復的術語</block>
@@ -790,8 +788,6 @@
   <block id="da06c5c1d28e308403236438dda209dc" category="list-text">* 來源與目標資料中心 *</block>
   <block id="7067fdfe055fabd950bd45a1a17e1642" category="list-text">* 目標叢集 *</block>
   <block id="2c0a2cae30cf923c64bbed704e923521" category="list-text">* 目標主機 * （選用）：選取叢集之後、您就可以設定此資訊。</block>
-  <block id="6d9f48430941cb04802ac18d9c695e65" category="admonition">如果 vCenter 已設定分散式資源排程器（ DRS ）來管理叢集中的多部主機、則不需要選取主機。如果您選取主機、 BlueXP  災難恢復會將所有虛擬機器放置在所選的主機上。</block>
-  <block id="999becf997185f87ea1b5bd029bf5b34" category="list-text">* 目標 VM 資料夾 * （選用）：建立新的根資料夾來儲存所選的 VM 。</block>
   <block id="0a8bc9b2bb8f581fa27738fc437d64b3" category="paragraph">根據您的選擇、此區段可能會顯示不同的欄位。</block>
   <block id="7b2b025be41dbbc4cda9601c1b5523a5" category="list-text">* 目標 VM 前置詞和後置詞 * ：在虛擬機器詳細資料下、您可以選擇性地將前置詞和後置詞新增至 VM 名稱。</block>
   <block id="230dc85a08275a2466390ae799703f92" category="list-text">* 來源 VM CPU 和 RAM* ：在虛擬機器詳細資料下、您可以選擇性地調整 VM CPU 和 RAM 參數的大小。</block>
@@ -832,8 +828,6 @@
   <block id="8914a354aeff1b07a47e178ccae21e27" category="list-text">*DHCP/* ：如果您希望 VM 從 DHCP 伺服器取得網路組態資訊、請選取此設定。如果您選擇此選項、則只會提供 VM 的認證。</block>
   <block id="fac29f06ba242d5478f84ec94ec5b901" category="list-text">* 指令碼 * ：您可以在容錯移轉後的程序中加入 .sh 、 .bat 或 .ps1 格式的自訂指令碼。透過自訂指令碼、您可以在容錯移轉程序之後執行 BlueXP 災難恢復指令碼。例如、您可以使用自訂指令碼、在容錯移轉完成後恢復所有資料庫交易。</block>
   <block id="df6b8c791e4694210c8862ed040048ef" category="list-text">* 建立應用程式一致的複本 * ：指出是否要建立應用程式一致的快照複本。服務會先將應用程式設為「已」、然後再建立快照、以取得應用程式的一致狀態。在 Windows 和 Linux 上執行的 Oracle 、以及在 Windows 上執行的 SQL Server 、都支援此功能。</block>
-  <block id="708b68cf49e909f729ce67863a2f6de3" category="list-text">* 資料存放區 * ：選取 * 資料存放區 * 旁的向下箭頭。根據VM的選擇、會自動選取資料存放區對應。</block>
-  <block id="27ee5986957f012b4e37ee29afe29c7f" category="list-text">* 來源和目標資料存放區 * ：如果存在多個（扇出） SnapMirror 關係、您可以選取要使用的目的地。如果某個 Volume 已經建立 SnapMirror 關係、則會顯示對應的來源和目標資料存放區。如果磁碟區沒有 SnapMirror 關係、您現在可以選取目標叢集、目標 SVM 並提供磁碟區名稱來建立一個。服務將建立 Volume 和 SnapMirror 關係。</block>
   <block id="950fa88679103c3c7c4e449423d8bfcc" category="list-text">如果 VM 來自同一個 Volume 和同一個 SVM 、則服務會執行標準 ONTAP 快照、並更新次要目的地。</block>
   <block id="a47d6910008cc9bb73921a36d6609a08" category="list-text">如果 VM 來自不同的 Volume 和相同的 SVM 、則服務會加入所有的 Volume 並更新次要目的地、以建立一致性群組快照。</block>
   <block id="3cc1e8e247fa51b1c7d6f2a7c029a515" category="list-text">如果 VM 來自不同的 Volume 和不同的 SVM 、服務會執行一致性群組啟動階段和提交階段快照、方法是將所有磁碟區納入相同或不同的叢集中、並更新次要目的地。</block>
@@ -949,7 +943,6 @@
   <block id="07b0eade4402d209b5dbe587a8ad3f6f" category="inline-link">在AWS上部署及設定虛擬化環境</block>
   <block id="2eccc2b2612ae991619a18b34919d843" category="paragraph">若要在 AWS 上設定 VMware Cloud 環境，請依照中的步驟<block ref="0faddedbfeb6e9d451b742468dbfc158" category="inline-link-rx"></block>進行。試行指示燈叢集也可用於災難恢復用途。</block>
   <block id="8c587749bc8bd978d85704d9a142b7a6" category="paragraph">您可以保護多個資料存放區上的多個 VM 。BlueXP  災難恢復會為所有託管受保護 VM 資料存放區的 ONTAP 磁碟區建立 ONTAP 一致性群組。</block>
-  <block id="345f26a72f023b2055826859eb701ceb" category="list-text">* 虛擬網路 * ：在容錯移轉對應標籤中、選取 * 虛擬網路 * 旁的向下箭頭。選取來源虛擬 LAN 和目標虛擬 LAN 。</block>
   <block id="02453bc953d0b6e10f85235da7a8cca7" category="paragraph">選取對應至適當虛擬 LAN 的網路。應已配置虛擬 LAN ，因此請選擇適當的虛擬 LAN 來對應 VM 。</block>
   <block id="c71c9ca45b74f3ddf3435fee65f93cfc" category="paragraph">虛擬機器的預設值已對應。預設對應使用的設定與虛擬機器在正式作業環境中使用的設定相同（相同的 IP 位址，子網路遮罩和閘道）。</block>
   <block id="a82971318b0c070daea6677a10d3473c" category="paragraph">如果您對預設設定進行任何變更，則必須將目標 IP 欄位變更為「與來源不同」。</block>
@@ -1170,7 +1163,6 @@
   <block id="807059f044473e420c53e102505d49cf" category="list-text">以一般方式填寫欄位，方法是新增 vCenter 伺服器，選取資源群組或應用程式，然後完成對應。</block>
   <block id="6a1727ba4109844c2f1bf48438eb19f5" category="list-text">在「複寫計畫 &gt; 資源對應」頁面中，選取 * 虛擬機器 * 區段。</block>
   <block id="b743f75136ce51e05e36623ebf8d0373" category="inline-image-macro">子網路對應選擇螢幕擷取畫面</block>
-  <block id="d56562607152896b0efda703821ab816" category="paragraph"><block ref="d56562607152896b0efda703821ab816" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a60af3ebe60a5e3cebadd89e2c407a9c" category="list-text">在 *Target IP* 欄位中，從下拉式清單中選取 * 使用子網路對應 * 。</block>
   <block id="88497a7ce9c844d7b07cc838ad7754d6" category="list-text">繼續建立複寫計畫。</block>
   <block id="e28871dd1f9f31bb54d653e42ab61487" category="paragraph">有關在站點中包括子網映射的詳細信息，請參閱<block ref="54555db921feb31b73553520fa282341" category="inline-link-rx"></block>。</block>
@@ -1182,4 +1174,21 @@
   <block id="c14eff79606049ee3db744788f842d7d" category="list-text">購買內含 Amazon Web Services （ AWS ） Marketplace 的 * NetApp Intelligent Services* 隨用隨付（ PAYGO ）訂閱。</block>
   <block id="cbb303696e69ece252e4279cf7e650f4" category="paragraph">免費試用結束後，您可以向 NetApp 購買授權，或透過 AWS Marketplace 訂閱 * NetApp Intelligent Services* 。本程序提供如何直接在 AWS Marketplace 中訂閱的高階概觀。</block>
   <block id="05d7d2c6dcb40b2ad3598ed40596c890" category="list-text">使用 AWS Marketplace 訂閱 * NetApp Intelligent Services* 和 * BlueXP  災難恢復 * 。</block>
+  <block id="ddbdc0fdada8e6466e651115cefbafee" category="section-title">地圖資源 &gt; 運算資源區段</block>
+  <block id="c74f8b35838f9f38552c33a8c05ad01a" category="paragraph">選取 * 運算資源 * 旁的向下箭頭。</block>
+  <block id="5044b19178ff5f8de4c9c0246fe12b78" category="admonition">如果 vCenter 已設定分散式資源排程器（ DRS ）來管理叢集中的多部主機、則不需要選取主機。如果您選取主機、 BlueXP  災難恢復會將所有虛擬機器放置在所選的主機上。* * 目標 VM 資料夾 * （選用）：建立新的根資料夾來儲存所選的 VM 。</block>
+  <block id="74b0088eeb9a4fc43afd0ad0e9f1ef57" category="section-title">對應資源 &gt; 虛擬網路區段</block>
+  <block id="21538d8465027f7c4a2d65593552875c" category="paragraph">在 [ 容錯移轉對應 ] 索引標籤中，選取 [* 虛擬網路 * ] 旁邊的向下箭號。選取來源虛擬 LAN 和目標虛擬 LAN 。</block>
+  <block id="d43d5aee258367a26705d2e855068453" category="section-title">對應資源 &gt; 虛擬機器區段</block>
+  <block id="27d300eb526c12800753bbfacfc390b6" category="paragraph">在 [ 容錯移轉對應 ] 索引標籤中，選取 [* 虛擬機器 * ] 旁邊的向下箭號。</block>
+  <block id="64a2a2b78e563e79f2c42c8e9d160e0e" category="section-title">對應資源 &gt; 資料存放區區區區段</block>
+  <block id="923805befcdde4aa8fa4752b9e9a277f" category="paragraph">選取 * 資料存放區 * 旁的向下箭頭。根據VM的選擇、會自動選取資料存放區對應。</block>
+  <block id="c4c09b507b4da4a281d7ce6c068b6a88" category="inline-image-macro">顯示新增複寫計畫 &amp;gt; 資源對應 &amp;gt; 資料存放區的螢幕擷取畫面</block>
+  <block id="7b6735057ec599457ce14b0629d098bf" category="paragraph"><block ref="383fd741f178abe8be4920d498113a6c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="63882377431b20b814641f0190aa1986" category="list-text">* 來源和目標資料存放區 * ：如果存在多個（扇出） SnapMirror 關係、您可以選取要使用的目的地。如果某個 Volume 已經建立 SnapMirror 關係、則會顯示對應的來源和目標資料存放區。如果磁碟區沒有 SnapMirror 關係，您現在可以選取目標叢集，選取目標 SVM ，並提供磁碟區名稱來建立。服務將建立 Volume 和 SnapMirror 關係。</block>
+  <block id="d3d01ba34a902e9e5d7cb703c2b96a65" category="inline-image-macro">新增子網路功能表螢幕快照</block>
+  <block id="6f7c69118d430fce089e3f0f18aba2c5" category="paragraph"><block ref="6f7c69118d430fce089e3f0f18aba2c5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e7be7bda88531d046e21401efd5bd9d5" category="paragraph">此時將顯示 Configure subnet 頁面：</block>
+  <block id="aaaeb2ea35c55b4a37b25b328a34587c" category="paragraph"><block ref="aaaeb2ea35c55b4a37b25b328a34587c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="58091bb6c8793ca7ad7178167e36010f" category="admonition">如果有兩個 VM （例如，一個是 Linux ，另一個是 Windows ），則只有 Windows 需要認證。</block>
 </blocks>
