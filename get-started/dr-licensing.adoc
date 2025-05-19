@@ -17,7 +17,7 @@ summary: 有了 BlueXP 災難恢復、您可以使用不同的授權方案、包
 您可以使用下列授權類型：
 
 * 註冊 30 天免費試用。
-* 透過 Amazon Web Services （ AWS ） Marketplace 購買隨用隨付（ PAYGO ）訂閱。
+* 購買內含 Amazon Web Services （ AWS ） Marketplace 的 * NetApp Intelligent Services* 隨用隨付（ PAYGO ）訂閱。
 * 請自帶授權（ BYOL ）、這是您從 NetApp 銷售代表處取得的 NetApp 授權檔案（ NLF ）您可以使用授權序號、在 BlueXP 數位錢包中啟動 BYOL 。
 
 
@@ -71,12 +71,12 @@ image:draas-landing2.png["BlueXP 災難恢復的登陸頁快照"]
 
 == 試用結束後、請透過 AWS Marketplace 訂閱
 
-免費試用結束後、您可以從 NetApp 購買授權、或透過 AWS Marketplace 訂閱。本程序提供如何直接在 AWS Marketplace 中訂閱的高階概觀。
+免費試用結束後，您可以向 NetApp 購買授權，或透過 AWS Marketplace 訂閱 * NetApp Intelligent Services* 。本程序提供如何直接在 AWS Marketplace 中訂閱的高階概觀。
 
 .步驟
 . 在 BlueXP 災難恢復中、您會看到免費試用即將到期的訊息。在訊息中、選取 * 訂閱或購買授權 * 。
 . 選取 * 在 AWS Marketplace* 中訂閱。
-. 在 AWS Marketplace 中、選取 * 檢視購買選項 * 。使用 AWS Marketplace 訂閱 BlueXP 災難恢復。
+. 使用 AWS Marketplace 訂閱 * NetApp Intelligent Services* 和 * BlueXP  災難恢復 * 。
 . 當您返回 BlueXP 災難恢復時、會有一則訊息指出您已訂閱。
 +
 您可以在 BlueXP  數位錢包中檢視訂閱詳細資料。link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-homepage.html["深入瞭解如何使用數位錢包管理訂閱"^]。
