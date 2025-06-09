@@ -20,9 +20,6 @@ BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢�
 * 另一個內部部署的 NFS 型 VMware 環境、搭配 ONTAP 儲存設備
 
 
-
-IMPORTANT: 此版本支援災難恢復功能、可在內部部署 VMware 工作負載的技術預覽中、透過 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區進行內部部署 VMware 環境。NetApp 不收取任何預覽工作負載容量的費用。
-
 BlueXP 災難恢復使用 ONTAP SnapMirror 技術作爲災難恢復站點的複製傳輸。這可在主要和次要站台上實現業界最佳的儲存效率（壓縮和重複資料刪除）。
 
 image:draas-onprem-to-cloud-onprem.png["顯示 VMware BlueXP 災難恢復元件的圖表"]

@@ -4,7 +4,7 @@ permalink: use/drplan-create.html
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, replication plan, protection, disaster, recovery, virtual machines, vm 
 summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。新增 vCenter 站台之後、您就可以準備好建立災難恢復或複寫計畫。 
 ---
-= 建立複寫計畫
+= 在 BlueXP 災難復原中建立複製計劃
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -186,9 +186,28 @@ NOTE: 如果您將設定變更為「與來源不同」，則需要提供 VM 來�
 這對於將大型環境恢復到較小的目標叢集或進行災難恢復測試而言非常有幫助、而無需配置一對一實體 VMware 基礎架構。
 
 +
-image:dr-plan-create-mapping-vms2.png["顯示新增複寫計畫 > 資源對應 > 虛擬機器的螢幕擷取畫面"]
+image:dr-plan-vm-subnet-option2.png["顯示新增複寫計畫 > 資源對應 > 虛擬機器的螢幕擷取畫面"]
 
 
+
+* *目標 IP* 字段，選擇以下選項之一：
++
+** *與來源相同*
+** *與來源不同*
+** *子網路對應*：如果要將來源子網路對應到不同的目標子網，請選擇此選項。您可以選擇來源子網，然後選擇目標子網路。當您想要變更目標環境中虛擬機器的 IP 位址時，此選項非常有用。
++
+
+NOTE: 使用子網路映射是一個可選的兩步驟過程：首先，在「站點」標籤中為每個 vCenter 站點新增子網路映射。其次，在複寫計畫中，指出您要使用子網路對應。
+
++
+
+NOTE: 如果有兩個 VM （例如，一個是 Linux ，另一個是 Windows ），則只有 Windows 需要認證。
+
+
+
+* *使用 Windows LAPS*：如果您使用 Windows 本機管理員密碼解決方案 (Windows LAPS)，請勾選此方塊。此選項僅在您選擇“靜態 IP”選項時可用。勾選此方塊後，您無需為每個虛擬機器提供密碼，只需提供網域控制器詳細資訊即可。
++
+如果您不使用 Windows LAPS，則該虛擬機為 Windows 虛擬機，且虛擬機器行上的憑證選項已啟用。您可以提供該虛擬機器的憑證。
 
 * * 指令碼 * ：您可以在容錯移轉後的程序中加入 .sh 、 .bat 或 .ps1 格式的自訂指令碼。透過自訂指令碼、您可以在容錯移轉程序之後執行 BlueXP 災難恢復指令碼。例如、您可以使用自訂指令碼、在容錯移轉完成後恢復所有資料庫交易。
 * * 目標 VM 前置詞和後置詞 * ：在虛擬機器詳細資料下、您可以選擇性地將前置詞和後置詞新增至 VM 名稱。

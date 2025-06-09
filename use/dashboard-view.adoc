@@ -4,7 +4,7 @@ permalink: use/dashboard-view.html
 keywords: disaster recovery remediate, disaster recovery, failover, failback, replication 
 summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。 
 ---
-= 在儀表板上檢視災難恢復計畫的健全狀況
+= 在儀表板上查看 BlueXP 災難復原計畫的運作狀況
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

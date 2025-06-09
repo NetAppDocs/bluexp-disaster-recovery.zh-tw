@@ -4,7 +4,7 @@ permalink: use/resource-group.html
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, replication plan, protection, disaster, recovery, virtual machines, vm 
 summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。新增 vCenter 站台之後、您就可以準備好建立災難恢復或複寫計畫。 
 ---
-= 建立資源群組以將 VM 組織在一起
+= 建立資源組以在 BlueXP 災難復原中將虛擬機器組織在一起
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

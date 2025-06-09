@@ -4,7 +4,7 @@ permalink: use/reports.html
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, monitor, bluexp, protection, reports 
 summary: 檢閱災難恢復報告可協助您分析災難恢復準備情況。預先設計的報告包括容錯移轉和容錯移轉的摘要、所有站台的複寫詳細資料、以及過去一年的工作詳細資料。 
 ---
-= 建立災難恢復報告
+= 建立 BlueXP 災難復原報告
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: 檢閱災難恢復報告可協助您分析災難恢復準備情況。�
 
 
 [role="lead"]
-檢閱災難恢復報告可協助您分析災難恢復準備情況。預先設計的報告包括過去七天內、在帳戶內所有站台上的測試容錯移轉摘要、複寫計畫詳細資料和工作詳細資料。
+查看 BlueXP 災難復原報告可以協助您分析災難復原準備狀況。預先設計的報告包括過去七天內、在帳戶內所有站台上的測試容錯移轉摘要、複寫計畫詳細資料和工作詳細資料。
 
 您可以下載 PDF ， HTML 或 JSON 格式的報告。
 

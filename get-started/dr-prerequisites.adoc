@@ -84,6 +84,7 @@ NOTE: 目的地 SVM 或 SVM 中的災難恢復磁碟區不應事先建立。Blue
 BlueXP Connector 必須在 BlueXP 中設定。當您使用 BlueXP Connector 時、它會包含災難恢復服務的適當功能。
 
 * BlueXP 災難恢復僅適用於標準模式 Connector 部署。請參閱。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html["以標準模式開始使用 BlueXP"^]
+* 確保來源 vCenter 和目標 vCenter 都使用相同的 BlueXP 連接器。
 * 所需的 BlueXP Connector 類型：
 +
 ** * 內部部署到內部部署災難恢復 * ：在災難恢復站點中安裝 BlueXP 內部部署 Connector 。請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["在內部部署安裝並設定 Connector"^]。

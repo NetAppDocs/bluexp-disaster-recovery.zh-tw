@@ -4,7 +4,7 @@ permalink: use/failback.html
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
 summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。 
 ---
-= 將應用程式容錯回復至原始來源
+= 使用 BlueXP 災難復原將應用程式故障還原到原始來源
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

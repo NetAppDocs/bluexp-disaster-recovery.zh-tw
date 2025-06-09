@@ -263,7 +263,6 @@
   <block id="c1942c862f0687fdf3f5a7564e0eadfa" category="list-text">SnapMirror 關係會從目標虛擬機器反轉至來源虛擬機器。</block>
   <block id="d0d1a7100fd604152ac7b93eb1abc016" category="list-text">在右側、選取 * 動作 * 選項 <block ref="2fddd650b01c7f9674be856867aae05d" category="inline-image-macro-rx" type="image"></block> 然後選擇 * 容錯移轉 * 。</block>
   <block id="0362f1f30abcc40f31c3c6618b1a15c3" category="list-text">若要檢查進度、請在頂端功能表中選取 * 工作監控 * 。</block>
-  <block id="ceeed92bd86d67dc2a2a6016ed40a571" category="paragraph">您可以快速瞭解所有災難恢復資源、或仔細查看每個資源：</block>
   <block id="3faa64303d5f5bcd043bb88f6768e603" category="list-text">網站</block>
   <block id="a8fc43ecd23ee9eb5e9efa5c60cb20b9" category="list-text">複寫計畫</block>
   <block id="769b718779fbe38c65b122b69e0271a3" category="list-text">資源群組</block>
@@ -295,7 +294,6 @@
   <block id="fb64cb9f2eb5e660830a8f202d12f794" category="list-text">若要新增資源群組、請選取 * 新增群組 * 。</block>
   <block id="c292b94d404e989038191db88d347fc7" category="list-text">要對資源組執行操作，請選擇 *Actions* 選項 <block ref="2fddd650b01c7f9674be856867aae05d" category="inline-image-macro-rx" type="image"></block>  在右側，選擇任何選項，例如 * 編輯資源組 * 或 * 刪除資源組 * 。</block>
   <block id="d88f9a7fc239e91ef7446fdd0e2c26a4" category="list-text">在右側、選取 * 動作 * 選項 <block ref="2fddd650b01c7f9674be856867aae05d" category="inline-image-macro-rx" type="image"></block> 然後選擇 * Replicate * 。</block>
-  <block id="4e76033871d8eb52e7a46330cc531bd8" category="doc">將應用程式容錯回復至原始來源</block>
   <block id="95c065ae2a71de38942ceb973d97399b" category="paragraph">在此工作流程中、 BlueXP 災難恢復會先將任何變更複寫回原始來源虛擬機器、然後再還原複寫方向。此程序從已完成容錯移轉至目標的關係開始、並涉及下列步驟：</block>
   <block id="c6e71b0dcb6847124e49e97ed111f902" category="list-text">在目標站台上、虛擬機器會關閉並取消登錄、磁碟區也會取消掛載。</block>
   <block id="187b70ae9883d244642e7af4f1b374c6" category="list-text">原始來源上的 SnapMirror 關係已中斷、無法讀取 / 寫入。</block>
@@ -332,7 +330,6 @@
   <block id="95a18472ce7b663d2c8fc430738919b9" category="list-text">選擇目標網站和位置。如果目標是雲端、請選取 * AWS* 。</block>
   <block id="df06aa418d44ef8725ac68927671ed66" category="paragraph">來源和目標 vCenter 會顯示在站台清單上。</block>
   <block id="70536defad0e93353b2ee45a9eba84b0" category="list-text">若要查看作業進度、請從頂端功能表中選取 * 工作監控 * 。</block>
-  <block id="239ed7a0645094a000a5d286f3b2ccf2" category="paragraph">您可以監控所有災難恢復工作、並判斷其進度。</block>
   <block id="957efce312dc74d9f2981b256c11180c" category="list-text">從頂端功能表中、選取 * 工作監控 * 。</block>
   <block id="a658e38fe05c1b71ade8529d73e083db" category="list-text">探索與營運相關的所有工作、並檢閱其時間戳記和狀態。</block>
   <block id="a2628e207373ba02728e8a48a677eca6" category="list-text">若要檢視特定工作的詳細資料、請選取該列。</block>
@@ -419,7 +416,6 @@
   <block id="2ce874f5717134aa8a63e219f05d39f9" category="list-text">容錯移轉、測試容錯移轉和移轉的數目。例如、如果您建立兩個計畫並移轉至目的地、則移轉計數會顯示為「 2 」。</block>
   <block id="d26cf1f0512a50b32d5a10b931f5fbe0" category="list-text">檢閱「活動」窗格中的所有作業。若要檢視工作監視器上的所有作業、請選取 * 檢視所有工作 * 。</block>
   <block id="6bc8dd7bb67f1165364943cf065cadcf" category="summary">使用 BlueXP 災難恢復、您可以將來源網站上的 VMware 應用程式移轉至其他網站。</block>
-  <block id="37fca13c16336a96bde58435050fff09" category="doc">將應用程式移轉至其他站台</block>
   <block id="ef5012739ecaf46323c1ba893541dc15" category="admonition">建立複寫計畫、在精靈中識別週期、並啟動移轉之後、每 30 分鐘 BlueXP 災難恢復就會驗證移轉是否確實根據計畫進行。您可以在「工作監控」頁面中監控進度。</block>
   <block id="c7e296ab461bd699a5d9cbf0801b389c" category="paragraph">在開始移轉之前、您應該先建立複寫計畫、然後選擇移轉應用程式。然後、「動作」功能表中會出現 * 移轉 * 選項。</block>
   <block id="4b832a5ef0d288f92d7b413054dc905f" category="list-text">在右側、選取 * 動作 * 選項 <block ref="2fddd650b01c7f9674be856867aae05d" category="inline-image-macro-rx" type="image"></block> 然後選取 * 移轉 * 。</block>
@@ -564,7 +560,6 @@
   <block id="d66d706cd022ab39ed6479a713135515" category="paragraph"><block ref="d66d706cd022ab39ed6479a713135515" category="inline-image-macro-rx" type="image"></block></block>
   <block id="991e816286764c3a5ea9b023c35e1d77" category="paragraph"><block ref="991e816286764c3a5ea9b023c35e1d77" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b45dfe874eaba6a97e58e0436eba2402" category="sidebar">開始使用 BlueXP 災難恢復即服務實驗室即隨需實驗室</block>
-  <block id="d5368fed025a9875e8a424b419508bef" category="admonition">此版本支援災難恢復功能、可在內部部署 VMware 工作負載的技術預覽中、透過 VMware vSphere 虛擬機器檔案系統（ VMFS ）資料存放區進行內部部署 VMware 環境。NetApp 不收取任何預覽工作負載容量的費用。</block>
   <block id="0dc4a26bb39078be4974284a72d54f64" category="paragraph">BlueXP 災難恢復服務可搭配 NetApp 授權使用、或透過 Amazon Web Services 使用年度訂閱方案。</block>
   <block id="66a7384fcc7d6c71e8da6dc152b82593" category="admonition">部分版本包含技術預覽。NetApp 不收取任何預覽工作負載容量的費用。如需最新技術預覽的相關資訊、請參閱 <block ref="431ce6b88c6d5399033553c1891688aa" category="inline-link-macro-rx"></block> 。</block>
   <block id="82dea2c8434a1770d46c03eb8b4c2389" category="summary">在使用 BlueXP 災難恢復之前、您應確保環境符合 ONTAP 儲存設備、 VMware vCenter 叢集和 BlueXP 需求。</block>
@@ -690,7 +685,6 @@
   <block id="544bb990c26b075198ab3593eb235cab" category="list-text">在方塊中輸入「容錯移轉」。</block>
   <block id="d3c41fabd7d85897eb0f306101f87e33" category="list-text">選擇 * 容錯移轉 * 。</block>
   <block id="9aaabae265e2785e58b6618d73b8e267" category="summary">您可以快速瀏覽所有 BlueXP 災難恢復資源、並管理 vCenter 站台、資源群組和複寫計畫。</block>
-  <block id="592189bb19e09b41686c42842ae7f60a" category="doc">管理站台、資源群組、複寫計畫、資料存放區和虛擬機器資訊</block>
   <block id="88947748ef8b3b00cf2cf0c3999a702e" category="paragraph">您可以停用、啟用及刪除複寫計畫。您可以變更排程。</block>
   <block id="fa62d17ad222d305b611f8c161aab288" category="list-text">若要新增或編輯虛擬機器、請選取 * 虛擬機器 * 索引標籤、然後選取 * 新增 VMS* 選項或 * 編輯 * 圖示。</block>
   <block id="714c8620cd504e0c90291fad7b5c119f" category="list-text">若要設定或變更測試容錯移轉排程或設定法規遵循頻率檢查、請選取計畫右側的 * 動作 * 選項 <block ref="2fddd650b01c7f9674be856867aae05d" category="inline-image-macro-rx" type="image"></block> 、然後選取 * 編輯排程 * 。</block>
@@ -731,7 +725,6 @@
   <block id="caa1e25984e775c1ab44cfd42620d720" category="inline-image-macro">鉛筆圖示</block>
   <block id="7906e2e007c3bad108fcd7ed7311a131" category="paragraph"><block ref="7906e2e007c3bad108fcd7ed7311a131" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6dbc81f47f4a822cd11ce7c8403756ed" category="list-text">在容錯移轉對應索引標籤中、選取每個資源右側的向下箭頭、並對應每個資源中的資源。</block>
-  <block id="c28e8a3b83f3f2cce376fe3daa7ad95d" category="paragraph"><block ref="64eb1ec301597178e47fa7deed0121dc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="10936c8535aaede0ed75f5d8d4fa6aaf" category="list-text">* 保留計數 * ：輸入您要保留的快照數。</block>
   <block id="76e4d72594030fca0b96279d0f8392dc" category="section-title">有助於您進行 BlueXP  災難恢復的術語</block>
   <block id="b7b26d16c3d1d84d3872afa1f04c92d6" category="paragraph">瞭解與災難恢復相關的一些術語可能會使您受益。</block>
@@ -811,7 +804,6 @@
   <block id="0f024621e0673f1f4e657983682d6e72" category="list-text">選擇*刪除*。</block>
   <block id="835e92deb53775d3ce75f1bab2ff7fe5" category="list-text">選取複寫計畫後、選取「動作」功能表、選取「清理舊快照」以移除目標上的舊快照、以符合新的保留計數。</block>
   <block id="4fcb591c27b70823ff71112c0db6af4f" category="summary">檢閱災難恢復報告可協助您分析災難恢復準備情況。預先設計的報告包括容錯移轉和容錯移轉的摘要、所有站台的複寫詳細資料、以及過去一年的工作詳細資料。</block>
-  <block id="8c909df77f7b5e2e6b77ff66ee6bd3e7" category="paragraph">檢閱災難恢復報告可協助您分析災難恢復準備情況。預先設計的報告包括過去七天內、在帳戶內所有站台上的測試容錯移轉摘要、複寫計畫詳細資料和工作詳細資料。</block>
   <block id="cd463f7ca5dbc8268a82ea8d8f5e4281" category="paragraph">下載連結的有效期限為六小時。</block>
   <block id="5e521694fac83ef0acfcb6f722d2b3cf" category="list-text">從 BlueXP  左側導航中，選擇 * 保護 * &gt; * 災難恢復 * &gt; * 複製計劃 * 。</block>
   <block id="40f8ac7caaab02ab3b9834517b54c7a4" category="list-text">從頁面頂端選取 * 建立報告 * 。</block>
@@ -984,7 +976,6 @@
   <block id="e2a36029181f04d6208811edf66b0c62" category="paragraph"><block ref="039fd09b60dad6f86188402eac2ef738" category="inline-link-rx"></block>。</block>
   <block id="5d3579189b9441a8b42010228d169cbc" category="inline-link">瞭解如何使用數位錢包更新授權</block>
   <block id="597c7a7ee6e647859f8aa98b20be3cb0" category="paragraph"><block ref="1180f9bbf40cd0c05f379b347ef1d8f9" category="inline-link-rx"></block>。</block>
-  <block id="4f65b71af0098f41a96bfdb343f2f325" category="doc">建立資源群組以將 VM 組織在一起</block>
   <block id="142aa3cf2c56c4cee9658fbb7fa95634" category="paragraph">您可以使用下列方法建立資源群組：</block>
   <block id="ad2f31d93207199cb75dd53824344fab" category="list-text">從資源群組索引標籤</block>
   <block id="ae21aa75d137aec3ba200318a51f9166" category="paragraph-title">關於資源群組</block>
@@ -1191,4 +1182,33 @@
   <block id="e7be7bda88531d046e21401efd5bd9d5" category="paragraph">此時將顯示 Configure subnet 頁面：</block>
   <block id="aaaeb2ea35c55b4a37b25b328a34587c" category="paragraph"><block ref="aaaeb2ea35c55b4a37b25b328a34587c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="58091bb6c8793ca7ad7178167e36010f" category="admonition">如果有兩個 VM （例如，一個是 Linux ，另一個是 Windows ），則只有 Windows 需要認證。</block>
+  <block id="97d3a415f1d32e0fd7045cf243744acd" category="doc">Windows 本機管理員密碼解決方案 (LAPS) 支持</block>
+  <block id="016381830d7dd927c4b8504121b26175" category="paragraph">Windows 本機管理員密碼解決方案 (Windows LAPS) 是一項 Windows 功能，可自動管理和備份 Active Directory 上本機管理員帳戶的密碼。</block>
+  <block id="33e3d20ad0d71e75d746da0b85431750" category="paragraph">現在，您可以透過提供網域控制器詳細資訊來選擇子網路對映選項並檢查 LAPS 選項。使用此選項，您無需為每個虛擬機器提供密碼。</block>
+  <block id="6988ffa358e4fb05fdfdb5afcd9633db" category="list-text">確保來源 vCenter 和目標 vCenter 都使用相同的 BlueXP 連接器。</block>
+  <block id="45d6a7a8d814b0580c86b35537ead34e" category="doc">BlueXP 災難復原的局限性</block>
+  <block id="f27f1ce6df3e2ec2518f77e8e1a4a531" category="section-title">2025 年 6 月 9 日</block>
+  <block id="a5b3547213084a11aef815f04f636f42" category="paragraph">版本 4.2.4</block>
+  <block id="ae028f4b0907152c734ed4a90acbc64b" category="doc">在儀表板上查看 BlueXP 災難復原計畫的運作狀況</block>
+  <block id="8d653efc41b18c9a1268d3e4be0f15ca" category="doc">在 BlueXP 災難復原中建立複製計劃</block>
+  <block id="1883274b7afbbc2357cb15c15a1af17e" category="paragraph"><block ref="a690938170d1fae8a1d7e7ed3a6d014f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="779cca7c4cefbaa596e10329a5e7344b" category="list-text">*目標 IP* 字段，選擇以下選項之一：</block>
+  <block id="43c3d8ca0ff82c763dd8ba2587262ce7" category="list-text">*與來源相同*</block>
+  <block id="c0906c265f059cdd05a640cb10c05397" category="list-text">*與來源不同*</block>
+  <block id="c93cc22297f7869a2923cf4a568e3431" category="list-text">*子網路對應*：如果要將來源子網路對應到不同的目標子網，請選擇此選項。您可以選擇來源子網，然後選擇目標子網路。當您想要變更目標環境中虛擬機器的 IP 位址時，此選項非常有用。</block>
+  <block id="9cdd5ce4f7751ec05ecae73c3e3d5959" category="admonition">使用子網路映射是一個可選的兩步驟過程：首先，在「站點」標籤中為每個 vCenter 站點新增子網路映射。其次，在複寫計畫中，指出您要使用子網路對應。</block>
+  <block id="6262500729b6f197aa6e4ad6b2b8e85e" category="list-text">*使用 Windows LAPS*：如果您使用 Windows 本機管理員密碼解決方案 (Windows LAPS)，請勾選此方塊。此選項僅在您選擇“靜態 IP”選項時可用。勾選此方塊後，您無需為每個虛擬機器提供密碼，只需提供網域控制器詳細資訊即可。</block>
+  <block id="4fd3e179011cd215b45b25dbfb0cc8d2" category="paragraph">如果您不使用 Windows LAPS，則該虛擬機為 Windows 虛擬機，且虛擬機器行上的憑證選項已啟用。您可以提供該虛擬機器的憑證。</block>
+  <block id="cf09d6f8881c452b09554e4e9dbc997e" category="doc">使用 BlueXP 災難復原將應用程式故障還原到原始來源</block>
+  <block id="23a9c843e7c84f7ba86dd5a99ee43340" category="doc">使用 BlueXP 災難復原將應用程式故障轉移到遠端站點</block>
+  <block id="2be6295929f0fec41d6014ed55de0fcb" category="doc">使用 BlueXP 災難復原管理網站、資源群組、複製計劃、資料儲存和虛擬機器訊息</block>
+  <block id="b88f2b61385be4d7b80c6f9deb44ef99" category="paragraph">您可以快速瀏覽所有 BlueXP 災難復原資源或詳細查看每個資源：</block>
+  <block id="e823ac96d622a36a3befb2adaf78dfc7" category="doc">使用 BlueXP 災難復原將應用程式遷移到另一個站點</block>
+  <block id="06db0057955b153079b2224fe8fe3fca" category="doc">監控 BlueXP 災難復原作業</block>
+  <block id="33364d8b01ea631f73ab5e07dbec17bc" category="paragraph">您可以監控所有 BlueXP 災難復原作業並確定其進度。</block>
+  <block id="4c37c0f8ebfaa6ad002a3b8027540686" category="doc">使用 BlueXP 災難復原將應用程式複製到另一個站點</block>
+  <block id="8402259962b0173d9712a8c8e6d195dd" category="doc">建立 BlueXP 災難復原報告</block>
+  <block id="b12e5762638e8dca606f02345a47867a" category="paragraph">查看 BlueXP 災難復原報告可以協助您分析災難復原準備狀況。預先設計的報告包括過去七天內、在帳戶內所有站台上的測試容錯移轉摘要、複寫計畫詳細資料和工作詳細資料。</block>
+  <block id="b3d496fccdf5d0b52dd71622cd01ca4c" category="doc">建立資源組以在 BlueXP 災難復原中將虛擬機器組織在一起</block>
+  <block id="4931eee83a268b667e0c868104ec1e32" category="doc">在 BlueXP 災難復原中將 vCenter 新增至站點</block>
 </blocks>

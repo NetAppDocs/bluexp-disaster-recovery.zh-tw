@@ -4,7 +4,7 @@ permalink: use/replicate.html
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
 summary: 使用 BlueXP 災難恢復、您可以使用 SnapMirror 複寫、將來源站台上的 VMware 應用程式複寫到雲端的災難恢復遠端站台。 
 ---
-= 將應用程式複寫到另一個站台
+= 使用 BlueXP 災難復原將應用程式複製到另一個站點
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

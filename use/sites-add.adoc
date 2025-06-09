@@ -4,7 +4,7 @@ permalink: use/sites-add.html
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
 summary: 在建立災難恢復計畫之前，您必須先在 BlueXP  災難恢復中新增主要 vCenter 站台和目標 vCenter 災難恢復站台。 
 ---
-= 新增 vCenter 至網站
+= 在 BlueXP 災難復原中將 vCenter 新增至站點
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -13,6 +13,9 @@ summary: 在建立災難恢復計畫之前，您必須先在 BlueXP  災難恢�
 
 [role="lead"]
 在建立災難恢復計畫之前，您必須先將主要 vCenter 伺服器新增至 BlueXP  中的站台和目標 vCenter 災難恢復站台。
+
+
+TIP: 確保來源 vCenter 和目標 vCenter 都使用相同的 BlueXP 連接器。
 
 新增 vCenter 之後， BlueXP  災難恢復會深入探索 vCenter 環境，包括 vCenter 叢集， ESXi 主機，資料存放區，儲存區足部列印，虛擬機器詳細資料， SnapMirror 複本和虛擬機器網路。
 
@@ -139,6 +142,12 @@ TIP: CIDR 表示法是一種指定 IP 位址及其網路遮罩的方法。/24 �
 === 選取複寫計畫的子網路對應
 
 建立複寫計畫時，您可以選取複寫計畫的子網路對應。
+
+使用子網路對應是選擇性的兩個步驟程序：
+
+* 首先，新增每個 vCenter 站台的子網路對應。
+* 其次，在複寫計畫中，指出您要使用子網路對應。
+
 
 .步驟
 . 從 BlueXP 災難恢復主菜單中，選擇 *Replication Plans （複製計劃） * 。

@@ -16,6 +16,22 @@ summary: BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化�
 
 
 
+== 2025 年 6 月 9 日
+
+版本 4.2.4
+
+
+
+=== Windows 本機管理員密碼解決方案 (LAPS) 支持
+
+Windows 本機管理員密碼解決方案 (Windows LAPS) 是一項 Windows 功能，可自動管理和備份 Active Directory 上本機管理員帳戶的密碼。
+
+現在，您可以透過提供網域控制器詳細資訊來選擇子網路對映選項並檢查 LAPS 選項。使用此選項，您無需為每個虛擬機器提供密碼。
+
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["建立複寫計畫"]。
+
+
+
 == 2025 年 13 月 5 日
 
 版本 4.2.3
