@@ -1,0 +1,77 @@
+---
+sidebar: sidebar 
+permalink: reference/evs-deploy-guide-config-add-arrays.html 
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
+summary: 在使用 BlueXP 災難復原之前，您必須將本機和雲端託管儲存執行個體新增至 BlueXP 工作環境。 
+---
+= 將本機陣列新增至具有 BlueXP 災難復原功能的 Amazon EVS 的 BlueXP 工作環境中
+:allow-uri-read: 
+
+
+[role="lead"]
+在使用 BlueXP 災難復原之前，您必須將本機和雲端託管儲存執行個體新增至 BlueXP 工作環境。
+
+您需要執行以下操作：
+
+* 將內部部署陣列新增至您的 BlueXP 工作環境。
+* 將 Amazon FSx for NetApp ONTAP（FSx for ONTAP）執行個體新增至您的 BlueXP 工作環境。
+
+
+
+
+== 將本機儲存陣列新增至 BlueXP 工作環境
+
+將本機 ONTAP 儲存資源新增至您的 BlueXP 工作環境。
+
+. 從 BlueXP Canvas 中，選擇 *新增工作環境*。
++
+image:evs-canvas-add-working-env-1.png["新增工作環境"]
+
+. 在新增工作環境頁面中，選擇*On-Premises*卡。
++
+image:evs-canvas-add-working-env-2.png["新增工作環境影像"]
+
+. 在 On-Premises ONTAP 卡上選擇 *發現*。
++
+image:evs-canvas-add-working-env-3.png["新增工作環境影像"]
+
+. 在發現集群頁面上，輸入以下資訊：
++
+.. ONTAP 陣列叢集管理埠的 IP 位址
+.. 管理員使用者名稱
+.. 管理者密碼
+
+
+. 選擇頁面底部的“發現”。
++
+image:evs-canvas-add-working-env-4-5.png["新增工作環境影像"]
+
+. 對將託管 vCenter 資料儲存庫的每個 ONTAP 陣列重複步驟 1-5。
+
+
+
+
+== 將 Amazon FSx for NetApp ONTAP 儲存實例新增至 BlueXP 工作環境
+
+接下來，將 Amazon FSx for NetApp ONTAP 儲存資源新增至您的 BlueXP 工作環境。
+
+. 從 BlueXP Canvas 中，選擇 *新增工作環境*。
++
+image:evs-canvas-add-working-env-1.png["新增工作環境影像"]
+
+. 在新增工作環境頁面中，選擇*Amazon Web Services*卡。
++
+image:evs-canvas-add-working-evs-2.png["新增工作環境影像"]
+
+. 選擇 Amazon FSx for ONTAP 卡上的 *Discover Existing* 連結。
++
+image:evs-canvas-add-working-evs-3.png["新增工作環境影像"]
+
+. 選擇託管 FSx for ONTAP 執行個體的憑證和 AWS 區域。
+. 選擇一個或多個要新增的 FSx for ONTAP 檔案系統。
+. 選擇頁面底部的“發現”。
++
+image:evs-needs-updates-canvas-add-working-evs-4-5.png["新增工作環境影像"]
+
+. 對將託管 vCenter 資料儲存區的每個 FSx for ONTAP 執行個體重複步驟 1-6。
+

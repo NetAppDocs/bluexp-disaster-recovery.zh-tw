@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: reference/evs-deploy-guide-add-vcenters.html 
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
+summary: 使用 Amazon EVS 和 Amazon FSxN 進行 BlueXP 災難復原簡介。建立網站後，您現在可以將 vCenter 叢集新增至 BlueXP 災難復原中的每個網站。建立每個站點時，我們會指明每個站點的類型。這會告知 BlueXP 災難復原對每種網站類型中託管的 vCenter 需要哪種類型的存取權。 AmazonEVS 的優勢之一是 Amazon EVS vCenter 與本機 vCenter 之間沒有真正的區別。兩者都需要相同的連線和身份驗證資訊。 
+---
+= 在 BlueXP 災難復原中新增本機和 Amazon EVS vCenter 叢集
+:allow-uri-read: 
+
+
+[role="lead"]
+建立網站後，您現在可以將 vCenter 叢集新增至 BlueXP 災難復原中的每個網站。建立每個網站時，我們都會指明對應的網站類型。這會告知 BlueXP 災難復原系統，每個網站類型中託管的 vCenter 需要哪種類型的存取權限。 AmazonEVS 的優勢之一是 Amazon EVS vCenter 與本機 vCenter 之間沒有真正的區別。兩者都需要相同的連線和身份驗證資訊。
+
+.在每個站點新增 vCenter 的步驟
+. 從「*網站*」標籤中，選擇所需網站的「*新增 vCenter*」。
++
+image:evs-add-vcenter-1.png["新增 vCenter 選項"]
+
+. 在新增 vCenter 伺服器對話方塊中，選擇或提供以下資訊：
++
+.. BlueXP 連接器託管在您的 AWS VPC 內。
+.. 要新增的 vCenter 的 IP 位址或 FQDN。
+.. 如果不同，請將連接埠值變更為 vCenter 叢集管理器使用的 TCP 連接埠。
+.. 先前建立的帳戶的 vCenter 使用者名，BlueXP 災難復原將使用該使用者名稱來管理 vCenter。
+.. 所提供使用者名稱的 vCenter 密碼。
+.. 如果您的公司使用外部憑證授權單位 (CA) 或 vCenter Endpoint 憑證儲存空間來存取您的 vCenter，請取消勾選「使用自簽名憑證」核取方塊。否則，請保留此複選框。
+
+
+. 選取*「Add*」。
++
+image:evs-add-vcenter-2-3.png["新增 vCenter 對話框"]
+
+

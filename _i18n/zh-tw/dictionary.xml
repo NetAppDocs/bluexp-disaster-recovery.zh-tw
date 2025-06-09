@@ -431,7 +431,6 @@
   <block id="d23a9d83c87c6eacef309f00a2beb5d3" category="inline-image-macro">網站頁面螢幕快照</block>
   <block id="6f5e3fdfa73285ac2283ba492cf2d47b" category="list-text">VMware Cloud （ VMC ） on AWS with Amazon FSX for NetApp ONTAP 或</block>
   <block id="b374472b15e644f23d1e6b059b5216b9" category="list-text">另一個內部部署的 NFS 型 VMware 環境、搭配 ONTAP 儲存設備</block>
-  <block id="53c1c0c22e2a647591a0b52427852850" category="paragraph"><block ref="53c1c0c22e2a647591a0b52427852850" category="inline-image-macro-rx" type="image"></block></block>
   <block id="add8d69a5f7975ffd43124657fc5030d" category="list-text">使用 SnapMirror 複寫、將內部部署正式作業站台上的 VMware 應用程式複寫到雲端或內部部署的災難恢復遠端站台。</block>
   <block id="dcc9d99320099ed731ca2f05b3e501a7" category="list-text">將 VMware 工作負載從原始站台移轉至其他站台。</block>
   <block id="a6a42e8e3070730d19bfd86d6a1d66fe" category="paragraph">下圖顯示內部部署到內部部署災難恢復計畫的架構。</block>
@@ -1211,4 +1210,434 @@
   <block id="b12e5762638e8dca606f02345a47867a" category="paragraph">查看 BlueXP 災難復原報告可以協助您分析災難復原準備狀況。預先設計的報告包括過去七天內、在帳戶內所有站台上的測試容錯移轉摘要、複寫計畫詳細資料和工作詳細資料。</block>
   <block id="b3d496fccdf5d0b52dd71622cd01ca4c" category="doc">建立資源組以在 BlueXP 災難復原中將虛擬機器組織在一起</block>
   <block id="4931eee83a268b667e0c868104ec1e32" category="doc">在 BlueXP 災難復原中將 vCenter 新增至站點</block>
+  <block id="4fdc7ce994e20231977a950f50d2bd8c" category="inline-link-macro">使用 Amazon Elastic VMware Service 和 Amazon FSx for NetApp ONTAP 介紹 BlueXP 災難復原</block>
+  <block id="23c676c1e2805ccfa79b1d5b119b359b" category="admonition">有關 AWS EVS 的此文件作為技術預覽提供。透過此預覽方案、 NetApp 保留在「一般供應」之前修改產品詳細資料、內容和時間表的權利。如需詳細資訊、請參閱 <block ref="cdad8a3d7f20169c4ae7abb02cbfb952" category="inline-link-macro-rx"></block>。</block>
+  <block id="307333c16acf811cbdcbc49b7e1ffe0c" category="paragraph"><block ref="307333c16acf811cbdcbc49b7e1ffe0c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="820dcf757b538e0c3906feee7e248e9b" category="inline-image-macro">該圖展示了 BlueXP 災難復原對 VMware 的用例</block>
+  <block id="0730a606f26806e8598f89fee000aa77" category="paragraph"><block ref="0730a606f26806e8598f89fee000aa77" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ce42bd6214051346d73d33c0caeff3ad" category="summary">在保護虛擬機基礎架構之前，BlueXP 災難復原服務​​需要了解哪些 VMware vCenter 叢集託管著需要保護的虛擬機，以及這些 vCenter 的位置。第一步是建立一個網站來代表來源資料中心和目標資料中心。站點可以是一個故障域，也可以是一個復原域。</block>
+  <block id="df43b28c9b444f6234798d82beab12eb" category="doc">在 BlueXP 災難復原中為 Amazon EVS 新增站點</block>
+  <block id="59cabc3db90da0724955c7298ca562a1" category="paragraph">在保護虛擬機基礎架構之前，請先確定哪些 VMware vCenter 叢集託管著要保護的虛擬機，以及這些 vCenter 的位置。第一步是建立一個網站來代表來源資料中心和目標資料中心。站點可以是故障域，也可以是恢復域。</block>
+  <block id="45dca8e7e249dec0e75baf3601093792" category="paragraph">您需要建立以下內容：</block>
+  <block id="d9c29ccbb6b2d06447761e6cf0756684" category="list-text">一個站點，代表生產 vCenter 叢集所在的每個生產資料中心</block>
+  <block id="394c227a36683c802c819b3f34846545" category="list-text">適用於 NetApp ONTAP 雲端資料中心的 Amazon EVS/Amazon FSx 站點</block>
+  <block id="f45637027169066618b4feb69cd78735" category="section-title">建立本地站點</block>
+  <block id="0b865754d79945616dd5a93fa7db75ee" category="paragraph">建立生產 vCenter 網站。</block>
+  <block id="dd1d9dbb557d73a1fd153af81b0bcd7b" category="list-text">從 BlueXP 左側導覽中，選擇 *保護* &gt; *災難復原*。</block>
+  <block id="3655395c09d80221e5f491b2eb9dcc2f" category="list-text">從 BlueXP 災難復原中的任何頁面中，選擇「*網站*」標籤。</block>
+  <block id="d0310d41f74b1c1cdc6c79c71a025b7f" category="inline-image-macro">「網站」標籤</block>
+  <block id="50c021e4f2a31fdef8036a8dba8a16b8" category="paragraph"><block ref="50c021e4f2a31fdef8036a8dba8a16b8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="935bee5f068d88e60f2dea6bf673db0a" category="list-text">從「網站」標籤中，選擇「*新增*」。</block>
+  <block id="5df91129083187f72c022108dc40019a" category="inline-image-macro">在「網站」標籤上新增選項</block>
+  <block id="f39c93b508f63c5847ca27a8a58d4063" category="paragraph"><block ref="f39c93b508f63c5847ca27a8a58d4063" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="800da9fc10adce98d89711c116529b76" category="list-text">在新增網站對話方塊中，提供網站名稱。</block>
+  <block id="308b16c04c14fc9c7831597351d20046" category="list-text">選擇“On-prem”作為位置。</block>
+  <block id="b2fc60f51b5a0628891f2dc6ca9c3dc9" category="inline-image-macro">建立網站對話框</block>
+  <block id="b4775672cce6d5c4397de54127eb400c" category="paragraph"><block ref="b4775672cce6d5c4397de54127eb400c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2f07f3f9af6f682449f80e9bbf3ca8c3" category="paragraph">如果您有其他生產 vCenter 站點，則可以使用相同的步驟新增它們。</block>
+  <block id="548c9c96147a0426f260364305e15190" category="section-title">創建亞馬遜雲端站點</block>
+  <block id="ddbae8bd4240ed180de1f145025881e2" category="paragraph">使用 Amazon FSx for NetApp ONTAP 儲存為 Amazon EVS 建立 DR 站點。</block>
+  <block id="92904974c00ca9b28d9ec7f0efadbe4a" category="inline-image-macro">在網站頁面上新增選項</block>
+  <block id="07ff11e38338c53ad9f51049256db866" category="paragraph"><block ref="07ff11e38338c53ad9f51049256db866" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b0497cc454b3915328ab40ece8c6cc62" category="list-text">選擇“AWS-EVS”作為位置。</block>
+  <block id="f4c51cf5363b5651017e61e046acbe01" category="inline-image-macro">新增對話框</block>
+  <block id="20320c5a5509e9d8a3970bb66e3976b5" category="paragraph"><block ref="20320c5a5509e9d8a3970bb66e3976b5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
+  <block id="0da98ea5899daa91a1bbac1ea476d6cf" category="paragraph">現在您已經建立了一個生產（來源）網站和一個 DR（目標）網站。</block>
+  <block id="669ca9c2ff6e928c4aff69471cec6d12" category="summary">使用 Amazon EVS 和 Amazon FSxN 進行 BlueXP 災難復原簡介。建立網站後，您現在可以將 vCenter 叢集新增至 BlueXP 災難復原中的每個網站。建立每個站點時，我們會指明每個站點的類型。這會告知 BlueXP 災難復原對每種網站類型中託管的 vCenter 需要哪種類型的存取權。 AmazonEVS 的優勢之一是 Amazon EVS vCenter 與本機 vCenter 之間沒有真正的區別。兩者都需要相同的連線和身份驗證資訊。</block>
+  <block id="7d189e80ea869464c06f8e85295498f7" category="doc">在 BlueXP 災難復原中新增本機和 Amazon EVS vCenter 叢集</block>
+  <block id="1460c23a88ded3dce057fa4478405940" category="paragraph">建立網站後，您現在可以將 vCenter 叢集新增至 BlueXP 災難復原中的每個網站。建立每個網站時，我們都會指明對應的網站類型。這會告知 BlueXP 災難復原系統，每個網站類型中託管的 vCenter 需要哪種類型的存取權限。 AmazonEVS 的優勢之一是 Amazon EVS vCenter 與本機 vCenter 之間沒有真正的區別。兩者都需要相同的連線和身份驗證資訊。</block>
+  <block id="3ac596c5aa435dd12f683335e2d27760" category="list-title">在每個站點新增 vCenter 的步驟</block>
+  <block id="0b6924fcba425d50ef4e409dab53b25f" category="list-text">從「*網站*」標籤中，選擇所需網站的「*新增 vCenter*」。</block>
+  <block id="59662aacba84700bcc666a989987c405" category="inline-image-macro">新增 vCenter 選項</block>
+  <block id="11c7214c26259f50d59799950f134613" category="paragraph"><block ref="11c7214c26259f50d59799950f134613" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="744f4f3b56736e13f1a146b4bfbfbd67" category="list-text">在新增 vCenter 伺服器對話方塊中，選擇或提供以下資訊：</block>
+  <block id="9f64cafc10d07a328fe9975be672e3fc" category="list-text">BlueXP 連接器託管在您的 AWS VPC 內。</block>
+  <block id="8bf4e0d4e225ffb8df46f2ccff910a1e" category="list-text">要新增的 vCenter 的 IP 位址或 FQDN。</block>
+  <block id="5b89f24b8876b95ec77cbbec46ac7f03" category="list-text">如果不同，請將連接埠值變更為 vCenter 叢集管理器使用的 TCP 連接埠。</block>
+  <block id="80f8a73ad31bbfe56cc8ab47d411f0a0" category="list-text">先前建立的帳戶的 vCenter 使用者名，BlueXP 災難復原將使用該使用者名稱來管理 vCenter。</block>
+  <block id="dcbbf9ae46e44ee95b9d29aafbb41fec" category="list-text">所提供使用者名稱的 vCenter 密碼。</block>
+  <block id="090ccdeb67b025c4f8b7081fde3f9701" category="list-text">如果您的公司使用外部憑證授權單位 (CA) 或 vCenter Endpoint 憑證儲存空間來存取您的 vCenter，請取消勾選「使用自簽名憑證」核取方塊。否則，請保留此複選框。</block>
+  <block id="b3a5c8845f853fe3c75c53b6ba4b310a" category="inline-image-macro">新增 vCenter 對話框</block>
+  <block id="34fdfb7ad906ce66a12a8da2c109d447" category="paragraph"><block ref="34fdfb7ad906ce66a12a8da2c109d447" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d3c22eda98eb023fc784b057b8ec04c3" category="summary">介紹使用 Amazon EVS 和 Amazon FSxN 的 BlueXP 災難復原。</block>
+  <block id="6f8b794f3246b0c1e1780bb4d4d5dc53" category="doc">結論</block>
+  <block id="eed7fbcbb7e8c74c99d0ddc3abdfe7cf" category="paragraph">BlueXP 災難復原功能可為您的本機 VMware 基礎架構提供經濟高效的混合雲端災難復原解決方案，前提是設定 Amazon EVS 和 Amazon FSx for NetApp ONTAP 作為災難復原目標。這為您提供了適用於關鍵任務基礎架構的強大災難復原目標。 BlueXP災難復原功能利用原生 ONTAP 資料保護功能，這些功能以數十年的資料保護經驗為後盾，並經過深入測試，確保您的資料得到全面保護。</block>
+  <block id="55707b4848b3a26a39057e3af6948b43" category="paragraph">更多資訊：</block>
+  <block id="0f5cc47067a5c4b536ab91f1a843de82" category="inline-link">Amazon FSX for NetApp ONTAP 功能入門</block>
+  <block id="6c289628dee43319166eea9002566c44" category="list-text"><block ref="6c289628dee43319166eea9002566c44" category="inline-link-rx"></block></block>
+  <block id="419107ae99e5cc9fd7d65d66f41050c1" category="inline-link">NetApp BlueXP 災難復原文檔</block>
+  <block id="a2c58b1632d6fbf942b246bd8c002cc2" category="list-text"><block ref="a2c58b1632d6fbf942b246bd8c002cc2" category="inline-link-rx"></block></block>
+  <block id="8e7c387f461b2ac490bda493fdceda5f" category="summary">在使用 BlueXP 災難復原之前，您必須將本機和雲端託管儲存執行個體新增至 BlueXP 工作環境。</block>
+  <block id="e68cb1824e09c8e066467d97cdb1991f" category="doc">將本機陣列新增至具有 BlueXP 災難復原功能的 Amazon EVS 的 BlueXP 工作環境中</block>
+  <block id="110cf9f49141b2330ac27d9a9baedd2f" category="paragraph">您需要執行以下操作：</block>
+  <block id="79b0e4663ef0a0fffd9246da087a5308" category="list-text">將內部部署陣列新增至您的 BlueXP 工作環境。</block>
+  <block id="52aceff615a8a353fa689f93ef3614ef" category="list-text">將 Amazon FSx for NetApp ONTAP（FSx for ONTAP）執行個體新增至您的 BlueXP 工作環境。</block>
+  <block id="1914a92b9fef7e409053598090207e08" category="section-title">將本機儲存陣列新增至 BlueXP 工作環境</block>
+  <block id="e21237ad7d28d5241dd6cdcffc9c2a00" category="paragraph">將本機 ONTAP 儲存資源新增至您的 BlueXP 工作環境。</block>
+  <block id="b14257c652d14d8515d271f0212bd2ce" category="list-text">從 BlueXP Canvas 中，選擇 *新增工作環境*。</block>
+  <block id="ddf0d84991cb06158f6eca119f5aa89c" category="inline-image-macro">新增工作環境</block>
+  <block id="349b2d7a1ca6eac6636f21a00ce0501d" category="paragraph"><block ref="349b2d7a1ca6eac6636f21a00ce0501d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="71fc6ede309a71bb3c4f28f1d6d83a62" category="list-text">在新增工作環境頁面中，選擇*On-Premises*卡。</block>
+  <block id="4a31ad94d282b19a1c5f3be4e28ec3c8" category="inline-image-macro">新增工作環境影像</block>
+  <block id="59018ab7657eb07f7057ada9d34538f1" category="paragraph"><block ref="59018ab7657eb07f7057ada9d34538f1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7804069ae091dd822cf8b497e221fdb2" category="list-text">在 On-Premises ONTAP 卡上選擇 *發現*。</block>
+  <block id="149ae88688585ac8b68e0c2f04f70fe0" category="paragraph"><block ref="149ae88688585ac8b68e0c2f04f70fe0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d326900fbed47108b04e2c8cee7b6041" category="list-text">在發現集群頁面上，輸入以下資訊：</block>
+  <block id="843fd4d49aab9b9f4784cd919767936c" category="list-text">ONTAP 陣列叢集管理埠的 IP 位址</block>
+  <block id="91c00f03a2fb5b93f522598c117611c6" category="list-text">管理員使用者名稱</block>
+  <block id="8aa764ffa66fb398df5f40185e9f98ac" category="list-text">管理者密碼</block>
+  <block id="8189eb9cbf13731a1a9d4488541f2942" category="list-text">選擇頁面底部的“發現”。</block>
+  <block id="e693301ddfb0ef44a5b2b45d11ae3467" category="paragraph"><block ref="e693301ddfb0ef44a5b2b45d11ae3467" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="39097babd0c6218dcf46c3ecd7d97c32" category="list-text">對將託管 vCenter 資料儲存庫的每個 ONTAP 陣列重複步驟 1-5。</block>
+  <block id="7602a1228d8b945d5cf0149d28c82adb" category="section-title">將 Amazon FSx for NetApp ONTAP 儲存實例新增至 BlueXP 工作環境</block>
+  <block id="4d8658bf6b366b5551718e0a00428893" category="paragraph">接下來，將 Amazon FSx for NetApp ONTAP 儲存資源新增至您的 BlueXP 工作環境。</block>
+  <block id="483ca1341a0e86a331b54f24705ed59e" category="paragraph"><block ref="483ca1341a0e86a331b54f24705ed59e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="191b215e1bafcf454d046bf2a04ebe00" category="list-text">在新增工作環境頁面中，選擇*Amazon Web Services*卡。</block>
+  <block id="9c84afb7256f6d1b08c629cfe97393c3" category="paragraph"><block ref="9c84afb7256f6d1b08c629cfe97393c3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="60307118e9d612ff41db44d4ac4a8b91" category="list-text">選擇 Amazon FSx for ONTAP 卡上的 *Discover Existing* 連結。</block>
+  <block id="beea635ab0d5488f092f8b6d53762427" category="paragraph"><block ref="beea635ab0d5488f092f8b6d53762427" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4d0606ca8000d6887d04df726f54bb08" category="list-text">選擇託管 FSx for ONTAP 執行個體的憑證和 AWS 區域。</block>
+  <block id="8d4ff1357f113705b6f30662ff7b14aa" category="list-text">選擇一個或多個要新增的 FSx for ONTAP 檔案系統。</block>
+  <block id="d6d547f4a67e7da1e6a84ec13d6fd5c6" category="paragraph"><block ref="d6d547f4a67e7da1e6a84ec13d6fd5c6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7de461c253e2cd429a574e5ca48a6fa4" category="list-text">對將託管 vCenter 資料儲存區的每個 FSx for ONTAP 執行個體重複步驟 1-6。</block>
+  <block id="04eb0ac30625c6312809ae3605f0b08f" category="summary">安裝 BlueXP Connector 後，您需要整合所有將參與 DR 過程的 ONTAP 儲存和 VMware vCenter 資源。</block>
+  <block id="5ddf5a2becf40d46416c1ecf397acead" category="doc">為 Amazon EVS 配置 BlueXP 災難復原概述</block>
+  <block id="8b9d6b5951a36c9d339854816f5a2864" category="paragraph">安裝 BlueXP Connector 後，您需要將參與災難復原過程的所有 ONTAP 儲存和 VMware vCenter 資源與 BlueXP 災難復原整合。</block>
+  <block id="300a6a9739ccd40ce80dbf01d1f81a3d" category="inline-link-macro">具有 BlueXP 災難復原的 Amazon EVS 的先決條件</block>
+  <block id="1196a09d760180a49604d32a98c45733" category="list-text"><block ref="1196a09d760180a49604d32a98c45733" category="inline-link-macro-rx"></block></block>
+  <block id="b90bda5398de68e1d85b7a6c119bd42b" category="inline-link-macro">將 ONTAP 儲存陣列新增至 BlueXP 災難復原</block>
+  <block id="74037e15fb74898fc2741e1fd0de2c1b" category="list-text"><block ref="74037e15fb74898fc2741e1fd0de2c1b" category="inline-link-macro-rx"></block></block>
+  <block id="948fdcd481f1b60f64cd0a1415b8772c" category="inline-link-macro">為 Amazon EVS 啟用 BlueXP 災難復原</block>
+  <block id="3b4041796a7d19952ce4f05d7ac1296e" category="list-text"><block ref="3b4041796a7d19952ce4f05d7ac1296e" category="inline-link-macro-rx"></block></block>
+  <block id="48640808aa8de0e397783c9f0bf7d38c" category="inline-link-macro">將 vCenter 站點新增至 BlueXP 災難復原</block>
+  <block id="b1a91a36f01e2b398842c4fafba5b827" category="list-text"><block ref="b1a91a36f01e2b398842c4fafba5b827" category="inline-link-macro-rx"></block></block>
+  <block id="4870ca95287127b763711668002ae46a" category="inline-link-macro">將 vCenter 叢集新增至 BlueXP 災難復原</block>
+  <block id="b58a5282def19b2cfa0d6a21a2fb1873" category="list-text"><block ref="b58a5282def19b2cfa0d6a21a2fb1873" category="inline-link-macro-rx"></block></block>
+  <block id="77b6a574c8fd563a40ba5d3ced2f6995" category="summary">在繼續使用 BlueXP 災難復原配置 Amazon EVS 之前，您應該確保滿足幾個先決條件。</block>
+  <block id="3cfd631225e4a5cd11bb7f070aa490d3" category="paragraph">具體來說，請執行以下操作：</block>
+  <block id="0c16cce0fa7cbfe2c47b9b35b500ef09" category="list-text">建立一個具有 BlueXP 災難復原所需的特定 VMware 權限的 vCenter 使用者帳戶，以執行必要的操作。</block>
+  <block id="f1b035e723ce8afdf6da2bf6a610f72a" category="admonition">我們不建議使用預設的“administrator@vsphere.com”管理員帳戶。相反，您應該在所有將參與 DR 流程的 vCenter 叢集上建立一個 BlueXP 災難復原專用使用者帳戶。有關所需特定權限的列表，請參閱<block ref="81359e3dc28c5def835ffa82482dcdcf" category="inline-link-macro-rx"></block> 。</block>
+  <block id="99c420b6898c190b219ba1e25a1f737e" category="list-text">確保所有託管受 BlueXP 災難復原保護的虛擬機器的 vCenter 資料儲存都位於 NetApp ONTAP 儲存資源上。</block>
+  <block id="8fc09ae0803e50a45a94b04ffd9379bf" category="paragraph">在 NetApp ONTAP 上使用 Amazon FSx 時，此服務支援 iSCSI 上的 NFS 和 VMFS（而非 FC）。雖然該服務支援 FC，但 Amazon FSx for NetApp ONTAP 不支援。</block>
+  <block id="aaa40fdffdb9b8b6db1fa18723bcd15b" category="list-text">確保您的 Amazon EVS vCenter 已連線至 Amazon FSx for NetApp ONTAP 儲存叢集。</block>
+  <block id="9709c4e90ccd66fb37391b201a587f74" category="list-text">確保所有受保護的虛擬機器上都安裝了 VMware 工具。</block>
+  <block id="77bc05bf2afea788cd5090d62741ed3d" category="list-text">確保您的本機網路已使用 Amazon 核准的連線方法連接到 AWS VPC 網路。我們建議您使用 AWS Direct Connect、AWS Private Link 或 AWS Site-to-Site VPN。</block>
+  <block id="8629f12efbc40885b1243e421cd3c4e5" category="summary">首先，使用 BlueXP 災難復原提供複製計畫名稱並選擇複製的來源和目標 vCenter。</block>
+  <block id="ea588d0f7f6f9983920d0d0e39b7f7d4" category="doc">建立複製計畫：步驟 1 - 在 BlueXP 災難復原中選擇 vCenter</block>
+  <block id="88e5c616aef10d1e25cd80753b2956cb" category="paragraph">首先，使用 BlueXP 災難恢復，提供複製計劃名稱並選擇複製的來源和目標 vCenter。</block>
+  <block id="3d5a9945f1a8ed1fc9f6c0e5c4eee4f6" category="list-text">為複製計劃輸入一個唯一的名稱。</block>
+  <block id="31e93095cb1f78296c5a4bfdd4647cd5" category="paragraph">複製計劃名稱僅允許使用字母數字字元和底線 (_)。</block>
+  <block id="431ee8ca0b3802786f62aed1da9220ed" category="list-text">選擇來源 vCenter 叢集。</block>
+  <block id="eb1e43df314e70cda644140a164ce3c9" category="list-text">選擇目標 vCenter 叢集。</block>
+  <block id="ecced8ecd9dc616f00d9f567714d6265" category="inline-image-macro">建立複製計劃，選擇 vCenter</block>
+  <block id="d35b9c993df2e12890476ca19b659441" category="paragraph"><block ref="d35b9c993df2e12890476ca19b659441" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b191b6f49b0765d360681184e8222444" category="inline-link-macro">建立複製計劃精靈步驟2</block>
+  <block id="5003f822127ac9a9c7547da6e214573c" category="paragraph">繼續<block ref="517e532aa0c56fe7f6a8ea55b263a992" category="inline-link-macro-rx"></block> 。</block>
+  <block id="4114dbae62a1d9485e06d7737e06fb0e" category="summary">介紹如何使用 Amazon EVS 和 Amazon FSx for NetApp ONTAP 進行 BlueXP 災難復原。選擇要使用 BlueXP 災難復原保護的虛擬機器。</block>
+  <block id="2819f8d1ba00dd72cf62a7b3471938cb" category="doc">建立複製計畫：步驟 2 - 在 BlueXP 災難復原中選擇虛擬機器資源</block>
+  <block id="6e842216ff79e66b8c0032bbe5e0bb9b" category="paragraph">選擇要使用 BlueXP 災難復原保護的虛擬機器。</block>
+  <block id="610fc4dc6e77d6a138be8851cd39ce5a" category="paragraph">有多種方法可以選擇要保護的虛擬機器：</block>
+  <block id="ce621c7003512f5ad0a4858f15d9be63" category="list-text">*選擇單一虛擬機器*：點選「虛擬機器」按鈕，您可以選擇要保護的單一虛擬機器。選擇每個虛擬機器後，該服務會將其新增至位於螢幕右側的預設資源群組。</block>
+  <block id="b4a2c2844cd161d3c25a32cbc39d36d8" category="list-text">*選擇先前建立的資源群組*：您可以使用 BlueXP 災難復原 UI 頂部的「資源群組」標籤預先建立自訂資源群組。這不是必需的，因為您可以使用其他兩種方法在複製計劃過程中建立資源組。如需詳細資訊、請參閱 <block ref="8aa3c94c171b2c9d7252afb28ee019a7" category="inline-link-macro-rx"></block>。</block>
+  <block id="3a9512d2d8c9e9f0f69ee9b535c77a83" category="list-text">*選擇整個 vCenter 資料儲存*：如果您使用此複製計畫保護大量虛擬機，則選擇單一虛擬機可能效率不高。由於 BlueXP 災難復原使用基於磁碟區的 SnapMirror 複製來保護虛擬機，因此位於資料儲存上的所有虛擬機都將作為磁碟區的一部分進行複製。在大多數情況下，您應該使用 BlueXP 災難復原保護並重新啟動位於資料儲存上的所有虛擬機器。使用此選項可指示服務將託管在選定資料儲存體上的所有虛擬機器新增至受保護虛擬機器清單中。</block>
+  <block id="28da8b5b38656ce6567ddf373453c269" category="paragraph">對於本指導說明，我們選擇整個 vCenter 資料儲存。</block>
+  <block id="7b9830c740b374eb20e5c17ea81bb1ab" category="list-title">造訪此頁面的步驟</block>
+  <block id="fc85d703602655afa214ccfc6b2ef4af" category="list-text">從「*複製計畫*」頁面繼續到「*應用程式*」部分。</block>
+  <block id="32f270bdb81f946e928264e11584d291" category="list-text">查看開啟的「*應用程式*」頁面中的資訊。</block>
+  <block id="adea8c3ade175d7b99a99a269bb1b136" category="inline-image-macro">複製計劃，應用程式頁面</block>
+  <block id="a66155ae2edcdc831993816e795e2cb4" category="paragraph"><block ref="a66155ae2edcdc831993816e795e2cb4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a538750f5afffe988fa99e8ccc24c31a" category="list-title">選擇資料儲存區的步驟：</block>
+  <block id="950f1daebd3c43f88a40dc7c475d8bf9" category="list-text">選取您想要保護的每個資料儲存旁邊的複選框。</block>
+  <block id="256c31a6dcdbd7ede927d725d062abd1" category="list-text">（可選）透過選擇資源組名稱旁的鉛筆圖示將資源組重新命名為適當的名稱。</block>
+  <block id="5cdb6865395a5a7c648eec3a4bfdc0cf" category="inline-link-macro">建立複製計劃精靈步驟3</block>
+  <block id="97ff8b16c5655b92ed53df0dd71843fa" category="paragraph">繼續<block ref="adffaab82c54ec90442b4418979dfb11" category="inline-link-macro-rx"></block> 。</block>
+  <block id="0a6ee28fe0af80a5803af0f506660dca" category="summary">介紹使用 Amazon EVS 和 Amazon FSx for NetApp ONTAP 進行 BlueXP 災難復原。在您獲得需要保護的虛擬機列表後，BlueXP 災難恢復要求您提供故障轉移映射和虛擬機配置信息，以便在故障轉移期間使用。</block>
+  <block id="843027f2f65b4fc9479458b57fe23e59" category="doc">建立複製計劃：步驟 3 - 在 BlueXP 災難復原中對應資源</block>
+  <block id="68630913837d4522c0b315316fa20616" category="paragraph">在您取得要使用 BlueXP 災難復原保護的虛擬機器清單後，請提供故障轉移期間要使用的故障轉移對應和虛擬機器設定資訊。</block>
+  <block id="d2ff096b4d4a2f5f4848cf23e9c25e0d" category="paragraph">您需要映射四種主要類型的信息：</block>
+  <block id="9cdd09a5b2d217b34fdab06b6438a3ea" category="list-text">運算資源</block>
+  <block id="30c53d4188dc7e116970e74000c9c914" category="list-text">虛擬網路</block>
+  <block id="99060ab16c8117b10834f3ad1dd732c8" category="list-text">虛擬機器重新配置</block>
+  <block id="f443508dbf8673a0459dd93afb702a1c" category="list-text">資料儲存映射</block>
+  <block id="76e8c836ee964f4fa864d6333268999a" category="paragraph">每個虛擬機器都需要前三種類型的信息。每個託管要保護的虛擬機器的資料儲存都需要進行資料儲存對應。</block>
+  <block id="daa6be73716dc44624a55224ae2ed0af" category="inline-image-macro">25.25</block>
+  <block id="35939d9e04d73376eda45b2b13922f28" category="list-text">帶有警告圖示 ( <block ref="8bb617320337469159947c2ee9a52889" category="inline-image-macro-rx" type="image"></block> ) 要求您提供地圖資訊。</block>
+  <block id="5574c8f31b4cf0921b32111194d0542a" category="list-text">標有複選圖示 ( <block ref="61783be3aca45cad43d97d02f3268d3c" category="inline-image-macro-rx" type="image"></block> ) 已映射或具有預設映射。請檢查這些映射以確保當前配置符合您的要求。</block>
+  <block id="6028265a3b574aed8497e66443fac28c" category="list-text">從「*複製計畫*」頁面繼續到「*資源映射*」部分。</block>
+  <block id="c983acef9845cc75bd306109d8a52c00" category="list-text">查看開啟的「資源映射」頁面上的資訊。</block>
+  <block id="fa1610ddfa2152b9e8f5778144e74473" category="inline-image-macro">建立複製計劃，資源映射頁面</block>
+  <block id="fe4f9d685407c3d061ae56d4bb07c056" category="paragraph"><block ref="fe4f9d685407c3d061ae56d4bb07c056" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="740199b79705af0b0465a7ac59ab8f62" category="list-text">若要開啟所需的每個映射類別，請選擇該部分旁邊的向下箭頭（*v*）。</block>
+  <block id="1d695da8be5a808b287d79de335b03ee" category="section-title">計算資源映射</block>
+  <block id="0a235ac401a30cfb7078a7aa681d6763" category="paragraph">由於一個網站可以託管多個虛擬資料中心和多個 vCenter 集群，因此您需要確定在發生故障轉移時在哪個 vCenter 集群上復原虛擬機器。</block>
+  <block id="bf6fa7ffbe6eb7d1755d6cbf9113608e" category="list-title">映射計算資源的步驟</block>
+  <block id="5f284173a4e05543b1d3f4f96396fe44" category="list-text">從位於 DR 站點的資料中心清單中選擇虛擬資料中心。</block>
+  <block id="98b8fc331440708a4300daf2feca158c" category="list-text">從所選虛擬資料中心內的叢集清單中選擇用於託管資料儲存區和虛擬機器的叢集。</block>
+  <block id="26101477fa982299ccdcb9317d953d1f" category="list-text">（可選）選擇目標叢集中的目標主機。</block>
+  <block id="8203a86e2a380c7c9948059ac5bafea4" category="paragraph">此步驟並非必需，因為 BlueXP 災難復原會選擇在 vCenter 中新增至叢集的第一個主機。此時，虛擬機器要么繼續在該 ESXi 主機上運行，要么 VMware DRS 根據配置的 DRS 規則將虛擬機器根據需要移至其他 ESXi 主機。</block>
+  <block id="6604b6a796234e71213e8532c2e0ac4d" category="list-text">（可選）提供用於放置 VM 註冊的頂級 vCenter 資料夾的名稱。</block>
+  <block id="19ec7913efad483c20da5162901ba76d" category="paragraph">這是為了滿足您的組織需求，並不是必要的。</block>
+  <block id="b98800e8cefd33a1732635723a78893e" category="inline-image-macro">建立複製計劃、計算資源</block>
+  <block id="7e7f922d36944c2c720506b1664eb3a6" category="paragraph"><block ref="7e7f922d36944c2c720506b1664eb3a6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5bb09905caece74967f31a8b9acdfec6" category="section-title">映射虛擬網路資源</block>
+  <block id="735422ecadbce7a10ea51451e2684498" category="paragraph">每個虛擬機器可以有一個或多個虛擬網路卡連接到 vCenter 網路基礎架構中的虛擬網路。為了確保每個虛擬機器在災難復原站點重新啟動後都能正確連接到所需的網絡，請確定要連接這些虛擬機器的災難復原站點虛擬網路。為此，請將本機站點中的每個虛擬網路對應到災難復原站點上的關聯網路。</block>
+  <block id="8a498354f2b10b57cd6a21abef44b84b" category="list-title">選擇每個來源虛擬網路要對應到哪個目標虛擬網絡</block>
+  <block id="be8a0f52b3f89ec52898a687a46d98d3" category="list-text">從下拉清單中選擇目標段。</block>
+  <block id="ffbce16aa92393c36f22c436fb54ba16" category="list-text">對列出的每個來源虛擬網路重複上一步驟。</block>
+  <block id="579a4f796bf2b17e04e79c92ced90e7c" category="inline-image-macro">建立複製計劃、網路資源</block>
+  <block id="b7e6f42742ecf3f82ee5efd7c340a0c4" category="paragraph"><block ref="b7e6f42742ecf3f82ee5efd7c340a0c4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="101a1653e9b88e3b9342a8d62b2a73b7" category="section-title">定義故障轉移期間虛擬機器重新配置的選項</block>
+  <block id="6d53be845ac6f380dbbdf61cb744f18f" category="paragraph">每個虛擬機器可能需要進行修改才能在 DR vCenter 站點中正常運作。「虛擬機器」部分可讓您提供必要的變更。</block>
+  <block id="727a4cbcb1c8c2a574698ac39f8a0e01" category="paragraph">預設情況下，BlueXP 災難復原對每個虛擬機器使用與來源本機站點相同的設定。這假設虛擬機器將使用相同的 IP 位址、虛擬 CPU 和虛擬 DRAM 配置。</block>
+  <block id="50fca5dd60bc7595c14d877fcc09a35b" category="section-title">網路重新配置</block>
+  <block id="7e7f909a784ac97b548d1c0c896ffda7" category="paragraph">支援的 IP 位址類型為靜態和 DHCP。對於靜態 IP 位址，您有下列目標 IP 設定：</block>
+  <block id="7ab1e4417fd162d1f894cc7ff7d92781" category="list-text">*與來源相同*：顧名思義，該服務在目標虛擬機器上使用的 IP 位址與來源站點虛擬機器上的 IP 位址相同。這要求您將上一個步驟中對應的虛擬網路配置為相同的子網路設定。</block>
+  <block id="f8711a934a3ad5b6455a62a3295f6b92" category="list-text">*與來源不同*：此服務為每個虛擬機器提供一組 IP 位址字段，這些字段必須根據目標虛擬網路（您在上一節中已對應）上使用的對應子網路進行配置。您必須為每個虛擬機器提供 IP 位址、子網路遮罩、DNS 和預設閘道值。（可選）當所有虛擬機器連接到相同子網路時，為所有虛擬機器使用相同的子網路遮罩、DNS 和網關設置，以簡化流程。</block>
+  <block id="4542f9e955c7d2139505f9e26a9ba8c7" category="list-text">*子網路對映*：此選項會根據目標虛擬網路的 CIDR 設定重新配置每個虛擬機器的 IP 位址。若要使用此功能，請確保每個 vCenter 的虛擬網路在服務中都具有已定義的 CIDR 設置，該設定已在「站點」標籤中的 vCenter 資訊中進行了變更。</block>
+  <block id="9878b8f9706d43985e2e2c7735cc56d9" category="paragraph">配置子網路後，子網路對應將對來源虛擬機器和目標虛擬機器配置使用相同的 IP 位址單元元件，但會根據提供的 CIDR 資訊取代 IP 位址的子網路元件。此功能還要求來源虛擬網路和目標虛擬網路具有相同的 IP 位址類別（ <block ref="0b93165f79d16271b738282c36905f88" prefix=" " category="inline-code"></block>受保護的虛擬機器（CIDR 的組成部分）。這可確保目標網站有足夠的 IP 位址來託管所有受保護的虛擬機器。</block>
+  <block id="ae5627da5802cb3e1a62f67e6b52b520" category="paragraph">對於此 EVS 設置，我們假設來源和目標 IP 配置相同，不需要任何額外的重新配置。</block>
+  <block id="7df032e1e3b26bcc6394803e16ee36e3" category="list-title">變更網路設定重新配置</block>
+  <block id="8faacc5c62c7b4f41379c86745cf1320" category="list-text">選擇用於故障轉移虛擬機器的 IP 位址類型。</block>
+  <block id="bd65c978b90114c74862fa1e6c2fb3a0" category="list-text">（可選）透過提供可選的前綴和後綴值為重新啟動的虛擬機器提供虛擬機器重命名方案。</block>
+  <block id="ee8fa5ed67895f2bd56b15818f6ba9db" category="paragraph"><block ref="ee8fa5ed67895f2bd56b15818f6ba9db" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a31bffcdbc06bba08556f1bcdb9efd4e" category="section-title">虛擬機器運算資源重新配置</block>
+  <block id="ac267974fdea0c3212164d8a231aa92a" category="paragraph">重新配置虛擬機器運算資源有多種選項。 BlueXP災難復原支援更改虛擬 CPU 數量、虛擬 DRAM 容量以及虛擬機器名稱。</block>
+  <block id="b84568179180e997fe88daef837b9e44" category="list-title">指定任何 VM 配置更改</block>
+  <block id="cbcc2cf21c1cabd12aef3bdc6989b58a" category="list-text">（可選）修改每個虛擬機器應使用的虛擬 CPU 數量。如果您的 DR vCenter 叢集主機的 CPU 核心數不如來源 vCenter 叢集多，則可能需要執行此操作。</block>
+  <block id="f99ff1887350d7bcdc532d81459bbcba" category="list-text">（可選）修改每個虛擬機器應使用的虛擬 DRAM 容量。如果您的 DR vCenter 叢集主機的實體 DRAM 容量不如來源 vCenter 叢集主機，則可能需要執行此操作。</block>
+  <block id="cb1cacde7ecdf6468ab80da9dc29aeaf" category="inline-image-macro">建立複製計劃、虛擬機器資源</block>
+  <block id="b7de53c41bbac8d240c11204a8336fe6" category="paragraph"><block ref="b7de53c41bbac8d240c11204a8336fe6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="41500e64be223d1286ec9ed56e434a6b" category="section-title">啟動順序</block>
+  <block id="a4e6ee2bbdad3a4d8407b47d0c2282dd" category="paragraph">BlueXP 災難復原支援根據啟動順序欄位依序重新啟動虛擬機器。「啟動順序」欄位指示每個資源組中虛擬機器的啟動方式。「啟動順序」欄位中值相同的虛擬機器將會並行啟動。</block>
+  <block id="c2aa8df176e82c22e3798ddeaf162829" category="list-title">修改啟動順序設定</block>
+  <block id="b092f60611c99cfbfadc573fde035e2b" category="list-text">（可選）修改您希望虛擬機器重新啟動的順序。此欄位可採用任意數值。 BlueXP災難復原會嘗試並行重新啟動具有相同數值的虛擬機器。</block>
+  <block id="c6abc4f53ac73ee608655639d83b459e" category="list-text">（可選）提供每次虛擬機器重新啟動之間的延遲時間。該時間將在此虛擬機器重新啟動完成後、啟動順序編號更高的虛擬機器之前註入。該時間以分鐘為單位。</block>
+  <block id="146293c3e8323d5de7fab758380284c9" category="inline-image-macro">建立複製計畫、啟動順序</block>
+  <block id="2285aa38909854998b9c1f6afd655df5" category="paragraph"><block ref="2285aa38909854998b9c1f6afd655df5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e1dc360c00065acba449e872783c58c4" category="section-title">自訂客戶作業系統操作</block>
+  <block id="95ab07a7c85a76ed75c195f0f531e106" category="paragraph">BlueXP 災難復原支援對每個虛擬機器執行一些客戶作業系統操作：</block>
+  <block id="f19c5dbfcb41e02dccb768d27c27e533" category="list-text">BlueXP 災難復原可以為執行 Oracle 資料庫和 Microsoft SQL Server 資料庫的虛擬機器進行應用程式一致的虛擬機器備份。</block>
+  <block id="357207d20bb8864f20f28c1189fce357" category="list-text">BlueXP 災難復原可以為每個虛擬機器執行適用於客戶作業系統的自訂腳本。執行此類腳本需要客戶作業系統可接受的使用者憑證，且該憑證必須具有足夠的權限才能執行腳本中列出的操作。</block>
+  <block id="abe3fe6dfef4ae381fe90e2ed48d5c00" category="list-title">修改每個虛擬機器的自訂客戶作業系統操作</block>
+  <block id="014767c5a4f585d6656d983919cb2c72" category="list-text">（可選）如果虛擬機器託管 Oracle 或 SQL Server 資料庫，請選取「建立應用程式一致副本」複選框。</block>
+  <block id="763e27fb652b34b1adbac7f8f2a991a8" category="list-text">（選用）如需在啟動過程中在客戶機作業系統中執行自訂操作，請為所有虛擬機器上傳腳本。如需在所有虛擬機器中執行單一腳本，請勾選突出顯示的核取方塊並填寫對應欄位。</block>
+  <block id="52e6c6e94ae36e19143bcae9a858c5f5" category="list-text">某些配置變更需要具有足夠權限的使用者憑證才能執行操作。在以下情況下提供憑證：</block>
+  <block id="4527e376733ff2c1c7e7ff3c53308fea" category="list-text">客戶作業系統將在虛擬機器內執行腳本。</block>
+  <block id="b81b7d3cf119376fc1e91c8228a69fc7" category="list-text">需要執行應用程式一致的快照。</block>
+  <block id="035c4fd259e9e7ca1c071c63887a2ee9" category="inline-image-macro">建立複製計畫、自訂客戶作業系統操作</block>
+  <block id="7535f841f34db2e7c20c7c0a70d45f9d" category="paragraph"><block ref="7535f841f34db2e7c20c7c0a70d45f9d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bde5353b2d9b0eb001221c6d160f86dd" category="section-title">地圖資料存儲</block>
+  <block id="d22d2b8c7fff83090c0de04eabc1fd68" category="paragraph">建立複製計畫的最後一步是確定 ONTAP 應如何保護資料儲存庫。這些設定定義了複製計畫的復原點目標 (RPO)、應維護的備份數量以及將每個 vCenter 資料儲存庫託管的 ONTAP 磁碟區複製到何處。</block>
+  <block id="ae2e5a024e6dfc76cacf68c5a3c12f2c" category="paragraph">預設情況下，BlueXP 災難復原管理自己的快照複製計畫；但是，您可以選擇指定使用現有的 SnapMirror 複製策略計畫來保護資料儲存區。</block>
+  <block id="69368a9520c0c7af90c332022566762a" category="paragraph">此外，您還可以選擇自訂要使用的資料 LIF（邏輯介面）和匯出策略。如果您不提供這些設置，BlueXP 災難復原將使用與對應協定（NFS、iSCSI 或 FC）關聯的所有資料 LIF，並使用 NFS 磁碟區的預設匯出策略。</block>
+  <block id="000dc760e354ae9b58065262bae7e919" category="list-title">配置資料儲存（卷）映射</block>
+  <block id="dd4695a3f0c9a5b23084d00c405cdb48" category="list-text">（可選）決定是否要使用現有的 ONTAP SnapMirror 複製計畫或讓 BlueXP 災難復原管理虛擬機器的保護（預設）。</block>
+  <block id="eb315e77d04175ba27a28688bbf3625b" category="list-text">提供服務開始備份的起點。</block>
+  <block id="2f8abd67ba85ff243c7fd1a96e395c01" category="list-text">指定服務應多久進行一次備份並將其複製到 DR 目標 Amazon FSx for NetApp ONTAP 叢集。</block>
+  <block id="fe0f24f024a5d540c8832cca7b543154" category="list-text">指定應保留多少個歷史備份。此服務在來源儲存叢集和目標儲存叢集上維護相同數量的備份。</block>
+  <block id="b9ddc614a5fc5a45bff5e0c4ae6d66f8" category="list-text">（可選）為每個磁碟區選擇一個預設邏輯介面（資料 LIF）。如果未選擇任何接口，則會設定目標 SVM 中所有支援磁碟區存取協定的資料 LIF。</block>
+  <block id="a367507541752e287e151e706fb73880" category="list-text">（可選）為任何 NFS 磁碟區選擇匯出策略。如果未選擇，則使用預設匯出策略</block>
+  <block id="0aca0237d66ff2a0ecd9688925663da8" category="inline-image-macro">建立複製計劃、資料儲存映射</block>
+  <block id="3e9f2fba72a59f060462aaf417bde827" category="paragraph"><block ref="3e9f2fba72a59f060462aaf417bde827" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4f3c7993b4a0eec366f6c0122e605a04" category="inline-link-macro">建立複製計劃精靈步驟4</block>
+  <block id="850540557deea1ebe75231ef329e63e0" category="paragraph">繼續<block ref="63ce8d54120138184ac6b85905fdfc39" category="inline-link-macro-rx"></block> 。</block>
+  <block id="9727ae43ed1ad8fcdb2151f2520082bb" category="summary">介紹如何使用 Amazon EVS 和 Amazon FSx for NetApp ONTAP 進行 BlueXP 災難復原。在 BlueXP 災難復原中新增所有複製計畫資訊後，請先驗證您輸入的資訊是否正確。</block>
+  <block id="9f98a6c7b0522caaf62dfb7dc693692b" category="doc">建立複製計劃：步驟 4 - 驗證 BlueXP 災難復原中的設置</block>
+  <block id="7cdc68d83dd3fc1f7568e8b25da420ff" category="paragraph">在 BlueXP 災難復原中新增複製計畫資訊後，請先驗證您輸入的資訊是否正確。</block>
+  <block id="1ec333fbe816bd59b32c3043688dce3a" category="list-text">在啟動複製計劃之前，選擇“*儲存*”來檢查您的設定。</block>
+  <block id="eaf1d2a5a85db51c895eec091024fcdb" category="paragraph">您可以選擇每個選項卡來查看設置，並透過選擇鉛筆圖示在任何選項卡上進行更改。</block>
+  <block id="02a14a8411578842546f29f1aa48aa03" category="inline-image-macro">複製計劃設定審查</block>
+  <block id="a6028cc77f12edef30126bf564d7e12c" category="paragraph">複製計劃設定審查<block ref="039af1de0de6af1a755c0ff0c52a0bf3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b25ad10e439d0b73b0ace76c8b82f32e" category="list-text">當您確認所有設定正確無誤後，選擇螢幕底部的*新增計畫*。</block>
+  <block id="5b8fe5ae3c38b512fafe1a0eda3235b7" category="inline-link-macro">驗證複製計劃</block>
+  <block id="d3137afd2501d96b6f91fb0cd319a97e" category="paragraph">繼續<block ref="9b042902ca8b7f8d8a3f6659df0dd9bf" category="inline-link-macro-rx"></block> 。</block>
+  <block id="c12bcbed25714ea7a70d91fad1a8f2ed" category="summary">介紹使用 Amazon EVS 和 Amazon FSx for NetApp ONTAP 進行 BlueXP 災難復原。在您需要保護本機網站上的 vCenter 並且已將 Amazon EVS 網站配置為使用 Amazon FSx for NetApp ONTAP 並將其用作災難復原目標後，您現在可以建立複製計畫 (RP) 來保護 Amazon FSx for NetApp ONTAP 叢集上託管的任何虛擬機器集。</block>
+  <block id="99424dc3dfb90e3bb1d8e290464f7a16" category="doc">在 BlueXP 災難復原概述中建立複製計劃</block>
+  <block id="fef9019000b5b750b8ceb6b358e2b27d" category="paragraph">在您需要保護本機網站上的 vCenter 並且已將 Amazon EVS 網站配置為使用 Amazon FSx for NetApp ONTAP 並將其用作 DR 目標後，您可以建立複製計畫 (RP) 來保護 Amazon FSx for NetApp ONTAP 叢集上託管的任何虛擬機器集。</block>
+  <block id="70d88db53e9d0a0893575ab9645014d9" category="list-title">若要開始複製計劃創建過程：</block>
+  <block id="659f5306fff0dcab09d03ea0979acdac" category="list-text">從任何 BlueXP 災難復原畫面中，選擇「*複製計畫*」標籤。</block>
+  <block id="4a43d8d7de6e2a08eef995c648a14226" category="inline-image-macro">複製計劃選項卡</block>
+  <block id="8ee3fdc5b8caacff3838ba90f649b7ec" category="paragraph"><block ref="8ee3fdc5b8caacff3838ba90f649b7ec" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="76e3d410eb73bcf4af10532c24c11b70" category="list-text">從複製計劃畫面中，選擇*新增*。</block>
+  <block id="990690bbac7cce3d6ec74f7ad2092ce9" category="inline-image-macro">複製計劃畫面</block>
+  <block id="6304a64bfb4ed5a846d90fa245489b8b" category="paragraph"><block ref="6304a64bfb4ed5a846d90fa245489b8b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="001c8602fd8350b7fdcf0372ede572df" category="paragraph">這將開啟建立複製計劃精靈。</block>
+  <block id="172e660321773233c788b5ea98a12f2b" category="inline-link-macro">建立複製計劃精靈步驟 1</block>
+  <block id="16a01d811080f0448945a1a3745c6964" category="paragraph">繼續<block ref="2602b8e50a671483fcbb79c7b3fae673" category="inline-link-macro-rx"></block> 。</block>
+  <block id="ad8d7b3f0324f4490bc3ec526980cf93" category="summary">介紹使用 Amazon EVS 和 Amazon FSx for NetApp ONTAP 進行 BlueXP 災難復原。 BlueXP災難復原是一款授權產品，必須先購買才能使用。我們提供多種類型的許可證，並且有多種購買方式。</block>
+  <block id="4f51d56e1adc27bcb44a867549b62db2" category="doc">將 BlueXP 災難復原服務​​新增至您的 Amazon EVS 的 BlueXP 帳戶</block>
+  <block id="c0f1e0513a47504d43666dd3be27308f" category="paragraph">BlueXP 災難復原是一款授權產品，必須先購買才能使用。我們提供多種類型的許可證，您可以透過多種方式購買許可證。許可證可讓您在特定時間段內保護特定數量的資料。</block>
+  <block id="a7c3607166959d0e07d06ffbc46756b3" category="paragraph">有關 BlueXP 災難復原許可證的更多信息，請參閱<block ref="04fbd25a14ae34b1a7095776d7fb43d8" category="inline-link-macro-rx"></block> 。</block>
+  <block id="2b2fba693aacdb90002ef3efdb1f458b" category="section-title">授權類型</block>
+  <block id="04a3ac6103cdf5bc7a2c80f16be09f23" category="paragraph">主要有兩種許可證類型：</block>
+  <block id="e817fd3836b1cf9d7c7644535354e579" category="inline-link-macro">30天試用許可證</block>
+  <block id="6b3361f01e2e64455153a1af81df53b0" category="list-text">NetApp 提供<block ref="0502060ba4bb25d46a7cc9c87b10aae3" category="inline-link-macro-rx"></block>您可以使用它來評估使用 ONTAP 和 VMware 資源的 BlueXP 災難復原。此許可證提供 30 天的使用期限，可無限量使用受保護的容量。</block>
+  <block id="286857925b326719163f0acf5623cc04" category="inline-link-macro">透過 AWS Marketplace 訂閱</block>
+  <block id="203aa85007f6906e905fdfd138ee68e7" category="list-text">如果您希望在 30 天試用期結束後獲得災難復原保護，請購買生產許可證。您可以透過任何 NetApp 雲端合作夥伴的市場購買此許可證，但在本指南中，我們建議您使用 Amazon AWS Marketplace 購買用於 BlueXP 災難復原的 *NetApp 智慧服務* 授權。要了解有關透過 Amazon Marketplace 購買許可證的更多信息，請參閱<block ref="e94dd95fc067f0bccce76d5e611ed19c" category="inline-link-macro-rx"></block> 。</block>
+  <block id="234355df259fd03a62f7b631b0fc7843" category="section-title">確定災難復原容量需求</block>
+  <block id="e4408096d206b1fb1a79ce8ad173f2fe" category="inline-link">儲存效率保證</block>
+  <block id="ac10f87078fcd040a1c080e865f1e1dc" category="paragraph">在購買許可證之前，您應該了解需要保護多少 ONTAP 儲存容量。使用 NetApp ONTAP 儲存的優點之一是 NetApp 儲存資料的高效率。所有儲存在 ONTAP 磁碟區中的資料（例如託管虛擬機器的 VMware 資料儲存區）都以高效的方式儲存。將資料寫入實體儲存時，ONTAP 預設採用三種儲存效率：壓縮、重複資料刪除和資料壓縮。最終結果是儲存效率在 1.5:1 到 4:1 之間，具體取決於儲存的資料類型。事實上，NetApp 提供了<block ref="9babe97d729d3736fdf7efb1977e157a" category="inline-link-rx"></block>對於某些工作負載。</block>
+  <block id="7a9d562cb820239393838fa8adecaf2a" category="paragraph">這會對您有利，因為 BlueXP 災難復原會在應用所有 ONTAP 儲存效率後計算許可容量。例如，假設您在 vCenter 中設定了一個 100 TB (TiB) 的 NFS 資料儲存區，用於託管 100 台要使用該服務保護的虛擬機器。此外，假設當資料寫入 ONTAP 磁碟區時，自動應用的儲存效率技術會使這些虛擬機器僅消耗 33 TiB（3:1 的儲存效率）。那麼BlueXP 災難復原只需獲得 33 TiB 的許可，而不是 100 TiB。與其他災難復原解決方案相比，這將大大降低您的災難復原解決方案的總擁有成本。</block>
+  <block id="1cac620f7757c79970587895922abdb9" category="list-text">若要確定託管要保護的 VMware 資料儲存庫的每個磁碟區上消耗的資料量，請透過對每個磁碟區執行 ONTAP CLI 命令來確定磁碟容量消耗： <block ref="5dcefe180a68e24e1f2547c10ed74406" prefix=" " category="inline-code"></block> 。</block>
+  <block id="b2c5103f5e7d26eaa7889c8f6de88694" category="list-text">記下每個磁碟區的「總物理已用量」值。這是 BlueXP 災難復原需要保護的資料量，您將使用該值來確定需要許可的容量。</block>
+  <block id="3d377102f65fdc239c428d801dacfcac" category="summary">介紹使用 Amazon EVS 和 Amazon FSx for NetApp ONTAP 進行 BlueXP 災難復原。雖然連接器可以安裝在您的任何網路位置，但為了實現 BlueXP 災難恢復，我們建議您將連接器安裝在災難復原站點。這可確保在主站點發生故障時，BlueXP 基於雲端的控制台 UI 能夠繼續與連接器保持聯繫，並能夠在該災難復原站點內協調復原流程。</block>
+  <block id="8c802a39edfdd0b2a599284298bd56ac" category="doc">安裝 BlueXP 連接器以進行 BlueXP 災難復原</block>
+  <block id="f1844479320277fd1e46211d122dc736" category="paragraph">BlueXP 連接器是運行在您的雲端或本機網路中的 NetApp 軟體。它執行 BlueXP 管理資料基礎架構所需的操作。連接器會持續輪詢作為服務層的 BlueXP 災難復原軟體，以了解其需要執行的任何操作。</block>
+  <block id="d98ac8362ccd7255d20fdcefbdbb5187" category="paragraph">對於 BlueXP 災難復原服務​​，執行的操作會使用針對每個對應服務的原生 API 來協調 VMware vCenter 叢集和 ONTAP 儲存實例，從而為在本機位置執行的生產虛擬機器提供保護。雖然連接器可以安裝在您的任何網路位置，但對於 BlueXP 災難恢復，我們建議您將連接器安裝在災難復原站點。這可確保在主站點發生故障時，BlueXP 基於雲端的控制台 UI 能夠繼續與連接器保持聯繫，並能夠在該災難復原站點內協調復原過程。</block>
+  <block id="e5901be946f21587f4728e9c30f5de03" category="inline-link">了解 BlueXP 部署模式 | NetApp 文檔</block>
+  <block id="7197235181daa6c664b3246064877a20" category="paragraph">若要使用服務，請以標準模式安裝連接器。若要詳細了解連接器的安裝類型，請造訪<block ref="0461f373f13493d6dbe2b5bfd88ff556" category="inline-link-rx"></block> 。</block>
+  <block id="66a46d25931269402cdb193de674535f" category="paragraph">雖然連接器對於使用該服務至關重要，但安裝步驟取決於您的需求和網路配置。提供具體的安裝說明超出了本文的範圍。</block>
+  <block id="a04a55560279e49c7d25e51d949885e0" category="inline-link">從 AWS Marketplace 建立連接器 | NetApp 文檔</block>
+  <block id="7e32586e492cc38625a195803b8f96f6" category="paragraph">使用 Amazon AWS 安裝連接器最簡單的方法是使用 AWS Marketplace。有關使用 AWS Marketplace 安裝連接器的詳細信息，請參閱<block ref="c2e19d334e5a1e3e11c5811eeb4b25db" category="inline-link-rx"></block> 。</block>
+  <block id="66390c88c62c14dc63b6422323c35074" category="summary">介紹使用 Amazon EVS 和 Amazon FSx for NetApp ONTAP 進行 BlueXP 災難復原。</block>
+  <block id="2062bf54e67da4951d69646f671e78dd" category="paragraph">客戶越來越依賴虛擬化基礎架構來處理生產運算工作負載，例如基於 VMware vSphere 的基礎架構。隨著這些虛擬機器 (VM) 對業務的重要性日益提升，客戶需要保護這些虛擬機器免受與實體運算資源相同類型的災難的影響。目前提供的災難復原 (DR) 解決方案既複雜又昂貴，而且資源密集。作為最大的虛擬化基礎架構儲存供應商，NetApp 致力於確保其客戶的虛擬機器受到與我們保護 ONTAP 儲存託管的任何類型的資料相同的保護。為了實現這一目標，NetApp 創建了 BlueXP 災難復原服務​​。</block>
+  <block id="259c572679c64fd6d53917c0e7cf4a56" category="admonition">有關 AMAZON EVS 的本文檔作為技術預覽提供。透過此預覽方案、 NetApp 保留在「一般供應」之前修改產品詳細資料、內容和時間表的權利。</block>
+  <block id="a3fe2ebdabea83ec0809c3eaabe8b916" category="paragraph">任何災難復原解決方案面臨的主要挑戰之一是，僅僅為了提供災難復原複製和復原基礎架構，就需要管理購買、配置和維護額外運算、網路和儲存資源的增量成本。保護關鍵本地虛擬資源的常見選擇是使用雲端託管虛擬資源作為災難復原複製和復原基礎架構。亞馬遜就是此類解決方案的一個例子，它可以提供與 NetApp ONTAP 託管虛擬機器基礎架構相容的經濟高效的資源。</block>
+  <block id="9139aacb33b5be42b71413b7de021e19" category="paragraph">亞馬遜推出了 Amazon Elastic VMware 服務 (Amazon EVS)，該服務可在您的虛擬私有雲 (VPC) 中支援 VMware Cloud Foundation。 AmazonEVS 提供 AWS 的彈性和效能，以及熟悉的 VMware 軟體和工具，使 Amazon EVS vCenters 可以整合到您的本地虛擬化基礎架構中作為擴充。</block>
+  <block id="79a48534a0ca0e870aba3fff8407f860" category="paragraph">雖然 Amazon EVS 附帶儲存資源，但對於儲存工作負載繁重的組織來說，使用原生儲存可能會降低其效率。在這種情況下，將 Amazon EVS 與 Amazon FSx for NetApp ONTAP 儲存 (Amazon FSxN) 結合使用可以提供更靈活的儲存解決方案。此外，當您在本機上使用 NetApp ONTAP 儲存解決方案託管 VMware 基礎架構時，將 Amazon EVS 與 FSx for ONTAP 結合使用表示您可以在本機和雲端託管基礎架構之間取得一流的資料互通性和保護功能。</block>
+  <block id="0f1d73d6c66361ba80e19cc22b86a1b5" category="paragraph">如需 Amazon FSX for NetApp ONTAP 的相關資訊、請參閱<block ref="ec78c81b4b092cfc0332e21528365cfc" category="inline-link-rx"></block>。</block>
+  <block id="dd7fe5a484ddce24b2554586a2d09b2e" category="summary">介紹如何使用 Amazon EVS 和 Amazon FSx for NetApp ONTAP 進行 BlueXP 災難復原。結合使用 BlueXP 災難復原與 Amazon EVS 和 Amazon FSx for NetApp ONTAP 來執行故障轉移、測試故障轉移、刷新資源、遷移、立即拍攝快照、停用或啟用複製計畫、清理舊快照、協調快照、刪除複製計畫以及編輯計畫。</block>
+  <block id="c356b30bc347bc1eb2fe74945fbe77be" category="doc">使用 BlueXP 災難復原執行複製計畫操作</block>
+  <block id="2732faab06b2878c1eb17b5e1b7b8db7" category="paragraph">使用 BlueXP 災難復原與 Amazon EVS 和 Amazon FSx for NetApp ONTAP 執行以下操作：故障轉移、測試故障轉移、刷新資源、遷移、立即拍攝快照、停用/啟用複製計畫、清理舊快照、協調快照、刪除複製計畫和編輯計畫。</block>
+  <block id="568e662aeb6cb5f3abafa0083f29082f" category="section-title">故障轉移</block>
+  <block id="06345068bbff395a98cb1b4d92fd19f4" category="paragraph">您可能需要執行的主要操作是您希望永遠不會發生的操作：在生產本地站點發生災難性故障時故障轉移到 DR（目標）資料中心。</block>
+  <block id="929f8200b5d5745bf0922d67a7aeb702" category="paragraph">故障轉移是一個手動啟動的過程。</block>
+  <block id="033c7809cb7db2bd9967ed41da27d653" category="list-title">存取故障轉移操作的步驟</block>
+  <block id="ffbbd53d5c02ce88979e91f9635fbac5" category="list-text">從 BlueXP 災難復原選單中，選擇*複製計畫*。</block>
+  <block id="f4a6c3bf5bb7636434870ae725dace9f" category="list-title">執行故障轉移的步驟</block>
+  <block id="f4881bd41f5a7647a1ad9e140812c61d" category="inline-image-macro">操作選單的水平點</block>
+  <block id="22e32b6ad42ff1fd375bc414d39ca7de" category="list-text">在複製計劃頁面中，選擇複製計劃的操作選項<block ref="35af0c4f66ae1fc18521df2bc2505df9" category="inline-image-macro-rx" type="image"></block> 。</block>
+  <block id="ddc60b12aae4cd21161c3a6683677d87" category="inline-image-macro">故障轉移選單選項</block>
+  <block id="c305b5d48bfc67e6e7d94d4a83c19af7" category="paragraph"><block ref="c305b5d48bfc67e6e7d94d4a83c19af7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="20c7ba7512d44b333596e490ae04d69f" category="list-text">如果生產（受保護）網站無法存取，請選擇先前建立的快照作為復原映像。為此，請選擇“選擇”。</block>
+  <block id="36205d97887256b59c0bcc3691656408" category="list-text">選擇要用於復原的備份。</block>
+  <block id="e0284ae2e32742abbe7a72ddcf9b0e50" category="list-text">（可選）選擇是否希望 BlueXP 災難復原強制執行故障轉移流程，無論複製計畫的狀態為何。這應該作為最後的手段。</block>
+  <block id="ab44d8018ba6f6491680d87eefee732a" category="list-text">（可選）選擇是否希望 BlueXP 災難復原在生產站點恢復後自動建立反向保護關係。</block>
+  <block id="059eb5c46c8a4f2a16c9ab4f012bed54" category="list-text">輸入單字“Failover”來確認您是否要繼續。</block>
+  <block id="c702a6b12de6915199f47fdf61c95c51" category="list-text">選擇“*故障轉移*”。</block>
+  <block id="4b39a048f359a09fa9de4a3100583f07" category="inline-image-macro">故障轉移對話框</block>
+  <block id="e5fb7c23867a153ae9816a76aa6c1717" category="paragraph"><block ref="e5fb7c23867a153ae9816a76aa6c1717" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cebb1167d3e78885137c837f0abf8026" category="section-title">測試容錯移轉</block>
+  <block id="accf14ae6f3081fa79e8a9271568ea7f" category="paragraph">測試故障轉移與故障轉移類似，但有兩個差異。</block>
+  <block id="ba8a22877412b2a764fcaf1377013701" category="list-text">生產站點仍然處於活動狀態，並且所有虛擬機器仍在按預期運作。</block>
+  <block id="ffe3447af4d39751e653c77bef31adce" category="list-text">BlueXP 對生產虛擬機器的災難復原保護仍在繼續。</block>
+  <block id="0455e75b717d7af99d737c181265b3e7" category="inline-link-macro">將應用程式故障轉移到遠端站點 | NetApp 文檔</block>
+  <block id="eb60cd435a46cb2a72dad0bad90e83b3" category="paragraph">這是透過在目標站點上使用原生 ONTAP FlexClone 磁碟區來實現的。要了解有關測試故障轉移的更多信息，請參閱<block ref="c5a4b51f9800467d8f72f63c8e6bec54" category="inline-link-macro-rx"></block> 。</block>
+  <block id="ac66d74de7e9b01bf8b83eda420d69b5" category="paragraph">執行測試故障轉移的步驟與執行實際故障轉移的步驟相同，只是您使用複製計劃的上下文功能表上的測試故障轉移操作。</block>
+  <block id="c49b8221e89f41789a2a43043e0ab7f0" category="list-text">選擇複製計劃的操作選項<block ref="35af0c4f66ae1fc18521df2bc2505df9" category="inline-image-macro-rx" type="image"></block> 。</block>
+  <block id="40e274aabe3c10540248c941dbd05cb8" category="list-text">從選單中選擇*測試故障轉移*。</block>
+  <block id="1a559345b987e0575e0a1c51e219c16d" category="inline-image-macro">測試故障轉移選單選項</block>
+  <block id="c32e1e17085ed0ca2906e246ecc689ec" category="paragraph"><block ref="c32e1e17085ed0ca2906e246ecc689ec" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e3806a4f1466635f7c69ffd13c31e9dc" category="list-text">決定是否要取得生產環境的最新狀態（立即拍攝快照）或使用先前建立的複製計畫備份（選擇）</block>
+  <block id="96f32afb6fcdd8b721d52f9a62dc7958" category="list-text">如果您選擇了先前建立的備份，則選擇要用於復原的備份。</block>
+  <block id="8d7c2e2984f4134b60d86fd761b977b7" category="list-text">輸入“測試故障轉移”一詞來驗證您是否要繼續。</block>
+  <block id="bf63515cf285de8238ef0309a2d05678" category="list-text">選擇 * 測試容錯移轉 * 。</block>
+  <block id="a8c93ee4438aec7783049b88778065db" category="inline-image-macro">測試故障轉移對話框</block>
+  <block id="d891ef4e4be2988a8f7404e3e66a3966" category="paragraph"><block ref="d891ef4e4be2988a8f7404e3e66a3966" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4a65f707ef88c886c08d9126f6f72c65" category="section-title">運行合規性檢查</block>
+  <block id="6710f330c40545389369acfdd947c822" category="paragraph">預設情況下，合規性檢查每三小時運行一次。您隨時都可以手動執行合規性檢查。</block>
+  <block id="6ac022abcddbfb10ff9a36fc1114e3b4" category="list-text">選擇“操作”選項<block ref="2fddd650b01c7f9674be856867aae05d" category="inline-image-macro-rx" type="image"></block>複製計劃旁。</block>
+  <block id="324da46f7d1dc598142515e5f155488c" category="list-text">從複製計畫的操作選單中選擇*執行合規性檢查*選項：</block>
+  <block id="f08f80a5eaf7192568c9739fc7270c46" category="inline-image-macro">運行合規性檢查選單選項</block>
+  <block id="6cba37ba047ae347eaaaaf21a41e3c59" category="paragraph"><block ref="6cba37ba047ae347eaaaaf21a41e3c59" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a2599e121910c54c28626814ebb5a109" category="list-text">若要變更 BlueXP 災難復原自動執行合規性檢查的頻率，請從複製計畫的作業選單中選擇*編輯計畫*選項。</block>
+  <block id="5a3b6e2d03ca148a71790459c4bc4819" category="section-title">刷新資源</block>
+  <block id="a612a35c47d9f35be9b55995ee6cb4be" category="paragraph">每當您對虛擬基礎架構進行變更（例如新增或刪除虛擬機器、新增或刪除資料儲存區，或在資料儲存區之間移動虛擬機器）時，您都需要在 BlueXP 災難復原服務​​中對受影響的 vCenter 叢集執行刷新。該服務預設每 24 小時自動執行一次刷新，但手動刷新可確保最新的虛擬基礎架構資訊可用，並將其納入災難復原保護的考量。</block>
+  <block id="2a713d2af75a9ff3c8198a63eadd3dd6" category="paragraph">有兩種情況需要刷新：</block>
+  <block id="8f6b3dc59a290a90778b85f93d204e04" category="list-text">vCenter 刷新：每當在 vCenter 群集中新增、刪除或移出虛擬機器時，執行 vCenter 刷新：</block>
+  <block id="bb2c5ba75ada770045e8e19979f779ff" category="list-text">複製計劃刷新：每當虛擬機器在同一來源 vCenter 叢集中的資料儲存之間移動時，執行複製計劃刷新。</block>
+  <block id="53172f45c3f78e0f0a061b9894edb469" category="image-alt">刷新資源選單選項</block>
+  <block id="10b5b21ed1ee90eca305b558caf7d03b" category="section-title">移轉</block>
+  <block id="a3e4a29e1d44dad8e2034cf381100cf8" category="paragraph">雖然 BlueXP 災難復原主要用於災難復原用例，但它也可以支援將一組虛擬機器從來源站點一次遷移到目標網站。這可以用於協同遷移到雲端的項目，也可以用於避免災難——例如惡劣天氣、政治衝突或其他潛在的暫時性災難事件。</block>
+  <block id="36a6fe238d0277d3060c69841bde3fef" category="list-text">若要將複製計畫中的虛擬機器移至目標 Amazon EVS 集群，請從複製計畫的操作選單中選擇*遷移*：</block>
+  <block id="b90eea17869e8ebbc46d383dec36f3ea" category="image-alt">遷移選單選項</block>
+  <block id="11e33978297a963679c0024ac124cb29" category="list-text">在「遷移」對話方塊中輸入資訊。</block>
+  <block id="b0a94d0ad57a282321e08a6112475ed3" category="section-title">立即拍攝快照</block>
+  <block id="3b51f6a2afb744108dc17e8832a59b3c" category="paragraph">您可以隨時立即建立複製計劃的快照。此快照包含在複製計劃的快照保留計數設定的 BlueXP 災難復原考慮因素中。</block>
+  <block id="3e92c173af93522420b1ed9f2a158fc5" category="list-text">若要立即拍攝複製計畫資源的快照，請在複製計畫的操作選單上選擇*立即拍攝快照*：</block>
+  <block id="477b039d0d8b7335fba316394ab00728" category="image-alt">立即拍攝快照選單選項</block>
+  <block id="b79fde821703aeeb373761de4bdb405a" category="section-title">停用或啟用複製計劃</block>
+  <block id="71b68393c3d6f6b900ba97b739bc2f19" category="paragraph">您可能需要暫時停止複製計劃來執行某些可能會影響複製過程的操作或維護。該服務提供了停止和啟動複製的方法。</block>
+  <block id="617b3e452b60d43e9d805106e772b377" category="list-text">若要暫時停止複製，請在複製計畫的操作選單上選擇*停用*。</block>
+  <block id="b811b71901befdd021e2e8bc473fe80d" category="list-text">若要重新啟動複製，請在複製計畫的操作選單上選擇*啟用*。</block>
+  <block id="b63cfe13603d1211e9388962694b20b6" category="paragraph">當複製計劃處於活動狀態時，「*啟用*」指令將顯示為灰色。當複製計劃處於停用狀態時，「*停用*」指令將顯示為灰色。</block>
+  <block id="d88986f4db78f1f6136188fe813b4670" category="image-alt">停用/啟用選單選項</block>
+  <block id="fb5d4ab92a440f8da6d5245c90702cd8" category="paragraph">您可能需要清理來源網站和目標網站上保留的舊快照。如果複製計劃的快照保留計數發生更改，則可能會發生這種情況。</block>
+  <block id="9ead1435f555cbe5194ac03aa3f14153" category="list-text">若要手動刪除這些舊快照，請從複製計畫的操作選單中選擇*清理舊快照*。</block>
+  <block id="776f371e9915a30a6e7a35215c9f6a31" category="image-alt">清理舊快照選單選項</block>
+  <block id="931f869d33d2ed4eb4467347cbb6c599" category="paragraph">由於本服務會協調 ONTAP 磁碟區快照，因此 ONTAP 儲存管理員可以在服務不知情的情況下使用 ONTAP 系統管理員、ONTAP CLI 或 ONTAP REST API 直接刪除快照。該服務會每 24 小時自動刪除來源叢集上所有不在目標叢集上的快照。不過、您可以隨需執行此作業。此功能可讓您確保所有站台的快照一致。</block>
+  <block id="2aea80cc7878ee06ac853bd5825acb61" category="list-text">若要從來源叢集中刪除目標叢集上不存在的快照，請從複製計畫的操作選單中選擇*協調快照*。</block>
+  <block id="910e6231110d3f8f9c342ffd45869c29" category="image-alt">協調快照選單選項</block>
+  <block id="1a6a6c930de0933fd7db6de4d1dc477e" category="section-title">刪除複製計劃</block>
+  <block id="9309fcfe23272451df79fcb4773985df" category="paragraph">如果不再需要複製計劃，您可以將其刪除。</block>
+  <block id="e241fe7ce1ba08d73054f679cb698007" category="list-text">若要刪除複製計劃，請從複製計劃的上下文功能表中選擇“*刪除*”。</block>
+  <block id="d213af6118a6949387ba381bee0bb7f1" category="image-alt">刪除選單選項</block>
+  <block id="846afbe1ece5e037b307cf0360a40102" category="paragraph">兩項操作會定期自動執行：測試故障轉移和合規性檢查。</block>
+  <block id="96e2d810b99dbb7ce1dd1f69c7f5b3a0" category="list-text">若要變更這兩個操作中的任一個的計劃，請選擇複製計劃的*編輯計劃*。</block>
+  <block id="f90ed7446ee302336082ca6e7a8728d7" category="image-alt">編輯時間表選單選項</block>
+  <block id="9d74fe59f9a87947edf62917622cab78" category="section-title">更改合規性檢查間隔</block>
+  <block id="43ab0a50eaca605fa6eb7379ca9cd35c" category="paragraph">預設情況下，合規性檢查每三小時執行一次。您可以將其變更為 30 分鐘到 24 小時之間的任意間隔。</block>
+  <block id="711fdca29a368838868cdb8b66f5a25c" category="paragraph">若要變更此間隔，請變更「編輯計畫」對話方塊中的「頻率」欄位：</block>
+  <block id="0ab78235e06733ff844354f29286ea23" category="image-alt">合規性檢查時間表</block>
+  <block id="8f5df8633aaecbef608d9f81c44f3e01" category="section-title">安排自動測試故障轉移</block>
+  <block id="5ec888c1fbbe1d4b124a9f90e95da2a9" category="paragraph">預設情況下，測試故障轉移是手動執行的。您可以安排自動測試故障轉移，這有助於確保您的複製計劃按預期執行。要了解有關測試故障轉移過程的更多信息，請參閱<block ref="d58fab57695dd294173a1098cf8b113b" category="inline-link-macro-rx"></block> 。</block>
+  <block id="f05be0f99c71d57183f9a4476e824824" category="list-title">安排測試故障轉移的步驟</block>
+  <block id="f3a1acf074fe227d89274501b493c1ab" category="list-text">選擇*運行故障轉移*。</block>
+  <block id="fcae7526a431169e3f609e220077c278" category="list-text">選取*依計畫執行測試故障轉移*複選框。</block>
+  <block id="6826a637ec211049ebd15b1557d244cd" category="list-text">（可選）選取*使用按需快照進行計劃測試故障轉移*。</block>
+  <block id="f4ed67dfc5fcda264bcb9e52308fcb69" category="list-text">在重複下拉式選單中選擇間隔類型。</block>
+  <block id="2dad2f5282a0f02ee2cf3dd2668245d9" category="list-text">選擇何時執行測試故障轉移</block>
+  <block id="6466fec301c85db6711549707f814c6d" category="list-text">每週：選擇星期幾</block>
+  <block id="9bdde146f3734db431d846a9b67c14be" category="list-text">每月：選擇月份中的日期</block>
+  <block id="1a45def86f00623d408295cfcdeaf9c7" category="list-text">選擇執行測試故障轉移的時間</block>
+  <block id="d286831c6fab295be218cee5293be970" category="list-text">選擇開始日期。</block>
+  <block id="9662b1330eade6367225de0265b6ab4c" category="list-text">決定是否希望服務自動清理測試環境，以及希望測試環境在清理過程開始之前運行多長時間。</block>
+  <block id="fd859d2ad3a0f7f4658b9ab4b3f761a3" category="image-alt">編輯計劃測試故障轉移</block>
+  <block id="8608cf17c3f258a4509ebf3c91882d39" category="summary">使用 Amazon EVS 和 Amazon FSxN 的 BlueXP 災難復原解決方案概述。</block>
+  <block id="2d12473c9d31db5d5a029ace437be2ba" category="doc">使用 Amazon EVS 和 Amazon FS 為 NetApp ONTAP 進行 BlueXP 災難復原的解決方案概述</block>
+  <block id="827916298fcdb6ea05601d2539662179" category="paragraph">BlueXP 災難復原是託管在 BlueXP 軟體即服務環境中的增值服務，它依賴 BlueXP 核心架構。 BlueXP中用於 VMware 保護的災難復原服務​​由幾個主要元件組成。</block>
+  <block id="fe9fdb931480bc69810bdbb893d31164" category="paragraph">有關 BlueXP 災難復原解決方案的完整概述，請參閱<block ref="aaf343642f2ab725a2ff6fd93343dece" category="inline-link-macro-rx"></block> 。</block>
+  <block id="dcf4eaae5b7bdb68e0250499844bbcb5" category="paragraph">如果您想要將本機 VMware 託管的虛擬機器保護到 Amazon AWS，請使用該服務透過 Amazon FSx for NetApp ONTAP 儲存託管資料儲存備份至 Amazon EVS。</block>
+  <block id="562f4ec7d85420cef97dbbe985cc8083" category="paragraph">下圖顯示了該服務如何使用 Amazon EVS 保護您的虛擬機器。</block>
+  <block id="beb72ff0d6394d9b5dcea1009ef441bc" category="inline-image-macro">使用 Amazon EVS 和 FSx for ONTAP 的 BlueXP 災難復原概述</block>
+  <block id="e7f96e3d7df592d32d84823f40e1fade" category="paragraph">使用 Amazon EVS 和 FSx for ONTAP 的 BlueXP 災難復原概述<block ref="ae6a61e6ad048345581bdd81689298c5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="15c9bef1ed46153c52fda03a9fab4114" category="list-text">Amazon EVS 部署在您的帳戶中的單一可用區 (AZ) 配置中以及您的虛擬私有雲 (VPC) 內。</block>
+  <block id="a11362436af6843b2406e8f85c0484cf" category="list-text">FSx for ONTAP 檔案系統與 Amazon EVS 部署在相同可用區中。此檔案系統可透過彈性網路介面 (ENI)、VPC 對等連接或 AmazonTransit 閘道直接連接至 Amazon EVS。</block>
+  <block id="f4a3a5cbc3485bfaddfa0155cb5cd3b2" category="list-text">NetApp BlueXP 連接器已安裝在您的 VPC 中。 BlueXP連接器託管多個資料管理服務（稱為代理），包括 BlueXP 災難復原代理，該代理負責管理您本地實體資料中心和 Amazon AWS 託管資源上的 VMware 基礎架構的災難復原。</block>
+  <block id="9bee8355a7cdefc29b053e9b3c88fb8b" category="list-text">BlueXP 災難復原代理程式安全地與 BlueXP 雲端託管服務通訊以接收任務，並將這些任務分發到適當的內部部署和 AWS 託管的 vCenter 和 ONTAP 儲存執行個體。</block>
+  <block id="3f7c8b2439e1827cd25075624d026918" category="list-text">您可以使用 BlueXP 雲端託管 UI 控制台建立複製計劃，指示應保護的虛擬機器、應保護這些虛擬機器的頻率，以及在從內部網站發生故障轉移時重新啟動這些虛擬機器所需執行的程序。</block>
+  <block id="4bac4e102e6c979bf229fc5de1c9333b" category="list-text">複製計畫決定哪些 vCenter 資料儲存區託管受保護的虛擬機，以及託管這些資料儲存區的 ONTAP 磁碟區。如果 FSx for ONTAP 叢集上尚不存在磁碟區，BlueXP 災難復原會自動建立這些磁碟區。</block>
+  <block id="2b7f0130e9379c81a15287a813fe65da" category="list-text">為每個已識別的來源 ONTAP 磁碟區與每個目標 FSx for ONTAP 託管 ONTAP 磁碟區建立 SnapMirror 關係，並根據複製計畫中使用者提供的 RPO 建立複製計畫。</block>
+  <block id="4e87308c8d965550dc58bd69a92f3136" category="list-text">如果主站點發生故障，管理員會在 BlueXP 控制台內啟動手動故障轉移程序，並選擇備份作為還原點。</block>
+  <block id="0849675035707d4b6e0667b3fb89d269" category="list-text">BlueXP 災難復原代理程式啟動 FSx for ONTAP 所託管的資料保護磁碟區。</block>
+  <block id="e49a8f44b1507573b41346a957317fdc" category="list-text">該代理程式向 Amazon EVS vCenter 註冊每個已啟動的 FS​​x for ONTAP 卷，向 Amazon EVS vCenter 註冊每個受保護的虛擬機，並根據複製計劃中包含的預定義規則啟動每個虛擬機。</block>
+  <block id="a75372b318b93c0a6de6b9b4b2b710ec" category="doc">驗證 BlueXP 災難復原中一切正常</block>
+  <block id="c6c4a414ae0fccd70f534087b621762b" category="paragraph">在 BlueXP 災難復原中新增複製計畫後，您將返回「複製計畫」頁面，您可以在其中查看複製計畫及其狀態。您應該驗證複製計劃是否處於「健康」狀態。如果不是，您應該檢查複製計劃的狀態並糾正所有問題，然後再繼續。</block>
+  <block id="2a52c80686f82be8aa2a3e4f3ff7df31" category="inline-image-macro">複製計劃頁面</block>
+  <block id="d257cabecabcc55ca3f6b7a3cd75ac7b" category="paragraph">圖：複製計劃頁面<block ref="de37ff63ad6c037e77db1184d40c66f9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="976fd34ddaf02a83851d294cc50564d0" category="paragraph">BlueXP 災難復原會執行一系列測試，以驗證所有元件（ONTAP 叢集、vCenter 叢集和虛擬機器）是否可存取且處於服務保護虛擬機器所需的正確狀態。這稱為合規性檢查，會定期運行。</block>
+  <block id="cfd75699026c8ccf116d7cc822922048" category="paragraph">在複製計劃頁面中，您可以看到以下資訊：</block>
+  <block id="ccb238eb4af46f131c1c95298789caf9" category="list-text">上次合規性檢查的狀態</block>
+  <block id="ff73ef921a2595317c8ebcfd745b9525" category="list-text">複製計劃的複製狀態</block>
+  <block id="dae6a888dd76ab8af615bbd14bb0d970" category="list-text">受保護（來源）網站的名稱</block>
+  <block id="faf0d22a90ba1218a90118919579cdab" category="list-text">複製計劃保護的資源組列表</block>
+  <block id="693eee995124fe1d32610314f6e68c30" category="list-text">故障轉移（目標）站點的名稱</block>
+  <block id="12033a3d8e0d7f3fb480fa5483fa00f3" category="sidebar">將 BlueXP 災難復原與 Amazon EVS 結合使用</block>
+  <block id="b1334639d8bfe77d3582e2378dc38a08" category="sidebar">使用 Amazon EVS 的 BlueXP 災難復原概述</block>
+  <block id="c0c4b60d27032c028c91440e9d3be949" category="sidebar">解決方案總覽</block>
+  <block id="28312bff8dd6c634a03c918b3596d5f7" category="sidebar">安裝BlueXP Connector</block>
+  <block id="c56bd649320b98b22e1f05d40935c0f6" category="sidebar">為 Amazon EVS 配置 BlueXP 災難復原</block>
+  <block id="4f94a228aaf45b495bf1d0a2993b0783" category="sidebar">Amazon EVS 的先決條件</block>
+  <block id="d1b981f857dccafd90e2d47d3dd9b84c" category="sidebar">為 Amazon EVS 新增陣列</block>
+  <block id="429e79e40c66df3fe31a40b9087107f5" category="sidebar">為 Amazon EVS 新增 BlueXP 災難復原</block>
+  <block id="456d07ca1e92ff93932f43241f478198" category="sidebar">為 Amazon EVS 新增 vCenter 集群</block>
+  <block id="ad115bee9be4ef501777f6719a0fe513" category="sidebar">為 Amazon EVS 建立複製計劃</block>
+  <block id="46942b0e0b0069545de09c85b8d0a7fb" category="sidebar">為 Amazon EVS 建立複製計劃概述</block>
+  <block id="7b797e6e5b968f50231b064bf226a71c" category="sidebar">為 Amazon EVS 建立複製計畫步驟 1</block>
+  <block id="c881eec8e2a2e7f61032f79bd49b2dce" category="sidebar">為 Amazon EVS 建立複製計畫第 2 步</block>
+  <block id="9f67090f69f4143c82e2283b43a86ad9" category="sidebar">為 Amazon EVS 建立複製計畫步驟 3</block>
+  <block id="3a83143b77a0b90d82bf03cbf43e4443" category="sidebar">為 Amazon EVS 建立複製計畫步驟 4</block>
+  <block id="5a72de72f8b0ba4525e25ce937621889" category="sidebar">驗證 Amazon EVS 的複製計劃</block>
+  <block id="f260d0f12b515f0ab789c0349e49a0fc" category="sidebar">執行複製計劃操作</block>
 </blocks>

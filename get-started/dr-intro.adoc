@@ -20,9 +20,12 @@ BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢�
 * 另一個內部部署的 NFS 型 VMware 環境、搭配 ONTAP 儲存設備
 
 
+
+NOTE: 有關 AWS EVS 的此文件作為技術預覽提供。透過此預覽方案、 NetApp 保留在「一般供應」之前修改產品詳細資料、內容和時間表的權利。如需詳細資訊、請參閱 link:../reference/evs-deploy-guide-introduction.html["使用 Amazon Elastic VMware Service 和 Amazon FSx for NetApp ONTAP 介紹 BlueXP 災難復原"]。
+
 BlueXP 災難恢復使用 ONTAP SnapMirror 技術作爲災難恢復站點的複製傳輸。這可在主要和次要站台上實現業界最佳的儲存效率（壓縮和重複資料刪除）。
 
-image:draas-onprem-to-cloud-onprem.png["顯示 VMware BlueXP 災難恢復元件的圖表"]
+image:../use/evs-bluexp-architecture.png["顯示 VMware BlueXP 災難恢復元件的圖表"]
 
 
 
@@ -48,6 +51,8 @@ BlueXP 災難恢復可讓您充分運用多項 NetApp 技術來達成下列目�
 * 在發生災難時，可依需求將主要站台容錯移轉至災難恢復站台，該站台可以是採用 Amazon FSX for NetApp ONTAP 的 AWS 上的 VMware Cloud ，或是採用 ONTAP 的內部部署 VMware 環境。
 * 災難解決後、可隨需從災難恢復站台容錯回復至主要站台。* 將虛擬機器或資料存放區分組為邏輯資源群組，以便有效管理。
 
+
+image:../use/evs-use-cases.png["該圖展示了 BlueXP 災難復原對 VMware 的用例"]
 
 
 NOTE: vSphere 伺服器的組態是在 vSphere Server 的 BlueXP 災難恢復之外完成。

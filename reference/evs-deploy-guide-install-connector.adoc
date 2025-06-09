@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: reference/evs-deploy-guide-install-connector.html 
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
+summary: 介紹使用 Amazon EVS 和 Amazon FSx for NetApp ONTAP 進行 BlueXP 災難復原。雖然連接器可以安裝在您的任何網路位置，但為了實現 BlueXP 災難恢復，我們建議您將連接器安裝在災難復原站點。這可確保在主站點發生故障時，BlueXP 基於雲端的控制台 UI 能夠繼續與連接器保持聯繫，並能夠在該災難復原站點內協調復原流程。 
+---
+= 安裝 BlueXP 連接器以進行 BlueXP 災難復原
+:allow-uri-read: 
+
+
+[role="lead"]
+BlueXP 連接器是運行在您的雲端或本機網路中的 NetApp 軟體。它執行 BlueXP 管理資料基礎架構所需的操作。連接器會持續輪詢作為服務層的 BlueXP 災難復原軟體，以了解其需要執行的任何操作。
+
+對於 BlueXP 災難復原服務​​，執行的操作會使用針對每個對應服務的原生 API 來協調 VMware vCenter 叢集和 ONTAP 儲存實例，從而為在本機位置執行的生產虛擬機器提供保護。雖然連接器可以安裝在您的任何網路位置，但對於 BlueXP 災難恢復，我們建議您將連接器安裝在災難復原站點。這可確保在主站點發生故障時，BlueXP 基於雲端的控制台 UI 能夠繼續與連接器保持聯繫，並能夠在該災難復原站點內協調復原過程。
+
+若要使用服務，請以標準模式安裝連接器。若要詳細了解連接器的安裝類型，請造訪 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解 BlueXP 部署模式 | NetApp 文檔"^] 。
+
+雖然連接器對於使用該服務至關重要，但安裝步驟取決於您的需求和網路配置。提供具體的安裝說明超出了本文的範圍。
+
+使用 Amazon AWS 安裝連接器最簡單的方法是使用 AWS Marketplace。有關使用 AWS Marketplace 安裝連接器的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-marketplace.html["從 AWS Marketplace 建立連接器 | NetApp 文檔"^] 。
