@@ -16,6 +16,10 @@ summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自
 
 這類計畫有時稱為 _BluePrints_ 。
 
+*必要的BlueXP角色* 組織管理員、資料夾或專案管理員、災難復原管理員、災難復原故障轉移管理員或災難復原應用程式管理員角色。
+
+link:../reference/dr-reference-roles.html["了解BlueXP disaster recovery中的使用者角色和權限"]。https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的 BlueXP 存取角色"^]。
+
 您可以建立複寫計畫、也可以編輯法規遵循與測試的排程。
 
 您可以保護多個資料存放區上的多個 VM 。BlueXP  災難恢復會為所有託管受保護 VM 資料存放區的 ONTAP 磁碟區建立 ONTAP 一致性群組。

@@ -16,6 +16,8 @@ summary: 存取 BlueXP 中的服務、開始使用 BlueXP 災難恢復功能。
 
 若要登入BlueXP、您可以使用NetApp 支援網站 您的不實證資料、也可以使用電子郵件和密碼註冊NetApp雲端登入。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["深入瞭解登入"^]。
 
+特定任務需要特定的BlueXP使用者角色。link:../reference/dr-reference-roles.html["了解BlueXP disaster recovery中的使用者角色和權限"]。https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的 BlueXP 存取角色"^]。
+
 .步驟
 . 開啟網頁瀏覽器、前往 https://console.bluexp.netapp.com/["BlueXP主控台"^]。
 +

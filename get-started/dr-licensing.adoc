@@ -14,6 +14,10 @@ summary: 有了 BlueXP 災難恢復、您可以使用不同的授權方案、包
 [role="lead"]
 有了 BlueXP 災難恢復、您可以使用不同的授權方案、包括免費試用、隨用隨付訂閱、或自帶授權。
 
+*必要的BlueXP角色* 組織管理員、資料夾或專案管理員、災難復原管理員或災難復原應用程式管理員角色。
+
+link:../reference/dr-reference-roles.html["了解BlueXP disaster recovery中的使用者角色和權限"]。https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的 BlueXP 存取角色"^]。
+
 您可以使用下列授權類型：
 
 * 註冊 30 天免費試用。

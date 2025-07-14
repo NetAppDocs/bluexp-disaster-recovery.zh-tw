@@ -14,6 +14,10 @@ summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自
 [role="lead"]
 發生災難時、請將主要內部部署 VMware 網站容錯移轉至其他內部部署 VMware 網站或 VMware Cloud on AWS 。您可以測試容錯移轉程序、確保在需要時成功。
 
+*必要的BlueXP角色* 組織管理員、資料夾或專案管理員、災難復原管理員或災難復原故障轉移管理員角色。
+
+link:../reference/dr-reference-roles.html["了解BlueXP disaster recovery中的使用者角色和權限"]。https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的 BlueXP 存取角色"^]。
+
 在容錯移轉期間、會使用最新的 SnapMirror 快照複本。或者、您可以從時間點快照（根據 SnapMirror 的保留原則）選取特定快照。如果您面臨勒索軟體等毀損事件、而最近的複本已經遭到入侵或加密、則時間點選項會很有幫助。BlueXP 災難恢復會及時顯示所有可用點。
 
 此程序會因正式作業站台是否正常運作而有所不同、而且您是因為關鍵基礎架構故障以外的原因而執行災難恢復站台的容錯移轉：

@@ -4,6 +4,8 @@ title: 參考資料
 entries:
 - title: BlueXP 災難恢復所需的 vCenter 權限
   url: "/reference/vcenter-privileges.html"
+- title: BlueXP disaster recovery復原角色和權限
+  url: "/reference/dr-reference-roles.html"
 - title: 將 BlueXP 災難復原與 Amazon EVS 結合使用
   entries:
   - title: 使用 Amazon EVS 的 BlueXP 災難復原概述

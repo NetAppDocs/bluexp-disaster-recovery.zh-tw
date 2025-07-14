@@ -1,0 +1,264 @@
+---
+sidebar: sidebar 
+permalink: reference/dr-reference-roles.html 
+keywords: how bluexp disaster recovery works, what is disaster recovery, bluexp, vmware, vcenter, draas, replicate, failover, failback, fail over, fail back, vmware cloud, netapp intelligent services 
+summary: BlueXP disaster recovery採用角色來管理每個使用者對特定功能和操作的存取權。 
+---
+= BlueXP disaster recovery基於角色的存取功能
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP disaster recovery採用角色來管理每個使用者對特定功能和操作的存取權。
+
+該服務使用特定於BlueXP disaster recovery的以下角色。
+
+* *災難復原管理員*：在BlueXP disaster recovery中執行任何操作。
+* *災難復原故障轉移管理員*：在BlueXP disaster recovery中執行故障轉移和遷移操作。
+* *災難復原應用程式管理員*：建立和修改複製計畫並啟動測試故障轉移。
+* *災難復原檢視器*：查看BlueXP disaster recovery中的信息，但不能執行任何操作。
+
+
+這些角色特定於BlueXP disaster recovery，與BlueXP中使用的平台角色不同。如需所有 BlueXP  平台角色的詳細資訊，請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["BlueXP  設定與管理文件"^]。
+
+下表列出了每個BlueXP disaster recovery角色可以執行的操作。
+
+[cols="30,20a,20a,20a,20a"]
+|===
+| 功能與行動 | 災難復原管理員 | 災難復原故障轉移管理員 | 災難復原應用程式管理員 | 災難復原檢視器 
+
+
+| 檢視儀表板和所有索引標籤  a| 
+是的
+ a| 
+是的
+ a| 
+是的
+ a| 
+是的
+
+
+
+| 開始免費試用  a| 
+是的
+ a| 
+否
+ a| 
+否
+ a| 
+否
+
+
+
+| 開始探索工作負載  a| 
+是的
+ a| 
+否
+ a| 
+否
+ a| 
+否
+
+
+
+| 查看許可證資訊  a| 
+是的
+ a| 
+是的
+ a| 
+是的
+ a| 
+是的
+
+
+
+| 啟動許可證  a| 
+是的
+ a| 
+否
+ a| 
+是的
+ a| 
+否
+
+
+
+5+| *在「網站」標籤上*： 
+
+
+| 查看網站  a| 
+是的
+ a| 
+是的
+ a| 
+是的
+ a| 
+是的
+
+
+
+| 新增、修改或刪除站點  a| 
+是的
+ a| 
+否
+ a| 
+否
+ a| 
+否
+
+
+
+5+| *在複製計劃標籤上*： 
+
+
+| 查看複製計劃  a| 
+是的
+ a| 
+是的
+ a| 
+是的
+ a| 
+是的
+
+
+
+| 查看複製計劃詳細信息  a| 
+是的
+ a| 
+是的
+ a| 
+是的
+ a| 
+是的
+
+
+
+| 建立或修改複製計劃  a| 
+是的
+ a| 
+是的
+ a| 
+是的
+ a| 
+否
+
+
+
+| 建立報告  a| 
+是的
+ a| 
+否
+ a| 
+否
+ a| 
+否
+
+
+
+| 查看快照  a| 
+是的
+ a| 
+是的
+ a| 
+是的
+ a| 
+是的
+
+
+
+| 執行故障轉移測試  a| 
+是的
+ a| 
+是的
+ a| 
+是的
+ a| 
+否
+
+
+
+| 執行故障轉移  a| 
+是的
+ a| 
+是的
+ a| 
+否
+ a| 
+否
+
+
+
+| 執行故障回復  a| 
+是的
+ a| 
+是的
+ a| 
+否
+ a| 
+否
+
+
+
+| 執行遷移  a| 
+是的
+ a| 
+是的
+ a| 
+否
+ a| 
+否
+
+
+
+5+| *在資源組標籤上*： 
+
+
+| 查看資源組  a| 
+是的
+ a| 
+是的
+ a| 
+是的
+ a| 
+是的
+
+
+
+| 建立、修改或刪除資源組  a| 
+是的
+ a| 
+否
+ a| 
+是的
+ a| 
+否
+
+
+
+5+| *在「作業監控」標籤上*： 
+
+
+| 檢視工作  a| 
+是的
+ a| 
+否
+ a| 
+是的
+ a| 
+是的
+
+
+
+| 取消作業  a| 
+是的
+ a| 
+是的
+ a| 
+是的
+ a| 
+否
+
+|===

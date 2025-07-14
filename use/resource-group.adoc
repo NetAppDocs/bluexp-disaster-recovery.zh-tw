@@ -14,6 +14,10 @@ summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自
 [role="lead"]
 新增 vCenter 站台之後，您可能會想要建立資源群組，以便依 VM 或資料存放區將 VM 群組在一起。資源群組可讓您將一組相關 VM 組織成符合您需求的邏輯群組。例如，您可以將與某個應用程式相關聯的虛擬機器分組，或是將具有類似階層的應用程式分組。另一個例子是，群組可能包含延遲開機順序，可在恢復時執行。
 
+*必要的BlueXP角色* 組織管理員、資料夾或專案管理員、災難復原管理員或災難復原應用程式管理員角色。
+
+link:../reference/dr-reference-roles.html["了解BlueXP disaster recovery中的使用者角色和權限"]。https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的 BlueXP 存取角色"^]。
+
 您可以將虛擬機器本身或虛擬機器分組在資料存放區中。
 
 您可以使用下列方法建立資源群組：

@@ -14,6 +14,14 @@ summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自
 [role="lead"]
 您可以監控所有 BlueXP 災難復原作業並確定其進度。
 
+
+
+== 檢視工作
+
+*必要的BlueXP角色* 組織管理員、資料夾或專案管理員、災難復原管理員、災難復原應用程式管理員或災難復原檢視器角色。
+
+link:../reference/dr-reference-roles.html["了解BlueXP disaster recovery中的使用者角色和權限"]。https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的 BlueXP 存取角色"^]。
+
 .步驟
 . 從 BlueXP 左側導航中，選擇 * 保護 * > * 災難恢復 * 。
 . 從頂端功能表中、選取 * 工作監控 * 。
@@ -27,6 +35,10 @@ summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自
 == 取消工作
 
 如果工作正在進行中或處於佇列狀態、而您不想繼續、您可以取消它。如果工作卡在相同的狀態、而您想要釋放佇列中的下一個作業、您可能會想要取消工作。您可能想要在逾時之前取消工作。
+
+*必要的BlueXP角色* 組織管理員、資料夾或專案管理員、災難復原管理員、災難復原故障轉移管理員或災難復原應用程式管理員角色。
+
+link:../reference/dr-reference-roles.html["了解BlueXP disaster recovery中的使用者角色和權限"]。https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的 BlueXP 存取角色"^]。
 
 .步驟
 . 從 BlueXP 左側導航中，選擇 * 保護 * > * 災難恢復 * 。

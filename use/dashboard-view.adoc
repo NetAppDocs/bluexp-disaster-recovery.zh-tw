@@ -14,6 +14,10 @@ summary: NetApp BlueXP 災難恢復是一種雲端型災難恢復服務、可自
 [role="lead"]
 使用 BlueXP 災難恢復儀表板、您可以判斷災難恢復站台和複寫計畫的健全狀況。您可以快速確定哪些站台和計畫狀況良好、中斷連線或降級。
 
+*必要的BlueXP角色* 組織管理員、資料夾或專案管理員、災難復原管理員、災難復原應用程式管理員或災難復原檢視器角色。
+
+link:../reference/dr-reference-roles.html["了解BlueXP disaster recovery中的使用者角色和權限"]。https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的 BlueXP 存取角色"^]。
+
 .步驟
 . 從 BlueXP 左側導航中，選擇 * 保護 * > * 災難恢復 * 。
 . 從 BlueXP 災難恢復主菜單中，選擇 *Dashboard * 。
