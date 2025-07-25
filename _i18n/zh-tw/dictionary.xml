@@ -2,7 +2,6 @@
 <blocks>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp以多種方式提供對BlueXP的支援。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">取得協助</block>
-  <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp以多種方式支援BlueXP及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">使用自我支援選項</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">這些選項可供免費使用、一天24小時、一週7天：</block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">文件</block>
@@ -87,16 +86,12 @@
   <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
   <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
-  <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">適用於 Google Cloud Cloud Volumes Service</block>
-  <block id="cf14bff66a8b72d3675db8ffe0f02ee3" category="list-text"><block ref="cf14bff66a8b72d3675db8ffe0f02ee3" category="inline-link-macro-rx"></block></block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">現有的客戶、擁有一個新服務客戶帳戶</block>
   <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">如果您是擁有NSS帳戶的NetApp客戶、您只需透過BlueXP註冊即可獲得支援。</block>
   <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。</block>
   <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">選取 * 使用者認證 * 。</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">選取 * 新增 NSS 認證 * 、然後遵循 NetApp 支援網站 （ NSS ）驗證提示。</block>
   <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">若要確認註冊程序是否成功、請選取「說明」圖示、然後選取 * 「支援 * 」。</block>
-  <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">螢幕擷取畫面會顯示帳戶序號和綠色核取方塊、以及註冊支援的文字。</block>
-  <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">現有客戶、但無NSS.帳戶</block>
   <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">如果您是現有的 NetApp 客戶、擁有現有的授權和序號、但沒有 NSS_ 帳戶、則需要建立一個 NSS 帳戶、並將其與您的 BlueXP 登入建立關聯。</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">《使用者登錄表》NetApp 支援網站</block>
@@ -1311,9 +1306,7 @@
   <block id="948fdcd481f1b60f64cd0a1415b8772c" category="inline-link-macro">為 Amazon EVS 啟用 BlueXP 災難復原</block>
   <block id="3b4041796a7d19952ce4f05d7ac1296e" category="list-text"><block ref="3b4041796a7d19952ce4f05d7ac1296e" category="inline-link-macro-rx"></block></block>
   <block id="48640808aa8de0e397783c9f0bf7d38c" category="inline-link-macro">將 vCenter 站點新增至 BlueXP 災難復原</block>
-  <block id="b1a91a36f01e2b398842c4fafba5b827" category="list-text"><block ref="b1a91a36f01e2b398842c4fafba5b827" category="inline-link-macro-rx"></block></block>
   <block id="4870ca95287127b763711668002ae46a" category="inline-link-macro">將 vCenter 叢集新增至 BlueXP 災難復原</block>
-  <block id="b58a5282def19b2cfa0d6a21a2fb1873" category="list-text"><block ref="b58a5282def19b2cfa0d6a21a2fb1873" category="inline-link-macro-rx"></block></block>
   <block id="77b6a574c8fd563a40ba5d3ced2f6995" category="summary">在繼續使用 BlueXP 災難復原配置 Amazon EVS 之前，您應該確保滿足幾個先決條件。</block>
   <block id="3cfd631225e4a5cd11bb7f070aa490d3" category="paragraph">具體來說，請執行以下操作：</block>
   <block id="0c16cce0fa7cbfe2c47b9b35b500ef09" category="list-text">建立一個具有 BlueXP 災難復原所需的特定 VMware 權限的 vCenter 使用者帳戶，以執行必要的操作。</block>
@@ -1628,7 +1621,6 @@
   <block id="28312bff8dd6c634a03c918b3596d5f7" category="sidebar">安裝BlueXP Connector</block>
   <block id="c56bd649320b98b22e1f05d40935c0f6" category="sidebar">為 Amazon EVS 配置 BlueXP 災難復原</block>
   <block id="4f94a228aaf45b495bf1d0a2993b0783" category="sidebar">Amazon EVS 的先決條件</block>
-  <block id="d1b981f857dccafd90e2d47d3dd9b84c" category="sidebar">為 Amazon EVS 新增陣列</block>
   <block id="429e79e40c66df3fe31a40b9087107f5" category="sidebar">為 Amazon EVS 新增 BlueXP 災難復原</block>
   <block id="456d07ca1e92ff93932f43241f478198" category="sidebar">為 Amazon EVS 新增 vCenter 集群</block>
   <block id="ad115bee9be4ef501777f6719a0fe513" category="sidebar">為 Amazon EVS 建立複製計劃</block>
@@ -1727,4 +1719,12 @@
   <block id="c63f107526be606f4a1357ceb85fa571" category="paragraph">*必要的BlueXP角色* 組織管理員、資料夾或專案管理員或災難復原管理員。</block>
   <block id="bfc307710c1f872e4dfb6ec657573e8a" category="sidebar">BlueXP disaster recovery復原角色和權限</block>
   <block id="0b6db37b4e08c0c7d93c7363682d4617" category="admonition">我們不建議使用預設的“\administrator@vsphere.com”管理員帳戶。相反，您應該在所有將參與 DR 流程的 vCenter 叢集上建立一個 BlueXP 災難復原專用使用者帳戶。有關所需特定權限的列表，請參閱<block ref="81359e3dc28c5def835ffa82482dcdcf" category="inline-link-macro-rx"></block> 。</block>
+  <block id="ba2befc5eb2af5c1c7f9d7cdbe007c3f" category="list-text"><block ref="ba2befc5eb2af5c1c7f9d7cdbe007c3f" category="inline-link-macro-rx"></block></block>
+  <block id="1ab0b0508e3ee0ed9909c87545358ccc" category="list-text"><block ref="1ab0b0508e3ee0ed9909c87545358ccc" category="inline-link-macro-rx"></block></block>
+  <block id="bbbc9b55f08bfe80f146b5207bdb7728" category="paragraph">NetApp以多種方式為BlueXP及其雲端服務提供支援。我們提供全天候 (24/7) 的大量免費自助支援選項，例如知識庫 (KB) 文章和社群論壇。您的支援註冊包含透過網路工單取得的遠端技術支援。</block>
+  <block id="1215f8190533dfdf63d2224a6d88266f" category="inline-link-macro">Google Cloud NetApp Volumes</block>
+  <block id="cb4bf32603c89d08cad17e7e7dd302f2" category="list-text"><block ref="cb4bf32603c89d08cad17e7e7dd302f2" category="inline-link-macro-rx"></block></block>
+  <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">螢幕截圖顯示了帳戶序號、綠色複選框和文字「已註冊支援」。</block>
+  <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b48bf926273d62cab06e1bce2eeec67f" category="sidebar">為 Amazon EVS 新增ONTAP儲存陣列</block>
 </blocks>

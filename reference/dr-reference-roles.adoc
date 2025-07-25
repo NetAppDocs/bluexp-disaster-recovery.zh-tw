@@ -8,7 +8,7 @@ summary: BlueXP disaster recovery採用角色來管理每個使用者對特定�
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/use
 
 
 [role="lead"]

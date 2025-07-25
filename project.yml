@@ -1,7 +1,6 @@
 ---
 settings:
   name: BlueXP disaster recovery
-  platform: cloud
   internal:
     pdf_enabled: true
     termcheck_enabled: true

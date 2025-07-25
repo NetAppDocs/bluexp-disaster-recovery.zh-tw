@@ -14,6 +14,6 @@ summary: 安裝 BlueXP Connector 後，您需要整合所有將參與 DR 過程�
 * link:evs-deploy-guide-config-prereqs.html["具有 BlueXP 災難復原的 Amazon EVS 的先決條件"]
 * link:evs-deploy-guide-config-add-arrays.html["將 ONTAP 儲存陣列新增至 BlueXP 災難復原"]
 * link:evs-deploy-guide-enable-draas.html["為 Amazon EVS 啟用 BlueXP 災難復原"]
-* link:evs-deploy-guide-config-add-sites.html["將 vCenter 站點新增至 BlueXP 災難復原"]
-* link:evs-deploy-guide-config-add-vcenters.html["將 vCenter 叢集新增至 BlueXP 災難復原"]
+* link:evs-deploy-guide-config-add-arrays.html["將 vCenter 站點新增至 BlueXP 災難復原"]
+* link:evs-deploy-guide-add-vcenters.html["將 vCenter 叢集新增至 BlueXP 災難復原"]
 
