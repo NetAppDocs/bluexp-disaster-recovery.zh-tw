@@ -547,9 +547,7 @@
   <block id="e2066cd1f4f96874fad4da9c48f8715b" category="list-text">如果您已經在使用服務、當您選取「災難恢復」時、儀表板會出現。</block>
   <block id="4701248bbe25ed364a5f0c79467e9f29" category="list-text">請先新增 vCenter 。</block>
   <block id="d780b26d8f0dcbe5b2593febbaacdb60" category="paragraph">如需詳細資訊、請參閱 <block ref="84d66f7662bc8a91a68e93706653efe2" category="inline-link-macro-rx"></block>。</block>
-  <block id="ad7911fdd21ff5752d10300d0446de95" category="section-title">試用結束後、請透過 AWS Marketplace 訂閱</block>
   <block id="acce4a6c25bc51b4930085d68e3cb0cd" category="list-text">在 BlueXP 災難恢復中、您會看到免費試用即將到期的訊息。在訊息中、選取 * 訂閱或購買授權 * 。</block>
-  <block id="584a50ae29d097d233ebd86ad952d305" category="list-text">選取 * 在 AWS Marketplace* 中訂閱。</block>
   <block id="717132172ed170ccb94cc8674c35dfbd" category="list-text">當您返回 BlueXP 災難恢復時、會有一則訊息指出您已訂閱。</block>
   <block id="d66d706cd022ab39ed6479a713135515" category="paragraph"><block ref="d66d706cd022ab39ed6479a713135515" category="inline-image-macro-rx" type="image"></block></block>
   <block id="991e816286764c3a5ea9b023c35e1d77" category="paragraph"><block ref="991e816286764c3a5ea9b023c35e1d77" category="inline-image-macro-rx" type="image"></block></block>
@@ -1155,10 +1153,6 @@
   <block id="981aed0e5104e08339386a1c5379d13f" category="paragraph">有關跳過保護的詳細信息，請參閱<block ref="1cbf59ee3e77dd0082612a21b0900f81" category="inline-link-rx"></block>。</block>
   <block id="a104b856c104ac1d20a94ca4ed8ba3f8" category="paragraph">選取此選項時， BlueXP  災難恢復不會設定備份排程。不過，您仍需要設定保留排程，因為仍可能需要拍攝快照來執行測試，容錯移轉和容錯回復作業。</block>
   <block id="05861d9bf485f3b7dc6f56871ad28892" category="paragraph">如需在複寫計畫中使用外部快照解決方案的詳細資訊，請參閱<block ref="5cf2140f2775e5f1ccc24bb836a069a3" category="inline-link-rx"></block>。</block>
-  <block id="d1b560a6ba275c266fdac08bcd1ba2d5" category="list-text">透過 Amazon Web Services （ AWS ） Marketplace 購買 NetApp Intelligent Services* 的隨用隨付（ PAYGO ）訂閱。</block>
-  <block id="c14eff79606049ee3db744788f842d7d" category="list-text">購買內含 Amazon Web Services （ AWS ） Marketplace 的 * NetApp Intelligent Services* 隨用隨付（ PAYGO ）訂閱。</block>
-  <block id="cbb303696e69ece252e4279cf7e650f4" category="paragraph">免費試用結束後，您可以向 NetApp 購買授權，或透過 AWS Marketplace 訂閱 * NetApp Intelligent Services* 。本程序提供如何直接在 AWS Marketplace 中訂閱的高階概觀。</block>
-  <block id="05d7d2c6dcb40b2ad3598ed40596c890" category="list-text">使用 AWS Marketplace 訂閱 * NetApp Intelligent Services* 和 * BlueXP  災難恢復 * 。</block>
   <block id="ddbdc0fdada8e6466e651115cefbafee" category="section-title">地圖資源 &gt; 運算資源區段</block>
   <block id="c74f8b35838f9f38552c33a8c05ad01a" category="paragraph">選取 * 運算資源 * 旁的向下箭頭。</block>
   <block id="5044b19178ff5f8de4c9c0246fe12b78" category="admonition">如果 vCenter 已設定分散式資源排程器（ DRS ）來管理叢集中的多部主機、則不需要選取主機。如果您選取主機、 BlueXP  災難恢復會將所有虛擬機器放置在所選的主機上。* * 目標 VM 資料夾 * （選用）：建立新的根資料夾來儲存所選的 VM 。</block>
@@ -1727,4 +1721,34 @@
   <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">螢幕截圖顯示了帳戶序號、綠色複選框和文字「已註冊支援」。</block>
   <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b48bf926273d62cab06e1bce2eeec67f" category="sidebar">為 Amazon EVS 新增ONTAP儲存陣列</block>
+  <block id="d4b79f85bf29ad80a3ae386050c77c87" category="doc">BlueXP disaster recovery更新</block>
+  <block id="36088b35355e766d544b98140baa439a" category="list-text">改進了 VMFS 支持，以處理來自多個儲存虛擬機的相同 LUN。</block>
+  <block id="5958ae417b9ca044a24e8a3629b195bb" category="list-text">改進了測試拆卸清理以處理已卸載或刪除的資料儲存。</block>
+  <block id="1a2957b0c8fb36225440df520076e072" category="list-text">改進了子網路映射，以便現在可以驗證輸入的網關是否包含在提供的網路中。</block>
+  <block id="7f5267deccdc08e8591ec8b4dccfcc03" category="list-text">解決了虛擬機器名稱包含“.com”時可能導致複製計劃失敗的問題。</block>
+  <block id="8af129ac3a817923db5feb647660eb7c" category="list-text">在建立複製計劃的過程中，刪除了封鎖目標磁碟區與來源磁碟區相同的限制。</block>
+  <block id="4de413f6189881cc6b259fb6e68df02c" category="list-text">在 Azure 市場中新增了對NetApp智慧服務的即用即付 (PAYGO) 訂閱支持，並在免費試用對話方塊中新增了 Azure 市場的連結。</block>
+  <block id="276ba658474d8685c0925cd2bcb486a8" category="inline-link">BlueXP disaster recovery許可</block>
+  <block id="17c3f7bad28af5667bbaacbe3fe4f6d1" category="paragraph">有關詳細信息，請參閱<block ref="ea68973aac8ca707300074d97a0eb98d" category="inline-link-rx"></block>和<block ref="1e6c39dcb2e36546ede605d53a914ae9" category="inline-link-rx"></block>。</block>
+  <block id="b9c1cdf7f87b0afdb4912dd1210368b2" category="doc">測試故障轉移的腳本配置</block>
+  <block id="23b8df4f947d4876b62a4f35651dc9da" category="paragraph">在此版本中，您現在可以在測試故障轉移過程中啟動虛擬機器後在其上執行腳本。這使您能夠測試和驗證腳本。例如，您可以更新 NFS 掛載以指向新的目標伺服器，確保來賓應用程式完全在線，並且可以端對端測試您的復原過程。</block>
+  <block id="c50483baf55d5fc84eb7cde2deb8dbbe" category="paragraph">有關故障轉移過程的更多信息，請參閱<block ref="971d0cd2e9d374816901b4e00433e2bb" category="inline-link-macro-rx"></block>。</block>
+  <block id="bf6db1e2a0fdc4928d739c9a62b174a9" category="section-title">改進的故障恢復過程</block>
+  <block id="3409a7280b540ad3a82c8fa7bda31a54" category="paragraph">在故障轉移期間，故障回復過程現在已停用，直到發現完成。這可確保在啟動故障復原之前正確識別和考慮所有配置，並降低發生錯誤的風險。</block>
+  <block id="4e76033871d8eb52e7a46330cc531bd8" category="inline-link-macro">將應用程式故障回復到原始來源</block>
+  <block id="61a1bcd67556c0aafb06a8820e6e7dce" category="paragraph">有關故障恢復過程的更多信息，請參閱<block ref="5386470d7b73cea41e5e361ec83bbd7a" category="inline-link-macro-rx"></block>。</block>
+  <block id="45e704b7096fcf6ac27af9311b96c07a" category="list-text">透過 Amazon Web Services (AWS) Marketplace 和 Microsoft Azure Marketplace 購買 * NetApp Intelligent Services* 的即用即付 (PAYGO) 訂閱。</block>
+  <block id="caf89067dc5383afa96e1ac3e7c34bb7" category="paragraph">*許可選項* 您可以使用以下許可選項：</block>
+  <block id="3c0bdabbea501ff7dea57775a21c6a85" category="list-text">透過 Amazon Web Services (AWS) Marketplace 或 Microsoft Azure Marketplace 購買 * NetApp Intelligent Services* 的即用即付 (PAYGO) 訂閱。</block>
+  <block id="919574c2e1cf45885dfdded4236ff487" category="section-title">試用期結束後，透過其中一個市場訂閱</block>
+  <block id="446691d02deb2b03ca183c5fd9738d38" category="paragraph">免費試用結束後，您可以從NetApp購買許可證，也可以透過 AWS Marketplace 或 Microsoft Azure Marketplace 訂閱 * NetApp智慧服務*。此過程提供瞭如何在其中一個市場中直接訂閱的高級概述。</block>
+  <block id="56e5cf5f883e7b888ddd4a1ac7202af2" category="paragraph">或者，從右上角選擇「查看付款方式」。</block>
+  <block id="89642db6eeb3c89414135d980b0f379c" category="inline-image-macro">BlueXP disaster recovery付款方式頁面</block>
+  <block id="de623a7bc4167d216e4ecab40f63a530" category="paragraph"><block ref="de623a7bc4167d216e4ecab40f63a530" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d54ccf88bc5eb0a90680898e52b66685" category="list-text">選擇*在 AWS Marketplace 中訂閱*或*在 Azure Marketplace 中訂閱*。</block>
+  <block id="ea9723858fffb6cdd001caff1cc4ed38" category="list-text">使用 AWS Marketplace 或 Microsoft Azure Marketplace 訂閱 * NetApp智慧服務 * 和 * BlueXP disaster recovery*。</block>
+  <block id="2f5c8ea43e93d972b7a25e5290de1a89" category="section-title">2025年9月15日</block>
+  <block id="7b79550b0f239051cee47679029d92d0" category="paragraph">版本 4.3.5P3</block>
+  <block id="3488d38349240c72f75d081c2a79fa3b" category="section-title">2025年8月4日</block>
+  <block id="4a32789f771ba902fef02cd0f2a544e6" category="paragraph">版本 4.2.5P2</block>
 </blocks>

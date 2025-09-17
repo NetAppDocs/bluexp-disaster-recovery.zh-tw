@@ -75,7 +75,7 @@ IMPORTANT: 部分版本包含技術預覽。NetApp 不收取任何預覽工作�
 您可以使用下列授權類型：
 
 * 註冊 30 天免費試用。
-* 透過 Amazon Web Services （ AWS ） Marketplace 購買 NetApp Intelligent Services* 的隨用隨付（ PAYGO ）訂閱。
+* 透過 Amazon Web Services (AWS) Marketplace 和 Microsoft Azure Marketplace 購買 * NetApp Intelligent Services* 的即用即付 (PAYGO) 訂閱。
 * 請自帶授權（ BYOL ）、這是您從 NetApp 銷售代表處取得的 NetApp 授權檔案（ NLF ）您可以使用授權序號、在 BlueXP 數位錢包中啟動 BYOL 。
 
 

@@ -18,10 +18,10 @@ summary: 有了 BlueXP 災難恢復、您可以使用不同的授權方案、包
 
 link:../reference/dr-reference-roles.html["了解BlueXP disaster recovery中的使用者角色和權限"]。https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的 BlueXP 存取角色"^]。
 
-您可以使用下列授權類型：
+*許可選項* 您可以使用以下許可選項：
 
 * 註冊 30 天免費試用。
-* 購買內含 Amazon Web Services （ AWS ） Marketplace 的 * NetApp Intelligent Services* 隨用隨付（ PAYGO ）訂閱。
+* 透過 Amazon Web Services (AWS) Marketplace 或 Microsoft Azure Marketplace 購買 * NetApp Intelligent Services* 的即用即付 (PAYGO) 訂閱。
 * 請自帶授權（ BYOL ）、這是您從 NetApp 銷售代表處取得的 NetApp 授權檔案（ NLF ）您可以使用授權序號、在 BlueXP 數位錢包中啟動 BYOL 。
 
 
@@ -73,14 +73,20 @@ image:draas-landing2.png["BlueXP 災難恢復的登陸頁快照"]
 
 
 
-== 試用結束後、請透過 AWS Marketplace 訂閱
+== 試用期結束後，透過其中一個市場訂閱
 
-免費試用結束後，您可以向 NetApp 購買授權，或透過 AWS Marketplace 訂閱 * NetApp Intelligent Services* 。本程序提供如何直接在 AWS Marketplace 中訂閱的高階概觀。
+免費試用結束後，您可以從NetApp購買許可證，也可以透過 AWS Marketplace 或 Microsoft Azure Marketplace 訂閱 * NetApp智慧服務*。此過程提供瞭如何在其中一個市場中直接訂閱的高級概述。
 
 .步驟
 . 在 BlueXP 災難恢復中、您會看到免費試用即將到期的訊息。在訊息中、選取 * 訂閱或購買授權 * 。
-. 選取 * 在 AWS Marketplace* 中訂閱。
-. 使用 AWS Marketplace 訂閱 * NetApp Intelligent Services* 和 * BlueXP  災難恢復 * 。
++
+或者，從右上角選擇「查看付款方式」。
+
++
+image:dr-licensing-payment-methods.png["BlueXP disaster recovery付款方式頁面"]
+
+. 選擇*在 AWS Marketplace 中訂閱*或*在 Azure Marketplace 中訂閱*。
+. 使用 AWS Marketplace 或 Microsoft Azure Marketplace 訂閱 * NetApp智慧服務 * 和 * BlueXP disaster recovery*。
 . 當您返回 BlueXP 災難恢復時、會有一則訊息指出您已訂閱。
 +
 您可以在 BlueXP  數位錢包中檢視訂閱詳細資料。link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-homepage.html["深入瞭解如何使用數位錢包管理訂閱"^]。

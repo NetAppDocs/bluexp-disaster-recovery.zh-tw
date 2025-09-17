@@ -16,6 +16,51 @@ summary: BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化�
 
 
 
+== 2025年9月15日
+
+版本 4.3.5P3
+
+
+
+=== 測試故障轉移的腳本配置
+
+在此版本中，您現在可以在測試故障轉移過程中啟動虛擬機器後在其上執行腳本。這使您能夠測試和驗證腳本。例如，您可以更新 NFS 掛載以指向新的目標伺服器，確保來賓應用程式完全在線，並且可以端對端測試您的復原過程。
+
+有關故障轉移過程的更多信息，請參閱link:https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["將應用程式容錯移轉至遠端站台"]。
+
+
+
+=== 改進的故障恢復過程
+
+在故障轉移期間，故障回復過程現在已停用，直到發現完成。這可確保在啟動故障復原之前正確識別和考慮所有配置，並降低發生錯誤的風險。
+
+有關故障恢復過程的更多信息，請參閱link:https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failback.html["將應用程式故障回復到原始來源"]。
+
+
+
+== 2025年8月4日
+
+版本 4.2.5P2
+
+
+
+=== BlueXP disaster recovery更新
+
+此版本包含下列更新：
+
+* 改進了 VMFS 支持，以處理來自多個儲存虛擬機的相同 LUN。
+* 改進了測試拆卸清理以處理已卸載或刪除的資料儲存。
+* 改進了子網路映射，以便現在可以驗證輸入的網關是否包含在提供的網路中。
+* 解決了虛擬機器名稱包含“.com”時可能導致複製計劃失敗的問題。
+* 在建立複製計劃的過程中，刪除了封鎖目標磁碟區與來源磁碟區相同的限制。
+* 在 Azure 市場中新增了對NetApp智慧服務的即用即付 (PAYGO) 訂閱支持，並在免費試用對話方塊中新增了 Azure 市場的連結。
++
+有關詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html#licensing["BlueXP disaster recovery許可"]和 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html["設定 BlueXP 災難恢復的授權"]。
+
+
+
+
+
 == 2025 年 14 月 7 日
 
 版本 4.2.5
