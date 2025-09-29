@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: release-notes/dr-whats-new.html 
-keywords: disaster recovery, bluexp, disaster recovery, vmware, vcenter, draas, disaster 
+keywords: disaster recovery, bluexp, disaster recovery, vmware, vcenter, draas, disaster,console, virtual machine 
 summary: BlueXP 災難恢復是一種雲端型災難恢復服務、可自動化災難恢復工作流程。有了適用於 VMware 的 BlueXP 災難恢復功能、您可以使用 NetApp 雲端儲存設備、將執行 ONTAP 儲存設備的內部部署 VMware 工作負載複寫到公有雲中的 VMware 軟體定義資料中心、做為災難恢復站台。 
 ---
 = BlueXP  災難恢復的新功能
